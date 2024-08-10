@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CIOM</title>
+  <meta content="ciom" name="keywords">
+  <meta name="description" content="mystery shopper services">
+  
+  <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/global.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const monthly = document.getElementById('prices_btn_monthly');
+      const annual = document.getElementById('prices_btn_annual');
+
+      monthly.addEventListener('click', function() {
+          updatePricing('monthly');
+      });
+
+      annual.addEventListener('click', function() {
+        updatePricing( 'annual');
+      });
+
+
+      function updatePricing(type) {
+        
+        const monthly = document.getElementById('prices_btn_monthly');
+        const annual = document.getElementById('prices_btn_annual');
+        const basic = document.querySelectorAll('.basic-price');
+        const advance = document.querySelectorAll('.advance-price');
+        const profesional = document.querySelectorAll('.profesional-price');
+      
+    
+        if (type === 'monthly') {
+          monthly.classList.remove('btn-secondary');
+          monthly.classList.add('btn-primary');
+          annual.classList.remove('btn-primary');
+          annual.classList.add('btn-secondary');
+          
+          basic[0].textContent = '19';
+          advance[0].textContent = '25';
+          profesional[0].textContent = '32';
+        } else {
+          monthly.classList.remove('btn-primary');
+          monthly.classList.add('btn-secondary');
+          annual.classList.remove('btn-secondary');
+          annual.classList.add('btn-primary');
+          
+          basic[0].textContent = '15';
+          advance[0].textContent = '20';
+          profesional[0].textContent = '25';
+        }
+      }
+      
+
+
+  function generateLogos(type) {
+    let logos;
+
+    if (type === "IT") {
+      logos =
+        `<div class="logo"><img src="./assets/img/it-react.png" alt="react"></div>
+        <div class="logo"><img src="./assets/img/it-redux.png" alt="redux"></div>
+        <div class="logo"><img src="./assets/img/it-node.png" alt="node"></div>
+        <div class="logo"><img src="./assets/img/it-mongodb.png" alt="mongodb"></div>
+        <div class="logo"><img src="./assets/img/it-aws.png" alt="aws"></div>
+        <div class="logo"><img src="./assets/img/it-google.png" alt="google"></div>`
+    } else if (type === "COMPANY")  { 
+      logos =   
+      `<div class="logo"><img src="./assets/img/company-exxon.svg" alt="exxon"></div>
+       <div class="logo"><img src="./assets/img/company-volvo.svg" alt="volvo"></div>
+       <div class="logo"><img src="./assets/img/company-hyundai.png" alt="hyundai"></div>
+       <div class="logo"><img src="./assets/img/company-walmart.svg" alt="walmart"></div>
+       <div class="logo"><img src="./assets/img/company-merck.svg" alt="merck"></div>
+       <div class="logo"><img src="./assets/img/company-chevron.svg" alt="chevron"></div>`
+    }
+      
+    let result = '';
+    for (let i = 0; i < 10; i++) {
+        result += logos;
+    }
+    return result;
+}
+
+
+
+// Uso de la función
+document.querySelector('.slider-track-it').innerHTML = generateLogos("IT");
+document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPANY");
+
+
+});
+
+
+
+
+  // document.addEventListener('DOMContentLoaded', function () {
+    // $('#testimonialCarousel').carousel({
+    //     interval: 3000
+    // });
+
+    // $('#testimonialCarousel').on('slide.bs.carousel', function (e) {
+    //     let itemsPerSlide = $(this).find('.carousel-item.active .col-md-4').length;
+    //     let totalItems = $('.carousel-item .col-md-4').length;
+
+    //     if (e.direction == 'left') {
+    //         if (totalItems - itemsPerSlide >= itemsPerSlide) {
+    //             let $newActive = $(this).find('.carousel-item.active').next();
+    //             if (!$newActive.length) {
+    //                 $newActive = $(this).find('.carousel-item').first();
+    //             }
+    //             $newActive.children().slice(0, itemsPerSlide).appendTo($newActive);
+    //         }
+    //     } else {
+    //         if (totalItems - itemsPerSlide >= itemsPerSlide) {
+    //             let $newActive = $(this).find('.carousel-item.active').prev();
+    //             if (!$newActive.length) {
+    //                 $newActive = $(this).find('.carousel-item').last();
+    //             }
+    //             $newActive.children().slice(-itemsPerSlide).prependTo($newActive);
+    //         }
+    //     }
+    // });
+
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+  
+    // var swiper = new Swiper('.swiper-container', {
+    //     slidesPerView: 'auto',
+    //     spaceBetween: 10,
+    //     loop: true,
+    //     speed: 5000, // Adjust speed for slower transition
+    //     autoplay: {
+    //       delay: 0,
+    //       disableOnInteraction: false,
+    //     },
+    //   });
+  
+    // $('#logoCarousel').carousel({
+    //     interval: 10
+    // });
+
+  // document.getElementById('cookies_accept').addEventListener('click', function() {
+  //   document.querySelector('.cookie-banner').style.display = 'none';
+  //   localStorage.setItem('cookiesAccepted', 'true');
+  // });
+
+  // window.addEventListener('load', function() {
+  //     if (localStorage.getItem('cookiesAccepted') === 'true') {
+  //         document.querySelector('.cookie-banner').style.display = 'none';
+  //     }
+  // });
+      
+// });
+
+
+</script>
+
+  
+<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 1769946,playbookUuid: '9886413d-9e92-4f17-8b12-5e2385a47ebb',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
+</head>
+
+<body>
+ 
+
+  <div id="navbar-container"></div>
+
+  <main id="main">
+
+    <section id="home" >
+
+      <div class="container">
+          
+        <div class="row"  data-aos="fade-up">
+          
+          <div class="col-md-6 order-md-1">
+            
+            <h2 id="home_title_sub">MIDA | CORRIJA | MEJORE</h2>
+            <h1 id="home_title">La plataforma para medir y mejorar en tiempo real</h1>
+
+            <ul>
+              <li>
+                <i class="bi bi-check-lg"></i>          
+                <span id="home_item_1">Mejora la ejecución de sus estrategias en campo</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>        
+                  <span id="home_item_2">Aumenta el cumplimiento de sus procesos internos</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>  
+                  <span id="home_item_3">Eleva la satisfacción de sus clientes</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>  
+                  <span id="home_item_4">Afina estrategias de precios, promociones y ofertas</span>
+              </li>                
+            </ul>
+
+            <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary"
+               id="home_btn"
+            >Comenzar</a>
+          
+          </div>
+
+          <div class="col-md-6 order-md-2 d-flex justify-content-end align-items-center">
+            <div data-aos="zoom-out" data-aos-delay="200">
+               <img src="assets/img/home_img.png" alt="Mediciones CIOM" class="image-slide"> 
+            </div>
+          </div>
+      
+        </div>
+
+      </div>
+
+    </section>
+      
+      <section id="logos">
+        <div class="container opacity">
+          <div class="logo-slider">
+              <div class="slider-track-company">
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="webApp">
+        <div class="container" data-aos="fade-up">
+      
+          <h1 id="webApp1_title">Cómo funciona</h1>
+          <div class="row row-eq-height" style="margin-top: 50px;">
+           
+            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
+              <div class="content">
+                <div class="card mobile-card">
+                  <div class="title">
+                    <img src="assets/img/1.png" alt="identifique">
+                    <h4 id="webApp1_item_1_title_sub">IDENTIFIQUE</h4>
+                  </div>
+                  <h6 id="webApp1_item_1_title">¿Qué tiene que mejorar?</h6>
+                  <p id="webApp1_item_1_text">Aspectos que mejorarían sus ventas y/o rentabilidad si los logra mejorar.</p>     
+                </div>
+                <img src="assets/img/Consultoria.png" class="image-slide" alt="Expertos en Indicadores">
+              </div>
+            </div>
+          
+            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
+              <div class="content">
+                <div class="card mobile-card">
+                  <div class="title">
+                    <img src="assets/img/2.png" alt="diseñe">
+                    <h4 id="webApp1_item_2_title_sub">DISEÑE</h4>
+                  </div>
+                  <h6 id="webApp1_item_2_title">¿Cómo lo vamos a medir?</h6>
+                  <p id="webApp1_item_2_text">Creamos una medición simple para alimentar su indicador de mejora continua.</p>       
+                </div>
+                <img src="assets/img/Asesoria.png" class="image-slide" alt="Soporte">
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
+              <div class="content">
+                <div class="card mobile-card">
+                  <div class="title">
+                    <img src="assets/img/3.png" alt="mejore">
+                    <h4 id="webApp1_item_3_title_sub">MEJORE</h4>
+                  </div>
+                  <h6 id="webApp1_item_3_title">¿Cómo logra la mejora?</h6>
+                  <p id="webApp1_item_3_text">Sus equipos comenzarán a evidenciar objetivamente las oportunidades y podrán dar trazabilidad a la mejora.</p>                      
+                </div>
+                <img src="assets/img/Dashboard.png" class="image-slide" alt="Plataforma">
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+     </section>
+
+     <section id="fortune">
+      <div class="container">
+        <div class="content">
+          <h1 id="fortune500">Usado desde compañías del <span style="font-weight: 600;">fortune 500</span> hasta empresas familiares</h1>          
+        </div>
+      </div>
+    </section>
+
+    <section id="webApp" class="background">
+      <div class="container" data-aos="fade-up">
+    
+        <h1 id="webApp2_title">La app que su equipo y proveedores amaran</h1>
+        
+        <div class="row row-eq-height justify-content-center" style="margin-top: 65px;">
+      
+          <div class="col-md-4 order-md-2 d-flex align-items-center">
+            <img src="assets/img/Aplicación Móvil.png" class="img-fluid mx-auto" style="margin: 0 0 15px -15px !important;" alt="GPS, Multimedia, Trazabilidad, Nativa, Android, IOs, Iphone, Simple, Personalizada, Customizada">
+          </div>
+
+          <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
+          <div class="card">
+              <h4 id="webApp2_item_1_title">Acciona en tiempo real</h4>
+              <p id="webApp2_item_1_description">Diseñada para procesar e informar al instante</p>
+            </div>
+            <div class="card">
+              <h4 id="webApp2_item_2_title">Consolida toda su información</h4>
+              <p id="webApp2_item_2_description">Para ser usada por su equipo y proveedores</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
+            <div class="card">
+              <h4 id="webApp2_item_3_title">Gana tranquilidad y seguridad</h4>
+              <p id="webApp2_item_3_description">Fecha, hora, gps y una multimedia respaldan cada dato</p>
+            </div>
+            <div class="card">
+              <h4 id="webApp2_item_4_title">Ahorra horas de trabajo</h4>
+              <p id="webApp2_item_4_description">Pensada para simplificar el trabajo de medición en el PDV</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+  </section>
+
+  <section id="webApp">
+    <div class="container" data-aos="fade-up">
+  
+      <h1 id="webApp3_title">Simplicidad y poder en una sola aplicación web</h1>
+      
+      <div class="row row-eq-height justify-content-center margin-img">
+     
+        <div class="col-md-4 order-md-2 d-flex align-items-center">
+          <img src="assets/img/Plataforma Web.png" class="img-fluid mx-auto" alt="Visualización, Dashboard, Indicadores, Personalizada, Customizada" style="margin: 80px 0px;">               
+        </div>
+
+        <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
+         <div class="card">
+            <h4 id="webApp3_item_1_title">Mejora su negocio</h4>
+            <p id="webApp3_item_1_description">Se automatiza la gestion de sus equipos</p>
+          </div>
+          <div class="card">
+            <h4 id="webApp3_item_2_title">Cuenta con mas ayuda</h4>
+            <p id="webApp3_item_2_description">Informará customizadamente a toda la organización</p></br>
+          </div>
+        </div>
+        
+        <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
+          <div class="card">
+            <h4 id="webApp3_item_3_title">Independiza por completo</h4>
+            <p  id="webApp3_item_3_description">Podrá crear y administrar sus indicadores facilmente</p>
+          </div>
+          <div class="card">
+            <h4 id="webApp3_item_4_title">Acelera su camino al crecimiento</h4>
+            <p id="webApp3_item_4_description">Será muy simple identificar mas y mejores oportunidades</p>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+ </section>
+
+    
+ <section id="statistics">
+  <div class="container">
+    
+    <div class="content">
+      <h1 id="statistics_title">Los riesgos que podría evitar con buenos indicadores</h1>          
+    </div>
+  
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>69%</span>
+          </div>
+          <p id="statistics_item_1">de sus clientes no regresarán luego de una mala experiencia</p>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>77%</span>
+          </div>
+          <p id="statistics_item_2">de clientes elegirán otra marca si su producto no está</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>65%</span>
+          </div>
+          <p id="statistics_item_3">de los consumidores prefieren una marca bien estandarizada</p>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>72%</span>
+          </div>
+          <p id="statistics_item_4">de clientes elegirán otra marca ante un mejor ofrecimiento</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>97%</span>
+          </div>
+          <p id="statistics_item_5">de productos no encontrados fue por problemas operativos en el PDV</p>
+        </div>
+        
+    </div>
+      
+    <div class="row justify-content-center" style="padding-top: 30px;">
+      <a
+      id="statistics_btn"
+      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="btn btn-info"
+      >Comenzar</a>
+  </div> 
+
+  </div> 
+
+  </div>
+</section> 
+
+<section id="measures">
+      
+  <div class="container" data-aos="fade-up">
+    <div>
+        <h1 id="measures_title_sub" style="font-weight: 600;">TOP 5</h1>
+        <h1 id="measures_title">Tipos de Medición para mejorar su rentabilidad</h1>
+      </div>         
+  </div>
+
+</section>
+
+<section id="measuresItem">
+
+  <div class="container" data-aos="fade-up">
+            
+    <div class="row justify-content-center" style="padding-top: 30px;">
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>1</h1>
+          <div class="body">
+            <div id="measures_item_1_title" class="title">CLIENTE MISTERIOSO</div>
+            <ul>
+              <li id="measures_item_1_1">Servicio</li>
+              <li id="measures_item_1_2">Ventas</li>
+              <li id="measures_item_1_3">Conocimientos</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>2</h1>
+          <div class="body">
+            <div id="measures_item_2_title" class="title">AUDITORIAS</div>
+            <ul>
+              <li id="measures_item_2_1">Imagen</li>
+              <li id="measures_item_2_2">Ejecución</li>
+              <li id="measures_item_2_3">Disponibilidad</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>3</h1>
+          <div class="body">
+            <div id="measures_item_3_title" class="title">INSPECCIONES</div>
+            <ul>
+              <li id="measures_item_3_1">Seguridad</li>
+              <li id="measures_item_3_2">Mantenimiento</li>
+              <li id="measures_item_3_3">Limpieza</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>4</h1>
+          <div class="body">
+            <div id="measures_item_4_title" class="title">ENCUESTAS</div>
+            <ul>
+              <li id="measures_item_4_1">Satisfacción</li>
+              <li id="measures_item_4_2">Oferta de Valor</li>
+              <li id="measures_item_4_3">Clima Laboral</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>5</h1>
+          <div class="body">
+            <div id="measures_item_5_title" class="title">BENCHMARKETING</div>
+            <ul>
+              <li id="measures_item_5_1">Precios</li>
+              <li id="measures_item_5_2">Ofertas</li>
+              <li id="measures_item_5_3">Servicio</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  <div class="row justify-content-center" style="padding-top: 55px;">
+    <div class="col-sm-10 col-md-10 col-lg-4">
+      <video width="100%" controls>
+        <source src="assets/img/Principales Servicios.mp4" type="video/mp4" alt="Cliente Misteriosos, Relevamiento de Precios, Inspecciones, Auditorías, Encuestas">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </div>
+  </div>
+
+
+</section>
+      
+<section id="methodology" >
+
+  <div class="container">
+      
+    <div class="row"  data-aos="fade-up">
+      
+      <div class="col-md-6 order-md-1" s>
+        
+      <div class="body">
+        <h1 id="methodology_title">La metodología empleada por las empresas exitosas</h1>
+
+        <ul>
+          <li id="methodology_item_1"> Al enfocar a su compañía a procesos de mejora continua usted va a conseguir Resultados Tangibles.</li>
+          <li id="methodology_item_2"> Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</li>
+          <li id="methodology_item_3"> El éxito es la habilidad de ir de un fracaso en otro sin perder el entusiasmo.  Henry Ford</li>                
+        </ul>
+
+        <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-link"
+           id="methodology_btn"
+        >Comenzar</a>
+      
+      </div>
+    </div>
+      <div class="col-md-6 order-md-2 d-flex justify-content-end">
+        <div data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/methodology_ciom.png" alt="methodology" class="image-slide">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="additional-service" >
+
+  <div class="container">
+      
+    <div class="row" data-aos="fade-up">
+      
+      <div class="col-md-6 order-md-1 order-2">
+        <div data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide">
+        </div>
+      </div>
+      
+      <div class="col-md-6 order-md-2 order-1">
+        
+        <div class="body">
+          <h1 id="additional_title">Un equipo especializado listo para facilitarle el proceso de mejora</h1>
+          <ul>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_1">Ayudarlos a definir indicadores simples y efectivos para que mejore su negocio</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_2">Apoyarlos con la configuración inicial del sistema para que ahorren tiempo</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_3">Acompañarlos en su proceso de mejora por el tiempo que lo necesiten</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_4"> Adaptar y Ejecutar el Programa Integral de Mejora by</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_5"> CIOMERS (Modelo Uber, independientes que le hacen sus tareas de campo)</span>
+            </li>
+          </ul>
+          <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-link"
+            id="additional_btn"
+          >Contactar con ventas</a>            
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+ 
+</section>
+  
+      
+      
+      <section id="prices" >
+
+        <div class="container">
+            
+          <div class="row" data-aos="fade-up">
+            
+            <div class="col">
+              
+              <h1 id="prices_title">Elija el plan que mejor se adapta a su empresa</h1>              
+
+              <div>
+                <div class="price-switch">
+                  <button id="prices_btn_monthly" type="button" class="btn btn-secondary">Pago mensual</button>
+                  <button id="prices_btn_annual" type="button" class="btn btn-primary">Pago anual</button>
+                  <span id="prices_saving" class="price-switch-text">(Ahorre hasta un 25%)</span>
+                </div>       
+                
+              </div>
+
+            </div>
+          
+          
+          </div>
+           
+          <div class="row">
+          
+              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+                <div class="mb-s3">                
+                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                      <div class="card-body-header">
+                        <div class="content">
+                          <img class="icon" alt="" src="./assets/img/price_low.svg"/>            
+                          <div id="prices_item_basic_title" class="title">FAMILIAR</div>
+                        </div>
+                        <div id="prices_item_basic_description" class="description">
+                          Elimina todas las disputas al poder acompañar las decisiones con datos objetivos.
+                        </div>
+                        <div class="plans-divider"></div>
+                        <div class="price">
+                          <div class="content">
+                            <div class="d">
+                              <b class="value">
+                                <span>US$</span>
+                                <span class="span basic-price">15</span>
+                              </b>
+                              
+                              <div class="info">
+                                <p id="prices_item_basic_item_info_1" class="item">Facturación anual</p>
+                                <p id="prices_item_basic_item_info_2" class="item">Por usuario, por mes</p>
+                                <p id="prices_item_basic_item_info_3" class="item">Incluye 3 usuarios</p>
+                              </div>
+                            </div>
+                            <div class="plans-divider"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-features">
+                        <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_basic_item_1" class="text">2 Indicadores de mejora</div>
+                        </div>
+                        <div class="item">
+                          <i class="bi bi-check-lg"></i>        
+                         <div id="prices_item_basic_item_3" class="text">Hasta 5GB</div>
+                       </div>
+                        <!-- <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_basic_item_2" class="text">Hasta 5GB</div>
+                        </div> -->
+                        <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_basic_item_3" class="text">Tutoriales simples</div>
+                        </div>
+                      </div>
+                      <div class="extras-parent">
+                        <div class="extras">Extras</div>
+                        <div class="pricing-features">
+                          <div class="item">
+                            <i class="bi bi-check-lg"></i>    
+                            <div id="prices_item_basic_item_extra_1" class="text"> Desk & Dashboard + Power Bi </div>
+                          </div>                             
+                        </div>
+                      </div>
+                      <a
+                      id="prices_item_basic_btn"
+                      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-primary"
+                      >Contratar</a>
+                    </div>
+                </div>
+              </div>
+            
+              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+                <div class="mb-s3">                
+                  <div class="card-selected" data-aos="zoom-in" data-aos-delay="100">                                      
+                      <div class="card-body-header">
+                        <div class="content">
+                          <img class="icon" alt="" src="./assets/img/price_medium.svg"/>            
+                          <div id="prices_item_advance_title" class="title">PYMES</div>
+                        </div>
+                        <div id="prices_item_advance_description" class="description">
+                          Trabaja como los grandes KPIs simples y prácticos para mejorar el resultado de su negocio.
+                        </div>
+                        <div class="plans-divider"></div>
+                        <div class="price">
+                          <div class="content">
+                            <div class="d">
+                              <b class="value">
+                                <span>US$</span>
+                                <span class="span advance-price">20</span>
+                              </b>
+                              <div class="info">
+                                <p id="prices_item_advance_item_info_1" class="item">Facturación anual</p>
+                                <p id="prices_item_advance_item_info_2" class="item">Por usuario, por mes</p>
+                                <p id="prices_item_advance_item_info_3" class="item">Incluye 6 usuarios</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="plans-divider"></div>
+                      </div>
+                      <div class="pricing-features">
+                        <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_advance_item_1" class="text">4 Indicadores de mejora</div>
+                        </div>
+                        <div class="item">
+                          <i class="bi bi-check-lg"></i>        
+                         <div id="prices_item_advance_item_3" class="text">Hasta 15GB</div>
+                       </div>
+                        <!-- <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_advance_item_2" class="text">Hasta 15GB</div>
+                        </div> -->
+                        <div class="item">
+                           <i class="bi bi-check-lg"></i>        
+                          <div id="prices_item_advance_item_3" class="text">Soporte automatizado</div>
+                        </div>
+                      </div>
+                      <div class="extras-parent">
+                        <div class="extras">Extras</div>
+                        <div class="pricing-features">
+                          <div class="item">
+                            <i class="bi bi-check-lg"></i>    
+                            <div id="prices_item_advance_item_extra_1" class="text">Analitycs Web</div>
+                          </div>                             
+                        </div>
+                      </div>
+                      <a 
+                        id="prices_item_advance_btn"
+                        href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-primary"
+                        >Contratar</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+                <div class="mb-s3">                
+                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                    <div class="card-body-header">
+                      <div class="content">
+                        <img class="icon" alt="" src="./assets/img/price_big.svg"/>            
+                        <div id="prices_item_profesional_title" class="title">GRANDES</div>
+                      </div>
+                      <div id="prices_item_profesional_description" class="description">
+                        Acciona en tiempo real, simplifica el trabajo de su equipo y ganara eficiencia.
+                      </div>
+                      <div class="plans-divider"></div>
+                      <div class="price">
+                        <div class="content">
+                          <div class="d">
+                            <b class="value">
+                              <span>US$</span>
+                              <span class="span profesional-price">25</span>
+                            </b>
+                            <div class="info">
+                              <p id="prices_item_profesional_item_info_1" class="item">Facturación anual</p>
+                              <p id="prices_item_profesional_item_info_2" class="item">Por usuario, por mes</p>
+                              <p id="prices_item_profesional_item_info_3" class="item">Incluye 19 usuarios</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="plans-divider"></div>
+                    </div>
+                    <div class="pricing-features">
+                      <div class="item">
+                         <i class="bi bi-check-lg"></i>        
+                        <div id="prices_item_profesional_item_1" class="text">6 Indicadores de mejora</div>
+                      </div>
+                      <div class="item">
+                        <i class="bi bi-check-lg"></i>        
+                       <div id="prices_item_profesional_item_3" class="text">Hasta 150GB</div>
+                     </div>
+                      <!-- <div class="item">
+                         <i class="bi bi-check-lg"></i>        
+                        <div id="prices_item_profesional_item_2" class="text">Hasta 150GB</div>
+                      </div> -->
+                      <div class="item">
+                         <i class="bi bi-check-lg"></i>        
+                        <div id="prices_item_profesional_item_3" class="text">Asesor en linea</div>
+                      </div>
+                    </div>
+                    <div class="extras-parent">
+                      <div class="extras">Extras</div>
+                      <div class="pricing-features">
+                        <div class="item">
+                          <i class="bi bi-check-lg"></i>    
+                          <div id="prices_item_profesional_item_extra_1" class="text">
+                            App brandeada
+                          </div>
+                        </div>                             
+                      </div>
+                    </div>
+                  
+                    <a 
+                    id="prices_item_profesional_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-primary"
+                    >Contratar</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+                <div class="mb-s3">                
+                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                    <div class="card-body-header">
+                      <div class="content">
+                        <img class="icon" alt="" src="./assets/img/price_big_extra.svg"/>            
+                        <div id="prices_item_corporate_title" class="title">CORPORATIVO</div>
+                      </div>
+                      <div id="prices_item_corporate_description" class="description">
+                        Toma el control de su información y consolida todas sus mediciones.
+                      </div>
+                      <div class="plans-divider"></div>
+                      <div class="price" style="min-height: 62px;">
+                        <div class="content">
+                          <div class="d">
+                              <span id="prices_item_corporate_item_info_1" class="custom">Precio en base a sus necesidades</span>                                                                      
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plans-divider"></div>
+                    <div class="pricing-features">
+                      <div class="item">
+                         <i class="bi bi-check-lg"></i>        
+                        <div id="prices_item_corporate_item_1" class="text">Funcionalidades especiales y costumizadas para su corporacion.</div>
+                      </div>                            
+                    </div>
+                    <div class="extras-parent">
+                      <div class="extras"></br></div>
+                      <div class="pricing-features">
+                        <div class="item">
+                          <span class="check-icon"></span>
+                          <div class="text">
+                            </br>
+                          </div>
+                        </div>                             
+                      </div>
+                    </div>
+                    
+                    <a 
+                    id="prices_item_corporate_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-link"
+                    >Contactar con ventas</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="logos" style="background-color: #fff;">
+        <div class="container">
+          <div class="logo-slider">
+              <div class="slider-track-it">
+          
+          </div>
+        </div>
+      </section>
+
+      <section id="help"></section>
+    
+      <section id="testimonials-2"></section>
+
+      <section id="capitalize"></section>
+<!-- 
+      <section id="help" >
+
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-12 custom-column">
+                <div class="frame">
+                  <div class="prompt">
+                    <img loading="lazy" alt="" src="./assets/img/price.svg" >
+                     <div class="body">
+                      <h1 id="help2_title">¿Listo para capitalizar sus oportunidades?</h1>
+                      <p></p>
+                    </div>
+                    <a 
+                    id="help2_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-info"
+                    >Preguntas frecuentes</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+
+  </main>
+  
+  <footer id="footer"></footer>  
+
+<!-- <div class="cookie-banner">
+  <span id="cookies_message">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra</span>
+  <button id="cookies_accept" class="btn btn-primary">Aceptar</button>
+</div> -->
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+  <!-- <a href="https://api.whatsapp.com/send?phone=5491136610332&text=¡Hola! Estoy contactándote desde el sitio web de CIOM." class="float" target="_blank">
+   
+    <i class="bi bi-whatsapp my-float"></i>
+    </a> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="assets/js/i18n-config.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/newjs.js"></script>
+  
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

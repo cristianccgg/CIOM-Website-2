@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --paragraph-p3-regular: Inter;
+  --h4: "Plus Jakarta Sans";
+  --font-mulish: Mulish;
+  --font-helvetica-neue: "Helvetica Neue";
+  --font-open-sans: "Open Sans";
+  --font-poetsenone: PoetsenOne;
+
+  /* font sizes */
+  --fs: 18px;
+  --fs-h1-home: 40px;
+  --FS-h1-home-lower: 36;
+  --fs-h1: 32px;
+  --fs-h2: 18px;
+  --fs-h3: 25px;
+  --fs-h4: 22px;
+  --fs-h6: 18px;
+  --fs-i: 24px;
+  --fs-btn: 16px;
+  --fs-li: 20px;
+  --fs-li-sm: 15px;
+  --fs-sm: 17px;
+  --fs-md: 25px;
+  --fs-bg: 34px;
+
+  /* --paragraph-p3-regular-size: 16px;
+  --pa-1-size: 18px;
+  --font-size-29xl: 48px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --h2-size: 36px;
+  --h4-size: 22px;
+  --pa-2-size: 14px;
+  --h5-size: 20px;
+  --font-size-xs: 12px;
+  --font-size-31xl: 50px;
+  --h1-size: 22px;
+  --h2-size: 40px;
+  --font-size-9xs-5: 3.5px;
+  --font-size-11xs-7: 1.7px;
+  --font-size-10xs-7: 2.7px;
+  --font-size-9xs-3: 3.3px;
+  --font-size-8xs: 5px;
+  --font-size-3xs: 10px;
+  --font-size-xs-8: 11.8px;  */
+
+  /* Colors */
+  /* --blanco: #fff; */
+
+  /* opcion 1*/
+  /* --color-font-principal: #063063;
+  --color-font-secondary: #0176D3;
+  --blue-dark: #063063; 
+  --azul-primario: #0176D3;
+    --background-primario: #fff;
+      --background-primario-font-color: #fff;
+        --home-title: #fff;
+  --home-title-header: #0176D3;
+     */
+
+  /* opcion 2*/
+  /* --color-font-principal: #063063;
+  --color-font-secondary: #0176D3;
+
+  --blue-dark: #063063; 
+  --azul-primario: #063063;
+  --background-primario: #fff;
+  --background-primario-font-color: #fff;
+  --home-title: #fff;
+  --home-title-header: #0176D3;
+  --home-background: #fff; */
+
+  /* opcion 3*/
+  --blue-light: #175fe2;
+  --azul-primario: #072146;
+
+  --celeste-secundario: #73bdfa;
+  --color-font-principal: #063063;
+  --color-font-secondary: #227be1;
+  --blue-dark: #063063;
+
+  --background-ligth: #f7fbff;
+  --grey: #d5d5d5;
+  --grey-ligth: #f1f1f1;
+  --negro: #2b2b2b;
+  --blanco: #fff;
+  --green: #2d844a;
+
+  /* --blanco: #fff;
+      --background-primario: #0176D3;
+      --background-primario-font-color: #fff;
+      --home-title: #fff;
+      --home-title-header: #73bdfa;
+      --home-background: #0176D3;
+      --home-text: #fff; */
+
+  /* opcion 4*/
+  /* --color-font-principal: #063063;
+      --color-font-secondary: #0176D3;
+      --blue-dark: #063063; 
+      --azul-primario: #063063;
+      --background-primario: #063063;
+      --background-primario-font-color: #fff;
+       */
+
+  /*   
+  --background-ligth: #eff5ff;
+
+  --celeste-secundario: #73bdfa;
+
+  --negro: #2b2b2b;  
+  --color-silver: #c5c5c5;
+  --color-whitesmoke-100: #eaeaea;
+  --color-lavender: #dce1ff;
+  --color-darkslategray-100: #3b3b3b;
+  --color-darkslategray-200: #2d2d2d;
+  --color-cornflowerblue: #26a5ff; */
+
+  /* Spacing */
+  --spacing-spacing-md: 24px;
+
+  /* Gaps */
+  --gap-13xl: 32px;
+  --gap-41xl: 60px;
+  --gap-base: 16px;
+  --gap-mini: 15px;
+  --gap-5xl: 24px;
+  --gap-11xl: 30px;
+  --gap-9xl: 28px;
+  --gap-6xs: 7px;
+  --gap-21xl: 40px;
+  --gap-xs: 12px;
+  --gap-3xl: 22px;
+  --gap-23xl: 42px;
+  --gap-4xs: 9px;
+  --gap-10xs-5: 2.5px;
+  --gap-27xl: 46px;
+
+  /* Paddings */
+  --padding-13xl: 32px;
+  --padding-21xl: 40px;
+  --padding-49xl: 68px;
+  --padding-59xl: 78px;
+  --padding-3xs: 10px;
+  --padding-5xl: 24px;
+  --padding-11xl: 30px;
+  --padding-5xs: 8px;
+  --padding-4xs-4: 8.4px;
+  --padding-6xs-7: 6.7px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-9xs: 4px;
+  --br-xl: 20px;
+  --br-11xs-8: 1.8px;
+  --br-mini-6: 14.6px;
+  --br-11xs-7: 1.7px;
+  --br-11xs: 2px;
+  --br-base: 16px;
+  --br-11xs-2: 1.2px;
+  --br-3xs-2: 9.2px;
+}
