@@ -29,7 +29,6 @@ body {
 
 #cliente-misterioso {
   background-image: url("../img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +457,7 @@ body {
 /* ------------Auditorias ------------------*/
 
 #auditorias {
-  background-image: url("/assets/img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
+  background-image: url("../img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -551,7 +550,7 @@ body {
 /* ------------Monitore de competencia ------------------*/
 
 #monitoreo {
-  background-image: url("/assets/img/Crowdsourcing/Monitoreo/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
+  background-image: url("../img/Crowdsourcing/Monitoreo/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -655,7 +654,7 @@ body {
 /* ------------Crowdsourcing------------------*/
 
 #crowdsourcing {
-  background-image: url("/assets/img/Crowdsourcing/hero-crowd.png");
+  background-image: url("../img/Crowdsourcing/hero-crowd.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -883,7 +882,7 @@ body {
 /* -------------Ciomers------------ */
 
 #ciomers-header {
-  background-image: url("/assets/img/Crowdsourcing/Ciomers/hero.png");
+  background-image: url("../img/Crowdsourcing/Ciomers/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1137,7 +1136,7 @@ header-info-container-apps {
 /* -------------Nosotros------------ */
 
 #nosotros {
-  background-image: url("/assets/img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
+  background-image: url("../img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1293,7 +1292,7 @@ header-info-container-apps {
 /* ----------Inversionistas--------- */
 
 #inversionistas {
-  background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
+  background-image: url("../img/Crowdsourcing/Inversionistas/hero inversionistas.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1375,7 +1374,7 @@ header-info-container-apps {
   }
 
   #inversionistas {
-    background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
+    background-image: url("../img/Crowdsourcing/Inversionistas/hero inversionistas.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1495,7 +1494,7 @@ header-info-container-apps {
 /* ----------FAQ--------- */
 
 #ayuda {
-  background-image: url("/assets/img/Crowdsourcing/PQR/Hero PQR.png");
+  background-image: url("../img/Crowdsourcing/PQR/Hero PQR.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
