@@ -1,0 +1,51 @@
+/* ------Hover carousel---- */
+.crowdsourcing-swiper .swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crowdsourcing-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%; /* Asegúrate de que la altura sea 100% del contenedor */
+  object-fit: cover; /* Ajusta el contenido de la imagen */
+  transition: transform 0.3s ease;
+}
+
+.crowdsourcing-swiper .swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #175fe2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.crowdsourcing-swiper .swiper-slide:hover::before {
+  opacity: 0.53;
+}
+.crowdsourcing-swiper .swiper-slide::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  max-width: 80%;
+  opacity: 0;
+  overflow: visible; /* Cambia esto para mostrar el texto completo */
+  white-space: normal; /* Permite que el texto se ajuste en múltiples líneas si es necesario */
+  z-index: 2;
+}
+
+.crowdsourcing-swiper .swiper-slide:hover::after {
+  content: attr(data-hover-text);
+  opacity: 1;
+}

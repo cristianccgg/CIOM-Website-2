@@ -176,7 +176,147 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 <body>
  
 
-  <div id="navbar-container"></div>
+  <div id="navbar-container"><header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="col d-flex align-items-center" style="max-width: 120px">
+        <a href="index.html" style="padding: 0px">
+          <img src="./assets/img/logo_header.png" alt="CIOM" class="logo" />
+        </a>
+      </div>
+  
+      <div class="d-flex justify-content-start align-items-center">
+        <nav id="navbar" class="navbar" style="padding: 0px">
+          <i class="bi bi-list mobile-nav-toggle"></i>
+          <ul>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-text"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Principales Indicadores
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a
+                    id="dropdown_item_1"
+                    class="dropdown-item nav-text"
+                    href="cliente-misterioso.html"
+                    >Cliente Misterioso</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_2"
+                    class="dropdown-item"
+                    href="auditorias.html"
+                    >Auditorias/Inspecciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_3"
+                    class="dropdown-item"
+                    href="monitoreo.html"
+                    >Monitoreo de competencia</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                id="header_menu_crowdsourcing"
+                href="crowdsourcing.html"
+                class="nav-link scrollto"
+                >Crowdsourcing</a
+              >
+            </li>
+            <li>
+              <a
+                id="header_menu_ciomers"
+                href="ciomers.html"
+                class="nav-link scrollto"
+                >Quiero ser CIOMER</a
+              >
+            </li>
+            <li>
+              <a
+                id="header_menu_prices"
+                href="index.html#prices"
+                class="nav-link scrollto"
+                >Precios</a
+              >
+            </li>
+            <li>
+              <a
+                id="header_menu_mentions"
+                href="nosotros.html"
+                class="nav-link scrollto"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                id="header_menu_investors"
+                href="inversionistas.html"
+                class="nav-link scrollto"
+                >Inversionistas</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="navbar-right-icons">
+        <div class="language-selector">
+          <button class="dropbtn">
+            <i class="bi bi-globe"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="changeLanguage('en')">English</a>
+            <a href="#" onclick="changeLanguage('sp')">Español</a>
+            <a href="#" onclick="changeLanguage('pt')">Português</a>
+            <a href="#" onclick="changeLanguage('fr')">Français</a>
+          </div>
+        </div>
+  
+        <div>
+          <a
+            href="http://web.ciom.tech/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="login-icon"
+              src="assets/img/Crowdsourcing/fluent_person-32-filled.png"
+              alt="icon-person"
+            />
+          </a>
+        </div>
+        <div class="d-none d-md-block">
+          <a href="http://web.ciom.tech/login" target="_blank">
+            <h2 id="header_login" class="iniciar-sesion">Iniciar Sesión</h2>
+          </a>
+        </div>
+  
+        <div>
+          <a
+            href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-header"
+            id="header_btn"
+          >
+            Comenzar
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  </div>
 
   <main id="main">
 
@@ -933,11 +1073,450 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
         </div>
       </section>
 
-      <section id="help"></section>
+      <section id="help" data-aos="fade-up"><div class="container">
+        <div class="row">
+          <div class="col-md-12 custom-column">
+            <div class="frame">
+              <div class="prompt">
+                <img loading="lazy" alt="" src="./assets/img/question.svg" />
+                <div class="body">
+                  <h1 id="help_title">¿Necesitas ayuda?</h1>
+                  <p id="help_description">Estamos para solucionar sus dudas.</p>
+                </div>
+                <!-- <a
+                    id="help1_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-info"
+                    >Preguntas frecuentes</a> -->
+                <a
+                  id="help1_btn"
+                  href="faq.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Preguntas frecuentes</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
     
-      <section id="testimonials-2"></section>
+      <section id="testimonials-2" data-aos="fade-up">
+        <div class="swiper2 mySwiper2">
+          <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
+            Qué dijeron quienes usaron CIOM para mejorar
+          </h1>
+          <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide">
+              <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-gsk.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Adriana Pérez</h2>
+                    <div id="testimonials_role" class="company-name2">
+                      Manager
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial" class="description2 text-start">
+                  <strong>“...Tecnología en su máxima expresión...”</strong>
+                  Permite ver cosas que antes no veíamos.
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-chevron.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Alberto Fields</h2>
+                    <div id="testimonials_role_1" class="company-name2">
+                      Consultant
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_1" class="description2 text-start">
+                  <strong>“...Muy simple de usar...” </strong>
+                  Consolidamos todas las mediciones
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-walmart.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Martin Carbonelli</h2>
+                    <div id="testimonials_role_2" class="company-name2">
+                      Walmart
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_2" class="description2 text-start">
+                  <strong>“...Ideal para relevar en competidores..”</strong>
+                  Podemos generar la data que necesitamos
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-novey.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Alvaro Valiente</h2>
+                    <div id="testimonials_role_3" class="company-name2">
+                      CHRO Novey
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_3" class="description2 text-start">
+                  <strong>“...Aplicamos mejora continua...”</strong>
+                  Medir, Corregir, Mejorar hecho simple
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-rey.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Sonia Madrid</h2>
+                    <div id="testimonials_role_4" class="company-name2">
+                      VP Operaciones
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_4" class="description2 text-start">
+                  <strong> >“...Tecnología en su máxima expresión...”</strong>
+                  Permite ver cosas que antes no veíamos.
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-exxon.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Cintia Salgado</h2>
+                    <div id="testimonials_role_5" class="company-name2">
+                      Procurment Latam
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_5" class="description2 text-start">
+                  <strong>“...Estandaricé todo el caribe...”</strong>
+                  Una sola herramienta para toda una región
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-company1.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Aldo Mangravita</h2>
+                    <div id="testimonials_role_6" class="company-name2">
+                      Director General
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_6" class="description2 text-start">
+                  <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
+                  Un nuevo logro para nuestro equipo
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-company2.png   "
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Ramón Lencina</h2>
+                    <div id="testimonials_role_7" class="company-name2">
+                      Director General
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_7" class="description2 text-start">
+                  <strong>“...Opero como una multinacional...”</strong>
+                  Tengo indicadores simples para accionar
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+              >
+                <div class="header-testimonials">
+                  <div>
+                    <img
+                      class="company-icon2"
+                      alt="company-icon"
+                      src="./assets/img/testimonial-texaco.png"
+                    />
+                  </div>
+                  <div class="client-content2 text-start">
+                    <h2 class="client-name">Pedro Seguí</h2>
+                    <div id="testimonials_role_8" class="company-name2">
+                      Country Manager
+                    </div>
+                  </div>
+                </div>
+                <p id="testimonial_8" class="description2 text-start">
+                  <strong>“...Logramos un cambio radical en 18 m..”</strong>
+                  Pasamos a ser el mejor país de la cadena
+                </p>
+                <div class="stars-container">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination2"></div>
+        </div>
+      </section>
 
-      <section id="capitalize"></section>
+      <section id="capitalize" data-aos="fade-up"><div class="container">
+        <div class="row">
+          <div class="col-md-12 custom-column">
+            <div class="frame">
+              <div class="prompt">
+                <img loading="lazy" alt="" src="assets/img/price.svg" />
+                <div class="body">
+                  <h1 id="capitalize_title" class="capitalize-title">
+                    ¿Listo para capitalizar tus oportunidades?
+                  </h1>
+                </div>
+                <a
+                  id="capitalize_btn"
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Empezá ahora</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 <!-- 
       <section id="help" >
 
@@ -968,7 +1547,95 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
   </main>
   
-  <footer id="footer"></footer>  
+  <footer id="footer">
+    <div class="container mt-5">
+    <div class="d-flex flex-column flex-md-row justify-content-md-between">
+      <div>
+        <img
+          class="logo-image"
+          loading="lazy"
+          alt="logo-image"
+          src="./assets/img/logo2.png"
+        />
+        <p id="footer_description">
+          Nos hemos posicionado como la empresa líder en mediciones para alimentar
+          indicadores de mejora contínua. <br />¿Qué quieren mejorar?
+        </p>
+      </div>
+  
+      <div
+        class="footer-items-rigth d-flex flex-column flex-md-row justify-content-between"
+      >
+        <div class="item-content-1 d-flex flex-column justify-content-between">
+          <b id="footer_menu_title">Menu</b>
+          <a id="footer_menu_prices" href="index.html#prices" target="_blank"
+            >Precios</a
+          >
+          <a
+            id="footer_menu_investments"
+            href="inversionistas.html"
+            target="_blank"
+            >Inversiones</a
+          >
+        </div>
+  
+        <div
+          class="item-content-2 d-flex gap-3 flex-column justify-content-between"
+        >
+          <b id="footer_item2_title">Contactenos</b>
+          <div style="display: grid">
+            <strong id="footer_sales">Ventas:</strong>
+            <span>+573508647288</span>
+            <span>comercial@ciom.tech</span>
+          </div>
+          <div style="display: grid">
+            <strong id="footer_support">Soporte:</strong>
+            <span>+5491136610332</span>
+            <span>soporte@ciom.tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="divide mt-5"></div>
+  
+    <div
+      class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
+    >
+      <div
+        class="legal-container d-flex flex-column flex-md-row align-items-start"
+      >
+        <a
+          id="footer_conditions"
+          href="https://web.ciom.tech/terminosycondicionesdeuso"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Terminos y condiciones</a
+        >
+        <div>Aviso de privacidad</div>
+        <div>©2024 CIOM</div>
+      </div>
+      <div class="d-flex icons-footer">
+        <div>
+          <a
+            href="https://www.linkedin.com/company/circle-complete-group/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img alt="" src="/assets/img/Crowdsourcing/icon-Facebook.png"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/company/circle-complete-group/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img alt="" src="./assets/img/linkedin.svg"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>  
 
 <!-- <div class="cookie-banner">
   <span id="cookies_message">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra</span>
@@ -986,11 +1653,13 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
     <script src="assets/js/i18n-config.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/newjs.js"></script>
+    <script src="assets/js/hoverText.js"></script>
   
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
 </body>
 
 </html>

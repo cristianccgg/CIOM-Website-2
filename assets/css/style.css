@@ -717,15 +717,14 @@ li {
 
 #header .container {
   display: flex;
-  justify-content: space-between;
   gap: 36px !important;
   max-width: 100% !important;
-  padding-left: 87px;
-  padding-right: 42px;
+  padding-left: 87px !important;
+  padding-right: 42px !important;
 }
 
 #header img {
-  max-width: 110px;
+  max-width: 120px;
 }
 
 #header.header-scrolled {
@@ -741,8 +740,11 @@ li {
   align-items: center;
   gap: 8px;
   z-index: 0;
+  margin-left: auto;
 }
-
+.language-selector {
+  width: 27px;
+}
 .language-selector,
 .navbar-right-icons > div {
   display: flex;
@@ -759,19 +761,29 @@ li {
   align-items: center !important;
 }
 
+.logo-container {
+  padding-left: 15px !important;
+}
+
 @media (max-width: 1000px) {
-  .navbar {
-    margin-left: -10px;
+  .logo-container {
+    padding-left: 15px !important;
+    padding-right: 25px !important;
   }
 
   #header .container {
     gap: 0px !important;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px !important;
+    padding-right: 20px !important;
   }
 
   #header img {
     max-width: 80px;
+  }
+  .navbar-right-icons {
+    margin-left: auto;
+    gap: 8px !important;
+    align-items: center !important;
   }
 
   .iniciar-sesion {
@@ -866,7 +878,7 @@ section {
 }
 .logo-slider .logo {
   display: inline-block;
-  padding: 0 65px;
+  padding: 0 60px;
   white-space: nowrap;
 }
 .logo-slider .logo img {

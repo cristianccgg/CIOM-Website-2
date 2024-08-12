@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateHoverTexts() {
     console.log("Updating hover texts...");
+
+    // Actualizar hover texts para Cliente Misterioso (páginas anteriores)
     document
       .querySelectorAll(".cliente-misterioso .swiper-slide")
       .forEach((slide) => {
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
+    // Actualizar hover texts para Auditorias (páginas anteriores)
     document
       .querySelectorAll(".auditorias-swiper .swiper-slide")
       .forEach((slide) => {
@@ -39,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
+    // Actualizar hover texts para Monitoreo (nueva página)
     document
       .querySelectorAll(".monitoreo-swiper .swiper-slide")
       .forEach((slide) => {
@@ -82,6 +86,70 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function updateContent() {
+    console.log("Updating content...");
+    document.querySelectorAll("[id]").forEach(function (el) {
+      const id = el.getAttribute("id");
+      if (i18next.exists(id)) {
+        el.innerHTML = i18next.t(id);
+        console.log(`Updated ${id} with translation: ${i18next.t(id)}`);
+      }
+    });
+
+    updateNavbarContent();
+    updateHoverTexts(); // Ensure hover texts are updated here
+  }
+
+  function updateNavbarContent() {
+    const navbar = document.querySelector("#navbar-container");
+    if (navbar) {
+      navbar.querySelectorAll("[id]").forEach(function (el) {
+        const id = el.getAttribute("id");
+        if (i18next.exists(id)) {
+          el.innerHTML = i18next.t(id);
+          console.log(
+            `Updated ${id} in navbar with translation: ${i18next.t(id)}`
+          );
+        }
+      });
+    }
+  }
+
+  // function loadNavbar() {
+  //   fetch("navbar.html")
+  //     .then((response) => response.text())
+  //     .then((data) => {
+  //       document.querySelector("body").insertAdjacentHTML("afterbegin", data);
+  //       const script = document.createElement("script");
+  //       script.src = "assets/js/navbar.js";
+  //       document.body.appendChild(script);
+  //       script.onload = function () {
+  //         updateNavbarContent();
+  //       };
+  //     })
+  //     .catch((error) => console.error("Error loading the navbar:", error));
+  // }
+
+  function initializeI18n() {
+    loadTranslations().then((resources) => {
+      console.log("Translations loaded:", resources);
+      const savedLanguage = getLanguageFromLocalStorage();
+      i18next.init(
+        {
+          lng: savedLanguage,
+          resources: resources,
+        },
+        function (err, t) {
+          if (err) {
+            console.error("Error initializing i18next", err);
+            return;
+          }
+          updateContent(); // Update content including hover texts after initialization
+        }
+      );
+    });
+  }
+
   function loadTranslations() {
     return Promise.all([
       fetch("assets/js/translations/en.json").then((response) =>
@@ -110,55 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getLanguageFromLocalStorage() {
     return localStorage.getItem("language") || "sp";
-  }
-
-  function initializeI18n() {
-    loadTranslations().then((resources) => {
-      console.log("Translations loaded:", resources);
-      const savedLanguage = getLanguageFromLocalStorage();
-      i18next.init(
-        {
-          lng: savedLanguage,
-          resources: resources,
-        },
-        function (err, t) {
-          if (err) {
-            console.error("Error initializing i18next", err);
-            return;
-          }
-          updateContent(); // Update content including hover texts after initialization
-        }
-      );
-    });
-  }
-
-  function updateContent() {
-    console.log("Updating content...");
-    document.querySelectorAll("[id]").forEach(function (el) {
-      const id = el.getAttribute("id");
-      if (i18next.exists(id)) {
-        el.innerHTML = i18next.t(id);
-        console.log(`Updated ${id} with translation: ${i18next.t(id)}`);
-      }
-    });
-
-    updateNavbarContent();
-    updateHoverTexts(); // Ensure hover texts are updated here
-  }
-
-  function updateNavbarContent() {
-    const navbar = document.querySelector("#navbar-container");
-    if (navbar) {
-      navbar.querySelectorAll("[id]").forEach(function (el) {
-        const id = el.getAttribute("id");
-        if (i18next.exists(id)) {
-          el.innerHTML = i18next.t(id);
-          console.log(
-            `Updated ${id} in navbar with translation: ${i18next.t(id)}`
-          );
-        }
-      });
-    }
   }
 
   window.changeLanguage = function (lng) {
@@ -191,5 +210,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   initializeI18n();
-  // loadNavbar(); // Uncomment if needed
+  // loadNavbar();
 });

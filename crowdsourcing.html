@@ -22,6 +22,8 @@
     <link href="assets/css/new-styles.css" rel="stylesheet" />
     <link href="assets/css/global.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/crowdsourcingHover.css" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -32,6 +34,160 @@
 
   <body>
     <div id="top-section">
+      <div id="navbar-container">
+        <header id="header" class="fixed-top d-flex align-items-center">
+          <div class="container">
+            <div
+              class="logo-container col d-flex align-items-center"
+              style="max-width: 120px"
+            >
+              <a href="index.html" style="padding: 0px">
+                <img
+                  src="./assets/img/logo_header.png"
+                  alt="CIOM"
+                  class="logo"
+                />
+              </a>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center">
+              <nav id="navbar" class="navbar" style="padding: 0px">
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                <ul>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle nav-text"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Principales Indicadores
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <li>
+                        <a
+                          id="dropdown_item_1"
+                          class="dropdown-item nav-text"
+                          href="cliente-misterioso.html"
+                          >Cliente Misterioso</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="dropdown_item_2"
+                          class="dropdown-item"
+                          href="auditorias.html"
+                          >Auditorias/Inspecciones</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="dropdown_item_3"
+                          class="dropdown-item"
+                          href="monitoreo.html"
+                          >Monitoreo de competencia</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_crowdsourcing"
+                      href="crowdsourcing.html"
+                      class="nav-link scrollto"
+                      >Crowdsourcing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_ciomers"
+                      href="ciomers.html"
+                      class="nav-link scrollto"
+                      >Quiero ser CIOMER</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_prices"
+                      href="index.html#prices"
+                      class="nav-link scrollto"
+                      >Precios</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_mentions"
+                      href="nosotros.html"
+                      class="nav-link scrollto"
+                      >Nosotros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_investors"
+                      href="inversionistas.html"
+                      class="nav-link scrollto"
+                      >Inversionistas</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="navbar-right-icons">
+              <div class="language-selector">
+                <button class="dropbtn">
+                  <i class="bi bi-globe"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="changeLanguage('en')">English</a>
+                  <a href="#" onclick="changeLanguage('sp')">Español</a>
+                  <a href="#" onclick="changeLanguage('pt')">Português</a>
+                  <a href="#" onclick="changeLanguage('fr')">Français</a>
+                </div>
+              </div>
+
+              <div>
+                <a
+                  href="http://web.ciom.tech/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="login-icon"
+                    src="assets/img/Crowdsourcing/fluent_person-32-filled.png"
+                    alt="icon-person"
+                  />
+                </a>
+              </div>
+              <div class="d-none d-md-block">
+                <a href="http://web.ciom.tech/login" target="_blank">
+                  <h2 id="header_login" class="iniciar-sesion">
+                    Iniciar Sesión
+                  </h2>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-header"
+                  id="header_btn"
+                >
+                  Comenzar
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
       <div
         id="crowdsourcing"
         class="header align-items-center text-white px-5"
@@ -41,7 +197,10 @@
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
           target="_blank"
-          ><button id="crowdsourcing_btn_start" class="btn-start">
+          ><button
+            id="crowdsourcing_btn_start"
+            class="btn btn-primary btn-hero-width"
+          >
             Comenzar
           </button></a
         >
@@ -49,8 +208,7 @@
       <div
         id="crowdsourcing-description"
         class="header-info-container d-flex flex-column py-5 gap-5"
-        data-aos="zoom-out"
-        data-aos-delay="200"
+        data-aos="fade-up"
       >
         <div
           class="header-row-container d-flex flex-column flex-md-row align-items-center mx-auto"
@@ -100,33 +258,42 @@
         </div>
       </div>
     </div>
-    <div id="swiper-cliente-misterioso" class="swiper-container-wrapper">
+    <div
+      id="swiper-cliente-misterioso"
+      class="swiper-container-wrapper crowdsourcing-swiper"
+    >
       <div class="swiper mySwiper" data-aos="fade-up">
         <h1 id="crowdsourcing_swiper_title" class="text-center p-5 p-md-0">
           Obtenga las manos que siempre quizo tener
         </h1>
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-crowdsourcing-1">
             <img
               src="assets/img/Crowdsourcing/image 89.png"
               alt="adults-eating-img"
             />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-crowdsourcing-2">
             <img
               src="assets/img/Crowdsourcing/image 90.png"
               alt="supermaket-img"
             />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-crowdsourcing-3">
             <img
               src="assets/img/Crowdsourcing/two-young-pretty-girls-looking-dresses-try-it-while-choosing-shop 2.png"
               alt="kid-icecream-img"
             />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-crowdsourcing-4">
             <img
               src="assets/img/Crowdsourcing/image 91.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-crowdsourcing-5">
+            <img
+              src="assets/img/Crowdsourcing/Crowdsourcing/image 92.png"
               alt="woman-hairdresser-img"
             />
           </div>
@@ -147,7 +314,10 @@
       <a
         href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
         target="_blank"
-        ><button class="btn-start text-white border border-white">
+        ><button
+          id="crowdsourcing_delegue_btn"
+          class="btn btn-primary btn-hero-width text-white border border-white"
+        >
           Comenzar
         </button></a
       >
@@ -165,7 +335,12 @@
         <div id="cols-container" class="row row-cols-1 row-cols-md-2">
           <div class="col col-crowd">
             <div class="container-grid">
-              <h3 class="crowdsourcing-titles">Alcance</h3>
+              <h3
+                id="crowdsourcing_capacidad_innet_title"
+                class="crowdsourcing-titles"
+              >
+                Alcance
+              </h3>
               <hr class="divider-crowdsourcing" />
               <p id="crowdsourcing_capacidad_item">
                 Al disponibilizar sus tareas en el sistema ciom la red de
@@ -178,7 +353,12 @@
           </div>
           <div class="col col-crowd">
             <div class="container-grid">
-              <h3 class="crowdsourcing-titles">Control</h3>
+              <h3
+                id="crowdsourcing_capacidad_innet_title_1"
+                class="crowdsourcing-titles"
+              >
+                Control
+              </h3>
               <hr class="divider-crowdsourcing" />
               <p id="crowdsourcing_capacidad_item_1">
                 Usando Ciom en todo momento usted tendrá el total y completo
@@ -191,7 +371,12 @@
           </div>
           <div class="col col-crowd">
             <div class="container-grid">
-              <h3 class="crowdsourcing-titles">Simplicidad</h3>
+              <h3
+                id="crowdsourcing_capacidad_innet_title_2"
+                class="crowdsourcing-titles"
+              >
+                Simplicidad
+              </h3>
               <hr class="divider-crowdsourcing" />
               <p id="crowdsourcing_capacidad_item_2">
                 Usted y su equipo solo se enfocarán en trabajar sobre los
@@ -204,7 +389,12 @@
           </div>
           <div class="col col-crowd">
             <div class="container-grid">
-              <h3 class="crowdsourcing-titles">Eficiencia</h3>
+              <h3
+                id="crowdsourcing_capacidad_innet_title_3"
+                class="crowdsourcing-titles"
+              >
+                Eficiencia
+              </h3>
               <hr class="divider-crowdsourcing" />
               <p id="crowdsourcing_capacidad_item_3">
                 El modelo Ciom le permite a su compañía alcanzar la máxima
@@ -312,8 +502,134 @@
       </div>
     </section>
 
-    <section id="help" data-aos="fade-up"></section>
-    <footer id="footer"></footer>
+    <section id="help" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 custom-column">
+            <div class="frame">
+              <div class="prompt">
+                <img loading="lazy" alt="" src="./assets/img/question.svg" />
+                <div class="body">
+                  <h1 id="help_title">¿Necesitas ayuda?</h1>
+                  <p id="help_description">
+                    Estamos para solucionar sus dudas.
+                  </p>
+                </div>
+                <!-- <a
+                  id="help1_btn"
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn btn-info"
+                  >Preguntas frecuentes</a> -->
+                <a
+                  id="help1_btn"
+                  href="faq.html"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Preguntas frecuentes</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container mt-5">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+          <div>
+            <img
+              class="logo-image"
+              loading="lazy"
+              alt="logo-image"
+              src="./assets/img/logo2.png"
+            />
+            <p id="footer_description">
+              Nos hemos posicionado como la empresa líder en mediciones para
+              alimentar indicadores de mejora contínua. <br />¿Qué quieren
+              mejorar?
+            </p>
+          </div>
+
+          <div
+            class="footer-items-rigth d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div
+              class="item-content-1 d-flex flex-column justify-content-between"
+            >
+              <b id="footer_menu_title">Menu</b>
+              <a
+                id="footer_menu_prices"
+                href="index.html#prices"
+                target="_blank"
+                >Precios</a
+              >
+              <a
+                id="footer_menu_investments"
+                href="inversionistas.html"
+                target="_blank"
+                >Inversiones</a
+              >
+            </div>
+
+            <div
+              class="item-content-2 d-flex gap-3 flex-column justify-content-between"
+            >
+              <b id="footer_item2_title">Contactenos</b>
+              <div style="display: grid">
+                <strong id="footer_sales">Ventas:</strong>
+                <span>+573508647288</span>
+                <span>comercial@ciom.tech</span>
+              </div>
+              <div style="display: grid">
+                <strong id="footer_support">Soporte:</strong>
+                <span>+5491136610332</span>
+                <span>soporte@ciom.tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divide mt-5"></div>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
+        >
+          <div
+            class="legal-container d-flex flex-column flex-md-row align-items-start"
+          >
+            <a
+              id="footer_conditions"
+              href="https://web.ciom.tech/terminosycondicionesdeuso"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Terminos y condiciones</a
+            >
+            <div>Aviso de privacidad</div>
+            <div>©2024 CIOM</div>
+          </div>
+          <div class="d-flex icons-footer">
+            <div>
+              <a
+                href="https://www.linkedin.com/company/circle-complete-group/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img alt="" src="/assets/img/Crowdsourcing/icon-Facebook.png"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/circle-complete-group/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img alt="" src="./assets/img/linkedin.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -327,11 +643,10 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-
     <script src="assets/js/i18n-config.js"></script>
 
     <script src="assets/js/newjs.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/hoverText.js"></script>
   </body>
 </html>
