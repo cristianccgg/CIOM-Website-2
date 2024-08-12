@@ -28,7 +28,8 @@ body {
 /* -----Cliente misterioso-------- */
 
 #cliente-misterioso {
-  background-image: url("assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
+  background-image: url("../img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
