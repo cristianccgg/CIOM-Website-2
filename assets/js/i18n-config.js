@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function checkI18nReady() {
     if (i18next.isInitialized) {
       console.log("i18next is initialized");
-      updateContent(); // Ensure this updates content only when i18next is ready
+      updateContent();
     } else {
       console.log("i18next is not initialized yet, checking again...");
-      setTimeout(checkI18nReady, 100); // Check again after 100ms
+      setTimeout(checkI18nReady, 100);
     }
   }
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error initializing i18next", err);
             return;
           }
-          updateContent(); // Update content including hover texts after initialization
+          updateContent();
         }
       );
     });
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateNavbarContent();
-    updateHoverTexts(); // Ensure hover texts are updated here
+    updateHoverTexts();
   }
 
   function updateNavbarContent() {
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error changing language", err);
         return;
       }
-      updateContent(); // Ensure content is updated including hover texts
+      updateContent();
       saveLanguageToLocalStorage(lng);
 
       const languageSelector = document.querySelector(".language-selector");
@@ -191,5 +191,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   initializeI18n();
-  // loadNavbar(); // Uncomment if needed
 });
