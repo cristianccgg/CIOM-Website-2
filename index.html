@@ -196,12 +196,20 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Principales Indicadores
+                Soluciones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
                   <a
                     id="dropdown_item_1"
+                    class="dropdown-item"
+                    href="indicadores.html"
+                    >Indicadores de Gestión</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_2"
                     class="dropdown-item nav-text"
                     href="cliente-misterioso.html"
                     >Cliente Misterioso</a
@@ -209,52 +217,84 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 </li>
                 <li>
                   <a
-                    id="dropdown_item_2"
+                    id="dropdown_item_3"
                     class="dropdown-item"
                     href="auditorias.html"
-                    >Auditorias/Inspecciones</a
+                    >Inspección</a
                   >
                 </li>
                 <li>
                   <a
-                    id="dropdown_item_3"
+                    id="dropdown_item_4"
                     class="dropdown-item"
                     href="monitoreo.html"
                     >Monitoreo de competencia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_5"
+                    class="dropdown-item"
+                    href="monitoreo.html"
+                    >Encuestas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_6"
+                    class="dropdown-item"
+                    href="monitoreo.html"
+                    >Auditorias</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_7"
+                    class="dropdown-item"
+                    href="monitoreo.html"
+                    >Sistemas y Automatización</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_8"
+                    class="dropdown-item"
+                    href="monitoreo.html"
+                    >Tercerización de Operación</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="dropdown_item_9"
+                    href="ciomers.html"
+                    class="nav-link scrollto"
+                    >Quiero ser CIOMER</a
                   >
                 </li>
               </ul>
             </li>
             <li>
               <a
-                id="header_menu_crowdsourcing"
+                id="header_menu_programa"
                 href="crowdsourcing.html"
                 class="nav-link scrollto"
-                >Crowdsourcing</a
+                >Programa de mejora</a
               >
-            </li>
-            <li>
-              <a
-                id="header_menu_ciomers"
-                href="ciomers.html"
-                class="nav-link scrollto"
-                >Quiero ser CIOMER</a
-              >
-            </li>
-            <li>
-              <a
-                id="header_menu_prices"
-                href="index.html#prices"
-                class="nav-link scrollto"
-                >Precios</a
-              >
-            </li>
+            </li>          
             <li>
               <a
                 id="header_menu_mentions"
                 href="nosotros.html"
                 class="nav-link scrollto"
                 >Nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                id="header_menu_prensa"
+                href="inversionistas.html"
+                class="nav-link scrollto"
+                >Prensa</a
               >
             </li>
             <li>
@@ -321,51 +361,40 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
     <section id="home" >
 
-      <div class="container">
-          
-        <div class="row"  data-aos="fade-up">
-          
-          <div class="col-md-6 order-md-1">
-            
-            <h2 id="home_title_sub">MIDA | CORRIJA | MEJORE</h2>
-            <h1 id="home_title">La plataforma para medir y mejorar en tiempo real</h1>
-
-            <ul>
-              <li>
-                <i class="bi bi-check-lg"></i>          
-                <span id="home_item_1">Mejora la ejecución de sus estrategias en campo</span>
-              </li>
-              <li>
-                <i class="bi bi-check-lg"></i>        
-                  <span id="home_item_2">Aumenta el cumplimiento de sus procesos internos</span>
-              </li>
-              <li>
-                <i class="bi bi-check-lg"></i>  
-                  <span id="home_item_3">Eleva la satisfacción de sus clientes</span>
-              </li>
-              <li>
-                <i class="bi bi-check-lg"></i>  
-                  <span id="home_item_4">Afina estrategias de precios, promociones y ofertas</span>
-              </li>                
-            </ul>
-
-            <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="btn btn-primary"
-               id="home_btn"
-            >Comenzar</a>
-          
-          </div>
-
-          <div class="col-md-6 order-md-2 d-flex justify-content-end align-items-center">
-            <div data-aos="zoom-out" data-aos-delay="200">
-               <img src="assets/img/home_img.png" alt="Mediciones CIOM" class="image-slide"> 
-            </div>
-          </div>
-      
+      <div class="d-flex flex-column row-md"   data-aos="fade-up">           
+                
+        <div class="col">
+              <div class="home-inner-text p-md-0">
+                <h1 id="home_title">La solución simple e integral para mejorar su negocio</h1>
+                <ul >
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <span id="home_item_1">Eleve la satisfacción y fidelización de sus clientes</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                      <span id="home_item_2">Aumente el cumplimiento de sus procesos y protocolos</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                      <span id="home_item_3">Mejore su propuesta de valor al cliente </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                      <span id="home_item_4">Simplifique y automatice su operación en tiempo real</span>
+                  </li>
+                </ul>
+                <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-primary"
+                   id="home_btn"
+                >Comencemos</a>
+              </div>
         </div>
-
+        <div class="col p-md-0" data-aos="zoom-out" data-aos-delay="200">
+          <img id="hero" src="assets/img/CIOM-2/Home/hhero 1.png" alt="Mediciones-CIOM" class="image-slide"> 
+ </div>   
       </div>
 
     </section>
@@ -392,10 +421,10 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                     <img src="assets/img/1.png" alt="identifique">
                     <h4 id="webApp1_item_1_title_sub">IDENTIFIQUE</h4>
                   </div>
-                  <h6 id="webApp1_item_1_title">¿Qué tiene que mejorar?</h6>
-                  <p id="webApp1_item_1_text">Aspectos que mejorarían sus ventas y/o rentabilidad si los logra mejorar.</p>     
+                  <h6 id="webApp1_item_1_title">¿Qué mejoraría en su negocio?</h6>
+                  <p id="webApp1_item_1_text">Definimos sus objetivos de mejora, el KPI correspondiente, diseñamos la medición y configuramos el sistema para que informe a los responsables.</p>     
                 </div>
-                <img src="assets/img/Consultoria.png" class="image-slide" alt="Expertos en Indicadores">
+                <img src="assets/img/CIOM-2/Home/image 82.png" class="image-slide" alt="Expertos en Indicadores">
               </div>
             </div>
           
@@ -404,12 +433,13 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 <div class="card mobile-card">
                   <div class="title">
                     <img src="assets/img/2.png" alt="diseñe">
-                    <h4 id="webApp1_item_2_title_sub">DISEÑE</h4>
+                    <h4 id="webApp1_item_2_title_sub">DEFINA</h4>
                   </div>
-                  <h6 id="webApp1_item_2_title">¿Cómo lo vamos a medir?</h6>
-                  <p id="webApp1_item_2_text">Creamos una medición simple para alimentar su indicador de mejora continua.</p>       
+                  <h6 id="webApp1_item_2_title">¿Cómo mediremos el progreso?</h6>
+                  <p id="webApp1_item_2_text">Externamente usando la solución Uberizada de Evaluadores.
+                    Internamente, usando su personal o el personal de sus proveedores. </p>       
                 </div>
-                <img src="assets/img/Asesoria.png" class="image-slide" alt="Soporte">
+                <img src="assets/img/CIOM-2/Home/woman-taking-picture-dress 1.png" class="image-slide" alt="Soporte">
               </div>
             </div>
             
@@ -418,12 +448,12 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 <div class="card mobile-card">
                   <div class="title">
                     <img src="assets/img/3.png" alt="mejore">
-                    <h4 id="webApp1_item_3_title_sub">MEJORE</h4>
+                    <h4 id="webApp1_item_3_title_sub">EJECUTE</h4>
                   </div>
-                  <h6 id="webApp1_item_3_title">¿Cómo logra la mejora?</h6>
-                  <p id="webApp1_item_3_text">Sus equipos comenzarán a evidenciar objetivamente las oportunidades y podrán dar trazabilidad a la mejora.</p>                      
+                  <h6 id="webApp1_item_3_title">¿Cómo implementará la mejora?</h6>
+                  <p id="webApp1_item_3_text">En tiempo real, su equipo conocerá las correcciones de forma clara y objetiva que tienen que ir haciendo para que su negocio siga mejorando.</p>                      
                 </div>
-                <img src="assets/img/Dashboard.png" class="image-slide" alt="Plataforma">
+                <img src="assets/img/CIOM-2/Home/image 79.png" class="image-slide" alt="Plataforma">
               </div>
             </div>
 
@@ -432,15 +462,123 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
       </div>
      </section>
 
-     <section id="fortune">
-      <div class="container">
-        <div class="content">
-          <h1 id="fortune500">Usado desde compañías del <span style="font-weight: 600;">fortune 500</span> hasta empresas familiares</h1>          
-        </div>
-      </div>
+    <section id="measures">
+      
+      <div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
+            <h1 id="measures_title">Las mediciones para alimentar sus 5 tipos de KPIs </h1>
+            <h2 id="measures_subtitle">Cada medición esta enfocada a mejorar la rentabilidad de su negocio. etc etc etc etc</h2>
+      </div>    
+      <section id="measuresItem">
+      
+        <div class="container" data-aos="fade-up">
+                  
+          <div class="row justify-content-center">
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+              <div class="card-body">                
+                <div class="body">
+                  <div id="measures_item_1_title" class="title">EL CLIENTE</div>
+                  <ul>
+                    <li id="measures_item_1_1">Cliente Misterioso</li>                  
+                  </ul>
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+              <div class="card-body">
+                
+                <div class="body">
+                  <div id="measures_item_2_title" class="title">OPERACION</div>
+                  <ul>
+                    <li id="measures_item_2_1">Inspecciones</li>                  
+                  </ul>
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+              <div class="card-body">
+              
+                <div class="body">
+                  <div id="measures_item_3_title" class="title">COMPETENCIA</div>
+                  <ul>
+                    <li id="measures_item_3_1">Monitoreos</li>                  
+                  </ul>
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+              <div class="card-body">
+                
+                <div class="body">
+                  <div id="measures_item_4_title" class="title">OPINION</div>
+                  <ul>
+                    <li id="measures_item_4_1">Encuestas</li>                 
+                  </ul>
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+              <div class="card-body">              
+                <div class="body">
+                  <div id="measures_item_5_title" class="title">AUDITORIA</div>
+                  <ul>
+                    <li id="measures_item_5_1">Auditorias</li>                  
+                  </ul>
+                </div> 
+              </div>
+            </div>          
+          </div>      
+        </div>   
+      </section>
     </section>
 
-    <section id="webApp" class="background">
+    <section id="webApp-1">
+      <div class="container" data-aos="fade-up">
+    
+        <h1 id="webApp3_title">La plataforma que se adapta a su forma de trabajar</h1>
+        
+        <div class="row row-eq-height justify-content-center margin-img">
+       
+          <div class="col-md-4 order-md-2 d-flex align-items-center">
+            <img src="assets/img/CIOM-2/Home/plataforma.png" class="img-fluid mx-auto" alt="Visualización, Dashboard, Indicadores, Personalizada, Customizada" style="margin: 80px 0px;">               
+          </div>
+  
+          <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
+           <div class="card">
+              <img src="assets/img/CIOM-2/Home/hand.png" alt="hand-icon">
+              <h4 id="webApp3_item_1_title">Simplifique su trabajo</h4>
+              <p id="webApp3_item_1_description">El sistema le automatiza la gestión de tareas operativas y/o  mediciones.</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/CIOM-2/Home/colab.png" alt="colab-icon">
+              <h4 id="webApp3_item_2_title">Incremente la colaboración</h4>
+              <p id="webApp3_item_2_description">Sus equipos conocerán en tiempo real sus oportunidades de mejora.</p></br>
+            </div>
+          </div>
+          
+          <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
+            <div class="card">
+              <img src="assets/img/CIOM-2/Home/independencia.png" alt="independencia-icon">
+              <h4 id="webApp3_item_3_title">Gane independencia</h4>
+              <p  id="webApp3_item_3_description">Diseñada para que el cliente tenga completa autonomía si lo desea.</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/CIOM-2/Home/crecimiento.png" alt="crecimiento-icon">
+              <h4 id="webApp3_item_4_title">Acelere su crecimiento</h4>
+              <p id="webApp3_item_4_description">Usamos herramientas como PDF, XLS, POWER BI y API para crearle mas y mejores oportunidades</p>
+            </div>
+          </div>
+  
+        </div>
+  
+    </div>
+   </section>
+
+    <section id="webApp-2" class="background">
       <div class="container" data-aos="fade-up">
     
         <h1 id="webApp2_title">La app que su equipo y proveedores amaran</h1>
@@ -478,43 +616,392 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
     </div>
   </section>
 
-  <section id="webApp">
-    <div class="container" data-aos="fade-up">
-  
-      <h1 id="webApp3_title">Simplicidad y poder en una sola aplicación web</h1>
-      
-      <div class="row row-eq-height justify-content-center margin-img">
-     
-        <div class="col-md-4 order-md-2 d-flex align-items-center">
-          <img src="assets/img/Plataforma Web.png" class="img-fluid mx-auto" alt="Visualización, Dashboard, Indicadores, Personalizada, Customizada" style="margin: 80px 0px;">               
+  <section id="testimonials-2" data-aos="fade-up">
+    <div class="swiper2 mySwiper2">
+      <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
+        Qué dijeron quienes usaron CIOM para mejorar
+      </h1>
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide">
+          <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-gsk.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Adriana Pérez</h2>
+                <div id="testimonials_role" class="company-name2">
+                  Manager
+                </div>
+              </div>
+            </div>
+            <p id="testimonial" class="description2 text-start">
+              <strong>“...Tecnología en su máxima expresión...”</strong>
+              Permite ver cosas que antes no veíamos.
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
-         <div class="card">
-            <h4 id="webApp3_item_1_title">Mejora su negocio</h4>
-            <p id="webApp3_item_1_description">Se automatiza la gestion de sus equipos</p>
-          </div>
-          <div class="card">
-            <h4 id="webApp3_item_2_title">Cuenta con mas ayuda</h4>
-            <p id="webApp3_item_2_description">Informará customizadamente a toda la organización</p></br>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-chevron.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Alberto Fields</h2>
+                <div id="testimonials_role_1" class="company-name2">
+                  Consultant
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_1" class="description2 text-start">
+              <strong>“...Muy simple de usar...” </strong>
+              Consolidamos todas las mediciones
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
-          <div class="card">
-            <h4 id="webApp3_item_3_title">Independiza por completo</h4>
-            <p  id="webApp3_item_3_description">Podrá crear y administrar sus indicadores facilmente</p>
-          </div>
-          <div class="card">
-            <h4 id="webApp3_item_4_title">Acelera su camino al crecimiento</h4>
-            <p id="webApp3_item_4_description">Será muy simple identificar mas y mejores oportunidades</p>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-walmart.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Martin Carbonelli</h2>
+                <div id="testimonials_role_2" class="company-name2">
+                  Walmart
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_2" class="description2 text-start">
+              <strong>“...Ideal para relevar en competidores..”</strong>
+              Podemos generar la data que necesitamos
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
           </div>
         </div>
-
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-novey.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Alvaro Valiente</h2>
+                <div id="testimonials_role_3" class="company-name2">
+                  CHRO Novey
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_3" class="description2 text-start">
+              <strong>“...Aplicamos mejora continua...”</strong>
+              Medir, Corregir, Mejorar hecho simple
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-rey.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Sonia Madrid</h2>
+                <div id="testimonials_role_4" class="company-name2">
+                  VP Operaciones
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_4" class="description2 text-start">
+              <strong> >“...Tecnología en su máxima expresión...”</strong>
+              Permite ver cosas que antes no veíamos.
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-exxon.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Cintia Salgado</h2>
+                <div id="testimonials_role_5" class="company-name2">
+                  Procurment Latam
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_5" class="description2 text-start">
+              <strong>“...Estandaricé todo el caribe...”</strong>
+              Una sola herramienta para toda una región
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-company1.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Aldo Mangravita</h2>
+                <div id="testimonials_role_6" class="company-name2">
+                  Director General
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_6" class="description2 text-start">
+              <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
+              Un nuevo logro para nuestro equipo
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-company2.png   "
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Ramón Lencina</h2>
+                <div id="testimonials_role_7" class="company-name2">
+                  Director General
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_7" class="description2 text-start">
+              <strong>“...Opero como una multinacional...”</strong>
+              Tengo indicadores simples para accionar
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+          >
+            <div class="header-testimonials">
+              <div>
+                <img
+                  class="company-icon2"
+                  alt="company-icon"
+                  src="./assets/img/testimonial-texaco.png"
+                />
+              </div>
+              <div class="client-content2 text-start">
+                <h2 class="client-name">Pedro Seguí</h2>
+                <div id="testimonials_role_8" class="company-name2">
+                  Country Manager
+                </div>
+              </div>
+            </div>
+            <p id="testimonial_8" class="description2 text-start">
+              <strong>“...Logramos un cambio radical en 18 m..”</strong>
+              Pasamos a ser el mejor país de la cadena
+            </p>
+            <div class="stars-container">
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+              <div>
+                <img class="star" alt="star" src="./assets/img/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-  </div>
- </section>
+      <div class="swiper-pagination2"></div>
+    </div>
+  </section>
 
     
  <section id="statistics">
@@ -580,108 +1067,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
   </div>
 </section> 
 
-<section id="measures">
-      
-  <div class="container" data-aos="fade-up">
-    <div>
-        <h1 id="measures_title_sub" style="font-weight: 600;">TOP 5</h1>
-        <h1 id="measures_title">Tipos de Medición para mejorar su rentabilidad</h1>
-      </div>         
-  </div>
 
-</section>
-
-<section id="measuresItem">
-
-  <div class="container" data-aos="fade-up">
-            
-    <div class="row justify-content-center" style="padding-top: 30px;">
-      
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-        <div class="card-body">
-          <h1>1</h1>
-          <div class="body">
-            <div id="measures_item_1_title" class="title">CLIENTE MISTERIOSO</div>
-            <ul>
-              <li id="measures_item_1_1">Servicio</li>
-              <li id="measures_item_1_2">Ventas</li>
-              <li id="measures_item_1_3">Conocimientos</li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-        <div class="card-body">
-          <h1>2</h1>
-          <div class="body">
-            <div id="measures_item_2_title" class="title">AUDITORIAS</div>
-            <ul>
-              <li id="measures_item_2_1">Imagen</li>
-              <li id="measures_item_2_2">Ejecución</li>
-              <li id="measures_item_2_3">Disponibilidad</li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-        <div class="card-body">
-          <h1>3</h1>
-          <div class="body">
-            <div id="measures_item_3_title" class="title">INSPECCIONES</div>
-            <ul>
-              <li id="measures_item_3_1">Seguridad</li>
-              <li id="measures_item_3_2">Mantenimiento</li>
-              <li id="measures_item_3_3">Limpieza</li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-        <div class="card-body">
-          <h1>4</h1>
-          <div class="body">
-            <div id="measures_item_4_title" class="title">ENCUESTAS</div>
-            <ul>
-              <li id="measures_item_4_1">Satisfacción</li>
-              <li id="measures_item_4_2">Oferta de Valor</li>
-              <li id="measures_item_4_3">Clima Laboral</li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-        <div class="card-body">
-          <h1>5</h1>
-          <div class="body">
-            <div id="measures_item_5_title" class="title">BENCHMARKETING</div>
-            <ul>
-              <li id="measures_item_5_1">Precios</li>
-              <li id="measures_item_5_2">Ofertas</li>
-              <li id="measures_item_5_3">Servicio</li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-      
-    </div>
-  
-  </div>
-
-  <div class="row justify-content-center" style="padding-top: 55px;">
-    <div class="col-sm-10 col-md-10 col-lg-4">
-      <video width="100%" controls>
-        <source src="assets/img/Principales Servicios.mp4" type="video/mp4" alt="Cliente Misteriosos, Relevamiento de Precios, Inspecciones, Auditorías, Encuestas">
-        Tu navegador no soporta la etiqueta de video.
-      </video>
-    </div>
-  </div>
-
-
-</section>
       
 <section id="methodology" >
 
@@ -1104,392 +1490,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
       </div>
       </section>
     
-      <section id="testimonials-2" data-aos="fade-up">
-        <div class="swiper2 mySwiper2">
-          <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
-            Qué dijeron quienes usaron CIOM para mejorar
-          </h1>
-          <div class="swiper-wrapper wrapper">
-            <div class="swiper-slide">
-              <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-gsk.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Adriana Pérez</h2>
-                    <div id="testimonials_role" class="company-name2">
-                      Manager
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial" class="description2 text-start">
-                  <strong>“...Tecnología en su máxima expresión...”</strong>
-                  Permite ver cosas que antes no veíamos.
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-chevron.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Alberto Fields</h2>
-                    <div id="testimonials_role_1" class="company-name2">
-                      Consultant
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_1" class="description2 text-start">
-                  <strong>“...Muy simple de usar...” </strong>
-                  Consolidamos todas las mediciones
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-walmart.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Martin Carbonelli</h2>
-                    <div id="testimonials_role_2" class="company-name2">
-                      Walmart
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_2" class="description2 text-start">
-                  <strong>“...Ideal para relevar en competidores..”</strong>
-                  Podemos generar la data que necesitamos
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-novey.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Alvaro Valiente</h2>
-                    <div id="testimonials_role_3" class="company-name2">
-                      CHRO Novey
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_3" class="description2 text-start">
-                  <strong>“...Aplicamos mejora continua...”</strong>
-                  Medir, Corregir, Mejorar hecho simple
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-rey.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Sonia Madrid</h2>
-                    <div id="testimonials_role_4" class="company-name2">
-                      VP Operaciones
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_4" class="description2 text-start">
-                  <strong> >“...Tecnología en su máxima expresión...”</strong>
-                  Permite ver cosas que antes no veíamos.
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-exxon.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Cintia Salgado</h2>
-                    <div id="testimonials_role_5" class="company-name2">
-                      Procurment Latam
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_5" class="description2 text-start">
-                  <strong>“...Estandaricé todo el caribe...”</strong>
-                  Una sola herramienta para toda una región
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-company1.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Aldo Mangravita</h2>
-                    <div id="testimonials_role_6" class="company-name2">
-                      Director General
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_6" class="description2 text-start">
-                  <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
-                  Un nuevo logro para nuestro equipo
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-company2.png   "
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Ramón Lencina</h2>
-                    <div id="testimonials_role_7" class="company-name2">
-                      Director General
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_7" class="description2 text-start">
-                  <strong>“...Opero como una multinacional...”</strong>
-                  Tengo indicadores simples para accionar
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-              >
-                <div class="header-testimonials">
-                  <div>
-                    <img
-                      class="company-icon2"
-                      alt="company-icon"
-                      src="./assets/img/testimonial-texaco.png"
-                    />
-                  </div>
-                  <div class="client-content2 text-start">
-                    <h2 class="client-name">Pedro Seguí</h2>
-                    <div id="testimonials_role_8" class="company-name2">
-                      Country Manager
-                    </div>
-                  </div>
-                </div>
-                <p id="testimonial_8" class="description2 text-start">
-                  <strong>“...Logramos un cambio radical en 18 m..”</strong>
-                  Pasamos a ser el mejor país de la cadena
-                </p>
-                <div class="stars-container">
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                  <div>
-                    <img class="star" alt="star" src="./assets/img/star.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination2"></div>
-        </div>
-      </section>
+    
 
       <section id="capitalize" data-aos="fade-up"><div class="container">
         <div class="row">
@@ -1648,8 +1649,8 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-    <script src="assets/js/i18n-config.js"></script>
+    <!-- <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="assets/js/i18n-config.js"></script> -->
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/newjs.js"></script>
     <script src="assets/js/hoverText.js"></script>
