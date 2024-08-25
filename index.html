@@ -103,70 +103,6 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 });
 
 
-
-
-  // document.addEventListener('DOMContentLoaded', function () {
-    // $('#testimonialCarousel').carousel({
-    //     interval: 3000
-    // });
-
-    // $('#testimonialCarousel').on('slide.bs.carousel', function (e) {
-    //     let itemsPerSlide = $(this).find('.carousel-item.active .col-md-4').length;
-    //     let totalItems = $('.carousel-item .col-md-4').length;
-
-    //     if (e.direction == 'left') {
-    //         if (totalItems - itemsPerSlide >= itemsPerSlide) {
-    //             let $newActive = $(this).find('.carousel-item.active').next();
-    //             if (!$newActive.length) {
-    //                 $newActive = $(this).find('.carousel-item').first();
-    //             }
-    //             $newActive.children().slice(0, itemsPerSlide).appendTo($newActive);
-    //         }
-    //     } else {
-    //         if (totalItems - itemsPerSlide >= itemsPerSlide) {
-    //             let $newActive = $(this).find('.carousel-item.active').prev();
-    //             if (!$newActive.length) {
-    //                 $newActive = $(this).find('.carousel-item').last();
-    //             }
-    //             $newActive.children().slice(-itemsPerSlide).prependTo($newActive);
-    //         }
-    //     }
-    // });
-
-// });
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-  
-    // var swiper = new Swiper('.swiper-container', {
-    //     slidesPerView: 'auto',
-    //     spaceBetween: 10,
-    //     loop: true,
-    //     speed: 5000, // Adjust speed for slower transition
-    //     autoplay: {
-    //       delay: 0,
-    //       disableOnInteraction: false,
-    //     },
-    //   });
-  
-    // $('#logoCarousel').carousel({
-    //     interval: 10
-    // });
-
-  // document.getElementById('cookies_accept').addEventListener('click', function() {
-  //   document.querySelector('.cookie-banner').style.display = 'none';
-  //   localStorage.setItem('cookiesAccepted', 'true');
-  // });
-
-  // window.addEventListener('load', function() {
-  //     if (localStorage.getItem('cookiesAccepted') === 'true') {
-  //         document.querySelector('.cookie-banner').style.display = 'none';
-  //     }
-  // });
-      
-// });
-
-
 </script>
 
   
@@ -361,9 +297,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
     <section id="home" >
 
-      <div class="d-flex flex-column row-md"   data-aos="fade-up">           
+      <div class="d-flex flex-column flex-md-row"   data-aos="fade-up">           
                 
-        <div class="col">
+        <div class="col order-md-2">
               <div class="home-inner-text p-md-0">
                 <h1 id="home_title">La solución simple e integral para mejorar su negocio</h1>
                 <ul >
@@ -408,55 +344,63 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
         </div>
       </section>
 
+      <section id="fortune">
+        <div>
+          <h1>Usado desde compañías del <strong>fortune 500</strong> hasta <strong>empresas familiares</strong></h1>
+        </div>
+      </section>
+
       <section id="webApp">
         <div class="container" data-aos="fade-up">
       
-          <h1 id="webApp1_title">Cómo funciona</h1>
-          <div class="row row-eq-height" style="margin-top: 50px;">
-           
-            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
-              <div class="content">
-                <div class="card mobile-card">
-                  <div class="title">
-                    <img src="assets/img/1.png" alt="identifique">
-                    <h4 id="webApp1_item_1_title_sub">IDENTIFIQUE</h4>
-                  </div>
-                  <h6 id="webApp1_item_1_title">¿Qué mejoraría en su negocio?</h6>
-                  <p id="webApp1_item_1_text">Definimos sus objetivos de mejora, el KPI correspondiente, diseñamos la medición y configuramos el sistema para que informe a los responsables.</p>     
+          <h1 id="webApp1_title">¿Cómo con CIOM convierte un desafío en una solución?</h1>
+          <div class="webapp-items d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <div>
+              <div class="card mobile-card">
+                <div class="title">
+                  <img src="assets/img/1.png" alt="identifique">
+                  <h4 id="webApp1_item_1_title_sub">IDENTIFICACION</h4>
                 </div>
-                <img src="assets/img/CIOM-2/Home/image 82.png" class="image-slide" alt="Expertos en Indicadores">
-              </div>
-            </div>
-          
-            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
-              <div class="content">
-                <div class="card mobile-card">
-                  <div class="title">
-                    <img src="assets/img/2.png" alt="diseñe">
-                    <h4 id="webApp1_item_2_title_sub">DEFINA</h4>
-                  </div>
-                  <h6 id="webApp1_item_2_title">¿Cómo mediremos el progreso?</h6>
-                  <p id="webApp1_item_2_text">Externamente usando la solución Uberizada de Evaluadores.
-                    Internamente, usando su personal o el personal de sus proveedores. </p>       
+                <h6 id="webApp1_item_1_title">¿Qué necesita mejorar?</h6>
+                <p id="webApp1_item_1_text">Gestión, Operación y/o Ejecución<br> <br>En una primer call buscaremos conocerlo y que nos explique los desafíos y oportunidades que enfrenta su negocio.</p>     
+                <div class="d-flex align-items-center">
+                  <img class="clock" src="assets/img/CIOM-2/Home/Clock.png" alt="clock">
+                  <h6 class="m-0">1 Semana</h6>
                 </div>
-                <img src="assets/img/CIOM-2/Home/woman-taking-picture-dress 1.png" class="image-slide" alt="Soporte">
               </div>
+              <img src="assets/img/CIOM-2/Home/image 82.png" class="image-slide" alt="Expertos en Indicadores">
             </div>
-            
-            <div class="col-sm-12 col-md-12 col-lg-4 howWorks">
-              <div class="content">
-                <div class="card mobile-card">
-                  <div class="title">
-                    <img src="assets/img/3.png" alt="mejore">
-                    <h4 id="webApp1_item_3_title_sub">EJECUTE</h4>
-                  </div>
-                  <h6 id="webApp1_item_3_title">¿Cómo implementará la mejora?</h6>
-                  <p id="webApp1_item_3_text">En tiempo real, su equipo conocerá las correcciones de forma clara y objetiva que tienen que ir haciendo para que su negocio siga mejorando.</p>                      
+            <div>
+              <div class="card mobile-card">
+                <div class="title">
+                  <img src="assets/img/1.png" alt="identifique">
+                  <h4 id="webApp1_item_1_title_sub">DEFINICION</h4>
                 </div>
-                <img src="assets/img/CIOM-2/Home/image 79.png" class="image-slide" alt="Plataforma">
+                <h6 id="webApp1_item_1_title">¿Cómo va a lograr la mejora?</h6>
+                <p id="webApp1_item_1_text">KPIs, Sistematización y/o Tercerización<br> <br>En una segunda call presentaremos la solución diseñada para su compañía.
+                  Con su aprobación configuramos y customizamos CIOM para su equipo.</p>     
+                <div class="d-flex align-items-center">
+                  <img class="clock" src="assets/img/CIOM-2/Home/Clock.png" alt="clock">
+                  <h6 class="m-0">1 Semana</h6>
+                </div>
               </div>
+              <img src="assets/img/CIOM-2/Home/woman-taking-picture-dress 1.png" class="image-slide" alt="Expertos en Indicadores">
             </div>
-
+            <div>
+              <div class="card mobile-card">
+                <div class="title">
+                  <img src="assets/img/1.png" alt="identifique">
+                  <h4 id="webApp1_item_1_title_sub">EJECUCION</h4>
+                </div>
+                <h6 id="webApp1_item_1_title">¿Cuál es la metodología de trabajo?
+                <p id="webApp1_item_1_text">Mejora Continua<br><br>Implementada la solución  sus equipos podrán identificar sus oportunidades de de forma simple para corregir y mejorar acercando a la compañía a su objetivo.</p>     
+                <div class="d-flex align-items-center">
+                  <img class="clock" src="assets/img/CIOM-2/Home/Clock.png" alt="clock">
+                  <h6 class="m-0">1 Semana</h6>
+                </div>
+              </div>
+              <img src="assets/img/CIOM-2/Home/image 79.png" class="image-slide" alt="Expertos en Indicadores">
+            </div>                     
           </div>
 
       </div>
@@ -465,33 +409,19 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
     <section id="measures">
       
       <div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
-            <h1 id="measures_title">Las mediciones para alimentar sus 5 tipos de KPIs </h1>
-            <h2 id="measures_subtitle">Cada medición esta enfocada a mejorar la rentabilidad de su negocio. etc etc etc etc</h2>
+            <h1 id="measures_title">Las soluciones integrales de CIOM para su negocio</h1>
+            <h2 id="measures_subtitle">Elija la que necesite y haga click para ver ¿Qué son?, ¿Cómo funcionan? y mucho más...</h2>
       </div>    
       <section id="measuresItem">
       
-        <div class="container" data-aos="fade-up">
-                  
-          <div class="row justify-content-center">
-            
+        <div class="container" data-aos="fade-up">                  
+          <div class="measures-inner row justify-content-center">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
               <div class="card-body">                
                 <div class="body">
-                  <div id="measures_item_1_title" class="title">EL CLIENTE</div>
+                  <div id="measures_item_2_title" class="title">GESTION</div>
                   <ul>
-                    <li id="measures_item_1_1">Cliente Misterioso</li>                  
-                  </ul>
-                </div> 
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
-              <div class="card-body">
-                
-                <div class="body">
-                  <div id="measures_item_2_title" class="title">OPERACION</div>
-                  <ul>
-                    <li id="measures_item_2_1">Inspecciones</li>                  
+                    <li id="measures_item_2_1">Indicadores (KPIs)</li>                  
                   </ul>
                 </div> 
               </div>
@@ -501,9 +431,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
               <div class="card-body">
               
                 <div class="body">
-                  <div id="measures_item_3_title" class="title">COMPETENCIA</div>
+                  <div id="measures_item_3_title" class="title">OPERACION</div>
                   <ul>
-                    <li id="measures_item_3_1">Monitoreos</li>                  
+                    <li id="measures_item_3_1">Aplicacación</li>                  
                   </ul>
                 </div> 
               </div>
@@ -513,9 +443,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
               <div class="card-body">
                 
                 <div class="body">
-                  <div id="measures_item_4_title" class="title">OPINION</div>
+                  <div id="measures_item_4_title" class="title">EJECUCION</div>
                   <ul>
-                    <li id="measures_item_4_1">Encuestas</li>                 
+                    <li id="measures_item_4_1">Solución Uberizada</li>                 
                   </ul>
                 </div> 
               </div>
@@ -524,9 +454,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
               <div class="card-body">              
                 <div class="body">
-                  <div id="measures_item_5_title" class="title">AUDITORIA</div>
+                  <div id="measures_item_5_title" class="title">PROGRAMA</div>
                   <ul>
-                    <li id="measures_item_5_1">Auditorias</li>                  
+                    <li id="measures_item_5_1">Programa de Mejora</li>                  
                   </ul>
                 </div> 
               </div>
@@ -536,7 +466,767 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
       </section>
     </section>
 
-    <section id="webApp-1">
+    <section id="statistics">
+      <div class="container d-flex flex-column flex-md-row align-items-center">        
+        <div class="content d-flex flex-column align-items-center align-items-md-start">
+          <h1 id="statistics_title">Permita a su equipo mejorar los resultados de su negocio</h1>
+          <button class="btn d-none d-md-block">Solicitar asesor</button>          
+        </div>
+        <div class="inner-statistics">
+          <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+            <div class="statistics-item d-flex flex-column align-items-center align-items-md-start">
+              <div class="d-flex">
+                <img src="assets/img/CIOM-2/Home/arrow-up.png" alt="arrow-up">
+                <h1>10%</h1>
+              </div>
+              <h2>Ventas Totales</h2>
+            </div>
+            <div class="d-flex flex-column align-items-center align-items-md-start mt-5 mt-md-0">
+              <div class="d-flex">
+                <img src="assets/img/CIOM-2/Home/arrow-up.png" alt="arrow-up">
+                <h1>15%</h1>
+              </div>
+              <h2>Disponibilidad en Góndola</h2>
+            </div>
+          </div>
+          <div class="mt-5 d-flex flex-column align-items-center align-items-md-start flex-md-row">
+            <div class="statistics-item d-flex flex-column align-items-center align-items-md-start">
+              <div class="d-flex">
+                <img src="assets/img/CIOM-2/Home/arrow-up.png" alt="arrow-up">
+                <h1>20%</h1>
+              </div>
+              <h2>Satisfacción del Cliente</h2>
+            </div>
+            <div class="d-flex flex-column align-items-center align-items-md-start mt-5 mt-md-0">
+              <div class="d-flex">
+                <img class="arrow" src="assets/img/CIOM-2/Home/arrow-up.png" alt="arrow-up">
+                <h1>30%</h1>
+              </div>
+              <h2>Cumplimiento de Procesos</h2>
+            </div>
+          </div>
+          <button class="btn d-md-none mt-5">Solicitar asesor</button>
+        </div>
+      </div> 
+    
+      </div>
+    </section> 
+
+    <section id="testimonials-2" data-aos="fade-up">
+      <div class="swiper2 mySwiper2">
+        <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
+          Qué dijeron quienes usaron CIOM para mejorar
+        </h1>
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide">
+            <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-gsk.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Adriana Pérez</h2>
+                  <div id="testimonials_role" class="company-name2">
+                    Manager
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial" class="description2 text-start">
+                <strong>“...Tecnología en su máxima expresión...”</strong>
+                Permite ver cosas que antes no veíamos.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-chevron.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Alberto Fields</h2>
+                  <div id="testimonials_role_1" class="company-name2">
+                    Consultant
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_1" class="description2 text-start">
+                <strong>“...Muy simple de usar...” </strong>
+                Consolidamos todas las mediciones
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-walmart.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Martin Carbonelli</h2>
+                  <div id="testimonials_role_2" class="company-name2">
+                    Walmart
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_2" class="description2 text-start">
+                <strong>“...Ideal para relevar en competidores..”</strong>
+                Podemos generar la data que necesitamos
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-novey.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Alvaro Valiente</h2>
+                  <div id="testimonials_role_3" class="company-name2">
+                    CHRO Novey
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_3" class="description2 text-start">
+                <strong>“...Aplicamos mejora continua...”</strong>
+                Medir, Corregir, Mejorar hecho simple
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-rey.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Sonia Madrid</h2>
+                  <div id="testimonials_role_4" class="company-name2">
+                    VP Operaciones
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_4" class="description2 text-start">
+                <strong> >“...Tecnología en su máxima expresión...”</strong>
+                Permite ver cosas que antes no veíamos.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-exxon.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Cintia Salgado</h2>
+                  <div id="testimonials_role_5" class="company-name2">
+                    Procurment Latam
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_5" class="description2 text-start">
+                <strong>“...Estandaricé todo el caribe...”</strong>
+                Una sola herramienta para toda una región
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-company1.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Aldo Mangravita</h2>
+                  <div id="testimonials_role_6" class="company-name2">
+                    Director General
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_6" class="description2 text-start">
+                <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
+                Un nuevo logro para nuestro equipo
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-company2.png   "
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Ramón Lencina</h2>
+                  <div id="testimonials_role_7" class="company-name2">
+                    Director General
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_7" class="description2 text-start">
+                <strong>“...Opero como una multinacional...”</strong>
+                Tengo indicadores simples para accionar
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+            >
+              <div class="header-testimonials">
+                <div>
+                  <img
+                    class="company-icon2"
+                    alt="company-icon"
+                    src="./assets/img/testimonial-texaco.png"
+                  />
+                </div>
+                <div class="client-content2 text-start">
+                  <h2 class="client-name">Pedro Seguí</h2>
+                  <div id="testimonials_role_8" class="company-name2">
+                    Country Manager
+                  </div>
+                </div>
+              </div>
+              <p id="testimonial_8" class="description2 text-start">
+                <strong>“...Logramos un cambio radical en 18 m..”</strong>
+                Pasamos a ser el mejor país de la cadena
+              </p>
+              <div class="stars-container">
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+                <div>
+                  <img class="star" alt="star" src="./assets/img/star.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination2"></div>
+      </div>
+    </section>
+
+    <section id="prices" >
+      <div class="container">          
+        <div class="row" data-aos="fade-up">          
+          <div class="col">            
+            <h1 id="prices_title">Elija el plan que mejor se adapta a su empresa</h1>              
+            <div>
+              <div class="price-switch">
+                <button id="prices_btn_monthly" type="button" class="btn btn-secondary">Pago mensual</button>
+                <button id="prices_btn_annual" type="button" class="btn btn-primary">Pago anual</button>
+                <span id="prices_saving" class="price-switch-text">(Ahorre hasta un 25%)</span>
+              </div>                
+            </div>
+          </div>       
+        </div> 
+
+        <div class="row">        
+            <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+              <div class="mb-s3">                
+                <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                    <div class="card-body-header">
+                      <div class="content">
+                        <img class="icon" alt="" src="./assets/img/price_low.svg"/>            
+                        <div id="prices_item_basic_title" class="title">PYMES</div>
+                      </div>
+                      <div id="prices_item_basic_description" class="description">
+                        Elimina todas las disputas al poder acompañar las decisiones con datos objetivos.
+                      </div>
+                      <div class="plans-divider-1"></div>
+                      <div class="price">
+                        <div class="content">
+                          <div class="d">
+                            <b class="value">
+                              <span>US$</span>
+                              <span class="span basic-price">15</span>
+                            </b>
+                            
+                            <div class="info">
+                              <p id="prices_item_basic_item_info_1" class="item">Facturación anual</p>
+                              <p id="prices_item_basic_item_info_2" class="item">Por usuario, por mes</p>
+                              <p id="prices_item_basic_item_info_3" class="item">Incluye 3 usuarios</p>
+                            </div>
+                          </div>
+                          <div class="plans-divider-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pricing-features pricing-item">
+                      <h2>Soluciones</h2>
+                      <div class="item ">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                      </div>                                         
+                    </div>
+                    <div class="pricing-features pricing-item-1">
+                      <h2>Herramientas</h2>
+                      <div class="item">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
+                      </div>                                         
+                    </div>
+                    <div class="pricing-features pricing-item-2">
+                      <h2>Extras</h2>
+                      <div class="item d-flex flex-column align-items-start">
+                         <div class="d-flex">
+                           <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                           <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
+                         </div>
+                         <div class="d-flex">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                          <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                        </div>
+                        
+                      </div>                                         
+                    </div>
+                    <!-- <a
+                    id="prices_item_basic_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-primary"
+                    >Contratar</a> -->
+                  </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+              <div class="mb-s3">                
+                <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                    <div class="card-body-header">
+                      <div class="content">
+                        <img class="icon" alt="" src="./assets/img/price_medium.svg"/>            
+                        <div id="prices_item_advance_title" class="title">PYMES</div>
+                      </div>
+                      <div id="prices_item_advance_description" class="description">
+                        Simplifique el trabajo diario de su equipo, mejore el cumplimiento de manuales, procesos, etc.
+                      </div>
+                      <div class="plans-divider-1"></div>
+                      <div class="price">
+                        <div class="content">
+                          <div class="d">
+                            <b class="value">
+                              <span>US$</span>
+                              <span class="span advance-price">20</span>
+                            </b>
+                            <div class="info">                              
+                              <p id="prices_item_advance_item_info_2" class="item">Por usuario, por mes</p>
+                              <p id="prices_item_advance_item_info_3" class="item">Incluye 6 usuarios</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="plans-divider-2"></div>
+                    </div>
+                    <div class="pricing-features pricing-item">
+                      <h2>Soluciones</h2>
+                      <div class="item d-flex flex-column align-items-start">
+                        <div class="d-flex">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                          <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                        </div>
+                        <div class="d-flex">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                         <div id="prices_item_basic_item_2" class="text">Operación (App)</div>
+                       </div>                       
+                     </div>                                           
+                    </div>
+                    <div class="pricing-features pricing-item-1">
+                      <h2>Herramientas</h2>
+                      <div class="item d-flex flex-column align-items-start">
+                        <div class="d-flex">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                          <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
+                        </div>
+                        <div class="d-flex">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                         <div id="prices_item_basic_item_2" class="text">Dashboard + Power Bi</div>
+                       </div>                       
+                     </div>                                               
+                    </div>
+                    <div class="pricing-features pricing-item-2">
+                      <h2>Extras</h2>
+                      <div class="item  d-flex flex-column align-items-start">
+                         <div class="d-flex">
+                           <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                           <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
+                         </div>
+                         <div class="d-flex">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                          <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                        </div>
+                        <div class="d-flex">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                          <div id="prices_item_basic_item_2" class="text">Asesor en Línea</div>
+                        </div>
+                      </div>                                         
+                    </div>
+                    <!-- <a 
+                      id="prices_item_advance_btn"
+                      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-primary"
+                      >Contratar</a> -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+              <div class="mb-s3">                
+                <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                  <div class="card-body-header">
+                    <div class="content">
+                      <img class="icon" alt="" src="./assets/img/price_big.svg"/>            
+                      <div id="prices_item_profesional_title" class="title">GRANDES</div>
+                    </div>
+                    <div id="prices_item_profesional_description" class="description">
+                      Aumente su capacidad operativa simplifique la contratación y supervisión de proveedores
+                    </div>
+                    <div class="plans-divider-1"></div>
+                    <div class="price">
+                      <div class="content">
+                        <div class="d">
+                          <b class="value">
+                            <span>US$</span>
+                            <span class="span profesional-price">25</span>
+                          </b>
+                          <div class="info">
+                            <p id="prices_item_profesional_item_info_2" class="item">Por usuario, por mes</p>
+                            <p id="prices_item_profesional_item_info_3" class="item">Incluye 12 usuarios</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plans-divider-2"></div>
+                  </div>
+                  <div class="pricing-features pricing-item">
+                    <h2>Soluciones</h2>
+                    <div class="item d-flex flex-column align-items-start">
+                      <div class="d-flex">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                      </div>
+                      <div class="d-flex">
+                       <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                       <div id="prices_item_basic_item_2" class="text">Operación (App)</div>
+                     </div>
+                     <div class="d-flex">
+                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                      <div id="prices_item_basic_item_2" class="text text-nowrap">Ejecución (Solución Uberizada)</div>
+                    </div>                       
+                   </div>                                           
+                  </div>
+                  <div class="pricing-features pricing-item-1">
+                    <h2>Herramientas</h2>
+                    <div class="item d-flex flex-column align-items-start">
+                      <div class="d-flex">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
+                      </div>
+                      <div class="d-flex">
+                       <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                       <div id="prices_item_basic_item_2" class="text">Dashboard + Power Bi</div>
+                     </div>
+                     <div class="d-flex">
+                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                      <div id="prices_item_basic_item_2" class="text">Analitycs</div>
+                    </div>   
+                    <div class="d-flex">
+                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                      <div id="prices_item_basic_item_2" class="text">Api de Integración</div>
+                    </div>                          
+                   </div>                                               
+                  </div>
+                  <div class="pricing-features pricing-item-2-1 ">
+                    <h2>Extras</h2>
+                    <div class="item  d-flex flex-column align-items-start">
+                       <div class="d-flex">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                         <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
+                       </div>
+                       <div class="d-flex">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                      </div>
+                      <div class="d-flex">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_2" class="text">Asesor en Línea</div>
+                      </div>
+                      <div class="d-flex ">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                        <div id="prices_item_basic_item_2" class="text">Consultor en Línea</div>
+                      </div>
+                    </div>                                         
+                  </div>
+                
+                  <!-- <a 
+                  id="prices_item_profesional_btn"
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn btn-primary"
+                  >Contratar</a> -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
+              <div class="mb-s3">                
+                <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                  <div class="card-body-header">
+                    <div class="content">
+                      <img class="icon" alt="" src="./assets/img/price_big_extra.svg"/>            
+                      <div id="prices_item_corporate_title" class="title">CORPORATIVO</div>
+                    </div>
+                    <div id="prices_item_corporate_description" class="description">
+                      Mejore y Estandarize sus resultados a lo largo de todo el continente de forma simple.
+                    </div>
+                    <div class="plans-divider-1"></div>
+                    <div class="price">
+                      <div class="content">
+                        <div class="d d-flex justify-content-center m-0 p-0">
+                          Precio diseñado en base a sus necesidades
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plans-divider-2"></div>
+                  <div class="pricing-features pricing-item-3">
+                    <div class="item  d-flex flex-column align-items-start">
+                       <div class="d-flex">
+                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                         <div id="prices_item_basic_item_1" class="text">Funcionalidades especiales y costumizadas para su corporacion./div>
+                       </div>                       
+                    </div>                                         
+                  </div>
+                  
+                  <!-- <a 
+                  id="prices_item_corporate_btn"
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn btn-link"
+                  >Contactar con ventas</a> -->
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="fortune">
+      <div>
+        <h1>Consulte por facturación local en la moneda local de su país</h1>
+      </div>
+    </section>
+
+    <section id="logos" style="background-color: #fff;">
+      <div class="container">
+        <div class="logo-slider">
+            <div class="slider-track-it">
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="webApp-1">
       <div class="container" data-aos="fade-up">
     
         <h1 id="webApp3_title">La plataforma que se adapta a su forma de trabajar</h1>
@@ -614,460 +1304,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
         </div>
 
     </div>
-  </section>
-
-  <section id="testimonials-2" data-aos="fade-up">
-    <div class="swiper2 mySwiper2">
-      <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
-        Qué dijeron quienes usaron CIOM para mejorar
-      </h1>
-      <div class="swiper-wrapper wrapper">
-        <div class="swiper-slide">
-          <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-gsk.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Adriana Pérez</h2>
-                <div id="testimonials_role" class="company-name2">
-                  Manager
-                </div>
-              </div>
-            </div>
-            <p id="testimonial" class="description2 text-start">
-              <strong>“...Tecnología en su máxima expresión...”</strong>
-              Permite ver cosas que antes no veíamos.
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-chevron.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Alberto Fields</h2>
-                <div id="testimonials_role_1" class="company-name2">
-                  Consultant
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_1" class="description2 text-start">
-              <strong>“...Muy simple de usar...” </strong>
-              Consolidamos todas las mediciones
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-walmart.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Martin Carbonelli</h2>
-                <div id="testimonials_role_2" class="company-name2">
-                  Walmart
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_2" class="description2 text-start">
-              <strong>“...Ideal para relevar en competidores..”</strong>
-              Podemos generar la data que necesitamos
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-novey.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Alvaro Valiente</h2>
-                <div id="testimonials_role_3" class="company-name2">
-                  CHRO Novey
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_3" class="description2 text-start">
-              <strong>“...Aplicamos mejora continua...”</strong>
-              Medir, Corregir, Mejorar hecho simple
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-rey.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Sonia Madrid</h2>
-                <div id="testimonials_role_4" class="company-name2">
-                  VP Operaciones
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_4" class="description2 text-start">
-              <strong> >“...Tecnología en su máxima expresión...”</strong>
-              Permite ver cosas que antes no veíamos.
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-exxon.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Cintia Salgado</h2>
-                <div id="testimonials_role_5" class="company-name2">
-                  Procurment Latam
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_5" class="description2 text-start">
-              <strong>“...Estandaricé todo el caribe...”</strong>
-              Una sola herramienta para toda una región
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-company1.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Aldo Mangravita</h2>
-                <div id="testimonials_role_6" class="company-name2">
-                  Director General
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_6" class="description2 text-start">
-              <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
-              Un nuevo logro para nuestro equipo
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-company2.png   "
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Ramón Lencina</h2>
-                <div id="testimonials_role_7" class="company-name2">
-                  Director General
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_7" class="description2 text-start">
-              <strong>“...Opero como una multinacional...”</strong>
-              Tengo indicadores simples para accionar
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-          >
-            <div class="header-testimonials">
-              <div>
-                <img
-                  class="company-icon2"
-                  alt="company-icon"
-                  src="./assets/img/testimonial-texaco.png"
-                />
-              </div>
-              <div class="client-content2 text-start">
-                <h2 class="client-name">Pedro Seguí</h2>
-                <div id="testimonials_role_8" class="company-name2">
-                  Country Manager
-                </div>
-              </div>
-            </div>
-            <p id="testimonial_8" class="description2 text-start">
-              <strong>“...Logramos un cambio radical en 18 m..”</strong>
-              Pasamos a ser el mejor país de la cadena
-            </p>
-            <div class="stars-container">
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-              <div>
-                <img class="star" alt="star" src="./assets/img/star.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination2"></div>
-    </div>
-  </section>
-
-    
- <section id="statistics">
-  <div class="container">
-    
-    <div class="content">
-      <h1 id="statistics_title">Los riesgos que podría evitar con buenos indicadores</h1>          
-    </div>
-  
-    <div class="row justify-content-center" style="padding-top: 30px;">
-        
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-          <div>
-            <span>69%</span>
-          </div>
-          <p id="statistics_item_1">de sus clientes no regresarán luego de una mala experiencia</p>
-        </div>
-
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-          <div>
-            <span>77%</span>
-          </div>
-          <p id="statistics_item_2">de clientes elegirán otra marca si su producto no está</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-          <div>
-            <span>65%</span>
-          </div>
-          <p id="statistics_item_3">de los consumidores prefieren una marca bien estandarizada</p>
-        </div>
-
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-          <div>
-            <span>72%</span>
-          </div>
-          <p id="statistics_item_4">de clientes elegirán otra marca ante un mejor ofrecimiento</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-          <div>
-            <span>97%</span>
-          </div>
-          <p id="statistics_item_5">de productos no encontrados fue por problemas operativos en el PDV</p>
-        </div>
-        
-    </div>
-      
-    <div class="row justify-content-center" style="padding-top: 30px;">
-      <a
-      id="statistics_btn"
-      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      class="btn btn-info"
-      >Comenzar</a>
-  </div> 
-
-  </div> 
-
-  </div>
-</section> 
-
-
+  </section> -->
       
 <section id="methodology" >
 
@@ -1105,6 +1342,12 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
   </div>
 
+</section>
+
+<section id="fortune">
+  <div>
+    <h1>Nuestro objetivo es que usted alcance el suyo</h1>
+  </div>
 </section>
 
 <section id="additional-service" >
@@ -1163,300 +1406,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
   
       
       
-      <section id="prices" >
+     
 
-        <div class="container">
-            
-          <div class="row" data-aos="fade-up">
-            
-            <div class="col">
-              
-              <h1 id="prices_title">Elija el plan que mejor se adapta a su empresa</h1>              
-
-              <div>
-                <div class="price-switch">
-                  <button id="prices_btn_monthly" type="button" class="btn btn-secondary">Pago mensual</button>
-                  <button id="prices_btn_annual" type="button" class="btn btn-primary">Pago anual</button>
-                  <span id="prices_saving" class="price-switch-text">(Ahorre hasta un 25%)</span>
-                </div>       
-                
-              </div>
-
-            </div>
-          
-          
-          </div>
-           
-          <div class="row">
-          
-              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
-                <div class="mb-s3">                
-                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
-                      <div class="card-body-header">
-                        <div class="content">
-                          <img class="icon" alt="" src="./assets/img/price_low.svg"/>            
-                          <div id="prices_item_basic_title" class="title">FAMILIAR</div>
-                        </div>
-                        <div id="prices_item_basic_description" class="description">
-                          Elimina todas las disputas al poder acompañar las decisiones con datos objetivos.
-                        </div>
-                        <div class="plans-divider"></div>
-                        <div class="price">
-                          <div class="content">
-                            <div class="d">
-                              <b class="value">
-                                <span>US$</span>
-                                <span class="span basic-price">15</span>
-                              </b>
-                              
-                              <div class="info">
-                                <p id="prices_item_basic_item_info_1" class="item">Facturación anual</p>
-                                <p id="prices_item_basic_item_info_2" class="item">Por usuario, por mes</p>
-                                <p id="prices_item_basic_item_info_3" class="item">Incluye 3 usuarios</p>
-                              </div>
-                            </div>
-                            <div class="plans-divider"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="pricing-features">
-                        <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_basic_item_1" class="text">2 Indicadores de mejora</div>
-                        </div>
-                        <div class="item">
-                          <i class="bi bi-check-lg"></i>        
-                         <div id="prices_item_basic_item_3" class="text">Hasta 5GB</div>
-                       </div>
-                        <!-- <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_basic_item_2" class="text">Hasta 5GB</div>
-                        </div> -->
-                        <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_basic_item_3" class="text">Tutoriales simples</div>
-                        </div>
-                      </div>
-                      <div class="extras-parent">
-                        <div class="extras">Extras</div>
-                        <div class="pricing-features">
-                          <div class="item">
-                            <i class="bi bi-check-lg"></i>    
-                            <div id="prices_item_basic_item_extra_1" class="text"> Desk & Dashboard + Power Bi </div>
-                          </div>                             
-                        </div>
-                      </div>
-                      <a
-                      id="prices_item_basic_btn"
-                      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      class="btn btn-primary"
-                      >Contratar</a>
-                    </div>
-                </div>
-              </div>
-            
-              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
-                <div class="mb-s3">                
-                  <div class="card-selected" data-aos="zoom-in" data-aos-delay="100">                                      
-                      <div class="card-body-header">
-                        <div class="content">
-                          <img class="icon" alt="" src="./assets/img/price_medium.svg"/>            
-                          <div id="prices_item_advance_title" class="title">PYMES</div>
-                        </div>
-                        <div id="prices_item_advance_description" class="description">
-                          Trabaja como los grandes KPIs simples y prácticos para mejorar el resultado de su negocio.
-                        </div>
-                        <div class="plans-divider"></div>
-                        <div class="price">
-                          <div class="content">
-                            <div class="d">
-                              <b class="value">
-                                <span>US$</span>
-                                <span class="span advance-price">20</span>
-                              </b>
-                              <div class="info">
-                                <p id="prices_item_advance_item_info_1" class="item">Facturación anual</p>
-                                <p id="prices_item_advance_item_info_2" class="item">Por usuario, por mes</p>
-                                <p id="prices_item_advance_item_info_3" class="item">Incluye 6 usuarios</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="plans-divider"></div>
-                      </div>
-                      <div class="pricing-features">
-                        <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_advance_item_1" class="text">4 Indicadores de mejora</div>
-                        </div>
-                        <div class="item">
-                          <i class="bi bi-check-lg"></i>        
-                         <div id="prices_item_advance_item_3" class="text">Hasta 15GB</div>
-                       </div>
-                        <!-- <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_advance_item_2" class="text">Hasta 15GB</div>
-                        </div> -->
-                        <div class="item">
-                           <i class="bi bi-check-lg"></i>        
-                          <div id="prices_item_advance_item_3" class="text">Soporte automatizado</div>
-                        </div>
-                      </div>
-                      <div class="extras-parent">
-                        <div class="extras">Extras</div>
-                        <div class="pricing-features">
-                          <div class="item">
-                            <i class="bi bi-check-lg"></i>    
-                            <div id="prices_item_advance_item_extra_1" class="text">Analitycs Web</div>
-                          </div>                             
-                        </div>
-                      </div>
-                      <a 
-                        id="prices_item_advance_btn"
-                        href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="btn btn-primary"
-                        >Contratar</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
-                <div class="mb-s3">                
-                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
-                    <div class="card-body-header">
-                      <div class="content">
-                        <img class="icon" alt="" src="./assets/img/price_big.svg"/>            
-                        <div id="prices_item_profesional_title" class="title">GRANDES</div>
-                      </div>
-                      <div id="prices_item_profesional_description" class="description">
-                        Acciona en tiempo real, simplifica el trabajo de su equipo y ganara eficiencia.
-                      </div>
-                      <div class="plans-divider"></div>
-                      <div class="price">
-                        <div class="content">
-                          <div class="d">
-                            <b class="value">
-                              <span>US$</span>
-                              <span class="span profesional-price">25</span>
-                            </b>
-                            <div class="info">
-                              <p id="prices_item_profesional_item_info_1" class="item">Facturación anual</p>
-                              <p id="prices_item_profesional_item_info_2" class="item">Por usuario, por mes</p>
-                              <p id="prices_item_profesional_item_info_3" class="item">Incluye 19 usuarios</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="plans-divider"></div>
-                    </div>
-                    <div class="pricing-features">
-                      <div class="item">
-                         <i class="bi bi-check-lg"></i>        
-                        <div id="prices_item_profesional_item_1" class="text">6 Indicadores de mejora</div>
-                      </div>
-                      <div class="item">
-                        <i class="bi bi-check-lg"></i>        
-                       <div id="prices_item_profesional_item_3" class="text">Hasta 150GB</div>
-                     </div>
-                      <!-- <div class="item">
-                         <i class="bi bi-check-lg"></i>        
-                        <div id="prices_item_profesional_item_2" class="text">Hasta 150GB</div>
-                      </div> -->
-                      <div class="item">
-                         <i class="bi bi-check-lg"></i>        
-                        <div id="prices_item_profesional_item_3" class="text">Asesor en linea</div>
-                      </div>
-                    </div>
-                    <div class="extras-parent">
-                      <div class="extras">Extras</div>
-                      <div class="pricing-features">
-                        <div class="item">
-                          <i class="bi bi-check-lg"></i>    
-                          <div id="prices_item_profesional_item_extra_1" class="text">
-                            App brandeada
-                          </div>
-                        </div>                             
-                      </div>
-                    </div>
-                  
-                    <a 
-                    id="prices_item_profesional_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-primary"
-                    >Contratar</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
-                <div class="mb-s3">                
-                  <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
-                    <div class="card-body-header">
-                      <div class="content">
-                        <img class="icon" alt="" src="./assets/img/price_big_extra.svg"/>            
-                        <div id="prices_item_corporate_title" class="title">CORPORATIVO</div>
-                      </div>
-                      <div id="prices_item_corporate_description" class="description">
-                        Toma el control de su información y consolida todas sus mediciones.
-                      </div>
-                      <div class="plans-divider"></div>
-                      <div class="price" style="min-height: 62px;">
-                        <div class="content">
-                          <div class="d">
-                              <span id="prices_item_corporate_item_info_1" class="custom">Precio en base a sus necesidades</span>                                                                      
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="plans-divider"></div>
-                    <div class="pricing-features">
-                      <div class="item">
-                         <i class="bi bi-check-lg"></i>        
-                        <div id="prices_item_corporate_item_1" class="text">Funcionalidades especiales y costumizadas para su corporacion.</div>
-                      </div>                            
-                    </div>
-                    <div class="extras-parent">
-                      <div class="extras"></br></div>
-                      <div class="pricing-features">
-                        <div class="item">
-                          <span class="check-icon"></span>
-                          <div class="text">
-                            </br>
-                          </div>
-                        </div>                             
-                      </div>
-                    </div>
-                    
-                    <a 
-                    id="prices_item_corporate_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-link"
-                    >Contactar con ventas</a>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="logos" style="background-color: #fff;">
-        <div class="container">
-          <div class="logo-slider">
-              <div class="slider-track-it">
-          
-          </div>
-        </div>
-      </section>
+      
 
       <section id="help" data-aos="fade-up"><div class="container">
         <div class="row">
@@ -1465,43 +1417,8 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
               <div class="prompt">
                 <img loading="lazy" alt="" src="./assets/img/question.svg" />
                 <div class="body">
-                  <h1 id="help_title">¿Necesitas ayuda?</h1>
+                  <h1 id="help_title">¿Quiere saber más?</h1>
                   <p id="help_description">Estamos para solucionar sus dudas.</p>
-                </div>
-                <!-- <a
-                    id="help1_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-info"
-                    >Preguntas frecuentes</a> -->
-                <a
-                  id="help1_btn"
-                  href="faq.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Preguntas frecuentes</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
-    
-    
-
-      <section id="capitalize" data-aos="fade-up"><div class="container">
-        <div class="row">
-          <div class="col-md-12 custom-column">
-            <div class="frame">
-              <div class="prompt">
-                <img loading="lazy" alt="" src="assets/img/price.svg" />
-                <div class="body">
-                  <h1 id="capitalize_title" class="capitalize-title">
-                    ¿Listo para capitalizar tus oportunidades?
-                  </h1>
                 </div>
                 <a
                   id="capitalize_btn"
@@ -1509,41 +1426,26 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary"
-                  >Empezá ahora</a
+                  >Solicitar asesor</a
                 >
+                <a
+                  id="help1_btn"
+                  href="faq.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Preguntas frecuentes</a>                
               </div>
             </div>
           </div>
         </div>
       </div>
       </section>
-<!-- 
-      <section id="help" >
+    
+    
 
-        <div class="container">
-          <div class="row" data-aos="fade-up">
-            <div class="col-md-12 custom-column">
-                <div class="frame">
-                  <div class="prompt">
-                    <img loading="lazy" alt="" src="./assets/img/price.svg" >
-                     <div class="body">
-                      <h1 id="help2_title">¿Listo para capitalizar sus oportunidades?</h1>
-                      <p></p>
-                    </div>
-                    <a 
-                    id="help2_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-info"
-                    >Preguntas frecuentes</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> -->
+      
+<
 
   </main>
   
@@ -1618,18 +1520,26 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
       <div class="d-flex icons-footer">
         <div>
           <a
-            href="https://www.linkedin.com/company/circle-complete-group/about/"
+            href="https://www.facebook.com/ciom.tech/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img alt="facebook-icon" src="assets/img/Crowdsourcing/icon-Facebook.png"
+            ><img alt="facebook-icon" src="./assets/img/-x30-1-facebook.svg"
           /></a>
         </div>
         <div>
           <a
-            href="https://www.linkedin.com/company/circle-complete-group/about/"
+            href="https://www.linkedin.com/company/circle-complete-group/mycompany/"
             target="_blank"
             rel="noopener noreferrer"
             ><img alt="linkedin-icon" src="./assets/img/linkedin.svg"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/ciom.latam/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img alt="linkedin-icon" src="./assets/img/CIOM-2/Home/mdi_instagram.png"
           /></a>
         </div>
       </div>
