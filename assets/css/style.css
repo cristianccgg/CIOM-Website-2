@@ -65,28 +65,6 @@ li {
   /* font-weight: 500; */
 }
 
-.navbar-mobile li {
-  display: block;
-  flex-direction: column;
-}
-
-.navbar-mobile .dropdown {
-  position: relative;
-}
-
-.navbar-mobile .dropdown-menu {
-  display: block;
-  position: absolute;
-  width: fit-content;
-  margin-top: 0;
-  box-shadow: none;
-  z-index: 1000;
-}
-
-.navbar-mobile li {
-  clear: both;
-}
-
 /*--------------------------------------------------------------
 # Button
 --------------------------------------------------------------*/
@@ -297,6 +275,72 @@ li {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+#navbar .dropdown-menu {
+  position: fixed;
+  left: 0;
+  top: 90px !important;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+#navbar .dropdown-menu .dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+  font-size: 15px;
+  font-weight: 500;
+  height: 400px;
+}
+
+#navbar .dropdown-menu .dropdown-item-2,
+.dropdown-item-3 {
+  border-left: 2px solid;
+}
+
+#navbar .dropdown-menu .dropdown-item h1 {
+  font-size: 34px;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar .dropdown-menu {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 95% !important;
+  }
+
+  #navbar .dropdown-menu .dropdown-item-2,
+  .dropdown-item-3 {
+    border: none;
+    border-top: 2px solid;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  #navbar .dropdown-menu {
+    display: none;
+  }
+
+  #navbar .dropdown-menu.mobile-show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.navbar-mobile .dropdown-toggle.active {
+  /* Add styles for the active state, e.g.: */
+  background-color: #f8f9fa;
+  color: #0056b3;
+}
 
 /* .navbar {
   display: contents;
@@ -308,7 +352,7 @@ li {
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 22px;
+  gap: 28px;
   font-weight: 500;
   font-size: 16px;
 }
@@ -347,21 +391,17 @@ li {
 }
 
 .navbar .dropdown ul {
-  display: block;
   position: absolute;
-  top: calc(100% + 30px);
+  top: 90px !important;
+  left: 0px !important;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
   background: var(--blanco);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
 }
 
 .navbar .dropdown ul a {
@@ -399,16 +439,6 @@ li {
   top: 0;
   left: 100%;
   visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
 }
 
 .mobile-nav-toggle {
@@ -525,8 +555,8 @@ li {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-.navbar .dropdown-menu {
-  position: absolute;
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
 }
 
 .navbar-mobile .dropdown ul li {
@@ -852,10 +882,11 @@ section {
 
 #home #hero {
   height: 610px;
+  max-width: 930px;
 }
 
 .home-inner-text {
-  width: 610px;
+  max-width: 610px;
   height: 438px !important;
   margin-left: 82.86px;
   margin-top: 89px;
@@ -915,6 +946,17 @@ section {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  #home {
+    max-width: 85% !important;
+  }
+
+  #home .inner-home {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 /* webApp
 --------------------------------*/
 
@@ -967,7 +1009,9 @@ section {
   padding: 50px 25px 12px 35px !important;
   border: 1px solid var(--grey-ligth);
   box-shadow: 4px 0px 10px var(--grey-ligth);
-  max-width: 402px;
+  width: 402px;
+  min-width: fit-content;
+
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -1012,128 +1056,18 @@ section {
   }
 }
 
+@media (min-width: 1500px) {
+  #webApp .mobile-card {
+    width: auto;
+  }
+}
+
 @media (max-width: 1500px) {
   #webApp .howWorks {
     padding: 0px 10px;
   }
 
   #webApp .container {
-    max-width: 95% !important;
-  }
-}
-
-/* webApp-1 ---------
---------------------------------*/
-
-#webApp-1 {
-  background-color: var(--blanco);
-  padding: 70px 0;
-}
-
-.background {
-  background-color: var(--background-ligth) !important;
-}
-
-#webApp-1 .card img {
-  width: 56px;
-  height: 56px;
-}
-
-#webApp-1 h1 {
-  text-align: center;
-  font-weight: 500;
-  position: relative;
-  color: var(--azul-primario);
-  font-weight: 600;
-  font-size: 36px;
-}
-
-#webApp-1 h4 {
-  font-weight: 600;
-  color: var(--azul-primario);
-}
-
-#webApp-1 h6 {
-  font-weight: 600;
-}
-
-#webApp-1 p {
-  line-height: 29px;
-  padding: 8px 0px;
-  opacity: 0.8;
-}
-
-#webApp-1 .content {
-  padding: 10px 0px;
-  border-radius: 10px;
-  /* box-shadow: 0 2px 8px -2px hsla(0,0%,9%,.08), 0 8px 12px -2px hsla(0,0%,9%,.16); */
-  /* max-width: 80%; */
-}
-
-#webApp-1 .card {
-  flex: 1 1 auto;
-  padding: 15px 0;
-  border: 0px;
-  background: initial;
-}
-
-#webApp-1 .card .title {
-  display: flex;
-  padding-bottom: 25px;
-}
-
-#webApp-1 .mobile-card {
-  padding: 50px 25px 34px 35px !important;
-  border: 1px solid var(--grey-ligth);
-  box-shadow: 4px 0px 10px var(--grey-ligth);
-  height: 310px;
-  min-height: 310px;
-}
-
-#webApp-1 .mobile-card img {
-  max-width: 35px;
-  margin-bottom: 4px;
-}
-
-#webApp-1 .mobile-card h4 {
-  color: var(--blue-light);
-  font-weight: 600;
-  padding-left: 15px;
-  vertical-align: bottom;
-  align-items: end;
-  display: grid;
-}
-
-#webApp-1 .howWorks {
-  padding: 0px 50px;
-}
-
-#webApp-1 .margin-img {
-  margin-top: 65px;
-}
-
-@media (max-width: 1000px) {
-  #webApp-1 .cardLong {
-    max-width: 100%;
-  }
-
-  #webApp-1 li {
-    font-size: var(--fs-sm);
-  }
-
-  #webApp-1 .margin-img {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 1500px) {
-  #webApp-1 .howWorks {
-    padding: 0px 10px;
-  }
-}
-
-@media (max-width: 1300px) {
-  #webApp-1 .container {
     max-width: 95% !important;
   }
 }
@@ -1272,6 +1206,31 @@ section {
   font-weight: 100;
 }
 
+/* Facturacion Section
+--------------------------------*/
+#facturacion {
+  padding: 31px 0;
+  color: var(--blanco);
+  background-color: var(--blue-light);
+}
+
+#facturacion .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#facturacion h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 1000px) {
+  #facturacion {
+    padding: 31px 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # measures Section
 --------------------------------------------------------------*/
@@ -1366,34 +1325,76 @@ section {
 --------------------------------------------------------------*/
 
 #methodology {
-  padding: 70px 0 0px 0;
+  padding: 0 88px 0 95px;
+
+  max-height: 574px;
 }
 
 #methodology .body {
-  padding: 30px 0px;
+  margin-top: 72px;
+  max-width: 500px;
+  max-height: 398px;
 }
 
 #methodology h1 {
+  font-size: 36px;
+  line-height: 50px;
   color: var(--azul-primario);
+  margin: 0px;
 }
 
-#methodology li {
-  padding-block: 10px;
+#methodology .body-list {
+  margin-top: 42px;
+  gap: 34px;
+}
+
+#methodology h2 {
   color: var(--negro);
-  /* opacity: 0.8;   */
-  font-size: var(--fs-li);
-  line-height: 34px;
-}
-
-#methodology .btn {
-  padding: 8px 40px;
-  border: 2px solid var(--blue-light);
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 400;
 }
 
 @media (max-width: 1000px) {
-  #methodology .btn {
-    width: 100%;
+  #methodology {
+    padding: 20px;
+    min-height: 900px !important;
+  }
+
+  #methodology .body {
+    margin-top: 30px;
+    max-width: 500px;
+    min-height: 600px !important;
+  }
+}
+
+/* Objetivo Section
+--------------------------------*/
+#objetivo {
+  padding: 31px 0;
+  color: var(--blanco);
+  background-color: var(--blue-light);
+  margin: 48px 0px;
+}
+
+#objetivo .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#objetivo h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+  #objetivo {
+    padding: 31px 20px;
+    color: var(--blanco);
+    background-color: var(--blue-light);
+    margin: 48px 0px;
   }
 }
 
@@ -1488,44 +1489,53 @@ section {
 --------------------------------------------------------------*/
 
 #additional-service {
-  background-color: var(--background-ligth);
-  padding: 0px 0 30px 0;
+  max-height: 574px;
+  padding: 0px 133px 0px 81px;
 }
 
 #additional-service .body {
-  padding: 40px 0px 0px 15px;
+  max-width: 586.13px;
+  max-height: 324px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-top: 64px;
+}
+
+#additional-service .inner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 #additional-service h1 {
   color: var(--azul-primario);
-}
-
-#additional-service ul {
-  margin: 20px 0px;
-}
-
-#additional-service li {
-  padding-block: 10px;
-  color: var(--negro);
-  font-size: var(--fs-li);
-  line-height: 30px;
+  font-size: 36px !important;
+  line-height: 50px;
+  font-weight: 600;
+  margin-bottom: 42px;
 }
 
 #additional-service i {
   font-size: var(--fs-i);
   color: var(--blue-light);
-}
-
-#additional-service .btn {
-  padding: 8px 40px;
-  border: 2px solid var(--blue-light);
-  line-height: 28px;
-  margin-bottom: 18px;
+  margin-right: 24px;
 }
 
 @media (max-width: 1000px) {
-  #additional-service .btn {
-    width: 100%;
+  #additional-service {
+    min-height: 874px;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  #additional-service .body {
+    min-height: 550px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -1534,11 +1544,15 @@ section {
 --------------------------------------------------------------*/
 #prices {
   background-color: var(--blanco);
-  padding: 50px 0;
+  padding: 50px 0 30px 0;
 }
 
 #prices .container {
   max-width: 90% !important;
+}
+
+#prices .cards-main-container {
+  margin-top: 60px;
 }
 
 #prices h1 {
@@ -1576,7 +1590,7 @@ section {
   flex-direction: column;
   padding: 40px 30px;
   gap: 22px;
-  width: 311px;
+  min-width: 311px;
   height: 859px;
 }
 
@@ -1775,7 +1789,7 @@ section {
 #help,
 #capitalize {
   color: var(--blanco);
-  padding: 40px 0;
+  margin-top: 57px;
 }
 
 #help .frame,
@@ -1832,6 +1846,10 @@ section {
   border: 2px solid var(--celeste-secundario);
   color: var(--blanco);
   background-color: var(--blue-light);
+}
+
+#help .saber-mas-btns {
+  gap: 19px;
 }
 
 @media (max-width: 800px) {
@@ -2242,7 +2260,7 @@ section {
   background-color: var(--blue-light);
   padding: 30px 20px 40px;
   color: #f7f7ee;
-  margin-top: 70px;
+  margin-top: 102px;
 }
 
 #footer p {
@@ -2378,15 +2396,6 @@ section {
   width: 100%;
   border: rgba(43, 43, 43, 0.1) 1px solid;
   margin-top: 24px;
-}
-
-.methodology {
-  line-height: 32px;
-}
-.methodology-group {
-  max-width: 500px;
-  margin-top: 42px;
-  margin-bottom: 37px;
 }
 
 /* -----------------Testimonials 2 ------------*/

@@ -131,7 +131,19 @@
     function (e) {
       if (select("#navbar").classList.contains("navbar-mobile")) {
         e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
+        let dropdownContent = this.nextElementSibling;
+
+        if (dropdownContent.classList.contains("dropdown-active")) {
+          dropdownContent.classList.remove("dropdown-active");
+        } else {
+          // Close all other dropdowns
+          select(".navbar .dropdown-active", true).forEach((el) => {
+            el.classList.remove("dropdown-active");
+          });
+
+          // Open this dropdown
+          dropdownContent.classList.add("dropdown-active");
+        }
       }
     },
     true

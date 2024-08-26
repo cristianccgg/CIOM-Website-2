@@ -135,78 +135,44 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 Soluciones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a
-                    id="dropdown_item_1"
-                    class="dropdown-item"
-                    href="indicadores.html"
-                    >Indicadores de Gestión</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_2"
-                    class="dropdown-item nav-text"
-                    href="cliente-misterioso.html"
-                    >Cliente Misterioso</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_3"
-                    class="dropdown-item"
-                    href="auditorias.html"
-                    >Inspección</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_4"
-                    class="dropdown-item"
-                    href="monitoreo.html"
-                    >Monitoreo de competencia</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_5"
-                    class="dropdown-item"
-                    href="monitoreo.html"
-                    >Encuestas</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_6"
-                    class="dropdown-item"
-                    href="monitoreo.html"
-                    >Auditorias</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_7"
-                    class="dropdown-item"
-                    href="monitoreo.html"
-                    >Sistemas y Automatización</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_8"
-                    class="dropdown-item"
-                    href="monitoreo.html"
-                    >Tercerización de Operación</a
-                  >
-                </li>
-                <li>
-                  <a
-                    id="dropdown_item_9"
-                    href="ciomers.html"
-                    class="nav-link scrollto"
-                    >Quiero ser CIOMER</a
-                  >
-                </li>
+                <div class="dropdown-item">
+                  <h1>Gestión</h1>
+                  <h2>Indicadores de Gestión (KPIs)</h2>
+                  <h2>¿Qué son y cómo se usan?</h2>
+                  <div>
+                    <h2>Los más importantes:</h2>
+                    <h2>#1 La Experiencia</h2>
+                    <h2>#2 La Operación</h2>
+                    <h2>#3 La Competencia</h2>
+                    <h2>#4 El Cliente</h2>
+                    <h2>#5 Auditoria</h2>
+                  </div>
+                </div>
+                
+                <div class="dropdown-item dropdown-item-2">
+                  <h1>Operación</h1>
+                  <h2>Sistematización / Automatización (App)</h2>
+                  <h2>¿Cómo lo logro?</h2>
+                  <div>
+                    <h2>Las Herramientas:</h2>
+                    <h2>Plataforma Web</h2>
+                    <h2>Aplicación Móvil</h2>
+                  </div>
+                </div>
+                
+                <div class="dropdown-item dropdown-item-3">
+                  <h1>Ejecución</h1>
+                  <h2>Tercerización (Uberización)</h2>
+                  <h2>¿Cómo puedo uberizar mi operación?</h2>
+                  <div>
+                    <h2>Servicios Uberizables:</h2>
+                    <h2>Evaluaciones</h2>
+                    <h2>Inspecciones</h2>
+                    <h2>Monitoreo</h2>
+                    <h2>Encuestas</h2>
+                    <h2>Auditorias</h2>
+                  </div>
+                </div>
               </ul>
             </li>
             <li>
@@ -239,6 +205,14 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 href="inversionistas.html"
                 class="nav-link scrollto"
                 >Inversionistas</a
+              >
+            </li>
+            <li>
+              <a
+                id="dropdown_item_9"
+                href="ciomers.html"
+                class="nav-link scrollto"
+                >Quiero ser CIOMER</a
               >
             </li>
           </ul>
@@ -285,7 +259,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
             class="btn btn-header"
             id="header_btn"
           >
-            Comenzar
+            Solicitar asesor
           </a>
         </div>
       </div>
@@ -295,9 +269,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
   <main id="main">
 
-    <section id="home" >
+    <section class="mx-auto" id="home" >
 
-      <div class="d-flex flex-column flex-md-row"   data-aos="fade-up">           
+      <div class="inner-home d-flex flex-column flex-md-row"   data-aos="fade-up">           
                 
         <div class="col order-md-2">
               <div class="home-inner-text p-md-0">
@@ -330,7 +304,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
         </div>
         <div class="col p-md-0" data-aos="zoom-out" data-aos-delay="200">
           <img id="hero" src="assets/img/CIOM-2/Home/hhero 1.png" alt="Mediciones-CIOM" class="image-slide"> 
- </div>   
+        </div>   
       </div>
 
     </section>
@@ -914,7 +888,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
           </div>       
         </div> 
 
-        <div class="row">        
+        <div class="row cards-main-container">        
             <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
               <div class="mb-s3">                
                 <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
@@ -1211,7 +1185,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
     </section>
 
-    <section id="fortune">
+    <section id="facturacion">
       <div>
         <h1>Consulte por facturación local en la moneda local de su país</h1>
       </div>
@@ -1308,27 +1282,20 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
       
 <section id="methodology" >
 
-  <div class="container">
+  <div class="">
       
     <div class="row"  data-aos="fade-up">
       
-      <div class="col-md-6 order-md-1" s>
+      <div class="col-md-6 order-md-1">
         
-      <div class="body">
+      <div class="body d-flex flex-column">
         <h1 id="methodology_title">La metodología empleada por las empresas exitosas</h1>
 
-        <ul>
-          <li id="methodology_item_1"> Al enfocar a su compañía a procesos de mejora continua usted va a conseguir Resultados Tangibles.</li>
-          <li id="methodology_item_2"> Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</li>
-          <li id="methodology_item_3"> El éxito es la habilidad de ir de un fracaso en otro sin perder el entusiasmo.  Henry Ford</li>                
-        </ul>
-
-        <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="btn btn-link"
-           id="methodology_btn"
-        >Comenzar</a>
+        <div class="body-list d-flex flex-column"> 
+          <h2 id="methodology_item_1">Al enfocar a su compañía a <strong>procesos de mejora</strong> continua usted va a conseguir <strong>Resultados Tangibles</strong>.</h2>
+          <h2 id="methodology_item_2">Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</h2>
+          <h2 id="methodology_item_3"><strong>“..El éxito es la habilidad de ir de un fracaso en otro sin perder el entusiasmo..”</strong>  Henry Ford</li>                
+        </div>       
       
       </div>
     </div>
@@ -1344,7 +1311,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
 </section>
 
-<section id="fortune">
+<section id="objetivo">
   <div>
     <h1>Nuestro objetivo es que usted alcance el suyo</h1>
   </div>
@@ -1352,48 +1319,39 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
 <section id="additional-service" >
 
-  <div class="container">
+  <div class="">
       
     <div class="row" data-aos="fade-up">
       
       <div class="col-md-6 order-md-1 order-2">
         <div data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide">
+          <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide p-0">
         </div>
       </div>
       
       <div class="col-md-6 order-md-2 order-1">
         
         <div class="body">
-          <h1 id="additional_title">Un equipo especializado listo para facilitarle el proceso de mejora</h1>
-          <ul>
-            <li>
+          <h1 id="additional_title">¿Necesita ayuda de <br> profesionales en la materia?</h1>
+          <div class="inner-body">
+            <div>
               <i class="bi bi-check-lg"></i>          
-              <span id="additional_item_1">Ayudarlos a definir indicadores simples y efectivos para que mejore su negocio</span>
-            </li>
-            <li>
+              <span id="additional_item_1">Asesoría para identificar los mejores KPIs para usted</span>
+            </div>
+            <div>
               <i class="bi bi-check-lg"></i>          
-              <span id="additional_item_2">Apoyarlos con la configuración inicial del sistema para que ahorren tiempo</span>
-            </li>
-            <li>
+              <span id="additional_item_2">Apoyo para la configuración y gestión del sistema</span>
+            </div>
+            <div>
               <i class="bi bi-check-lg"></i>          
-              <span id="additional_item_3">Acompañarlos en su proceso de mejora por el tiempo que lo necesiten</span>
-            </li>
-            <li>
+              <span id="additional_item_3">Acompañamiento en su proceso de mejora</span>
+            </div>
+            <div>
               <i class="bi bi-check-lg"></i>          
-              <span id="additional_item_4"> Adaptar y Ejecutar el Programa Integral de Mejora by</span>
-            </li>
-            <li>
-              <i class="bi bi-check-lg"></i>          
-              <span id="additional_item_5"> CIOMERS (Modelo Uber, independientes que le hacen sus tareas de campo)</span>
-            </li>
-          </ul>
-          <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="btn btn-link"
-            id="additional_btn"
-          >Contactar con ventas</a>            
+              <span id="additional_item_4">Diseño de Programas Integrales de Mejora</span>
+            </div>            
+          </div>
+                    
         </div>
 
       </div>
@@ -1420,21 +1378,23 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                   <h1 id="help_title">¿Quiere saber más?</h1>
                   <p id="help_description">Estamos para solucionar sus dudas.</p>
                 </div>
-                <a
-                  id="capitalize_btn"
-                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Solicitar asesor</a
-                >
-                <a
-                  id="help1_btn"
-                  href="faq.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Preguntas frecuentes</a>                
+                <div class="saber-mas-btns d-flex flex-column">
+                  <a
+                    id="capitalize_btn"
+                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                    >Solicitar asesor</a
+                  >
+                  <a
+                    id="help1_btn"
+                    href="faq.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                    >Preguntas frecuentes</a>
+                </div>           
               </div>
             </div>
           </div>
@@ -1460,8 +1420,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
           src="./assets/img/logo2.png"
         />
         <p id="footer_description">
-          Nos hemos posicionado como la empresa líder en mediciones para alimentar
-          indicadores de mejora contínua. <br />¿Qué quieren mejorar?
+          Se posicionó como la solución <br> integral para compañías que buscan <br> mejorar su negocio.
         </p>
       </div>
   
