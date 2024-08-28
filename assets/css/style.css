@@ -894,7 +894,7 @@ section {
 
 .home-inner-text ul {
   margin-top: 28px !important;
-  margin-bottom: 86px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -908,6 +908,7 @@ section {
   line-height: 55px;
   font-size: 40px;
   color: var(--azul-primario);
+  height: 165px;
 }
 
 #home h2 {
@@ -963,7 +964,7 @@ section {
 #webApp {
   background-color: var(--blanco);
   padding-top: 87.3px;
-  padding-bottom: 27px;
+  padding-bottom: 115px;
 }
 
 .background {
@@ -991,7 +992,8 @@ section {
 
 #webApp h6 {
   font-size: 16px !important;
-  font-weight: 600;
+  font-weight: 500;
+  opacity: 40%;
   margin-top: 24px;
 }
 
@@ -1011,7 +1013,6 @@ section {
   box-shadow: 4px 0px 10px var(--grey-ligth);
   width: 402px;
   min-width: fit-content;
-
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -1023,6 +1024,7 @@ section {
   width: 22px;
   height: 21px;
   margin-right: 8px;
+  opacity: 40%;
 }
 
 #webApp .mobile-card img {
@@ -1186,9 +1188,9 @@ section {
 /* fortune Section
 --------------------------------*/
 #fortune {
-  padding: 55px 0;
-  color: var(--blanco);
-  background-color: var(--blue-light);
+  padding: 55px 0 !important;
+  color: var(--blanco) !important;
+  background-color: var(--blue-light) !important;
 }
 
 #fortune strong {
@@ -1236,7 +1238,6 @@ section {
 --------------------------------------------------------------*/
 
 #measures {
-  background-color: var(--background-ligth);
   padding: 86.56px 0 67.44px 0;
 }
 
@@ -1244,10 +1245,6 @@ section {
   color: var(--azul-primario);
   text-align: center;
   font-weight: 500;
-}
-
-#measuresItem {
-  background-color: var(--background-ligth);
 }
 
 .card-body {
@@ -1268,6 +1265,13 @@ section {
 
 .body ul li {
   padding: 0 !important;
+}
+
+.body ul li a {
+  color: var(--azul-primario);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
 }
 
 #measuresItem .container {
@@ -1551,6 +1555,13 @@ section {
   max-width: 95% !important;
 }
 
+#prices .container h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
 #prices .cards-main-container {
   margin-top: 16px !important;
 }
@@ -1559,6 +1570,7 @@ section {
   color: var(--azul-primario);
   text-align: center;
   font-weight: 500;
+  font-size: 36px;
 }
 
 #prices .price-switch {
@@ -1567,9 +1579,9 @@ section {
   font-weight: 600;
   justify-content: center;
   gap: var(--gap-xs);
-  padding: 15px;
   font-size: 15px;
   color: var(--blue-light);
+  margin-bottom: 5px;
 }
 
 #prices .row {
