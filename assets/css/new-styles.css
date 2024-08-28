@@ -28,7 +28,7 @@ body {
 /* -----Cliente misterioso-------- */
 
 #cliente-misterioso {
-  background-image: url("../img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
+  background-image: url("../img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/woman-surrounded-by-bags-pile 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,8 +38,8 @@ body {
 
 #cliente-misterioso h1 {
   font-size: 40px;
-  font-weight: 600;
-  padding-top: 170px;
+  font-weight: 500;
+  padding-top: 160px;
 }
 
 #cliente-misterioso-description .header-row-container {
@@ -70,18 +70,18 @@ body {
   #cliente-misterioso h1 {
     font-size: 40px;
     font-weight: 600;
-    width: 489px;
+    width: 331px;
     height: 55px;
     margin-left: 66px;
-    padding: 0;
+    padding-top: 172px;
   }
 
   #cliente-misterioso-description {
     height: 460px !important;
     width: 100%;
     padding-top: 116px !important;
-    padding-left: 134px;
-    padding-right: 135px;
+    padding-left: 103px;
+    padding-right: 94px;
   }
 
   #cliente-misterioso-description .header-row-container {
@@ -95,7 +95,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     line-height: 38px;
-    max-width: 596px !important;
+    max-width: 638px !important;
     height: 228px !important;
   }
 
@@ -334,7 +334,7 @@ body {
 }
 
 .btn-hero-width {
-  width: 180px !important;
+  min-width: 180px !important;
   height: 52px;
 }
 
@@ -380,14 +380,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  #cliente-misterioso {
-    gap: 36px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 147px;
-    justify-content: unset;
-  }
-
   #empresas-cliente-misterioso .datos,
   #empresas-monitoreo .datos {
     gap: 13px !important;
@@ -548,41 +540,34 @@ body {
 /*--------------------------------------------------------------
 # prices Section
 --------------------------------------------------------------*/
-#prices {
+#prices2 {
   background-color: var(--blanco);
   padding: 79px 0 100px 0 !important;
 }
 
-#prices .container {
+#prices2 .container {
   max-width: 90% !important;
 }
 
-#prices .price-cards-container {
+#prices2 .price-cards-container {
   margin-top: 60px;
 }
 
-#prices .row {
+#prices2 .row {
   display: flex;
   justify-content: center; /* Centrar el contenido de la segunda fila */
 }
 
-#prices #prices_cliente_title_1 {
-  margin-bottom: 71px;
-  color: var(--blue-light);
-}
-
-#prices h1 {
+#prices2 h1 {
   color: var(--azul-primario);
   text-align: center;
+  font-size: 36px;
   font-weight: 500;
   line-height: 50px;
+  margin-bottom: 24px;
 }
 
-#prices h1 a {
-  color: var(--blue-light) !important;
-}
-
-#prices .price-switch {
+#prices2 .price-switch {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -591,9 +576,20 @@ body {
   padding: 15px;
   font-size: 15px;
   color: var(--blue-light);
+  margin-top: 24px;
 }
 
-#prices .row {
+#prices2 #seleccion_btn {
+  width: 260px;
+  height: 52px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 4px !important;
+  color: var(--blue-light);
+  border: var(--blue-light) 1px solid;
+}
+
+#prices2 .row {
   flex-direction: row;
   align-items: center;
   padding: 10px;
@@ -601,7 +597,7 @@ body {
   align-items: end;
 }
 
-#prices .card {
+#prices2 .card {
   flex: 1;
   box-shadow: 34.9px 29.6px 48.34px rgba(51, 102, 255, 0.05);
   border-radius: 20px;
@@ -612,10 +608,10 @@ body {
   padding: 40px 30px;
   gap: 22px;
   width: 320px;
-  height: 340px !important;
+  height: 410px !important;
 }
 
-#prices .card:hover {
+#prices2 .card:hover {
   flex: 1;
   border-radius: 20px;
   background-color: #fff;
@@ -629,7 +625,7 @@ body {
   min-width: 300px;
 }
 
-#prices .card-body-header {
+#prices2 .card-body-header {
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
@@ -637,7 +633,7 @@ body {
   justify-content: flex-start;
 }
 
-#prices .card-body-header .content {
+#prices2 .card-body-header .content {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -645,7 +641,7 @@ body {
   justify-content: flex-start;
 }
 
-#prices .card-body-header .content .icon {
+#prices2 .card-body-header .content .icon {
   width: 42px;
   position: relative;
   height: 42px;
@@ -653,7 +649,7 @@ body {
   flex-shrink: 0;
 }
 
-#prices .card-body-header .content .title {
+#prices2 .card-body-header .content .title {
   flex: 1;
   position: relative;
   line-height: 150%;
@@ -662,7 +658,7 @@ body {
   font-size: var(--fs-h2) !important;
 }
 
-#prices .card-body-header .description {
+#prices2 .card-body-header .description {
   align-self: stretch;
   position: relative;
   line-height: 25px;
@@ -674,24 +670,24 @@ body {
   min-width: 251px;
 }
 
-#prices .price {
+#prices2 .price {
   flex-direction: row;
   align-items: center;
   color: #2d2d2d;
 }
 
-#prices .price .content {
+#prices2 .price .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-#prices .price .content h4 {
+#prices2 .price .content h4 {
   font-size: 16px;
 }
 
-#prices .price .content .d {
+#prices2 .price .content .d {
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -700,29 +696,29 @@ body {
   gap: 18px;
 }
 
-#prices .price .content .d .value {
+#prices2 .price .content .d .value {
   position: relative;
   letter-spacing: -0.02em;
   display: flex;
   align-items: baseline;
 }
 
-#prices .price .content .d .value .span-numb {
+#prices2 .price .content .d .value .span-numb {
   font-size: 22px !important;
   margin-left: 12.5px;
 }
 
-#prices .price .content .d .span {
+#prices2 .price .content .d .span {
   font-size: 50px !important;
   font-weight: 700 !important;
 }
 
-#prices .price .content .d span {
+#prices2 .price .content .d span {
   font-size: 22px !important;
   font-weight: 700 !important;
 }
 
-#prices .price .content .d .info {
+#prices2 .price .content .d .info {
   /* width: 122px; */
   position: relative;
   font-size: var(--fs-li-sm);
@@ -734,22 +730,22 @@ body {
   opacity: 0.6;
 }
 
-#prices .price .content .d .custom {
+#prices2 .price .content .d .custom {
   font-size: 18px;
   font-weight: 600;
 }
 
-#prices .price .content .d .info .item {
+#prices2 .price .content .d .info .item {
   margin: 0;
   font-size: 12px !important;
 }
 
-#prices i {
+#prices2 i {
   font-size: var(--fs-i);
   color: var(--blue-light);
 }
 
-#prices .pricing-features {
+#prices2 .pricing-features {
   align-self: stretch;
   display: flex;
   font-size: 16px !important;
@@ -760,7 +756,7 @@ body {
   gap: 16px;
 }
 
-#prices .pricing-features .item .text {
+#prices2 .pricing-features .item .text {
   flex: 1;
   position: relative;
   font-weight: 500;
@@ -769,11 +765,11 @@ body {
 }
 
 @media (max-width: 800px) {
-  #prices .container {
+  #prices2 .container {
     max-width: 95% !important;
   }
 
-  #prices .price-switch-text {
+  #prices2 .price-switch-text {
     display: none;
   }
 }
@@ -804,6 +800,129 @@ body {
   }
 }
 
+/*--------------------------------------------------------------
+# measures 2 Section
+--------------------------------------------------------------*/
+
+#measures2 {
+  background-color: var(--background-ligth);
+  padding: 86.56px 0 67.44px 0;
+}
+
+#measures2 h1 {
+  color: var(--azul-primario);
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+#measuresItem2 {
+  background-color: var(--background-ligth);
+}
+
+.card-body {
+  width: 233.4px;
+  height: 130px;
+  padding: 0px;
+}
+
+#measuresItem2 .title:hover {
+  background-color: var(--green);
+}
+
+.body ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body ul li {
+  padding: 0 !important;
+}
+
+#measuresItem2 .container {
+  max-width: 95% !important;
+}
+
+#measuresItem2 h1 {
+  color: var(--blue-light);
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+#measures2 h2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#measuresItem2 .body {
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+}
+
+.measures-inner {
+  gap: 40px;
+  padding: 45px 0px;
+}
+
+#measuresItem2 .title {
+  padding: 15px 10px;
+  line-height: 28px;
+  background-color: var(--blue-light);
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 16px !important;
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .card-body {
+    width: 100%;
+    height: 130px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #measuresItem2 .container {
+    max-width: 100% !important;
+  }
+}
+
+/* Objetivo Section
+--------------------------------*/
+#objetivo {
+  padding: 31px 0;
+  color: var(--blanco);
+  background-color: var(--blue-light);
+  margin: 48px 0px;
+}
+
+#objetivo .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#objetivo h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+  #objetivo {
+    padding: 31px 20px;
+    color: var(--blanco);
+    background-color: var(--blue-light);
+    margin: 48px 0px;
+  }
+}
+
 /* ------------------capitalize----------- */
 
 .capitalize-title {
@@ -823,7 +942,7 @@ body {
 /* ------------Auditorias ------------------*/
 
 #auditorias {
-  background-image: url("../img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
+  background-image: url("../img/CIOM-2/Inspeccion/home.ciom.tech/medicion/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -831,16 +950,9 @@ body {
   max-height: 401px;
 }
 
-.header-auditorias {
-  gap: 36px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 128px;
-}
-
-#auditorias .title {
+#auditorias h1 {
+  padding-top: 160px;
   font-size: 40px;
-  font-weight: 600;
 }
 
 #auditorias-description .header-row-container {
@@ -863,36 +975,38 @@ body {
   color: black;
 }
 
-@media screen and (min-width: 768px) {
-  .header-auditorias {
-    gap: 36px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 148px;
-  }
-
-  #auditorias .title {
+@media screen and (min-width: 1035px) {
+  #auditorias h1 {
     font-size: 40px;
     font-weight: 600;
-    line-height: 55px;
+    width: 215px;
+    height: 55px;
+    padding-left: 103px !important;
+    padding-top: 172px !important;
+    padding: 0;
   }
 
   #auditorias-description {
-    height: 460px !important;
-    padding-top: 154px !important;
+    min-height: 460px !important;
+    width: 100%;
+    padding-top: 116px !important;
+    padding-left: 124px;
+    padding-right: 125px;
   }
 
   #auditorias-description .header-row-container {
     gap: 120px;
     padding: 0px;
-    height: 162px;
+    min-height: 228px !important;
+    width: 100%;
   }
 
   #auditorias-description .header-info-container-1 {
     font-size: 22px;
     font-weight: 600;
     line-height: 38px;
-    height: 152px;
+    max-width: 662px !important;
+    height: 228px !important;
   }
 
   #auditorias-description .header-info-container-2 {
@@ -916,22 +1030,19 @@ body {
 /* ------------Monitore de competencia ------------------*/
 
 #monitoreo {
-  background-image: url("../img/Crowdsourcing/Monitoreo/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
+  background-image: url("../img/CIOM-2/Monitoreo/home.ciom.tech/medicion/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
   max-height: 401px;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
 }
 
 #monitoreo h1 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 55px;
-  padding-top: 85px;
+  padding-top: 160px;
 }
 
 #monitoreo-description .header-row-container {
@@ -968,7 +1079,7 @@ body {
   margin-top: 50px !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1018px) {
   #empresas-monitoreo {
     height: 470px;
     padding-top: 79px !important;
@@ -988,8 +1099,12 @@ body {
   #monitoreo h1 {
     font-size: 40px;
     line-height: 55px;
-    padding-top: 148px;
+    width: 533px;
+    text-wrap: nowrap;
+    padding-left: 103px;
+    padding-top: 172px;
   }
+
   #cliente-misterioso h1 {
     font-size: 40px;
     font-weight: 600;
@@ -997,23 +1112,711 @@ body {
 
   #monitoreo-description {
     height: 460px !important;
-    padding-top: 149px !important;
+    width: 100%;
+    padding-top: 135px !important;
+    padding-left: 116px;
+    padding-right: 119px;
   }
 
   #monitoreo-description .header-row-container {
     gap: 120px;
     padding: 0px;
-    height: 162px;
+    height: 190px;
+    width: 100%;
   }
 
   #monitoreo-description .header-info-container-1 {
     font-size: 22px;
     font-weight: 600;
     line-height: 38px;
+    max-width: 606px !important;
+    height: 190px !important;
   }
 
   #monitoreo-description .header-info-container-2 {
+    height: 190px;
+  }
+}
+
+/* webApp-4
+--------------------------------*/
+
+#webApp-4 {
+  background-color: var(--blanco);
+  padding-top: 42.3px;
+  padding-bottom: 27px;
+  margin-bottom: 43px;
+}
+
+.background {
+  background-color: var(--background-ligth) !important;
+}
+
+.webapp-items {
+  gap: 25.5px;
+}
+
+#webApp-4 h1 {
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  color: var(--azul-primario);
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+#webApp-4 h4 {
+  font-weight: 600;
+  color: var(--azul-primario);
+  padding: 0 !important;
+  margin: 0% !important;
+}
+
+#webApp-4 h6 {
+  font-size: 16px !important;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+#webApp-4 p {
+  line-height: 29px;
+  padding: 12px 0px 49px 0px;
+  opacity: 0.8;
+}
+
+#webApp-4 .card .title {
+  display: flex;
+}
+
+#webApp-4 .mobile-card {
+  padding: 50px 25px 12px 35px !important;
+  border: 1px solid var(--grey-ligth);
+  box-shadow: 4px 0px 10px var(--grey-ligth);
+  width: 678px;
+  min-width: fit-content;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.webapp-img {
+  height: 178px !important;
+}
+
+#webApp-4 .mobile-card h4 {
+  color: var(--blue-light);
+  font-weight: 600;
+  vertical-align: bottom;
+  align-items: end;
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  #webApp-4 .card {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  #webApp-4 p {
+    line-height: 29px;
+    padding: 8px 0px;
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 1500px) {
+  #webApp-4 .mobile-card {
+    width: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  #webApp-4 .howWorks {
+    padding: 0px 10px;
+  }
+
+  #webApp-4 .container {
+    max-width: 95% !important;
+  }
+}
+
+/* -----Encuestas-------- */
+
+#encuestas {
+  background-image: url("../img/CIOM-2/Encuestas/home.ciom.tech/medicion/image 106.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+}
+
+#encuestas h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 160px;
+}
+
+#encuestas-description .header-row-container {
+  padding: 15px;
+}
+
+#encuestas-description .header-info-container-1 {
+  color: var(--azul-primario);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 530px;
+}
+
+#encuestas-description .header-info-container-2 {
+  color: var(--azul-primario);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
+
+#empresas-monitoreo .datos {
+  gap: 50px !important;
+}
+
+@media screen and (min-width: 900px) {
+  #encuestas h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 200px !important;
+    height: 55px;
+    margin-left: 103px;
+    padding-top: 172px;
+  }
+
+  #encuestas-description {
+    height: 460px !important;
+    width: 100%;
+    padding-top: 116px !important;
+    padding-left: 103px;
+    padding-right: 94px;
+  }
+
+  #encuestas-description .header-row-container {
+    gap: 120px;
+    padding: 0px;
+    height: 228px;
+    width: 100%;
+  }
+
+  #encuestas-description .header-info-container-1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 38px;
+    max-width: 611px !important;
+    height: 228px !important;
+  }
+
+  #encuestas-description .header-info-container-2 {
     height: 162px;
+    max-width: 455px;
+  }
+}
+
+/* webApp-5 (encuestas)
+--------------------------------*/
+
+#webApp-5 {
+  background-color: var(--blanco);
+  padding-top: 87px;
+  padding-bottom: 103px;
+}
+
+.background {
+  background-color: var(--background-ligth) !important;
+}
+
+.webapp-items {
+  gap: 25.5px;
+}
+
+#webApp-5 h1 {
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  color: var(--azul-primario);
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+#webApp-5 h4 {
+  font-weight: 600;
+  color: var(--azul-primario);
+  padding: 0 !important;
+  margin: 0% !important;
+}
+
+#webApp-5 h6 {
+  font-size: 16px !important;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+#webApp-5 p {
+  line-height: 29px;
+  padding: 12px 0px 0px 0px;
+  opacity: 0.8;
+}
+
+#webApp-5 .card .title {
+  display: flex;
+}
+
+#webApp-5 .mobile-card {
+  padding: 50px 25px 40px 35px !important;
+  border: 1px solid var(--grey-ligth);
+  box-shadow: 4px 0px 10px var(--grey-ligth);
+  width: 678px;
+  min-width: fit-content;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#webApp-5 .mobile-card h4 {
+  color: var(--blue-light);
+  font-weight: 600;
+  vertical-align: bottom;
+  align-items: end;
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  #webApp-5 .card {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  #webApp-5 p {
+    line-height: 29px;
+    padding: 8px 0px;
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 1500px) {
+  #webApp-5 .mobile-card {
+    width: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  #webApp-5 .howWorks {
+    padding: 0px 10px;
+  }
+
+  #webApp-5 .container {
+    max-width: 95% !important;
+  }
+}
+
+/* ------------Auditorias 2 ------------------*/
+
+#auditorias2 {
+  background-image: url("../img/CIOM-2/Auditoria/home.ciom.tech/medicion/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+}
+
+#auditorias2 h1 {
+  padding-top: 160px;
+  font-size: 40px;
+}
+
+#auditorias2-description .header-row-container {
+  padding: 15px;
+}
+
+#auditorias2-description .header-info-container-1 {
+  color: var(--azul-primario);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 530px;
+}
+
+#auditorias2-description .header-info-container-2 {
+  color: var(--azul-primario);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
+
+@media screen and (min-width: 1035px) {
+  #auditorias2 h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 215px;
+    height: 55px;
+    padding-left: 103px !important;
+    padding-top: 172px !important;
+    padding: 0;
+  }
+
+  #auditorias2-description {
+    min-height: 460px !important;
+    width: 100%;
+    padding-top: 116px !important;
+    padding-left: 124px;
+    padding-right: 125px;
+  }
+
+  #auditorias2-description .header-row-container {
+    gap: 120px;
+    padding: 0px;
+    min-height: 228px !important;
+    width: 100%;
+  }
+
+  #auditorias2-description .header-info-container-1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 38px;
+    max-width: 615px !important;
+    height: 228px !important;
+  }
+
+  #auditorias2-description .header-info-container-2 {
+    height: 162px;
+  }
+}
+
+/* webApp-6 (auditoria)
+--------------------------------*/
+
+#webApp-6 {
+  background-color: var(--blanco);
+  padding-top: 87px;
+  padding-bottom: 103px;
+}
+
+.background {
+  background-color: var(--background-ligth) !important;
+}
+
+.webapp-items {
+  gap: 25.5px;
+}
+
+#webApp-6 h1 {
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  color: var(--azul-primario);
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+#webApp-6 h4 {
+  font-weight: 600;
+  color: var(--azul-primario);
+  padding: 0 !important;
+  margin: 0% !important;
+}
+
+#webApp-6 h6 {
+  font-size: 16px !important;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+#webApp-6 .kpi {
+  margin-top: 12px;
+}
+
+#webApp-6 .card .title {
+  display: flex;
+}
+
+#webApp-6 .mobile-card {
+  padding: 50px 25px 40px 35px !important;
+  border: 1px solid var(--grey-ligth);
+  box-shadow: 4px 0px 10px var(--grey-ligth);
+  width: 678px;
+  min-width: fit-content;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#webApp-6 .mobile-card h4 {
+  color: var(--blue-light);
+  font-weight: 600;
+  vertical-align: bottom;
+  align-items: end;
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  #webApp-6 .card {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  #webApp-6 p {
+    line-height: 29px;
+    padding: 8px 0px;
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 1500px) {
+  #webApp-6 .mobile-card {
+    width: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  #webApp-6 .howWorks {
+    padding: 0px 10px;
+  }
+
+  #webApp-6 .container {
+    max-width: 95% !important;
+  }
+}
+
+/* -----Indicadores de gestión-------- */
+
+#indicadores {
+  background-image: url("../img/CIOM-2/Indicadores de Gestion/home.ciom.tech/solucion/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 160px;
+}
+
+#indicadores h2 {
+  display: none;
+}
+
+#indicadores h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#indicadores-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#indicadores-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#indicadores-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#indicadores-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#empresas-monitoreo .datos {
+  gap: 50px !important;
+}
+
+@media screen and (min-width: 1300px) {
+  #indicadores {
+    padding-top: 150px;
+    padding-left: 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #indicadores h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #indicadores h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 449px !important;
+    height: 55px;
+  }
+
+  #indicadores-description {
+    height: 422px !important;
+    width: 100%;
+    padding-top: 116px !important;
+    padding-left: 103px;
+    padding-right: 94px;
+  }
+
+  #indicadores-description .header-row-container {
+    gap: 200px;
+    padding: 0px;
+    height: 222px;
+    max-width: 1158px;
+  }
+
+  #indicadores-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #indicadores-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 535px !important;
+    padding: 0%;
+    height: 228px !important;
+  }
+
+  #indicadores-description .header-info-container-2 {
+    height: 204px;
+    max-width: 430px !important;
+  }
+
+  #indicadores-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #indicadores-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 430px !important;
+  }
+
+  #indicadores-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* --------KPIs -----------*/
+
+#kpis .title {
+  margin-bottom: 19px;
+}
+
+#kpis .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+#kpis #kpis_item {
+  padding: 25px;
+}
+
+#kpis #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis #kpis_item .card {
+  border: none;
+}
+
+#kpis #kpis_item .card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+#kpis #kpis_item .card h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#kpis #kpis_item .card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis > div:nth-child(3) {
+  background-color: var(--background-ligth);
+}
+
+#kpis > div:nth-child(5) {
+  background-color: var(--background-ligth);
+}
+
+#kpis #kpis_item .card .seguir {
+  height: 24px;
+  width: 140.79px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 32px;
+}
+
+#kpis #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+#kpis #kpis_item button img {
+  width: 16.79px;
+  height: 16.79px;
+}
+
+#kpis #kpis_item .card a {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-decoration: underline;
+  width: 100%;
+  color: #363636;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis .title {
+    height: 137px;
+    margin-bottom: 19px;
+  }
+  #kpis #kpis_item {
+    padding-top: 45px;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 50px;
+  }
+
+  #kpis #kpis_item .card {
+    max-width: 500px;
+    border: none;
+  }
+
+  #kpis #kpis_item .kpi-img {
+    width: 100%;
   }
 }
 

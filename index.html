@@ -20,49 +20,7 @@
   
   
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const monthly = document.getElementById('prices_btn_monthly');
-      const annual = document.getElementById('prices_btn_annual');
-
-      monthly.addEventListener('click', function() {
-          updatePricing('monthly');
-      });
-
-      annual.addEventListener('click', function() {
-        updatePricing( 'annual');
-      });
-
-
-      function updatePricing(type) {
-        
-        const monthly = document.getElementById('prices_btn_monthly');
-        const annual = document.getElementById('prices_btn_annual');
-        const basic = document.querySelectorAll('.basic-price');
-        const advance = document.querySelectorAll('.advance-price');
-        const profesional = document.querySelectorAll('.profesional-price');
-      
-    
-        if (type === 'monthly') {
-          monthly.classList.remove('btn-secondary');
-          monthly.classList.add('btn-primary');
-          annual.classList.remove('btn-primary');
-          annual.classList.add('btn-secondary');
-          
-          basic[0].textContent = '19';
-          advance[0].textContent = '25';
-          profesional[0].textContent = '32';
-        } else {
-          monthly.classList.remove('btn-primary');
-          monthly.classList.add('btn-secondary');
-          annual.classList.remove('btn-secondary');
-          annual.classList.add('btn-primary');
-          
-          basic[0].textContent = '15';
-          advance[0].textContent = '20';
-          profesional[0].textContent = '25';
-        }
-      }
-      
+    document.addEventListener('DOMContentLoaded', function() {           
 
 
   function generateLogos(type) {
@@ -893,9 +851,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
               <div class="mb-s3">                
                 <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
                     <div class="card-body-header">
-                      <div class="content">
-                        <img class="icon" alt="" src="./assets/img/price_low.svg"/>            
-                        <div id="prices_item_basic_title" class="title">PYMES</div>
+                      <div class="content d-flex align-items-center">
+                        <img class="icon" alt="icono-basico" src="./assets/img/CIOM-2/iconos precios/home.ciom.tech/solucion/image 137.png"/>            
+                        <div id="prices_item_basic_title" class="title">Básico</div>
                       </div>
                       <div id="prices_item_basic_description" class="description">
                         Elimina todas las disputas al poder acompañar las decisiones con datos objetivos.
@@ -906,7 +864,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                           <div class="d">
                             <b class="value">
                               <span>US$</span>
-                              <span class="span basic-price">15</span>
+                              <span class="span basico-price d-flex align-items-center" id="basico-price">15</span>
                             </b>
                             
                             <div class="info">
@@ -920,41 +878,64 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                       </div>
                     </div>
                     <div class="pricing-features pricing-item">
-                      <h2>Soluciones</h2>
-                      <div class="item ">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
-                      </div>                                         
+                      <h2 id="soluciones">Soluciones</h2>                                                     
+                        <div class="item d-flex flex-column align-items-start gap-3">
+                          <div class="d-flex align-items-center gap-2">
+                            <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div class="grey-item" id="prices_item_basic_item_1" class="text">Operación (App)</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div class="grey-item" id="prices_item_basic_item_1" class="text">Ejecución (CIOMERS)</div>
+                          </div>
+                        </div>                                                               
                     </div>
                     <div class="pricing-features pricing-item-1">
                       <h2>Herramientas</h2>
-                      <div class="item">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
-                      </div>                                         
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div class="grey-item" id="prices_item_basic_item_1" class="text">Analitycs + Power Bi</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div class="grey-item" id="prices_item_basic_item_1" class="text">Api de Integración</div>
+                        </div>
+                      </div>                                                 
                     </div>
                     <div class="pricing-features pricing-item-2">
                       <h2>Extras</h2>
-                      <div class="item d-flex flex-column align-items-start">
-                         <div class="d-flex">
-                           <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                           <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
-                         </div>
-                         <div class="d-flex">
-                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                          <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
                         </div>
-                        
-                      </div>                                         
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Tutoriales</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div class="grey-item" id="prices_item_basic_item_1" class="text">Asesor en Línea</div>
+                        </div>
+                      </div>                                          
                     </div>
-                    <!-- <a
+                    <a
                     id="prices_item_basic_btn"
                     href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     class="btn btn-primary"
-                    >Contratar</a> -->
-                  </div>
+                    >Seleccionar</a>
+                </div>
               </div>
             </div>
           
@@ -962,9 +943,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
               <div class="mb-s3">                
                 <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
                     <div class="card-body-header">
-                      <div class="content">
-                        <img class="icon" alt="" src="./assets/img/price_medium.svg"/>            
-                        <div id="prices_item_advance_title" class="title">PYMES</div>
+                      <div class="content d-flex align-items-center">
+                        <img class="icon1" alt="" src="./assets/img/CIOM-2/iconos precios/home.ciom.tech/solucion/image 138.png"/>            
+                        <div id="prices_item_advance_title" class="title">Avanzado</div>
                       </div>
                       <div id="prices_item_advance_description" class="description">
                         Simplifique el trabajo diario de su equipo, mejore el cumplimiento de manuales, procesos, etc.
@@ -975,7 +956,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                           <div class="d">
                             <b class="value">
                               <span>US$</span>
-                              <span class="span advance-price">20</span>
+                              <span class="span avanzado-price d-flex align-items-center" id="avanzado-price">20</span>
                             </b>
                             <div class="info">                              
                               <p id="prices_item_advance_item_info_2" class="item">Por usuario, por mes</p>
@@ -987,66 +968,74 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                       <div class="plans-divider-2"></div>
                     </div>
                     <div class="pricing-features pricing-item">
-                      <h2>Soluciones</h2>
-                      <div class="item d-flex flex-column align-items-start">
-                        <div class="d-flex">
-                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                          <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
-                        </div>
-                        <div class="d-flex">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                         <div id="prices_item_basic_item_2" class="text">Operación (App)</div>
-                       </div>                       
-                     </div>                                           
+                      <h2 id="soluciones">Soluciones</h2>                                                     
+                        <div class="item d-flex flex-column align-items-start gap-3">
+                          <div class="d-flex align-items-center gap-2">
+                            <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div id="prices_item_basic_item_1" class="text">Operación (App)</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                            <div class="grey-item" id="prices_item_basic_item_1" class="text">Ejecución (CIOMERS)</div>
+                          </div>
+                        </div>                                                               
                     </div>
                     <div class="pricing-features pricing-item-1">
                       <h2>Herramientas</h2>
-                      <div class="item d-flex flex-column align-items-start">
-                        <div class="d-flex">
-                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
                           <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
                         </div>
-                        <div class="d-flex">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                         <div id="prices_item_basic_item_2" class="text">Dashboard + Power Bi</div>
-                       </div>                       
-                     </div>                                               
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Analitycs + Power Bi</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img class="grey-item" src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div class="grey-item" id="prices_item_basic_item_1" class="text">Api de Integración</div>
+                        </div>
+                      </div>                                                 
                     </div>
                     <div class="pricing-features pricing-item-2">
                       <h2>Extras</h2>
-                      <div class="item  d-flex flex-column align-items-start">
-                         <div class="d-flex">
-                           <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                           <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
-                         </div>
-                         <div class="d-flex">
-                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                          <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
                         </div>
-                        <div class="d-flex">
-                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                          <div id="prices_item_basic_item_2" class="text">Asesor en Línea</div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Tutoriales</div>
                         </div>
-                      </div>                                         
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Asesor en Línea</div>
+                        </div>
+                      </div>                                          
                     </div>
-                    <!-- <a 
+                    <a 
                       id="prices_item_advance_btn"
                       href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       class="btn btn-primary"
-                      >Contratar</a> -->
+                      >Seleccionar</a>
                   </div>
               </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 col-custom d-flex flex-column justify-content-center">
               <div class="mb-s3">                
-                <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
+                <div class="card selected" data-aos="zoom-in" data-aos-delay="100">                                      
                   <div class="card-body-header">
                     <div class="content">
-                      <img class="icon" alt="" src="./assets/img/price_big.svg"/>            
-                      <div id="prices_item_profesional_title" class="title">GRANDES</div>
+                      <img class="icon2" alt="" src="./assets/img/CIOM-2/iconos precios/home.ciom.tech/solucion/image 139.png"/>            
+                      <div id="prices_item_profesional_title" class="title">Profesional</div>
                     </div>
                     <div id="prices_item_profesional_description" class="description">
                       Aumente su capacidad operativa simplifique la contratación y supervisión de proveedores
@@ -1057,7 +1046,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                         <div class="d">
                           <b class="value">
                             <span>US$</span>
-                            <span class="span profesional-price">25</span>
+                            <span class="span profesional-price d-flex align-items-center" id="profesional-price">25</span>
                           </b>
                           <div class="info">
                             <p id="prices_item_profesional_item_info_2" class="item">Por usuario, por mes</p>
@@ -1069,72 +1058,63 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                     <div class="plans-divider-2"></div>
                   </div>
                   <div class="pricing-features pricing-item">
-                    <h2>Soluciones</h2>
-                    <div class="item d-flex flex-column align-items-start">
-                      <div class="d-flex">
-                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
-                      </div>
-                      <div class="d-flex">
-                       <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                       <div id="prices_item_basic_item_2" class="text">Operación (App)</div>
-                     </div>
-                     <div class="d-flex">
-                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                      <div id="prices_item_basic_item_2" class="text text-nowrap">Ejecución (Solución Uberizada)</div>
-                    </div>                       
-                   </div>                                           
+                    <h2 id="soluciones">Soluciones</h2>                                                     
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Gestión (KPIs)</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Operación (App)</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Ejecución (CIOMERS)</div>
+                        </div>
+                      </div>                                                               
                   </div>
                   <div class="pricing-features pricing-item-1">
                     <h2>Herramientas</h2>
-                    <div class="item d-flex flex-column align-items-start">
-                      <div class="d-flex">
-                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
+                    <div class="item d-flex flex-column align-items-start gap-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
                         <div id="prices_item_basic_item_1" class="text">Reportes XLS y PDF</div>
                       </div>
-                      <div class="d-flex">
-                       <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                       <div id="prices_item_basic_item_2" class="text">Dashboard + Power Bi</div>
-                     </div>
-                     <div class="d-flex">
-                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                      <div id="prices_item_basic_item_2" class="text">Analitycs</div>
-                    </div>   
-                    <div class="d-flex">
-                      <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                      <div id="prices_item_basic_item_2" class="text">Api de Integración</div>
-                    </div>                          
-                   </div>                                               
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                        <div id="prices_item_basic_item_1" class="text">Analitycs + Power Bi</div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                        <div id="prices_item_basic_item_1" class="text">Api de Integración</div>
+                      </div>
+                    </div>                                                 
                   </div>
-                  <div class="pricing-features pricing-item-2-1 ">
+                  <div class="pricing-features pricing-item-2">
                     <h2>Extras</h2>
-                    <div class="item  d-flex flex-column align-items-start">
-                       <div class="d-flex">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                         <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
-                       </div>
-                       <div class="d-flex">
-                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_2" class="text">Tutoriales</div>
+                    <div class="item d-flex flex-column align-items-start gap-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                        <div id="prices_item_basic_item_1" class="text">Storage:  50 GB</div>
                       </div>
-                      <div class="d-flex">
-                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_2" class="text">Asesor en Línea</div>
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                        <div id="prices_item_basic_item_1" class="text">Tutoriales</div>
                       </div>
-                      <div class="d-flex ">
-                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                        <div id="prices_item_basic_item_2" class="text">Consultor en Línea</div>
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                        <div id="prices_item_basic_item_1" class="text">Asesor en Línea</div>
                       </div>
-                    </div>                                         
-                  </div>
-                
-                  <!-- <a 
+                    </div>                                          
+                  </div>                  
+                  <a 
                   id="prices_item_profesional_btn"
                   href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   class="btn btn-primary"
-                  >Contratar</a> -->
+                  >Seleccionar</a>
                 </div>
               </div>
             </div>
@@ -1144,8 +1124,8 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                 <div class="card" data-aos="zoom-in" data-aos-delay="100">                                      
                   <div class="card-body-header">
                     <div class="content">
-                      <img class="icon" alt="" src="./assets/img/price_big_extra.svg"/>            
-                      <div id="prices_item_corporate_title" class="title">CORPORATIVO</div>
+                      <img class="icon3" alt="" src="./assets/img/CIOM-2/iconos precios/home.ciom.tech/solucion/image 140.png"/>            
+                      <div id="prices_item_corporate_title" class="title">Corporativo</div>
                     </div>
                     <div id="prices_item_corporate_description" class="description">
                       Mejore y Estandarize sus resultados a lo largo de todo el continente de forma simple.
@@ -1160,29 +1140,33 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
                     </div>
                   </div>
                   <div class="plans-divider-2"></div>
-                  <div class="pricing-features pricing-item-3">
-                    <div class="item  d-flex flex-column align-items-start">
-                       <div class="d-flex">
-                         <img src="assets/img/CIOM-2/Home/Check.png" alt="check">      
-                         <div id="prices_item_basic_item_1" class="text">Funcionalidades especiales y costumizadas para su corporacion./div>
-                       </div>                       
-                    </div>                                         
+                  <div class="pricing-features pricing-item">
+                                                                        
+                      <div class="item d-flex flex-column align-items-start gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Home/Check.png" alt="check">
+                          <div id="prices_item_basic_item_1" class="text">Funcionalidades especiales y costumizadas para su corporacion.</div>
+                        </div>                          
+                      </div>                                                               
                   </div>
-                  
-                  <!-- <a 
-                  id="prices_item_corporate_btn"
+                  <div class="pricing-features pricing-item-1">
+                                                               
+                  </div>
+                  <div class="pricing-features pricing-item-2">
+                                                         
+                  </div>                     
+                  <a 
+                  id="prices_item_profesional_btn"
                   href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  class="btn btn-link"
-                  >Contactar con ventas</a> -->
+                  class="btn btn-primary"
+                  >Seleccionar</a>
                 </div>
               </div>
             </div>
-        </div>
-
-      </div>
-
+        </div>  
+      </div>  
     </section>
 
     <section id="facturacion">
@@ -1528,6 +1512,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/prices-general.js"></script>
     
 </body>
 

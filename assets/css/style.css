@@ -1548,11 +1548,11 @@ section {
 }
 
 #prices .container {
-  max-width: 90% !important;
+  max-width: 95% !important;
 }
 
 #prices .cards-main-container {
-  margin-top: 60px;
+  margin-top: 16px !important;
 }
 
 #prices h1 {
@@ -1588,13 +1588,19 @@ section {
   border: 1px solid #dce1ff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 40px 30px;
   gap: 22px;
-  min-width: 311px;
-  height: 859px;
+  min-width: 311.5px;
+  height: 898px;
 }
 
-#prices .card:hover {
+#prices .card {
+  transition: all 0.3s ease;
+}
+
+#prices .card:hover,
+#prices .card.selected {
   flex: 1;
   border-radius: 20px;
   background-color: #fff;
@@ -1605,7 +1611,7 @@ section {
   gap: 20px;
   box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
   margin-bottom: 10px;
-  min-width: 300px;
+  min-width: 311.5px;
 }
 
 #prices .card-body-header {
@@ -1625,9 +1631,33 @@ section {
 }
 
 #prices .card-body-header .content .icon {
-  width: 42px;
+  width: 23px;
   position: relative;
-  height: 42px;
+  height: 21px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#prices .card-body-header .content .icon1 {
+  width: 20.5px;
+  position: relative;
+  height: 24.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#prices .card-body-header .content .icon2 {
+  width: 23px;
+  position: relative;
+  height: 25px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#prices .card-body-header .content .icon3 {
+  width: 23px;
+  position: relative;
+  height: 28.5px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -1635,10 +1665,10 @@ section {
 #prices .card-body-header .content .title {
   flex: 1;
   position: relative;
-  line-height: 150%;
-  font-weight: 600;
+  line-height: 27px;
+  font-weight: 700;
   margin-left: 22px;
-  font-size: var(--fs-h4);
+  font-size: 18px !important;
 }
 
 #prices .card-body-header .description {
@@ -1730,12 +1760,31 @@ section {
   margin: 0px;
 }
 
+#prices .price .content .d .value .span-numb {
+  font-size: 22px !important;
+  margin-left: 12.5px;
+}
+
+#prices .price .content .d .span {
+  font-size: 50px !important;
+  font-weight: 700 !important;
+}
+
+#prices .price .content .d span {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+#prices .pricing-features .grey-item {
+  opacity: 40%;
+}
+
 #prices .pricing-item {
   height: 133px;
 }
 
 #prices .pricing-item-1 {
-  height: 170px;
+  height: 133px;
 }
 
 #prices .pricing-item-2 {
@@ -1771,6 +1820,17 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 20.8px;
+}
+
+#prices a {
+  background-color: transparent;
+  color: var(--blue-light);
+  min-height: 52px;
+  width: 251.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 @media (max-width: 800px) {

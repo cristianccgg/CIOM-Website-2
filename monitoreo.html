@@ -29,6 +29,52 @@
     />
 
     <title>Monitoreo</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+       
+   
+    function generateLogos(type) {
+      let logos;
+  
+      if (type === "IT") {
+        logos =
+          `<div class="logo"><img src="./assets/img/it-react.png" alt="react"></div>
+          <div class="logo"><img src="./assets/img/it-redux.png" alt="redux"></div>
+          <div class="logo"><img src="./assets/img/it-node.png" alt="node"></div>
+          <div class="logo"><img src="./assets/img/it-mongodb.png" alt="mongodb"></div>
+          <div class="logo"><img src="./assets/img/it-aws.png" alt="aws"></div>
+          <div class="logo"><img src="./assets/img/it-google.png" alt="google"></div>`
+      } else if (type === "COMPANY")  { 
+        logos =   
+        `<div class="logo"><img src="./assets/img/company-exxon.svg" alt="exxon"></div>
+         <div class="logo"><img src="./assets/img/company-volvo.svg" alt="volvo"></div>
+         <div class="logo"><img src="./assets/img/company-hyundai.png" alt="hyundai"></div>
+         <div class="logo"><img src="./assets/img/company-walmart.svg" alt="walmart"></div>
+         <div class="logo"><img src="./assets/img/company-merck.svg" alt="merck"></div>
+         <div class="logo"><img src="./assets/img/company-chevron.svg" alt="chevron"></div>`
+      }
+        
+      let result = '';
+      for (let i = 0; i < 10; i++) {
+          result += logos;
+      }
+      return result;
+  }
+  
+  
+  
+  // Uso de la función
+  document.querySelector('.slider-track-it').innerHTML = generateLogos("IT");
+  document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPANY");
+  
+  
+  });
+  
+  
+  </script>
+  
+    
+  <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 1769946,playbookUuid: '9886413d-9e92-4f17-8b12-5e2385a47ebb',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
   </head>
 
   <body>
@@ -181,24 +227,10 @@
       </header>
     </div>
     <div id="top-section">
-      <div
-        id="monitoreo"
-        class="align-items-center text-white px-5"
-        data-aos="fade-up"
-      >
+      <div id="monitoreo" class="text-white" data-aos="fade-up">
         <h1 id="monitoreo_title" class="text-center">
           Monitoreo de competencia
         </h1>
-        <a
-          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-          target="_blank"
-          ><button
-            id="monitoreo_btn_start"
-            class="btn btn-primary btn-hero-width"
-          >
-            Comenzar
-          </button>
-        </a>
       </div>
       <div
         id="monitoreo-description"
@@ -210,9 +242,11 @@
         >
           <div class="header-info-container-1 col-md d-flex align-items-center">
             <p id="monitoreo_description" class="text-start">
-              Consiste en observar las actividades, estrategias y desempeño de
-              las empresas que compiten con usted. Conocerá sus productos o
-              servicios, precios, ofertas, tácticas de marketing, etc.
+              El <strong>Monitoreo de Competencia</strong> es el proceso de observar y analizar
+              las actividades, estrategias y desempeño de otras empresas que
+              ofrecen productos o servicios similares. Ayuda a entender cómo se
+              están comportando los competidores y/o para identificar un
+              benchmark
             </p>
           </div>
           <div
@@ -225,7 +259,7 @@
                   alt="check-icon"
                 />
                 <h7 id="monitoreo_description_item"
-                  >Mejora su propuesta de valor</h7
+                  >Detecta rapidamente las amenazas</h7
                 >
               </li>
               <li class="d-flex align-items-center">
@@ -233,7 +267,7 @@
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
                 /><h7 id="monitoreo_description_item_1"
-                  >Incrementa su rentabilidad</h7
+                  >Identifica tendencias y oportunidades</h7
                 >
               </li>
               <li class="d-flex align-items-center">
@@ -241,7 +275,7 @@
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
                 /><h7 id="monitoreo_description_item_2"
-                  >Acelera su crecimiento</h7
+                  >Mejora su propuesta de valor</h7
                 >
               </li>
               <li class="d-flex align-items-center">
@@ -263,7 +297,7 @@
     >
       <div class="swiper mySwiper" data-aos="fade-up">
         <h1 id="monitoreo_swiper_title" class="text-center p-5 p-md-0">
-          Obtenga la ventaja que necesita
+          Monitorear a sus Competidores una garantía de éxito
         </h1>
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-monitoreo-1">
@@ -301,57 +335,70 @@
       </div>
     </div>
 
+    <section id="webApp-4">
+      <div class="container" data-aos="fade-up">
+        <h1 id="webApp4_title">Frecuencias de medición en base a objetivos</h1>
+        <div
+          class="webapp-items d-flex flex-column flex-md-row align-items-center justify-content-center"
+        >
+          <div>
+            <div class="card mobile-card">
+              <div class="title">
+                <h4 id="webApp4_item_1_title_sub">SER LA MEJOR OPCION</h4>
+              </div>
+              <h6 id="webApp4_item_1_title">Frecuencia según industria</h6>
+              <p id="webApp4_item_1_text">
+                El parámetro más recomendado para establecer la frecuencia con la que debe monitorear a su competencia es el cambio de precios. No solo cada industria cambia precios a diferente ritmo, sino que incluso en los diferentes países la misma industria podría tener otro dinamismo en el cambio de precios.
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+
     <section
-      id="empresas-monitoreo"
+      id="empresas-cliente-misterioso"
       class="d-flex align-items-center flex-column text-center p-5"
       data-aos="fade-up"
     >
-      <div
-        class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
-      >
-        <div class="mb-5 mb-md-0">
-          <h3 id="monitoreo_empresas_title" class="empresas-2-title">
-            App móvil líder para monitoreo de sus competidores
+      <div class="d-flex flex-column gap-4 align-items-center">
+        <div>
+          <h3 id="cliente_misterioso_empresas_title" class="title">
+            Permita a su equipo mejorar su negocio con Inspecciones Periódicas
           </h3>
         </div>
         <div class="datos d-flex flex-column gap-3 my-5 my-md-0 flex-md-row">
-          <div class="datos-inner d-flex flex-column align-items-center gap-3">
-            <img
-              src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location.png"
-              alt="geo-icon"
-            />
-            <p id="monitoreo_empresas_item">Geoposicionamiento</p>
+          <div class="datos-inner d-flex flex-column align-items-center">
+            <h3 class="inner-text-empresas-2">10%</h3>
+            <p id="cliente_misterioso_empresas_item" class="span">Ventas</p>
           </div>
-          <div class="datos-inner d-flex flex-column align-items-center gap-3">
-            <img
-              src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-1.png"
-              alt="geo-icon"
-            />
-            <p id="monitoreo_empresas_item_1">Trabajo sin Conexión</p>
+          <div class="datos-inner d-flex flex-column align-items-center">
+            <h3 class="inner-text-empresas-2">15%</h3>
+            <p id="cliente_misterioso_empresas_item_1" class="span">
+              Disponibilidad en Góndola
+            </p>
           </div>
-          <div class="datos-inner d-flex flex-column align-items-center gap-3">
-            <img
-              src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-2.png"
-              alt="geo-icon"
-            />
-            <p id="monitoreo_empresas_item_2">Respaldo Multimedia</p>
+          <div class="datos-inner d-flex flex-column align-items-center">
+            <h3 class="inner-text-empresas-2">25%</h3>
+            <p id="cliente_misterioso_empresas_item_2" class="span">
+              Cumplimiento de Procesos
+            </p>
           </div>
-          <div class="datos-inner d-flex flex-column align-items-center gap-3">
-            <img
-              src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-3.png"
-              alt="geo-icon"
-            />
-            <p id="monitoreo_empresas_item_3">Tiempo Real</p>
+          <div class="datos-inner d-flex flex-column align-items-center">
+            <h3 class="inner-text-empresas-2">30%</h3>
+            <p id="cliente_misterioso_empresas_item_3" class="span">
+              Satisfacción del Cliente
+            </p>
           </div>
         </div>
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
           target="_blank"
           ><button
-            id="auditoria_empresas_btn"
-            class="btn btn-primary btn-hero-width rounded border-white border"
+            id="empresas_btn"
+            class="btn btn-primary btn-hero-width text-white rounded border-white border"
           >
-            Comenzar
+            Solicitar asesor
           </button></a
         >
       </div>
@@ -360,7 +407,7 @@
     <section id="testimonials-2" data-aos="fade-up">
       <div class="swiper2 mySwiper2">
         <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
-          Qué dijeron quienes usaron CIOM para mejorar
+          Casos de éxito, transforme desafíos en oportunidades
         </h1>
         <div class="swiper-wrapper wrapper">
           <div class="swiper-slide">
@@ -745,60 +792,512 @@
     </section>
 
     <section
-      id="mejorar"
-      class="d-flex flex-column gap-5 p-5 align-items-center"
-      data-aos="fade-up"
+    id="empresas-monitoreo"
+    class="d-flex align-items-center flex-column text-center p-5"
+    data-aos="fade-up"
+  >
+    <div
+      class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
     >
-      <h1 id="auditorias_mejorar_title" class="text-center">
-        Qué necesita para mejorar?
-      </h1>
-      <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
-        <a href="cliente-misterioso.html">
-          <button id="mejorar_cliente_btn" class="btn-mejorar rounded fs-6">
-            CLIENTE MISTERIOSO
-          </button>
-        </a>
-        <a href="auditorias.html">
-          <button id="mejorar_auditoria_btn" class="rounded fs-6 btn-mejorar">
-            AUDITORIA/INSPECCION
-          </button>
-        </a>
-        <a href="monitoreo.html">
-          <button
-            id="mejorar_monitoreo_btn"
-            class="btn-mejorar-active rounded fs-6 text-nowrap"
-          >
-            MONITOREO DE COMPETENCIA
-          </button>
-        </a>
+      <div class="mb-5 mb-md-0">
+        <h3 id="monitoreo_empresas_title" class="empresas-2-title">
+          App móvil líder para monitoreo de sus competidores
+        </h3>
       </div>
-    </section>
-    <section id="capitalize" data-aos="fade-up">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 custom-column">
-            <div class="frame">
-              <div class="prompt">
-                <img loading="lazy" alt="" src="assets/img/price.svg" />
-                <div class="body">
-                  <h1 id="capitalize_title" class="capitalize-title">
-                    ¿Listo para capitalizar tus oportunidades?
-                  </h1>
+      <div class="datos d-flex flex-column gap-3 my-5 my-md-0 flex-md-row">
+        <div class="datos-inner d-flex flex-column align-items-center gap-3">
+          <img
+            src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location.png"
+            alt="geo-icon"
+          />
+          <p id="monitoreo_empresas_item">Geoposicionamiento</p>
+        </div>
+        <div class="datos-inner d-flex flex-column align-items-center gap-3">
+          <img
+            src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-1.png"
+            alt="geo-icon"
+          />
+          <p id="monitoreo_empresas_item_1">Trabajo sin Conexión</p>
+        </div>
+        <div class="datos-inner d-flex flex-column align-items-center gap-3">
+          <img
+            src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-2.png"
+            alt="geo-icon"
+          />
+          <p id="monitoreo_empresas_item_2">Respaldo Multimedia</p>
+        </div>
+        <div class="datos-inner d-flex flex-column align-items-center gap-3">
+          <img
+            src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-3.png"
+            alt="geo-icon"
+          />
+          <p id="monitoreo_empresas_item_3">Tiempo Real</p>
+        </div>
+      </div>
+      <a
+        href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+        target="_blank"
+        ><button
+          id="auditoria_empresas_btn"
+          class="btn btn-primary btn-hero-width rounded border-white border"
+        >
+          Comenzar
+        </button></a
+      >
+    </div>
+  </section>
+
+  <section id="prices2">
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <div class="col">            
+          <div class="d-flex flex-column align-items-center">
+            <h1 id="prices2_title">¿Desea tercerizar las mediciones con la <br> solución uberizada que le ofrece CIOM?</h1>
+            <h2 id="prices2_sub_title">Consulte por facturación local en la moneda de su país</h2>
+          </div>
+          <div>
+            <div class="price-switch">
+              <button id="prices_btn_monthly" type="button" class="btn btn-secondary">Pago mensual</button>
+              <button id="prices_btn_annual" type="button" class="btn btn-primary">Pago anual</button>
+              <span id="prices_saving" class="price-switch-text">(Ahorre hasta un 25%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjetas de precios -->
+      <div class="row price-cards-container">
+        
+        <!-- First three cards -->
+         
+        <div class="col-12 col-md-6 col-lg-4 price-card">
+          <div class="col-12 col-md-6 col-lg-4 col-custom d-flex flex-column justify-content-center">
+            <div class="mb-s3">
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-body-header">
+                  <div class="content">
+                    <img class="icon" alt="" src="./assets/img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/mdi_spy.png" />
+                    <div id="prices2_item_misterioso_title" class="title">CLIENTE MISTERIOSO</div>
+                  </div>
+                  <div id="prices2_item_misterioso_description" class="description">
+                    Mejore la experiencia de sus clientes y aumente las ventas
+                  </div>
+                  <div class="plans-divider-1"></div>
+                  <div class="price">
+                    <div class="content">
+                      <h4 id="prices2_desde">Desde:</h4>
+                      <div class="d">
+                        <b class="value">
+                          <span>US$</span>
+                          <span class="span misterioso-price d-flex align-items-center" id="misterioso-price">15<span class="span-misterioso-price span-numb"></span></span>
+                        </b>
+                        <div class="info">
+                          <p id="prices2_item_misterioso_item_info_1" class="item">Por evaluación</p>
+                        </div>
+                      </div>                        
+                    </div>
+                  </div>
+                  <button id="seleccion_btn">Seleccionar</button>
                 </div>
-                <a
-                  id="capitalize_btn"
-                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-capitalizar-width"
-                  >Empezá ahora</a
-                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 price-card">
+          <div class="col-12 col-md-6 col-lg-4 col-custom d-flex flex-column justify-content-center">
+            <div class="mb-s3">
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-body-header">
+                  <div class="content">
+                    <img class="icon" alt="" src="./assets/img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/icons8_document.png" />
+                    <div id="prices2_item_inspecciones_title" class="title">INSPECCIONES</div>
+                  </div>
+                  <div id="prices2_item_inspecciones_description" class="description">
+                    Mejore su operación interna y reduzca riesgos innecesarios
+                  </div>
+                  <div class="plans-divider-1"></div>
+                  <div class="price">
+                    <div class="content">
+                      <h4>Desde:</h4>
+                      <div class="d">
+                        <b class="value">
+                          <span>US$</span>
+                          <span class="span inspecciones-price d-flex align-items-center" id="inspecciones-price">25<span class="span-inspecciones-price span-numb"></span></span>
+                        </b>
+                        <div class="info">
+                          <p id="prices2_item_inspecciones_item_info_1" class="item">Por inspeccion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="seleccion_btn">Seleccionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 price-card">
+          <div class="col-12 col-md-6 col-lg-4 col-custom d-flex flex-column justify-content-center">
+            <div class="mb-s3">
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-body-header">
+                  <div class="content">
+                    <img class="icon" alt="" src="./assets/img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/icon-park-outline_inspection.png" />
+                    <div id="prices2_item_monitoreos_title" class="title">MONITOREOS</div>
+                  </div>
+                  <div id="prices2_item_monitoreos_description" class="description">
+                    Conozca lo que hacen sus competidores en todo momento.
+                  </div>
+                  <div class="plans-divider-1"></div>
+                  <div class="price">
+                    <div class="content">
+                      <h4>Desde:</h4>
+                      <div class="d">
+                        <b class="value">
+                          <span>US$</span>
+                          <span class="span monitoreos-price d-flex align-items-center" id="monitoreos-price">15<span class="span-monitoreos-price span-numb"></span></span>                         
+                        </b>
+                        <div class="info">
+                          <p id="prices2_item_monitoreos_item_info_2" class="item">Por monitoreo</p>                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="seleccion_btn">Seleccionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Last two cards -->
+        <div class="col-12 col-md-6 col-lg-5 price-card">
+          <div class="col-12 col-md-6 col-lg-6 col-custom d-flex flex-column justify-content-center">
+            <div class="mb-s3">
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-body-header">
+                  <div class="content">
+                    <img class="icon" alt="" src="./assets/img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/mdi_comment-question-outline.png" />
+                    <div id="prices2_item_encuestas_title" class="title">ENCUESTAS</div>
+                  </div>
+                  <div id="prices2_item_encuestas_description" class="description">
+                    Entienda a sus clientes de una forma simple y dinámica
+                  </div>
+                  <div class="plans-divider-1"></div>
+                  <div class="price">
+                    <div class="content">
+                      <h4>Desde:</h4>
+                      <div class="d">
+                        <b class="value">
+                          <span>US$</span>
+                          <span class="span encuestas-price d-flex align-items-center" id="encuestas-price">2<span class="span-encuestas-price span-numb">50</span></span>
+                        </b>
+                        <div class="info">
+                          <p id="prices2_item_encuestas_item_info_1" class="item">Por encuesta</p>                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="seleccion_btn">Seleccionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 price-card">
+          <div class="col-12 col-md-6 col-lg-6 col-custom d-flex flex-column justify-content-center">
+            <div class="mb-s3">
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-body-header">
+                  <div class="content">
+                    <img class="icon" alt="" src="./assets/img/CIOM-2/Cliente Misterioso/home.ciom.tech/medicion/ant-design_audit-outlined.png" />
+                    <div id="prices2_item_auditorias_title" class="title">AUDITORIAS</div>
+                  </div>
+                  <div id="prices2_item_auditorias_description" class="description text-nowrap">
+                    Aumente seguridad y transparencia <br> en toma de decisiones
+                  </div>
+                  <div class="plans-divider-1"></div>
+                  <div class="price">
+                    <div class="content">
+                      <h4>Desde:</h4>
+                      <div class="d">
+                        <b class="value">
+                          <span>US$</span>
+                          <span class="span auditorias-price d-flex align-items-center" id="auditorias-price">35<span class="span-auditorias-price span-numb"></span></span>                         
+                        </b>
+                        <div class="info">
+                          <p id="prices2_item_auditorias_item_info_1" class="item">Por auditoria</p>                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="seleccion_btn">Seleccionar</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  
+
+  <section id="measures2">   
+    
+    <div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
+          <h1 id="measures2_title">Las mediciones idóneas para cada tipo de KPIs</h1>
+          <h2 id="measures2_subtitle">Haga click en la que necesita y vea ¿Qué es?, ¿Cómo funciona?</h2>
+    </div>    
+    <section id="measuresItem2">
+    
+      <div class="container" data-aos="fade-up">                  
+        <div class="measures-inner row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+            <div class="card-body">                
+              <div class="body">
+                <div id="measures2_item_1_title" class="title">1° LA EXPERIENCIA</div>
+                <ul>
+                  <li id="measures2_item_1_1">Cliente Misterioso</li>                  
+                </ul>
+              </div> 
+            </div>
+          </div>
+    
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+            <div class="card-body">
+            
+              <div class="body">
+                <div id="measures2_item_2_title"class="title">2° LA OPERACION</div>
+                <ul>
+                  <li id="measures2_item_2_1">Inspecciones</li>                  
+                </ul>
+              </div> 
+            </div>
+          </div>
+    
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+            <div class="card-body">
+              
+              <div class="body">
+                <div id="measures2_item_3_title"class="title">3° LA COMPETENCIA</div>
+                <ul>
+                  <li id="measures2_item_3_1">Monitoreos</li>                 
+                </ul>
+              </div> 
+            </div>
+          </div>
+    
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+            <div class="card-body">              
+              <div class="body">
+                <div id="measures2_item_4_title"class="title">4° LA OPINION</div>
+                <ul>
+                  <li id="measures2_item_4_1">Encuestas</li>                  
+                </ul>
+              </div> 
+            </div>
+          </div> 
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+            <div class="card-body">              
+              <div class="body">
+                <div id="measures2_item_5_title" class="title">5° LA TRANSPARENCIA</div>
+                <ul>
+                  <li id="measures2_item_5_1">Auditorías</li>                  
+                </ul>
+              </div> 
+            </div>
+          </div>          
+        </div>      
+      </div>   
     </section>
+  </section>
+
+
+  <!-- <section id="facturacion">
+    <div>
+      <h1>Consulte por facturación local en la moneda local de su país</h1>
+    </div>
+  </section> -->
+
+  <section id="logos" style="background-color: #fff;">
+    <div class="container">
+      <div class="logo-slider">
+          <div class="slider-track-it">
+      
+      </div>
+    </div>
+  </section>
+
+    
+<section id="methodology" >
+
+<div class="">
+    
+  <div class="row"  data-aos="fade-up">
+    
+    <div class="col-md-6 order-md-1">
+      
+    <div class="body d-flex flex-column">
+      <h1 id="methodology_title">La metodología empleada por las empresas exitosas</h1>
+
+      <div class="body-list d-flex flex-column"> 
+        <h2 id="methodology_item_1">Al enfocar a su compañía a <strong>procesos de mejora</strong> continua usted va a conseguir <strong>Resultados Tangibles</strong>.</h2>
+        <h2 id="methodology_item_2">Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</h2>
+        <h2 id="methodology_item_3"><strong>“..El éxito es la habilidad de ir de un fracaso en otro sin perder el entusiasmo..”</strong>  Henry Ford </h2>               
+      </div>       
+    
+    </div>
+  </div>
+    <div class="col-md-6 order-md-2 d-flex justify-content-end">
+      <div data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/methodology_ciom.png" alt="methodology" class="image-slide">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<section id="objetivo">
+<div>
+  <h1 id="objetivo_text">Nuestro objetivo es que usted alcance el suyo</h1>
+</div>
+</section>
+
+<section id="additional-service" >
+
+<div class="">
+    
+  <div class="row" data-aos="fade-up">
+    
+    <div class="col-md-6 order-md-1 order-2">
+      <div data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide p-0">
+      </div>
+    </div>
+    
+    <div class="col-md-6 order-md-2 order-1">
+      
+      <div class="body">
+        <h1 id="additional_title">¿Necesita ayuda de <br> profesionales en la materia?</h1>
+        <div class="inner-body">
+          <div>
+            <i class="bi bi-check-lg"></i>          
+            <span id="additional_item_1">Asesoría para identificar los mejores KPIs para usted</span>
+          </div>
+          <div>
+            <i class="bi bi-check-lg"></i>          
+            <span id="additional_item_2">Apoyo para la configuración y gestión del sistema</span>
+          </div>
+          <div>
+            <i class="bi bi-check-lg"></i>          
+            <span id="additional_item_3">Acompañamiento en su proceso de mejora</span>
+          </div>
+          <div>
+            <i class="bi bi-check-lg"></i>          
+            <span id="additional_item_4">Diseño de Programas Integrales de Mejora</span>
+          </div>            
+        </div>                    
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="measures">
+    
+<div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
+      <h1 id="measures_title">Las soluciones integrales de CIOM para su negocio</h1>
+      <h2 id="measures_subtitle">Elija la que necesite y haga click para ver ¿Qué son?, ¿Cómo funcionan? y mucho más...</h2>
+</div>    
+<section id="measuresItem">
+
+  <div class="container" data-aos="fade-up">                  
+    <div class="measures-inner row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+        <div class="card-body">                
+          <div class="body">
+            <div id="measures_item_2_title" class="title">GESTION</div>
+            <ul>
+              <li id="measures_item_2_1">Indicadores (KPIs)</li>                  
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+        <div class="card-body">
+        
+          <div class="body">
+            <div id="measures_item_3_title" class="title">OPERACION</div>
+            <ul>
+              <li id="measures_item_3_1">Aplicacación</li>                  
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+        <div class="card-body">
+          
+          <div class="body">
+            <div id="measures_item_4_title" class="title">EJECUCION</div>
+            <ul>
+              <li id="measures_item_4_1">Solución Uberizada</li>                 
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+        <div class="card-body">              
+          <div class="body">
+            <div id="measures_item_5_title" class="title">PROGRAMA</div>
+            <ul>
+              <li id="measures_item_5_1">Programa de Mejora</li>                  
+            </ul>
+          </div> 
+        </div>
+      </div>          
+    </div>      
+  </div>   
+</section>
+</section>
+
+<section id="help" data-aos="fade-up"><div class="container">
+<div class="row">
+  <div class="col-md-12 custom-column">
+    <div class="frame">
+      <div class="prompt">
+        <img loading="lazy" alt="" src="./assets/img/question.svg" />
+        <div class="body">
+          <h1 id="help_title">¿Quiere saber más?</h1>
+          <p id="help_description">Estamos para solucionar sus dudas.</p>
+        </div>
+        <div class="saber-mas-btns d-flex flex-column">
+          <a
+            id="solicitar_btn"
+            href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            >Solicitar asesor</a
+          >
+          <a
+            id="help1_btn"
+            href="faq.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            >Preguntas frecuentes</a>
+        </div>           
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
 
     <footer id="footer">
       <div class="container mt-5">
@@ -915,5 +1414,6 @@
     <script src="assets/js/newjs.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/hoverText.js"></script>
+    <script src="assets/js/prices.js"></script>
   </body>
 </html>
