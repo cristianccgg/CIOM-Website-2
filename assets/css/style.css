@@ -1074,91 +1074,6 @@ section {
   }
 }
 
-/* webApp-2 ---------
---------------------------------*/
-
-#webApp-2 {
-  background-color: var(--blanco);
-  padding: 70px 0;
-}
-
-.background {
-  background-color: var(--background-ligth) !important;
-}
-
-#webApp-2 h1 {
-  text-align: center;
-  font-weight: 500;
-  position: relative;
-  color: var(--azul-primario);
-  font-weight: 600;
-  font-size: 36px;
-}
-
-#webApp-2 h4 {
-  font-weight: 600;
-  color: var(--azul-primario);
-}
-
-#webApp-2 h6 {
-  font-weight: 600;
-}
-
-#webApp-2 p {
-  line-height: 29px;
-  padding: 8px 0px;
-  opacity: 0.8;
-}
-
-#webApp-2 .content {
-  padding: 10px 0px;
-  border-radius: 10px;
-  /* box-shadow: 0 2px 8px -2px hsla(0,0%,9%,.08), 0 8px 12px -2px hsla(0,0%,9%,.16); */
-  /* max-width: 80%; */
-}
-
-#webApp-2 .card {
-  flex: 1 1 auto;
-  padding: 15px 0;
-  border: 0px;
-  background: initial;
-}
-
-#webApp-2 .card .title {
-  display: flex;
-  padding-bottom: 25px;
-}
-
-#webApp-2 .mobile-card {
-  padding: 50px 25px 34px 35px !important;
-  border: 1px solid var(--grey-ligth);
-  box-shadow: 4px 0px 10px var(--grey-ligth);
-  height: 310px;
-  min-height: 310px;
-}
-
-#webApp-2 .mobile-card img {
-  max-width: 35px;
-  margin-bottom: 4px;
-}
-
-#webApp-2 .mobile-card h4 {
-  color: var(--blue-light);
-  font-weight: 600;
-  padding-left: 15px;
-  vertical-align: bottom;
-  align-items: end;
-  display: grid;
-}
-
-#webApp-2 .howWorks {
-  padding: 0px 50px;
-}
-
-#webApp-2 .margin-img {
-  margin-top: 65px;
-}
-
 @media (max-width: 1000px) {
   #webApp-1 .cardLong {
     max-width: 100%;
@@ -1239,6 +1154,7 @@ section {
 
 #measures {
   padding: 86.56px 0 67.44px 0;
+  background-color: var(--background-ligth);
 }
 
 #measures h1 {
@@ -1433,6 +1349,12 @@ section {
   text-wrap: nowrap;
 }
 
+.inner-statistics h1 {
+  font-weight: 600 !important;
+  text-wrap: nowrap;
+  font-size: 36px !important;
+}
+
 .statistics-item {
   width: 210px;
   height: 77px;
@@ -1448,6 +1370,44 @@ section {
   max-width: 523px;
   font-size: 36px;
   font-weight: 600;
+  line-height: 50px;
+}
+
+#statistics_indicadores_title {
+  max-width: 523px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+#statistics_tercerizacion_title {
+  max-width: 583px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.inner-statistics_tercerizacion {
+  max-width: 512px !important;
+  height: 249px;
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner-statistics_programa {
+  max-width: 512px !important;
+  height: 216px;
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#statistics_app_title {
+  max-width: 583px;
+  line-height: 50px;
 }
 
 #statistics .btn {

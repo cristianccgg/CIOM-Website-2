@@ -82,6 +82,7 @@ body {
     padding-top: 116px !important;
     padding-left: 103px;
     padding-right: 94px;
+    background-color: var(--background-ligth);
   }
 
   #cliente-misterioso-description .header-row-container {
@@ -209,17 +210,17 @@ body {
 
 /* -----------Carrusel imagenes Cliente Misterioso-------- */
 #swiper-cliente-misterioso {
-  background-color: #f7faff;
+  background-color: transparent !important;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
+  min-height: 739px !important;
 }
 
 #swiper-cliente-misterioso .swiper {
   position: relative;
   width: 100%;
-  height: 739px !important;
-  background-color: #f7faff;
+  background-color: transparent !important;
 }
 
 .swiper2 .swiper-slide {
@@ -261,7 +262,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  #swiper-cliente-misterioso .swiper-pagination {
+  #swiper-cliente-misterioso .swiper .swiper-pagination {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,12 +279,7 @@ body {
   }
   .swiper {
     margin-left: 92px;
-    height: 739px !important;
-  }
-
-  .swiper-pagination {
-    margin-right: 92px !important;
-    margin-bottom: 107px !important;
+    min-height: 682px !important;
   }
 
   .swiper-wrapper-imgs {
@@ -307,19 +303,75 @@ body {
 
 @media screen and (min-width: 1000px) {
   #empresas-cliente-misterioso {
-    height: 470px;
-    padding-top: 79px !important;
+    height: 523px;
+    padding-top: 80px !important;
   }
 
   #empresas-cliente-misterioso .title {
     font-size: 36px !important;
     font-weight: 600;
     line-height: 50px;
-    margin-bottom: 71px;
+    margin-bottom: 56px !important;
   }
 
-  #empresas-cliente-misterioso .datos {
-    margin-bottom: 21px !important;
+  /* #empresas-cliente-misterioso .datos {
+    margin-bottom: 68px !important;
+  } */
+
+  #empresas_btn {
+    margin-top: 30px !important;
+  }
+
+  #empresas_btn_2 {
+    margin-top: 30px !important;
+  }
+}
+
+.datos-inner h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.datos-inner p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ------------Empresas 2-------- */
+
+#empresas-cliente-misterioso2 .title {
+  font-size: 36px !important;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+#empresas-cliente-misterioso2 .datos {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  #empresas-cliente-misterioso2 {
+    height: 523px;
+    padding-top: 80px !important;
+  }
+
+  #empresas-cliente-misterioso2 .title {
+    font-size: 36px !important;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 56px !important;
+  }
+
+  /* #empresas-cliente-misterioso .datos {
+    margin-bottom: 68px !important;
+  } */
+
+  #empresas_btn {
+    margin-top: 30px !important;
+  }
+
+  #empresas_btn_2 {
+    margin-top: 30px !important;
   }
 }
 
@@ -395,7 +447,8 @@ body {
 #empresas-cliente-misterioso,
 #empresas-auditorias,
 #empresas-monitoreo,
-#empresas-crowdsourcing {
+#empresas-crowdsourcing,
+#empresas-cliente-misterioso2 {
   background-color: var(--blue-light);
   color: white;
 }
@@ -538,7 +591,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# prices Section
+# prices2 Section
 --------------------------------------------------------------*/
 #prices2 {
   background-color: var(--blanco);
@@ -611,7 +664,8 @@ body {
   height: 410px !important;
 }
 
-#prices2 .card:hover {
+#prices2 .card:hover,
+#prices2 .card.active {
   flex: 1;
   border-radius: 20px;
   background-color: #fff;
@@ -623,6 +677,12 @@ body {
   box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
   margin-bottom: 10px;
   min-width: 300px;
+}
+
+#prices2 .card.active {
+  border: 2px solid #002e8a;
+  box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
+  margin-bottom: 10px;
 }
 
 #prices2 .card-body-header {
@@ -805,7 +865,7 @@ body {
 --------------------------------------------------------------*/
 
 #measures2 {
-  background-color: var(--background-ligth);
+  background-color: var(--background-ligth) !important;
   padding: 86.56px 0 67.44px 0;
 }
 
@@ -897,7 +957,7 @@ body {
 /* Objetivo Section
 --------------------------------*/
 #objetivo {
-  padding: 31px 0;
+  padding: 50px 0 !important;
   color: var(--blanco);
   background-color: var(--blue-light);
   margin: 48px 0px;
@@ -992,6 +1052,7 @@ body {
     padding-top: 116px !important;
     padding-left: 124px;
     padding-right: 125px;
+    background-color: var(--background-ligth);
   }
 
   #auditorias-description .header-row-container {
@@ -1065,6 +1126,10 @@ body {
   color: black;
 }
 
+#monitoreo-description {
+  background-color: var(--background-ligth);
+}
+
 #empresas-monitoreo .title {
   font-size: 36px !important;
   font-weight: 600;
@@ -1116,6 +1181,7 @@ body {
     padding-top: 135px !important;
     padding-left: 116px;
     padding-right: 119px;
+    background-color: var(--background-ligth);
   }
 
   #monitoreo-description .header-row-container {
@@ -1603,6 +1669,7 @@ body {
 #indicadores h1 {
   font-size: 40px;
   font-weight: 500;
+  text-wrap: nowrap !important;
 }
 
 #indicadores-description .header-row-container h1 {
@@ -1657,6 +1724,7 @@ body {
     font-weight: 600;
     width: 449px !important;
     height: 55px;
+    text-wrap: wrap;
   }
 
   #indicadores-description {
@@ -1817,6 +1885,1430 @@ body {
 
   #kpis #kpis_item .kpi-img {
     width: 100%;
+  }
+}
+
+/* -----App-------- */
+
+#app {
+  background-image: url("../img/CIOM-2/App/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 160px;
+}
+
+#app h2 {
+  display: none;
+}
+
+#app h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#app-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#app-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#app-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#app-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1300px) {
+  #app {
+    padding-top: 149px;
+    padding-left: 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #app h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  #app h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 449px !important;
+    height: 55px;
+    text-wrap: nowrap;
+  }
+
+  #app-description {
+    height: 422px !important;
+    width: 100%;
+    padding-top: 75px !important;
+    padding-left: 111px;
+    padding-right: 137px;
+  }
+
+  #app-description .header-row-container {
+    gap: 174px !important;
+    padding: 0px;
+    height: 222px;
+    max-width: 1158px;
+  }
+
+  #app-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #app-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 535px !important;
+    padding: 0%;
+    height: 228px !important;
+  }
+
+  #app-description .header-info-container-2 {
+    height: 284px;
+    max-width: 430px !important;
+    padding-top: 60px !important;
+  }
+
+  #app-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #app-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 430px !important;
+  }
+
+  #app-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* App ---------
+--------------------------------*/
+#App {
+  background-color: var(--background-ligth);
+  padding: 100px 0px 123px 0px;
+}
+
+#App .card1,
+#App .card2 {
+  max-width: 315px;
+  padding: 0%;
+}
+
+#App .card1 {
+  margin-top: 45px;
+}
+
+#App .cards-container {
+  margin-top: 79px;
+  max-width: 1200px;
+}
+
+#App .title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#App .card1 h4,
+#App .card2 h4 {
+  font-size: 22px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+#App .card1 p,
+#App .card2 p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#App .webapp-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+
+#App .webapp-icon1 {
+  width: 41px;
+  height: 41px;
+  margin-bottom: 24px;
+}
+
+#App .app-img {
+  width: 283.51px;
+  height: 471px;
+}
+
+@media screen and (min-width: 1000px) {
+  #App .card1 {
+    margin-top: 0px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px !important;
+  }
+
+  #App .card2 {
+    margin-top: 0px;
+    margin-left: 186px;
+    gap: 48px;
+  }
+}
+
+/* App 2---------
+--------------------------------*/
+#App2 {
+  padding: 100px 0px 111px 0px;
+}
+
+#App2 .card1,
+#App2 .card2 {
+  max-width: 315px;
+  padding: 0%;
+}
+
+#App2 .card1 {
+  margin-top: 45px;
+}
+
+#App2 .cards-container {
+  margin-top: 79px;
+  max-width: 1200px;
+}
+
+#App2 .title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#App2 .card1 h4,
+#App2 .card2 h4 {
+  font-size: 22px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+#App2 .card1 p,
+#App2 .card2 p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#App2 .webapp-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+
+#App2 .app-img {
+  width: 283.51px;
+  height: 471px;
+}
+
+@media screen and (min-width: 1200px) {
+  #App2 .card1 {
+    margin-top: 0px;
+    margin-right: 76px;
+    gap: 48px !important;
+  }
+
+  #App2 .card2 {
+    margin-top: 0px;
+    margin-left: 122px;
+    gap: 48px;
+  }
+}
+
+/* -----Tercerizacion-------- */
+
+#tercerizacion {
+  background-image: url("../img/CIOM-2/Tercerizacion/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 160px;
+}
+
+#tercerizacion h2 {
+  display: none;
+}
+
+#tercerizacion h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-wrap: wrap !important;
+}
+
+#tercerizacion-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#tercerizacion-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#tercerizacion-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#tercerizacion-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1300px) {
+  #tercerizacion {
+    padding-top: 150px;
+    padding-left: 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #tercerizacion h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #tercerizacion h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 449px !important;
+    height: 55px;
+    text-wrap: nowrap !important;
+  }
+
+  #tercerizacion-description {
+    min-height: 437px !important;
+    width: 100%;
+    padding-top: 65px !important;
+    padding-left: 0px;
+    padding-right: 125px;
+    font-weight: 400 !important;
+    font-size: 18px;
+  }
+
+  #tercerizacion-description .header-row-container {
+    gap: 183px;
+    padding: 0px;
+    height: 318px;
+  }
+
+  #tercerizacion-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #tercerizacion-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 574px !important;
+    padding: 0%;
+    height: 228px !important;
+    margin-left: 109px;
+  }
+
+  #tercerizacion-description .header-info-container-2 {
+    height: 284px;
+    max-width: 449px !important;
+    margin-top: 30px;
+  }
+
+  #tercerizacion-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #tercerizacion-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 449px !important;
+  }
+
+  #tercerizacion-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* --------KPIs2 Tercerizacion -----------*/
+
+#kpis2 .title {
+  margin-bottom: 19px;
+  margin-top: 57px;
+}
+
+#kpis2 .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+#kpis2 #kpis_item {
+  padding: 25px;
+}
+
+#kpis2 #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis2 #kpis_item .card,
+#kpis2 #kpis_item .card2 {
+  border: none;
+
+  width: 100% !important;
+}
+
+#kpis2 #kpis_item .card h2,
+#kpis2 #kpis_item .card2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+#kpis2 #kpis_item .card h1,
+#kpis2 #kpis_item .card2 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#kpis2 #kpis_item .card p,
+#kpis2 #kpis_item .card2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis2 > div:nth-child(3) {
+  background-color: var(--background-ligth);
+}
+
+#kpis2 > div:nth-child(5) {
+  background-color: var(--background-ligth);
+}
+
+#kpis2 #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis2 .title {
+    height: 137px;
+    margin-bottom: 19px;
+  }
+
+  #kpis2 #kpis_item {
+    padding-top: 89px;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 90px;
+  }
+
+  #kpis2 #kpis_item .card {
+    width: 500px !important;
+    height: 351px;
+    border: none;
+  }
+
+  #kpis2 #kpis_item .card2 {
+    width: 620px !important;
+    margin-left: 123px;
+    height: 351px;
+    border: none;
+  }
+
+  #kpis2 #kpis_item .kpi-img {
+    width: 568px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/* -----Programa de mejora-------- */
+
+#programa {
+  background-image: url("../img/CIOM-2/Programa de mejora/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 160px;
+}
+
+#programa h2 {
+  display: none;
+}
+
+#programa h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-wrap: wrap !important;
+}
+
+#programa-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#programa-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#programa-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#programa-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1300px) {
+  #programa {
+    padding-top: 150px;
+    padding-left: 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #programa h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #programa h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 449px !important;
+    height: 55px;
+    text-wrap: nowrap !important;
+  }
+
+  #programa-description {
+    min-height: 437px !important;
+    width: 100%;
+    padding-top: 0px !important;
+    padding-left: 0px;
+    padding-right: 125px;
+    font-weight: 400 !important;
+    font-size: 18px;
+  }
+
+  #programa-description .header-row-container {
+    gap: 216px;
+    padding: 0px;
+    height: 318px;
+    margin-top: 40px;
+  }
+
+  #programa-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-wrap: nowrap;
+  }
+
+  #programa-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 540px !important;
+    padding: 0%;
+    height: 318px !important;
+    margin-left: 109px;
+  }
+
+  #programa-description .header-info-container-2 {
+    height: 252px;
+    max-width: 474px !important;
+  }
+
+  #programa-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #programa-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 449px !important;
+  }
+
+  #programa-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* --------KPIs3 Programa de mejora -----------*/
+
+#kpis3 .title {
+  margin-bottom: 19px;
+  margin-top: 33px;
+}
+
+#kpis3 .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+#kpis3 #kpis_item {
+  padding: 25px;
+}
+
+#kpis3 #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis3 .clock-icon {
+  width: 22px;
+  height: 21px;
+  margin-right: 6px;
+}
+
+#kpis3 #kpis_item .card,
+#kpis3 #kpis_item .card2 {
+  border: none;
+
+  width: 100% !important;
+}
+
+#kpis3 #kpis_item .card h2,
+#kpis3 #kpis_item .card2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+#kpis3 #kpis_item .card h1,
+#kpis3 #kpis_item .card2 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#kpis3 #kpis_item .card p,
+#kpis3 #kpis_item .card2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis3 > div:nth-child(3) {
+  background-color: var(--background-ligth);
+}
+
+#kpis3 > div:nth-child(5) {
+  background-color: var(--background-ligth);
+}
+
+#kpis3 #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis3 .title {
+    height: 137px;
+    margin-bottom: 19px;
+  }
+
+  #kpis3 #kpis_item {
+    padding-top: 45px;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 46px;
+  }
+
+  #kpis3 #kpis_item .card {
+    width: 500px !important;
+    height: 351px;
+    border: none;
+    height: 449px !important;
+  }
+
+  #kpis3 #kpis_item .card2 {
+    width: 620px !important;
+    margin-left: 123px;
+    height: 449px !important;
+    border: none;
+  }
+
+  #kpis3 #kpis_item .kpi-img {
+    width: 568px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# PRICES 3 - Programa de mejora
+--------------------------------------------------------------*/
+#prices3 {
+  background-color: var(--blanco);
+  padding: 100px 0px 89px 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#prices3 .container3 {
+  max-width: 1330px !important;
+}
+
+#prices3 .prices3-cards-container {
+  margin: 60px 0px;
+  gap: 28px;
+}
+
+#prices3 h1 {
+  color: var(--azul-primario);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+
+#prices3 .price-switch {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: center;
+  gap: var(--gap-xs);
+  padding: 15px;
+  font-size: 15px;
+  color: var(--blue-light);
+  margin-top: 0px;
+}
+
+#prices3 #seleccion_programa_btn {
+  min-width: 332px;
+  height: 52px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 4px !important;
+  color: var(--blue-light);
+  border: var(--blue-light) 1px solid;
+}
+
+#prices3 .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: end;
+}
+
+#prices3 .card {
+  flex: 1;
+  box-shadow: 34.9px 29.6px 48.34px rgba(51, 102, 255, 0.05);
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #dce1ff;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  max-width: 424.67px;
+  height: 655px !important;
+}
+
+#prices3 .card:hover,
+#prices3 .card.active {
+  flex: 1;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 2px solid #002e8a;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  gap: 20px;
+  box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
+  margin-bottom: 10px;
+}
+
+#prices3 .card.active {
+  border: 2px solid #002e8a;
+  box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
+  margin-bottom: 10px;
+}
+
+#prices3 .card-body-header {
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#prices3 .card-body-header .content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#prices3 .card-body-header .content .icon {
+  width: 42px;
+  position: relative;
+  height: 42px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#prices3 .card-body-header .content .title {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  margin-left: 22px;
+  font-size: var(--fs-h2) !important;
+}
+
+#prices3 .card-body-header .description {
+  align-self: stretch;
+  position: relative;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 16px !important;
+  opacity: 0.8;
+  min-height: auto;
+  margin-top: 22px;
+  min-width: 251px;
+}
+
+#prices3 .price {
+  flex-direction: row;
+  align-items: center;
+  color: #2d2d2d;
+}
+
+#prices3 .price .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#prices3 .price .content h4 {
+  font-size: 16px;
+}
+
+#prices3 .price .content .d {
+  align-self: stretch;
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  height: fit-content;
+  gap: 18px;
+}
+
+#prices3 .price .content .d .value {
+  position: relative;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: baseline;
+}
+
+#prices3 .price .content .d .value .span-numb {
+  font-size: 22px !important;
+  margin-left: 12.5px;
+}
+
+#prices3 .price .content .d .span {
+  font-size: 50px !important;
+  font-weight: 700 !important;
+}
+
+#prices3 .price .content .d span {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+#prices3 .price .content .d .info {
+  /* width: 122px; */
+  position: relative;
+  font-size: var(--fs-li-sm);
+  /* line-height: 140%; */
+  font-weight: 500;
+  color: #2b2b2b;
+  display: inline-block;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+#prices3 .price .content .d .info .item {
+  margin: 0;
+  font-size: 12px !important;
+}
+
+#prices3 .prices3-list {
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 20px !important;
+  gap: 16px;
+}
+
+/* -----Ciomer-------- */
+
+#ciomer {
+  background-image: url("../img/CIOM-2/Ciomer/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 140px;
+}
+
+#ciomer h2 {
+  display: none;
+}
+
+#ciomer h1 {
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 541px;
+}
+
+#ciomer-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#ciomer-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#ciomer-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#ciomer-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1300px) {
+  #ciomer {
+    padding-top: 95px;
+    padding-left: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #ciomer h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  #ciomer h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 541px !important;
+    height: 55px;
+  }
+
+  #ciomer-description {
+    height: 422px !important;
+    width: 100%;
+    padding-top: 75px !important;
+    padding-left: 111px;
+    padding-right: 137px;
+  }
+
+  #ciomer-description .header-row-container {
+    gap: 256px !important;
+    padding: 0px;
+    height: 222px;
+    max-width: 1158px;
+  }
+
+  #ciomer-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #ciomer-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 624px !important;
+    padding: 0%;
+    height: 228px !important;
+  }
+
+  #ciomer-description .header-info-container-2 {
+    height: 284px;
+    max-width: 430px !important;
+    padding-top: 60px !important;
+  }
+
+  #ciomer-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #ciomer-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 430px !important;
+  }
+
+  #ciomer-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+#requisitos_ciomer {
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+#requisitos_ciomer .lists-container {
+  gap: 50px;
+}
+
+#requisitos_ciomer .requisitos-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+#requisitos_ciomer .requisitos-list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  gap: 4px;
+  max-width: 525px !important;
+}
+
+#requisitos_ciomer .requisitos-list2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  gap: 20.25px;
+  max-width: 465px !important;
+  text-wrap: wrap;
+}
+
+#requisitos_ciomer .requisitos-list2 .nivel {
+  width: 90px;
+  color: var(--blue-light);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+  #ciomer .card1 {
+    margin-top: 0px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px !important;
+  }
+
+  #ciomer .card2 {
+    margin-top: 0px;
+    margin-left: 186px;
+    gap: 48px;
+  }
+
+  #requisitos_ciomer {
+    height: 437px;
+    padding: 50px 130px 96px 117px;
+    margin-bottom: 0px;
+    max-width: 1440px;
+  }
+
+  #requisitos_ciomer .lists-container {
+    gap: 203px;
+  }
+
+  #requisitos_ciomer .requisitos-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  #requisitos_ciomer .requisitos-list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    gap: 4px;
+    max-width: 525px !important;
+  }
+
+  #requisitos_ciomer .requisitos-list2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    gap: 20.25px;
+    max-width: 465px !important;
+    text-wrap: nowrap;
+  }
+
+  #requisitos_ciomer .requisitos-list2 .nivel {
+    width: 90px;
+    color: var(--blue-light);
+    font-weight: 500;
+  }
+}
+
+#requisitos_ciomer .check-icon {
+  width: 13.12px !important;
+  height: 8.75px !important;
+}
+
+#plataforma {
+  background-color: var(--blue-light);
+  color: white;
+  padding: 59px 25px 56px 25px;
+}
+
+#plataforma h1 {
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40.32px;
+}
+
+#plataforma button {
+  color: white;
+  min-width: 180px;
+  min-height: 52px;
+  border: 2px solid var(--celeste-secundario);
+}
+
+#ingresos {
+  background-color: var(--background-ligth);
+}
+
+#ingresos .ingresos-text-container {
+  padding: 59px 25px 56px 25px;
+  background-color: var(--background-ligth);
+}
+
+#ingresos .ingresos-text {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 50px;
+  color: var(--blue-light);
+}
+
+#ingresos img {
+  height: 382px !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 1000px) {
+  #ingresos .ingresos-text-container {
+    padding: 115px 124px 115px 119px;
+    max-width: 695px !important;
+  }
+
+  #ingresos .ingresos-text {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+}
+
+/* ---------- Ciomer-Herramientas --------- */
+
+#ciomers_herramientas {
+  padding: 65px 25px;
+  gap: 50px;
+}
+
+#ciomers_herramientas img {
+  width: 36.67px;
+  height: 36.67px;
+  margin-bottom: 35px;
+}
+
+#ciomers_herramientas .ciomers-herramientas-card {
+  width: 90% !important;
+  height: 275px;
+}
+
+#ciomers_herramientas .herramientas-h3-container {
+  padding: 10px 20px 10px 2px;
+  width: fit-content;
+  height: 50px;
+  border-bottom: var(--blue-light) 1px solid;
+  margin-bottom: 21px;
+}
+
+#ciomers_herramientas h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 31px;
+  color: var(--blue-light);
+}
+
+#ciomers_herramientas p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (min-width: 1000px) {
+  #ciomers_herramientas {
+    padding: 100px 156px;
+    max-height: 475px !important;
+    gap: 100px;
+  }
+
+  #ciomers_herramientas .ciomers-herramientas-card {
+    width: 208px !important;
+    height: 275px;
+  }
+}
+
+/* --------Ciomer libera ---------*/
+
+#libera {
+  padding: 55px 25px;
+  gap: 50px;
+  background-color: var(--blue-light);
+}
+
+#ciomers_libera_title {
+  color: white;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  line-height: 40.32px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------- Testimonials-3 Ciomers----------- */
+
+#testimonials-3 {
+  padding: 55px 25px;
+  gap: 50px;
+  height: auto;
+}
+
+#testimonials-3 .testimonials-3-inner {
+  padding: 0;
+  height: fit-content;
+}
+
+#testimonials-3 .swiper-slide {
+  width: 320px;
+}
+
+#testimonials-3 .card3 {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#testimonials-3 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+#testimonials-3 p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#testimonials-3 .stars-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 128px;
+  height: 24px;
+}
+
+#testimonials-3 .stars-container3 .star {
+  width: 24px;
+  height: 24px !important;
+}
+
+#testimonials-3 #testimonials_3_btn {
+  min-width: 277px;
+  min-height: 75px;
+  border: var(--blue-light) 2px solid;
+  background-color: transparent;
+  color: var(--blue-light);
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 1000px) {
+  #testimonials-3 {
+    padding: 54px 112px 60px 98px;
+    min-height: 658px !important;
+  }
+
+  #testimonials-3 .testimonials-3-inner {
+    max-width: 1060px !important;
+    min-height: 379px !important;
+    padding: 0;
+  }
+
+  #testimonials-3 .swiper-slide {
+    min-width: 320px;
+    min-height: 194px;
+  }
+
+  #testimonials-3 .card3 {
+    min-width: 320px;
+    min-height: 194px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #testimonials-3 h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 63px;
+  }
+
+  #testimonials-3 p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  #testimonials-3 #testimonials_3_btn {
+    min-width: 277px;
+    min-height: 75px;
+    border: var(--blue-light) 2px solid;
+    background-color: transparent;
+    color: var(--blue-light);
+    margin-top: 90px;
   }
 }
 
@@ -2048,319 +3540,58 @@ body {
   }
 }
 
-/* -------------Ciomers------------ */
-
-#ciomers-header {
-  background-image: url("../img/Crowdsourcing/Ciomers/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 401px;
-  max-height: 401px;
-}
-
-@media (max-width: 768px) {
-  #ciomers-header {
-    padding-top: 90px !important;
-    background-position: 20% center;
-  }
-}
-
-#ciomers-header h1 {
-  font-size: 40px !important;
-  font-weight: 600 !important;
-  line-height: 55px !important;
-  z-index: 2;
-}
-
-.app-img {
-  margin-top: 50px;
-  width: 356px;
-  max-width: 466px;
-}
-
-.quienes-text h1 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 50px;
-  color: var(--azul-primario);
-}
-
-.quienes-text p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-.ciomer-quienes,
-.ciomer-quienes-2 {
-  max-width: 1212px;
-}
-
-#ciomers_libera_title {
-  background-color: var(--blue-light);
-  color: white;
-  font-size: 32px !important;
-  font-weight: 400 !important;
-  line-height: 40.32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 15px;
-}
-
-@media screen and (min-width: 768px) {
-  #ciomers_libera_title {
-    display: flex;
-    justify-content: center;
-    height: 173px;
-    width: 100% !important;
-    font-weight: 400 !important;
-    font-size: 32px !important;
-    line-height: 40.32px !important;
-  }
-}
-
-#herramientas h3 {
-  color: var(--blue-light);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid var(--blue-light);
-  border-left: 0;
-  padding-bottom: 10px;
-  margin-bottom: 21px;
-}
-
-#herramientas p {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
-}
-
-.herramientas-inner-item {
-  width: 275px;
-}
-
-.herramientas-inner-item .herramientas-icon {
-  margin-bottom: 32px;
-}
-
-#herramientas h1 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 50px;
-  color: var(--azul-primario);
-}
-
-@media screen and (min-width: 768px) {
-  #herramientas {
-    height: 594px;
-    max-width: 1440px;
-    margin: auto;
-  }
-
-  #herramientas h1 {
-    margin-top: 100px;
-    margin-bottom: 69px;
-  }
-
-  .herramientas-items {
-    width: 1128px;
-    gap: 100px !important;
-  }
-}
-
-.app-container {
-  width: 534px;
-}
-
-#la_app .header-info-container-1 {
-  max-width: 495px;
-}
-
-#ciomers_app_title {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 50px;
-}
-
-#ciomers_app_p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .ciomer-quienes-2 {
-    display: flex;
-    align-items: center;
-    height: 595px;
-    align-items: center;
-    margin-top: 0px;
-  }
-
-  .app-img {
-    margin-top: 0px !important;
-    width: 356px;
-    max-width: 466px;
-  }
-
-  #ciomers-header {
-    padding-top: 193.03px;
-  }
-}
-
-header-info-container-apps {
-  gap: 95px !important;
-}
-
-/* ------- Testimonials-3 Ciomers----------- */
-
-#testimonials-3 h1 {
-  font-size: 1.5rem !important;
-  font-weight: 600;
-  color: var(--azul-primario);
-}
-
-.card3 {
-  width: 320px !important;
-  height: 194px !important;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.stars-container3 img.star {
-  width: 24px;
-  height: auto;
-}
-
-.stars-container3 {
-  display: flex;
-  gap: 25px;
-  padding: 0px;
-  height: 24px;
-  width: 128px;
-}
-
-.swiper3 {
-  margin-top: 0px !important;
-  height: 537px;
-  width: 1212px;
-}
-
-.swiper-pagination3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 0px;
-  z-index: 10;
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-pagination3 {
-    display: flex;
-    align-items: center;
-    padding-right: 0px;
-    z-index: 1;
-  }
-
-  #testimonials-3 {
-    height: 507px !important;
-  }
-
-  #testimonials-3 h1 {
-    font-size: 36px !important;
-    font-weight: 600;
-    line-height: 50px;
-    color: var(--azul-primario);
-    margin-top: 60px;
-  }
-
-  #testimonials-3 p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .icons-container-ciomers {
-    gap: 65px !important;
-  }
-}
-
-#la_app {
-  padding-top: 64px;
-}
-
 /* -------------Nosotros------------ */
 
 #nosotros {
-  background-image: url("../img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
+  background-image: url("../img/CIOM-2/Nosotros/Header.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   height: 401px;
   max-height: 401px;
-  padding-top: 70px;
+  padding-top: 160px;
+}
+
+#nosotros h2 {
+  display: none;
+  padding: 0%;
 }
 
 #nosotros h1 {
-  font-size: 40px !important;
-  font-weight: 600 !important;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 55px;
+  text-wrap: wrap !important;
 }
 
-.header-info-container-nosotros {
-  line-height: 38px;
-  border: red;
-  padding-left: -10px;
-  padding-right: -10px;
+.header-main-container-nosotros {
+  padding: 50px 25px !important;
+  margin: auto;
+  height: auto;
 }
 
-#nosotros p {
-  font-size: 18px;
+#nosotros-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px !important;
 }
 
-.header-main-container-nosotros h3 {
+#nosotros-description-container p,
+#nosotros-description-container h2 {
+  line-height: 30px;
+}
+
+.header-main-container-nosotros .description_subtitle {
   font-size: 20px !important;
   font-weight: 700;
-  line-height: 30px;
-}
-
-.header-main-container-nosotros p {
-  font-size: 18px !important;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.header-main-container-nosotros h2 {
-  font-size: 16px !important;
-  font-weight: 700;
-  line-height: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .this-is-us h1 {
   font-size: 36px;
   font-weight: 600;
-}
-
-#nuestro-trabajo {
-  background-color: var(--blue-light);
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 15px;
 }
 
 #nuestro-trabajo h3 {
@@ -2369,6 +3600,10 @@ header-info-container-apps {
   font-size: 32px !important;
   line-height: 40.32px;
   color: white;
+}
+
+#this-is-us {
+  background-color: var(--background-ligth);
 }
 
 #this-is-us #team .team-items h1 {
@@ -2385,9 +3620,98 @@ header-info-container-apps {
   font-weight: 600;
   line-height: 20.1px;
   letter-spacing: -0.25%;
+  color: var(--blue-light);
 }
 
-@media screen and (min-width: 768px) {
+#this-is-us #team .team-items .linkedin {
+  width: 18px;
+  height: 18px;
+  margin-top: 14.25px;
+}
+
+#nosotros_objetivo {
+  padding: 50px 0 !important;
+  color: var(--blanco);
+  background-color: var(--blue-light);
+}
+
+#nosotros_objetivo .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nosotros_objetivo h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+#info-adicional {
+  padding: 100px 25px;
+  height: 435px;
+}
+
+#info-adicional h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#info-adicional .info-buttons-container {
+  padding: 68.5px 25px;
+  gap: 25px;
+}
+
+#info-adicional .info-adicional-button {
+  width: 336px;
+  height: 60px;
+  background-color: transparent;
+  color: var(--blue-light);
+  border: 2px solid var(--blue-light);
+  border-radius: 4px;
+}
+
+#info-adicional .info-btn-selected {
+  background-color: var(--blue-light);
+  color: var(--blanco);
+  width: 336px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+  #nosotros_objetivo {
+    padding: 31px 20px;
+    color: var(--blanco);
+    background-color: var(--blue-light);
+    margin: 48px 0px;
+  }
+}
+
+@media screen and (min-width: 1057px) {
+  #nosotros {
+    padding-top: 122px !important;
+    padding-left: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #nosotros h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 521px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #nosotros h1 {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 521px !important;
+    height: 55px;
+  }
+
   #nuestro-trabajo {
     background-color: var(--blue-light);
     height: 173px;
@@ -2403,12 +3727,11 @@ header-info-container-apps {
     color: white;
   }
 
-  #nosotros {
-    padding-top: 172px;
-  }
-
   #this-is-us {
-    padding-top: 90px !important;
+    padding-top: 107px !important;
+    padding-bottom: 107px;
+    height: 1030px;
+    background-color: var(--background-ligth);
   }
 
   #this-is-us h1 {
@@ -2417,14 +3740,34 @@ header-info-container-apps {
     line-height: 50px;
     color: var(--azul-primario);
     margin-bottom: 56px;
+    margin-top: 0;
+  }
+
+  .header-main-container-nosotros {
+    padding: 99px 270px 88px 287px !important;
+    margin: auto;
+    max-height: 1058px;
   }
 
   #nosotros-description-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 851px !important;
-    height: 451px !important;
+    height: 871px !important;
+    max-width: 882px;
+    font-size: 18px !important;
+  }
+
+  #nosotros-description-container p,
+  #nosotros-description-container h2 {
+    line-height: 30px;
+  }
+
+  .header-main-container-nosotros .description_subtitle {
+    font-size: 20px !important;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
   }
 
   #this-is-us #team .team-items h1 {
@@ -2447,123 +3790,670 @@ header-info-container-apps {
     gap: 53.9px !important;
   }
 
-  .this-is-us {
-    height: 930px;
-  }
-
-  .header-main-container-nosotros {
-    padding-top: 72px !important;
-    margin: auto;
-    height: 643px;
+  #info-adicional {
+    padding: 100px 81px;
+    max-height: 435px;
   }
 }
 
-/* ----------Inversionistas--------- */
+/* -----Inversionistas CIOM 2-------- */
 
 #inversionistas {
-  background-image: url("../img/Crowdsourcing/Inversionistas/hero inversionistas.png");
+  background-image: url("/assets/img/CIOM-2/Inversionistas/Header.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-  height: 401px;
-  max-height: 401px;
-  padding-top: 90px;
+  height: 495px;
+  padding-top: 120px;
 }
 
-#inversionistas .title {
-  font-size: 1.5rem !important;
+#inversionistas h2 {
+  display: none;
+}
+
+#inversionistas h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-wrap: wrap !important;
+  padding: 0 25px;
+}
+
+#inversionistas-description {
+  padding: 82px 25px !important;
+}
+
+#inversionistas-description h1 {
+  font-size: 36px;
   font-weight: 600;
-  margin-bottom: 36px;
+  margin-bottom: 54px;
+}
+
+#inversionistas-description .card {
+  border: none;
+}
+
+#inversionistas-description .description-item-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+#inversionistas-description .blue-text {
+  color: var(--blue-light);
+  width: 166px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+#inversionistas-description span {
+  color: #ff0000;
+}
+
+#inversionistas_header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  font-size: 16px;
+  min-width: 203px;
+  height: 52px;
+  background: var(--blue-light);
+  color: white;
+  border: var(--blue-light) 2px solid;
+  border-radius: 4px;
+  margin-top: 46px;
+}
+
+@media screen and (min-width: 1300px) {
+  #inversionistas {
+    padding-top: 93px;
+    padding-left: 95px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #inversionistas h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #inversionistas h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 546px !important;
+    padding: 0%;
+  }
+
+  #inversionistas_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    font-size: 16px;
+    min-width: 203px;
+    height: 52px;
+    background: transparent;
+    color: white;
+    border: var(--celeste-secundario) 2px solid;
+    border-radius: 4px;
+    margin-top: 46px;
+  }
+
+  #inversionistas-description {
+    height: 633px;
+  }
+
+  #inversionistas-description .card {
+    gap: 72px;
+    border: none;
+  }
+
+  #inversionistas-description .description-items {
+    max-height: 325px;
+  }
+
+  #inversionistas-description .description-problems {
+    margin-top: 84px;
+  }
+
+  #inversionistas-description .blue-text {
+    color: var(--blue-light);
+    min-width: 166px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+    text-wrap: nowrap;
+  }
+}
+
+/* --------KPIs4 Inversionistas -----------*/
+
+#kpis4 .title {
+  margin-bottom: 19px;
+  margin-top: 33px;
+}
+
+#kpis4 .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+#kpis4 #kpis_item {
+  padding: 25px;
+}
+
+#kpis4 #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis4 .clock-icon {
+  width: 22px;
+  height: 21px;
+  margin-right: 6px;
+}
+
+#kpis4 #kpis_item .card,
+#kpis4 #kpis_item .card2 {
+  border: none;
+  width: 100% !important;
+}
+
+#kpis4 #kpis_item .card h2,
+#kpis4 #kpis_item .card2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+#kpis4 #kpis_item .card h1,
+#kpis4 #kpis_item .card2 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#kpis4 #kpis_item .card p,
+#kpis4 #kpis_item .card2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis4 #kpis_item .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  background-color: var(--background-ligth) !important;
+}
+
+#kpis4 #kpis_item .card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  height: fit-content !important;
+}
+
+#kpis4 > div:nth-child(2) {
+  background-color: var(--background-ligth);
+}
+
+#kpis4 #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis4 {
+    margin-bottom: 67px;
+    margin-top: 86px;
+  }
+
+  #kpis4 .title {
+    height: 137px;
+    margin-bottom: 19px;
+  }
+
+  #kpis4 #kpis_item {
+    padding-top: 45px;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 46px;
+  }
+
+  #kpis4 #kpis_item .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px !important;
+    height: 351px;
+    border: none;
+    height: 314px !important;
+    background-color: var(--background-ligth) !important;
+  }
+
+  #kpis4 #kpis_item .card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 620px !important;
+    margin-left: 123px;
+    height: 314px !important;
+    border: none;
+  }
+
+  #kpis4 #kpis_item .kpi-img {
+    width: 568px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/* Con CIOM */
+
+#con-ciom {
+  background-color: var(--blue-light);
+  padding: 55px;
+}
+
+#con-ciom h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* ---------- Clarin -----------*/
+
+#clarin {
+  background-image: url("/assets/img/CIOM-2/Inversionistas/hhero_1.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+#clarin .clarin-inner {
+  height: 719px;
+  max-width: 649px;
+  padding: 25px;
+}
+
+#clarin h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 55px;
+  margin-top: 79px;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#clarin .clarin-cards {
+  gap: 22px;
+  margin-bottom: 46px;
+}
+
+#clarin .clarin-cards h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#clarin #clarin_seguir_leyendo {
+  font-size: 16 !important;
+  font-weight: 600 !important;
+  line-height: 24px;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+#clarin .plus-icon {
+  width: 16.79px;
+  height: 16.79px;
+}
+
+@media screen and (min-width: 900px) {
+  #clarin {
+    background-image: url("/assets/img/CIOM-2/Inversionistas/hhero_1.png");
+    height: 610px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+  }
+
+  #clarin .clarin-inner {
+    height: 719px;
+    max-width: 649px;
+    margin-left: 84px;
+    margin-top: 130px;
+    padding: 0px;
+  }
+}
+
+/* --------Desarrollo propio -------*/
+
+#desarrollo_propio {
+  margin: 82px 25px 0px 25px;
+}
+
+#desarrollo_propio_text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #8e8e93;
+}
+
+/* ----------Solucion -------*/
+
+#solucion-360 {
+  padding: 25px;
+  background-color: var(--background-ligth);
+}
+
+#solucion-360 h1 {
+  margin: 35px 0px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 50px;
+  color: var(--blue-light);
+  text-align: center;
+}
+
+#solucion-360 img {
+  min-width: 370px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 900px) {
+  #solucion-360 {
+    padding: 73px 65px 73px 99px;
+    background-color: var(--background-ligth);
+  }
+
+  #solucion-360 h1 {
+    margin-right: 91px;
+    max-width: 536px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--blue-light);
+    text-align: start;
+  }
+}
+
+/* producto  inversionistas*/
+
+#producto_inversionistas {
+  background-color: var(--blue-light);
+  padding: 35px 25px;
+}
+
+#producto_inversionistas h1 {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#producto_inversionistas button {
+  min-width: 180px;
+  height: 52px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: var(--celeste-secundario) 2px solid;
+  margin-top: 42px;
+}
+
+@media screen and (min-width: 900px) {
+  #producto_inversionistas {
+    background-color: var(--blue-light);
+    padding: 60px 90px 56px 90px;
+  }
+}
+
+/* ----------Victorinox Inversionistas--------- */
+#victorinox {
+  padding: 50px 25px;
 }
 
 #victorinox h3 {
   font-size: 36px;
   font-weight: 600;
   line-height: 50px;
-  margin-top: 79px;
-  color: var(--azul-primario);
+  margin-bottom: 69px;
 }
 
-#victorinox p {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-}
-#maximiza {
-  background-color: var(--blue-light);
-  color: white;
-  font-size: 32px !important;
-  font-weight: 400 !important;
-  line-height: 40.32px;
-  padding-top: 47px !important;
+#victorinox .victorinox-cards {
+  gap: 65px;
 }
 
-#maximiza-text {
-  max-width: 1260px;
+#victorinox .victorinox-card {
+  justify-content: space-between;
+  max-width: 190px;
+  height: 134px;
 }
 
-.ciom-text {
-  font-size: 32px !important;
-  font-weight: 700 !important;
-  line-height: 40.32px !important;
-}
-
-#inversionistas_maximiza_title {
-  font-weight: 400;
-}
-
-#inversionistas_maximiza_title br {
-  display: none; /* Oculta el <br> si no deseas que se vea */
-}
-
-@media screen and (min-width: 768px) {
-  .ciom-text {
-    font-size: 32px !important;
-    font-weight: 700 !important;
-    line-height: 40.32px !important;
-  }
-
-  #inversionistas_maximiza_title {
-    font-weight: 400;
-  }
-
-  #inversionistas_maximiza_title br {
-    display: none; /* Oculta el <br> si no deseas que se vea */
-  }
-  #maximiza {
-    display: flex;
-    justify-content: center;
-    height: 173px;
-  }
-
-  #maximiza h3 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40.32px;
-  }
-
-  #inversionistas {
-    background-image: url("../img/Crowdsourcing/Inversionistas/hero inversionistas.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 401px;
-    max-height: 401px;
-    padding-top: 102px;
-  }
-
-  #inversionistas .title {
-    font-size: 40px !important;
-    font-weight: 600;
-    line-height: 55px;
-  }
-
+@media screen and (min-width: 1105px) {
   #victorinox {
-    height: 431px;
+    padding: 79px 25px 97px 25px;
+  }
+
+  #victorinox .victorinox-cards {
+    max-width: 1260px;
+    gap: 65px;
+  }
+
+  #victorinox .victorinox-card {
+    justify-content: space-between;
+    width: 190px;
+    height: 134px;
+  }
+}
+
+/* --------KPIs5 Inversionistas -----------*/
+
+#kpis5 .kpis5-title {
+  margin-bottom: 19px;
+  margin-top: 33px;
+}
+
+#kpis5 #kpis_item {
+  padding: 25px;
+}
+
+#kpis5 #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis5 .clock-icon {
+  width: 22px;
+  height: 21px;
+  margin-right: 6px;
+}
+
+#kpis5 #kpis_item #card,
+#kpis5 #kpis_item #card2 {
+  border: none;
+  width: 100% !important;
+}
+
+#kpis5 #kpis_item #card h1,
+#kpis5 #kpis_item #card2 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 30px !important;
+}
+
+#kpis5 #kpis_item #card p,
+#kpis5 #kpis_item #card2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis5 #kpis_item #card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: var(--background-ligth);
+}
+
+#kpis5 #kpis_item #card2 {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: fit-content !important;
+}
+
+#kpis5 > div:nth-child(3) {
+  background-color: var(--background-ligth);
+}
+
+#kpis5 > div:nth-child(5) {
+  background-color: var(--background-ligth);
+}
+
+#kpis5 #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis5 {
+    margin-bottom: 67px;
+    margin-top: 86px;
+  }
+
+  #kpis5 #kpis_item {
+    padding-top: 45px;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 46px;
+    min-height: 540px;
+    display: flex;
+    align-items: center !important;
+  }
+
+  #kpis5 #kpis_item #card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 580px !important;
+    height: fit-content !important;
+    border: none;
+    margin-right: 86px;
+    margin-bottom: 0px !important;
+  }
+
+  #kpis5 #kpis_item #card2 {
+    display: flex;
+    flex-direction: column;
+    width: 580px !important;
+    margin-left: 123px;
+    height: fit-content !important;
+    padding: 0 !important;
+    margin-bottom: 0px !important;
+  }
+
+  #kpis5 #kpis_item .kpi-img {
+    width: 568px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/* ---------World -------*/
+#world {
+  padding: 78px 25px;
+}
+
+#world .world-header {
+  gap: 21px;
+  margin-bottom: 48px;
+}
+
+#world .world-header-item {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+#world .world-header-item-2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40.32px;
+}
+
+#world .world-and-list {
+  gap: 54px;
+}
+
+#world .world-list {
+  gap: 22px;
+  max-width: 481px;
+  min-width: 375px !important;
+}
+
+#world .world-list-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#world .left-list {
+  max-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+#world .check-icon {
+  width: 13.12px !important;
+  height: 8.75px !important;
+}
+
+@media screen and (min-width: 900px) {
+  #world {
+    padding: 78px 178px 106px 173px;
+  }
+
+  #world .world-and-list {
+    gap: 254px;
+  }
+
+  #world .world-img {
+    max-width: 354px !important;
+    height: 347px !important;
   }
 }
 
 /* ----------Pre-ronda------------ */
+
+#pre-ronda {
+  background-color: var(--background-ligth);
+}
 
 #pre-ronda h3 {
   font-size: 20px;
@@ -2587,13 +4477,12 @@ header-info-container-apps {
 }
 
 .pre-ronda-inner-item {
-  width: 207px !important;
+  max-width: 207px !important;
 }
 
 @media screen and (min-width: 768px) {
   #pre-ronda {
-    height: 564px;
-    max-width: 1212px;
+    padding: 82px 156px 126px 156px !important;
     margin: auto;
   }
 
@@ -2601,7 +4490,6 @@ header-info-container-apps {
     font-size: 36px;
     font-weight: 600;
     line-height: 50px;
-    margin-top: 79px;
     margin-bottom: 89px;
   }
 }
@@ -2613,6 +4501,9 @@ header-info-container-apps {
   margin-left: 20px !important;
   margin-right: 20px !important;
   margin: auto;
+  background-color: white !important;
+  color: var(--azul-primario);
+  border: 2px var(--blue-light) solid;
 }
 
 #x5 button {

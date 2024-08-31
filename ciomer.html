@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="assets/css/new-styles.css" rel="stylesheet" />
+    <link href="assets/css/global.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/crowdsourcingHover.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ciomer</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function generateLogos(type) {
+          let logos;
+
+          if (type === "IT") {
+            logos = `<div class="logo"><img src="./assets/img/it-react.png" alt="react"></div>
+          <div class="logo"><img src="./assets/img/it-redux.png" alt="redux"></div>
+          <div class="logo"><img src="./assets/img/it-node.png" alt="node"></div>
+          <div class="logo"><img src="./assets/img/it-mongodb.png" alt="mongodb"></div>
+          <div class="logo"><img src="./assets/img/it-aws.png" alt="aws"></div>
+          <div class="logo"><img src="./assets/img/it-google.png" alt="google"></div>`;
+          } else if (type === "COMPANY") {
+            logos = `<div class="logo"><img src="./assets/img/company-exxon.svg" alt="exxon"></div>
+         <div class="logo"><img src="./assets/img/company-volvo.svg" alt="volvo"></div>
+         <div class="logo"><img src="./assets/img/company-hyundai.png" alt="hyundai"></div>
+         <div class="logo"><img src="./assets/img/company-walmart.svg" alt="walmart"></div>
+         <div class="logo"><img src="./assets/img/company-merck.svg" alt="merck"></div>
+         <div class="logo"><img src="./assets/img/company-chevron.svg" alt="chevron"></div>`;
+          }
+
+          let result = "";
+          for (let i = 0; i < 10; i++) {
+            result += logos;
+          }
+          return result;
+        }
+
+        document.querySelector(".slider-track-it").innerHTML =
+          generateLogos("IT");
+        document.querySelector(".slider-track-company").innerHTML =
+          generateLogos("COMPANY");
+      });
+    </script>
+
+    <script>
+      window.pipedriveLeadboosterConfig = {
+        base: "leadbooster-chat.pipedrive.com",
+        companyId: 1769946,
+        playbookUuid: "9886413d-9e92-4f17-8b12-5e2385a47ebb",
+        version: 2,
+      };
+      (function () {
+        var w = window;
+        if (w.LeadBooster) {
+          console.warn("LeadBooster already exists");
+        } else {
+          w.LeadBooster = {
+            q: [],
+            on: function (n, h) {
+              this.q.push({ t: "o", n: n, h: h });
+            },
+            trigger: function (n) {
+              this.q.push({ t: "t", n: n });
+            },
+          };
+        }
+      })();
+    </script>
+    <script
+      src="https://leadbooster-chat.pipedrive.com/assets/loader.js"
+      async
+    ></script>
+  </head>
+
+  <body>
+    <div id="top-section">
+      <div id="navbar-container">
+        <header id="header" class="fixed-top d-flex align-items-center">
+          <div class="container">
+            <div
+              class="logo-container col d-flex align-items-center"
+              style="max-width: 120px"
+            >
+              <a href="index.html" style="padding: 0px">
+                <img
+                  src="./assets/img/logo_header.png"
+                  alt="CIOM"
+                  class="logo"
+                />
+              </a>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center">
+              <nav id="navbar" class="navbar" style="padding: 0px">
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                <ul>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle nav-text"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Principales Indicadores
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <li>
+                        <a
+                          id="dropdown_item_1"
+                          class="dropdown-item nav-text"
+                          href="cliente-misterioso.html"
+                          >Cliente Misterioso</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="dropdown_item_2"
+                          class="dropdown-item"
+                          href="auditorias.html"
+                          >Auditorias/Inspecciones</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="dropdown_item_3"
+                          class="dropdown-item"
+                          href="monitoreo.html"
+                          >Monitoreo de competencia</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_crowdsourcing"
+                      href="crowdsourcing.html"
+                      class="nav-link scrollto"
+                      >Crowdsourcing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_ciomers"
+                      href="ciomers.html"
+                      class="nav-link scrollto"
+                      >Quiero ser CIOMER</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_prices"
+                      href="index.html#prices"
+                      class="nav-link scrollto"
+                      >Precios</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_mentions"
+                      href="nosotros.html"
+                      class="nav-link scrollto"
+                      >Nosotros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="header_menu_investors"
+                      href="inversionistas.html"
+                      class="nav-link scrollto"
+                      >Inversionistas</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="navbar-right-icons">
+              <div class="language-selector">
+                <button class="dropbtn">
+                  <i class="bi bi-globe"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="changeLanguage('en')">English</a>
+                  <a href="#" onclick="changeLanguage('sp')">Español</a>
+                  <a href="#" onclick="changeLanguage('pt')">Português</a>
+                  <a href="#" onclick="changeLanguage('fr')">Français</a>
+                </div>
+              </div>
+
+              <div>
+                <a
+                  href="http://web.ciom.tech/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="login-icon"
+                    src="assets/img/Crowdsourcing/fluent_person-32-filled.png"
+                    alt="icon-person"
+                  />
+                </a>
+              </div>
+              <div class="d-none d-md-block">
+                <a href="http://web.ciom.tech/login" target="_blank">
+                  <h2 id="header_login" class="iniciar-sesion">
+                    Iniciar Sesión
+                  </h2>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-header"
+                  id="header_btn"
+                >
+                  Comenzar
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div
+        id="ciomer"
+        class="header d-flex flex-column align-items-center align-items-lg-start text-white"
+        data-aos="fade-up"
+      >
+        <h2 id="ciomer_subtitle">QUIERO USAR CIOM</h2>
+        <h1 id="ciomer_title" class="text-center text-md-start">
+          Descubre la libertad de generar ingresos a tu <br />
+          propio ritmo
+        </h1>
+      </div>
+
+      <div
+        id="ciomer-description"
+        class="header-info-container d-flex flex-column py-5 gap-5 py-md-0 gap-md-0"
+        data-aos="fade-up"
+      >
+        <div
+          class="header-row-container d-flex flex-column flex-md-row align-items-center mx-auto"
+        >
+          <div class="header-info-container-1 d-flex flex-column">
+            <h1 id="ciomer_description_title">¿Quienes pueden usar CIOM?</h1>
+            <p id="ciomer_p" class="text-start">
+              Las personas o empresas que decidan contratar los servicios de la
+              plataforma CIOM para poder prestar sus servicios a terceros a
+              través del aplicativo en calidad de prestador de servicios
+              independiente. Por simplicididad en las comnicaciones nos
+              referiremos a usted como EL Proveedor, El Contratista o EL CIOMER.
+            </p>
+          </div>
+          <div
+            class="header-info-container-2 d-flex flex-column justify-content-center"
+          >
+            <img
+              src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Captura de pantalla 2024-07-30 a la(s) 06.20.33 1.png"
+              alt="phone-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mx-auto" id="requisitos_ciomer">
+      <div
+        class="lists-container d-flex flex-column flex-md-row align-items-center"
+      >
+        <div class="list-container">
+          <h2 id="requisitos_title" class="requisitos-title">Requisitos</h2>
+          <div class="requisitos-list d-flex flex-column">
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                class="check-icon"
+                src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Vector.png"
+                alt="check"
+              />
+              <h2 id="requisitos_item">Ser mayor de edad</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                class="check-icon"
+                src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Vector.png"
+                alt="check"
+              />
+              <h2 id="requisitos_item_1">
+                Cumplir con todos los requisitos de ley de su país para la
+                prestación de servicios
+              </h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                class="check-icon"
+                src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Vector.png"
+                alt="check"
+              />
+              <h2 id="requisitos_item_2">Aceptar términos y condiciones</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                class="check-icon"
+                src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Vector.png"
+                alt="check"
+              />
+              <h2 id="requisitos_item_3">
+                Mantener una calidad mayor al 95% en todos los servicios que
+                presente
+              </h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img
+                class="check-icon"
+                src="assets/img/CIOM-2/Ciomer/www.ciom.tech/Vector.png"
+                alt="check"
+              />
+              <h2 id="requisitos_item_4">Estar al día con el pago por el uso de la plataforma</h2>
+            </div>
+          </div>
+        </div>
+        <div class="list-container">
+          <h2 id="requisitos_list_title" class="requisitos-title">Costos del Servicio</h2>
+          <div class="requisitos-list2 d-flex flex-column">
+            <div class="d-flex gap-2 align-items-center">
+              <h2 id="requisitos_nivel" class="nivel">Nivel 0:</h2>
+              <h2 id="requisitos_nivel_text">Prueba gratuita (2 Meses)</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <h2 id="requisitos_nivel_1" class="nivel">Nivel 1 a 3:</h2>
+              <h2 id="requisitos_nivel_text_1">8 % de los ingresos generados con el app</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <h2 id="requisitos_nivel_2" class="nivel">Nivel 4 a 6:</h2>
+              <h2 id="requisitos_nivel_text_2">6 % de los ingresos generados con el app</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <h2 id="requisitos_nivel_3" class="nivel">Nivel 7 a 9:</h2>
+              <h2 id="requisitos_nivel_text_3">4 % de los ingresos generados con el app</h2>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <h2 id="requisitos_nivel_4" class="nivel">Nivel 10+:</h2>
+              <h2 id="requisitos_nivel_text_4">2 % de los ingresos generados con el app</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="plataforma" class="d-flex flex-column align-items-center">
+      <h1 id="plataforma_text" class="text-center">
+        Utiliza la plataforma CIOM para prestar tus servicios <br />
+        de forma libre e independiente
+      </h1>
+      <button id="plataforma_btn" class="btn">Inscribirme</button>
+    </div>
+
+    <div
+      id="ingresos"
+      class="d-flex flex-column flex-md-row align-items-center"
+    >
+      <div class="ingresos-text-container text-center text-md-start order-md-2">
+        <h1 id="ingresos_text" class="ingresos-text">
+          Conviértase en su propio jefe y aumente sus ingresos en sus tiempos
+          libres.
+        </h1>
+      </div>
+      <div>
+        <img
+          src="assets/img/CIOM-2/Ciomer/www.ciom.tech/pikaso_embed 1.png"
+          alt="woman-working"
+        />
+      </div>
+    </div>
+
+    <div
+      id="ciomers_herramientas"
+      class="d-flex flex-column flex-md-row align-items-center"
+    >
+      <div class="ciomers-herramientas-card d-flex flex-column">
+        <img
+          src="assets/img/Crowdsourcing/Ciomers/herramientas icons/material-symbols_reviews-outline.png"
+          alt="geo-icon"
+        />
+        <div class="herramientas-h3-container">
+          <h3 id="ciomers_herramientas_item">Satisfacción</h3>
+        </div>
+
+        <p id="ciomers_herramientas_item_lower">
+          Mantenemos una línea abierta para ayudarte con tus primeros servicios.
+        </p>
+      </div>
+      <div class="ciomers-herramientas-card d-flex flex-column">
+        <img
+          src="assets/img/Crowdsourcing/Ciomers/herramientas icons/jam_world.png"
+          alt="geo-icon"
+        />
+        <div class="herramientas-h3-container">
+          <h3 id="ciomers_herramientas_item_1">Sin fronteras</h3>
+        </div>
+
+        <p id="ciomers_herramientas_item_1_lower">
+          Podrás usar nuestro servicio en el país o ciudad que encuentres un
+          servicios solicitados.
+        </p>
+      </div>
+      <div class="ciomers-herramientas-card d-flex flex-column">
+        <img
+          src="assets/img/Crowdsourcing/Ciomers/herramientas icons/Vector.png"
+          alt="geo-icon"
+        />
+        <div class="herramientas-h3-container">
+          <h3 id="ciomers_herramientas_item_2">Transferencias</h3>
+        </div>
+        <p id="ciomers_herramientas_item_2_lower">
+          1 vez al mes el sistema cobrará a tus clientes y te depositará en tu
+          cuenta tus ingresos.
+        </p>
+      </div>
+      <div class="ciomers-herramientas-card d-flex flex-column">
+        <img
+          src="assets/img/Crowdsourcing/Ciomers/herramientas icons/mdi_chart-line.png"
+          alt="geo-icon"
+        />
+        <div class="herramientas-h3-container">
+          <h3 id="ciomers_herramientas_item_3">Ingresos</h3>
+        </div>
+        <p id="ciomers_herramientas_item_3_lower">
+          A medida que logre subir de nivel encontrará más tipos de servicios
+          que podrá prestar.
+        </p>
+      </div>
+    </div>
+
+    <section id="libera" data-aos="fade-up">
+      <h3 id="ciomers_libera_title" class="text-center">
+        Libere su potencial y conquiste su propio destino
+      </h3>
+    </section>
+
+    <div id="swiper-cliente-misterioso" class="swiper-container-wrapper crowdsourcing-swiper">
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <h1 id="ciomers_swiper_title" class="text-center p-5 p-md-0"">
+          Aprenda tareas simples <br> para prestar servicios a empresas
+        </h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-crowdsourcing-1">
+            <img
+              src="assets/img/Crowdsourcing/image 89.png"
+              alt="adults-eating-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-crowdsourcing-2">
+            <img
+              src="assets/img/Crowdsourcing/image 90.png"
+              alt="supermaket-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-crowdsourcing-3">
+            <img
+              src="assets/img/Crowdsourcing/two-young-pretty-girls-looking-dresses-try-it-while-choosing-shop 2.png"
+              alt="kid-icecream-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-crowdsourcing-4">
+            <img
+              src="assets/img/Crowdsourcing/image 91.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-crowdsourcing-5">
+            <img
+              src="assets/img/Crowdsourcing/Crowdsourcing/image 92.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination mb-5 mb-md-0"></div>
+      </div>
+    </div>
+
+    <section id="testimonials-3" data-aos="fade-up" class="d-flex flex-column align-items-center"> 
+        <div class="testimonials-3-inner swiper3 mySwiper3">
+          <h1
+            id="testimonials_ciomers_title"
+            class="text-center"
+          >
+          ¿Qué opinan quienes usan CIOM para prestar sus servicios?
+          </h1>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers" class="text-center">
+                  Buenas tarde muy contento por el objetivo logrado si estuve un poco
+                  nervioso pero tranqui y también agradecer al soporte por ser un buen
+                  instructor me guío de la mejor manera y muy buena la atención gracias
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_1" class="text-center">
+                  La aplicación me contacto para que les colaborará con un servicio el
+                  cual acepte , me pareció una experiencia muy buena, y ellos muy
+                  cumplidos con lo que prometieron , espero poder colaborar con ellos
+                  más adelante.
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_2" class="text-center">
+                  Increíble esto. Hacer auditorías de estaciones de servicio en tus
+                  horarios libres y que te paguen re bien no me lo esperaba. Además está
+                  App tel o hace super fácil y más con el apoyo por Whatsapp. Lo
+                  recomiendo 110%
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_3" class="text-center">
+                  Buenas tardes, excelente atención y predisposición por parte de
+                  Daniel, muy buena ayuda y seguimiento antes las dudas. Tengo que
+                  mejorar algunos aspectos que hacen a la práctica. Muchas gracias
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_4" class="text-center">
+                  Muy buena la experiencia y fácil de utilizar la app, es una buena
+                  opción para generar ingresos extras, también se destaca el
+                  acompañamiento por parte de soporte en el proceso de certificación,
+                  muy atenta la asesora.
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_5" class="text-center">
+                  La asesoría y la comunicación que nos dan es muy fluida. Es una
+                  empresa confiable. Solo es de seguir instrucciones y cumplir a
+                  cabalidad sencillos pasos y de forma ordenada. No he tenido problemas
+                  con los pagos.
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_6" class="text-center">
+                  Hermosa experiencia y destaco el acompañamiento y seguimiento del
+                  soporte en este proceso de certificación. Es imprescindible generar un
+                  vínculo de confianza para sentirse cómodo en la práctica, frente a lo
+                  nuevo y desconocido, que en esta oportunidad con el rol de soporte se
+                  logró.
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column">
+                <p id="testimonial_ciomers_7" class="text-center">
+                  Le doy 5 estrellas 🤩 me encanto, x ser la primera vez estuve re
+                  tranquila. Igual el soporte muy buena honda me explico bien detallado
+                  como lo tenía q hacer. Me gustó mucho su atención. No sabía q existía
+                  está aplicación, se siente interesante formar parte de este equipo.
+                  Muchas gracias
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card3 rounded-3 d-flex flex-column justify-content-between">
+                <p id="testimonial_ciomers_8" class="text-center">
+                  Excelente aplicación, mejor aún la empresa... ofrece oportunidades
+                  para generar ingresos, y siempre te brindan apoyo desde soporte
+                  técnico. Muy agradecido y conforme.
+                </p>
+                <div class="stars-container3">
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                  <div>
+                    <img class="star" alt="star" src="./assets/img/star.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination3"></div>
+        </div>
+        <button id="testimonials_3_btn">INSCRIBIRME</button>
+    </section>
+
+    <footer id="footer">
+      <div class="container mt-5">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+          <div>
+            <img
+              class="logo-image"
+              loading="lazy"
+              alt="logo-image"
+              src="./assets/img/logo2.png"
+            />
+            <p id="footer_description">
+              Nos hemos posicionado como la empresa líder en mediciones para
+              alimentar indicadores de mejora contínua. <br />¿Qué quieren
+              mejorar?
+            </p>
+          </div>
+
+          <div
+            class="footer-items-rigth d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div
+              class="item-content-1 d-flex flex-column justify-content-between"
+            >
+              <b id="footer_menu_title">Menu</b>
+              <a
+                id="footer_menu_prices"
+                href="index.html#prices"
+                target="_blank"
+                >Precios</a
+              >
+              <a
+                id="footer_menu_investments"
+                href="inversionistas.html"
+                target="_blank"
+                >Inversiones</a
+              >
+            </div>
+
+            <div
+              class="item-content-2 d-flex gap-3 flex-column justify-content-between"
+            >
+              <b id="footer_item2_title">Contactenos</b>
+              <div style="display: grid">
+                <strong id="footer_sales">Ventas:</strong>
+                <span>+573508647288</span>
+                <span>comercial@ciom.tech</span>
+              </div>
+              <div style="display: grid">
+                <strong id="footer_support">Soporte:</strong>
+                <span>+5491136610332</span>
+                <span>soporte@ciom.tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divide mt-5"></div>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
+        >
+          <div
+            class="legal-container d-flex flex-column flex-md-row align-items-start"
+          >
+            <a
+              id="footer_conditions"
+              href="https://web.ciom.tech/terminosycondicionesdeuso"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Terminos y condiciones</a
+            >
+            <div id="footer_privacy">Aviso de privacidad</div>
+            <div>©2024 CIOM</div>
+          </div>
+          <div class="d-flex icons-footer">
+            <div>
+              <a
+                href="https://www.linkedin.com/company/circle-complete-group/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  alt="facebook-icon"
+                  src="assets/img/Crowdsourcing/icon-Facebook.png"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/circle-complete-group/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img alt="linkedin-icon" src="./assets/img/linkedin.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-c7a8eK5fjUb/Yf16oE2zr/YZXXF5tSFnzL2SP2Xr06ZbLxCAVFCLZqG6KFb7mJ0d"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="assets/js/i18n-config.js"></script>
+
+    <script src="assets/js/newjs.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/hoverText.js"></script>
+    <script src="assets/js/price-selected.js"></script>
+    <script src="assets/js/prices-general.js"></script>
+  </body>
+</html>
