@@ -632,7 +632,10 @@ body {
   margin-top: 24px;
 }
 
-#prices2 #seleccion_btn {
+#seleccion_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 260px;
   height: 52px;
   background-color: white;
@@ -938,6 +941,10 @@ body {
   font-size: 16px !important;
   border-radius: 8px 8px 0px 0px;
   text-align: center;
+}
+
+#measures2 .kpis2-link {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
@@ -4551,10 +4558,331 @@ body {
   }
 }
 
+/* -----Prensa-------- */
+
+#prensa {
+  background-image: url("../img/CIOM-2/Prensa/home.ciom.tech/Header.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 401px;
+  max-height: 401px;
+  padding-top: 160px;
+}
+
+#prensa h2 {
+  display: none;
+}
+
+#prensa h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-wrap: wrap !important;
+}
+
+#prensa-description .header-row-container h1 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#prensa-description .header-info-container-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 532px !important;
+}
+
+#prensa-description .header-info-container-2 {
+  padding: 25px;
+}
+
+#prensa-description .header-info-container-2 h2 {
+  max-width: 430px !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1300px) {
+  #prensa {
+    padding-top: 122px;
+    padding-left: 103px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #prensa h2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 449px !important;
+    height: 30px;
+    display: block;
+  }
+
+  #prensa h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 449px !important;
+    height: 55px;
+  }
+
+  #prensa-description {
+    min-height: 437px !important;
+    width: 100%;
+    padding-top: 0px !important;
+    padding-left: 0px;
+    padding-right: 125px;
+    font-weight: 400 !important;
+    font-size: 18px;
+  }
+
+  #prensa-description .header-row-container {
+    gap: 216px;
+    padding: 0px;
+    height: 318px;
+    margin-top: 40px;
+  }
+
+  #prensa-description .header-row-container h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-wrap: nowrap;
+  }
+
+  #prensa-description .header-info-container-1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 540px !important;
+    padding: 0%;
+    height: 318px !important;
+    margin-left: 109px;
+  }
+
+  #prensa-description .header-info-container-2 {
+    height: 252px;
+    max-width: 474px !important;
+  }
+
+  #prensa-description .header-info-container-2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #prensa-description .header-info-container-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-wrap: nowrap;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 24px;
+    max-width: 449px !important;
+  }
+
+  #prensa-description .header-info-container-2 ul li {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* --------KPIs6 Prensa -----------*/
+
+#kpis6 .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+#kpis6 #kpis_item {
+  padding: 25px;
+}
+
+#kpis6 #kpis_item .kpi-img {
+  width: 350px;
+  margin-top: 35px;
+}
+
+#kpis6 .clock-icon {
+  width: 22px;
+  height: 21px;
+  margin-right: 6px;
+}
+
+#kpis6 #kpis_item .card,
+#kpis6 #kpis_item .card2 {
+  border: none;
+
+  width: 100% !important;
+}
+
+#kpis6 #kpis_item .card h2,
+#kpis6 #kpis_item .card2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+#kpis6 #kpis_item .card h1,
+#kpis6 #kpis_item .card2 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  margin-bottom: 42px;
+}
+
+#kpis6 #kpis_item .card p,
+#kpis6 #kpis_item .card2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#kpis6 > div:nth-child(2) {
+  background-color: var(--background-ligth);
+}
+
+#kpis6 > div:nth-child(4) {
+  background-color: var(--background-ligth);
+}
+
+#kpis6 > div:nth-child(6) {
+  background-color: var(--background-ligth);
+}
+
+#kpis6 #kpis_item button {
+  border: none;
+  background-color: transparent;
+  align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  #kpis6 #kpis_item {
+    padding-top: 125px;
+    padding-left: 95px;
+    padding-right: 110px;
+    padding-bottom: 46px;
+    min-height: 540px;
+  }
+
+  #kpis6 #kpis_item .card {
+    max-width: 580px !important;
+    height: 288px;
+    border: none;
+    height: 344px !important;
+  }
+
+  #kpis6 #kpis_item .card2 {
+    max-width: 620px !important;
+    margin-left: 123px;
+    height: 449px !important;
+    border: none;
+  }
+
+  #kpis6 #kpis_item .kpi-img {
+    max-width: 584px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/* -------------Contacto prensa ---------*/
+
+#contacto-prensa {
+  min-height: 313px;
+  border-radius: 30px;
+  padding: 25px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  margin: auto;
+  background-color: white !important;
+  color: var(--azul-primario);
+  border: 2px var(--blue-light) solid;
+}
+
+#contacto-prensa .contacto-inner-right {
+  gap: 46px;
+}
+
+#contacto-prensa .contacto-inner-left h1 {
+  font-size: 42;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+#contacto-prensa .contacto-inner-left h2 {
+  font-size: 18;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 18px;
+}
+
+#contacto-prensa .contacto-datos {
+  height: 181px;
+  width: 146px;
+}
+
+#contacto-prensa .contacto-datos h1 {
+  font-size: 22px !important;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+#contacto-prensa .contacto-datos h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#contacto-prensa .contacto-datos .full-icon {
+  width: 69px;
+  height: 30px;
+}
+
+#contacto-prensa .contacto-datos .contactar-img {
+  width: 118px;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #contacto-prensa {
+    max-width: 1246px;
+    max-height: 313px;
+    margin: auto !important;
+    padding-right: 208px;
+    padding-left: 167px;
+  }
+
+  #contacto-prensa .contacto-inner-main-container {
+    width: 1009px;
+  }
+
+  #contacto-prensa h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54.6px;
+    height: 31px;
+  }
+
+  #contacto-prensa h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
 /* ----------FAQ--------- */
 
 #ayuda {
-  background-image: url("../img/Crowdsourcing/PQR/Hero PQR.png");
+  background-color: var(--blue-light);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4569,6 +4897,11 @@ body {
   font-size: 40px;
   font-weight: 600;
   line-height: 55px;
+}
+
+.custom-accordion-container .title {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d7def0;
 }
 
 .app {
@@ -4590,9 +4923,10 @@ body {
   justify-content: space-between !important;
   align-items: center !important;
   background-color: transparent !important;
-  border: none !important; /* Eliminar todos los bordes */
-  border-bottom: 2px solid rgba(0, 46, 138, 1) !important; /* Borde inferior del color del texto */
+  border: none !important;
+  border-bottom: 1.5px solid #d7def0 !important;
   padding: 10px !important;
+  padding-bottom: 27px !important;
   font-weight: 700;
   font-size: 20px !important;
   text-align: left !important;
@@ -4600,10 +4934,9 @@ body {
   width: 100% !important;
   outline: none !important;
   font-size: 16px !important;
-  color: rgba(0, 46, 138, 1);
+  color: #2b2b2b;
 }
 
-/* Estilos para el contenido del acordeón */
 .custom-accordion-content {
   display: none;
   background-color: transparent !important;
@@ -4611,12 +4944,10 @@ body {
   padding-bottom: 0px;
 }
 
-/* Estilos para el icono de rotación */
 .custom-accordion-icon {
   transition: transform 0.3s ease !important;
 }
 
-/* Rotación del icono cuando el acordeón está abierto */
 .custom-accordion-button.active .custom-accordion-icon {
   transform: rotate(180deg) !important;
 }
@@ -4624,11 +4955,52 @@ body {
 .custom-accordion-container p,
 .custom-accordion-container li {
   padding-top: 15px;
-  color: rgba(0, 46, 138, 1);
+  color: #2b2b2b;
   line-height: 30px;
 }
 
 .custom-accordion-container {
   max-width: 936px;
   margin-top: 44px;
+}
+
+/* --------Agradecimiento ------*/
+
+#agradecimiento_header {
+  background-image: url("../img/CIOM-2/Agradecimiento/home.ciom.tech/image 141.png");
+  height: 556px;
+  background-position: center;
+}
+
+#agradecimiento_text {
+  padding: 50px 25px 0px 25px;
+}
+
+#agradecimiento_text h2 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+#agradecimiento_text h4 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 91px;
+}
+
+#agradecimiento_text span {
+  color: #ff0000;
+}
+
+#agradecimiento_text img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  #agradecimiento_text {
+    padding: 84.75px 279px 0px 279px;
+  }
 }

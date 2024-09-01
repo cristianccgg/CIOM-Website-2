@@ -280,27 +280,65 @@ li {
   left: 0;
   top: 90px !important;
   width: 100%;
-  padding: 20px;
   display: flex;
+  padding: 32px 178px 58px 160px;
+  min-height: 394px !important;
 }
 
-#navbar .dropdown-menu .dropdown-item {
+#navbar .dropdown-item {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   align-items: start;
-  font-size: 15px;
-  font-weight: 500;
-  height: 400px;
+  gap: 10px;
+  height: 304px;
+}
+
+#navbar .links-container {
+  height: 160px;
+  gap: 10px;
+  margin-left: 36px;
+}
+
+#navbar .links-container1 {
+  margin-left: 36px;
 }
 
 #navbar .dropdown-menu .dropdown-item-2,
 .dropdown-item-3 {
-  border-left: 2px solid;
+  border-left: 1px solid #8e8e9366;
+  padding-left: 40px;
 }
 
 #navbar .dropdown-menu .dropdown-item h1 {
-  font-size: 34px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #8e8e93;
+  margin-bottom: 16px;
+}
+
+#navbar .dropdown-menu .dropdown-item h2 {
+  font-size: 14px !important;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--azul-primario);
+  padding: 0;
+}
+
+#navbar .dropdown-menu .dropdown-item a {
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 24px !important;
+  color: #8e8e93;
+  padding: 0;
+}
+
+#navbar .drop1 {
+  max-width: 282px;
+}
+
+#navbar .drop2 {
+  max-width: 336px;
 }
 
 @media screen and (max-width: 992px) {
@@ -308,7 +346,9 @@ li {
     left: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 95% !important;
+    padding: 60px;
   }
 
   #navbar .dropdown-menu .dropdown-item-2,
@@ -316,6 +356,25 @@ li {
     border: none;
     border-top: 2px solid;
     padding-top: 24px;
+    width: 100%;
+  }
+
+  #navbar .drop1 {
+    width: auto;
+  }
+
+  #navbar .drop2 {
+    width: auto;
+  }
+
+  #navbar .links-container {
+    height: 160px;
+    gap: 10px;
+    margin-left: 36px;
+  }
+
+  #navbar .links-container1 {
+    margin-left: 36px;
   }
 }
 
@@ -916,11 +975,13 @@ section {
   color: var(--blue-light);
 }
 
-#home .btn {
-  padding: 8px 40px;
+#home_btn {
+  padding: 10px 24px !important;
   border: 2px solid var(--blue-light);
   background-color: var(--blue-light);
   line-height: 28px;
+  min-width: 180px !important;
+  min-height: 52px !important;
 }
 
 @media (max-width: 1000px) {
@@ -942,7 +1003,7 @@ section {
     margin-top: 30px;
   }
 
-  #home .btn {
+  #home_btn {
     width: 100%;
   }
 }
@@ -1154,7 +1215,6 @@ section {
 
 #measures {
   padding: 86.56px 0 67.44px 0;
-  background-color: var(--background-ligth);
 }
 
 #measures h1 {
@@ -1830,7 +1890,7 @@ section {
   border-radius: 30px;
   background-color: var(--blue-light);
   align-items: center;
-  padding: 40px 50px;
+  padding: 68px 78px;
 }
 
 #help .prompt,
@@ -1885,9 +1945,9 @@ section {
 }
 
 @media (max-width: 800px) {
-  #help h1,
-  #capitalize h1 {
-    font-size: var(--fs-h2);
+  #help .saber-mas-btns {
+    width: 100%;
+    height: 104px;
   }
 }
 
