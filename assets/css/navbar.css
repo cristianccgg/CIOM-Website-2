@@ -1,0 +1,149 @@
+#navbar2 {
+  padding: 10px;
+  text-wrap: nowrap;
+}
+
+#navbar2 .menu-container-left img {
+  width: 80px;
+  margin-right: 8px;
+}
+
+.iniciar-sesion-text {
+  display: none;
+}
+
+#navbar2 .menu-container-left-text {
+  gap: 28px;
+  margin-left: 36px;
+  display: none !important;
+}
+
+#navbar2 .menu-container-left h2 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 32px !important;
+  color: #072146;
+}
+
+#navbar2 .menu-container-left .nav-ciomer {
+  color: #175fe2;
+}
+
+#navbar2 .menu-container-right img {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
+
+#navbar2 .menu-container-right h2 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 32px !important;
+  color: #072146;
+  margin-left: 8px;
+}
+
+#navbar2 .dropbtn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+#navbar2 .menu-container-right #navbar2_header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px !important;
+  height: 32px !important;
+  font-size: 0.5rem !important;
+  font-weight: 500 !important;
+  line-height: 32px !important;
+  color: white;
+  background-color: #2d844a;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+#navbar2 .close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 595px) {
+  .iniciar-sesion-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar2 {
+    padding: 22px 48px;
+    text-wrap: nowrap;
+  }
+}
+
+/* ... your existing CSS ... */
+
+@media screen and (max-width: 1375px) {
+  #navbar2 .menu-container-left-text {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1001;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: 100%;
+    overflow-y: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #navbar2 .menu-container-left-text.show-menu {
+    display: flex !important;
+  }
+
+  #navbar2 .bi-list {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+
+  #navbar2 .menu-container-left {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  #navbar2 .menu-container-left-text {
+    gap: 28px;
+    margin-left: 36px;
+    display: flex !important;
+  }
+
+  #navbar2 .bi-list,
+  #navbar2 .close-icon {
+    display: none !important;
+  }
+
+  .bi-list {
+    display: none;
+  }
+
+  #navbar2 .menu-container-left img {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #navbar2 .close-icon {
+    display: none !important;
+  }
+}

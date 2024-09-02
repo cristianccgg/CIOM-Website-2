@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateHoverTexts() {
-    console.log("Updating hover texts...");
     document
       .querySelectorAll(".cliente-misterioso .swiper-slide")
       .forEach((slide) => {
@@ -11,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (key) {
           const translation = i18next.t(key);
           slide.setAttribute("data-hover-text", translation);
-          console.log(
-            `Updated hover text for ${key} with translation: ${translation}`
-          );
         }
       });
 
@@ -23,20 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const className = slide.classList.value;
         const keyMatch = className.match(/swiper-audit-\d+/);
         const key = keyMatch ? keyMatch[0] : null;
-
-        if (key) {
-          const translation = i18next.t(key);
-          if (translation) {
-            console.log(
-              `Updated hover text for ${key} with translation: ${translation}`
-            );
-            slide.setAttribute("data-hover-text", translation);
-          } else {
-            console.log(`No translation found for key: ${key}`);
-          }
-        } else {
-          console.log(`No key found in class: ${className}`);
-        }
       });
 
     document

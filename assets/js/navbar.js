@@ -94,25 +94,25 @@
   });
 
   document.addEventListener("DOMContentLoaded", function () {
-    const dropdownToggle = document.querySelector("#navbarDropdownMenuLink");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
+    const solucionesDropdown = document.querySelector(
+      "#navbarDropdownMenuLink"
+    );
+    const dropdownMenu = document.querySelector(".mobile-dropdown");
 
-    dropdownToggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      dropdownMenu.classList.toggle("mobile-show");
-      this.classList.toggle("active");
+    solucionesDropdown.addEventListener("click", function (e) {
+      if (window.innerWidth <= 991) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle("show");
+      }
     });
 
     // Close dropdown when clicking outside
     document.addEventListener("click", function (e) {
       if (
-        !dropdownToggle.contains(e.target) &&
+        !solucionesDropdown.contains(e.target) &&
         !dropdownMenu.contains(e.target)
       ) {
-        dropdownMenu.classList.remove("mobile-show");
-        dropdownToggle.classList.remove("active");
+        dropdownMenu.classList.remove("show");
       }
     });
   });

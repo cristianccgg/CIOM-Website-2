@@ -33,12 +33,6 @@ h3 {
 h4 {
   font-size: var(--fs-h4);
 }
-h5,
-h6 {
-  /* font-weight: 400;
-  margin: 0 0 20px 0;
-  padding: 0; */
-}
 
 ul {
   padding-left: 0px;
@@ -280,7 +274,6 @@ li {
   left: 0;
   top: 90px !important;
   width: 100%;
-  display: flex;
   padding: 32px 178px 58px 160px;
   min-height: 394px !important;
 }
@@ -334,21 +327,63 @@ li {
 }
 
 #navbar .drop1 {
-  max-width: 282px;
+  min-width: 282px;
 }
 
 #navbar .drop2 {
-  max-width: 336px;
+  min-width: 336px;
 }
 
-@media screen and (max-width: 992px) {
+#navbar .drop1:hover {
+  background-color: transparent !important;
+}
+
+#navbar .drop2:hover {
+  background-color: transparent !important;
+}
+
+#navbar .drop3:hover {
+  background-color: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .mobile-dropdown {
+    display: none !important;
+
+    position: absolute;
+    top: 100% !important;
+    width: 100%;
+    /* ... */
+  }
+
+  .mobile-dropdown.show {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 1425px) {
+  #navbar .dropdown-menu {
+    width: fit-content !important;
+    max-width: 90% !important;
+  }
+
+  #navbar .drop1 {
+    width: fit-content;
+  }
+
+  #navbar .drop2 {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   #navbar .dropdown-menu {
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 95% !important;
-    padding: 60px;
+    width: 90% !important;
+    padding: 60px 0px;
   }
 
   #navbar .dropdown-menu .dropdown-item-2,
@@ -356,15 +391,7 @@ li {
     border: none;
     border-top: 2px solid;
     padding-top: 24px;
-    width: 100%;
-  }
-
-  #navbar .drop1 {
-    width: auto;
-  }
-
-  #navbar .drop2 {
-    width: auto;
+    width: 90% !important;
   }
 
   #navbar .links-container {
@@ -376,34 +403,38 @@ li {
   #navbar .links-container1 {
     margin-left: 36px;
   }
-}
 
-@media (max-width: 991px) {
   #navbar .dropdown-menu {
     display: none;
   }
+}
 
-  #navbar .dropdown-menu.mobile-show {
+@media screen and (max-width: 500px) {
+  #navbar .dropdown-menu {
+    left: 0;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100% !important;
-    left: 0 !important;
-    width: 100%;
-    opacity: 1;
-    visibility: visible;
+    align-items: flex-start;
+    width: 90% !important;
+    padding: 60px 0px;
+  }
+  #navbar .drop1 {
+    min-width: 282px !important;
+  }
+
+  #navbar .drop2 {
+    min-width: 336px !important;
+  }
+
+  #navbar .drop3 {
+    width: 336px !important;
   }
 }
 
 .navbar-mobile .dropdown-toggle.active {
-  /* Add styles for the active state, e.g.: */
   background-color: #f8f9fa;
   color: #0056b3;
 }
-
-/* .navbar {
-  display: contents;
-} */
 
 .navbar ul {
   margin: 0;
@@ -430,8 +461,6 @@ li {
   font-size: 16px !important;
   white-space: nowrap;
   transition: 0.3s;
-
-  /* font-size: var(--fs-btn); */
 }
 
 .navbar a i,
@@ -1001,6 +1030,10 @@ section {
     height: 100% !important;
     margin-left: 0;
     margin-top: 30px;
+  }
+
+  .home-inner-text h1 {
+    line-height: 40px !important;
   }
 
   #home_btn {

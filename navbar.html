@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link href="assets/css/global.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav id="navbar2" class="d-flex align-items-center justify-content-between">
+      <div class="menu-container-left d-flex align-items-center">
+        <img src="assets/img/logo_header.png" alt="logo" />
+        <i class="bi bi-list menu-icon"></i>
+        <i class="bi bi-x-lg close-icon" style="display: none"></i>
+        <div class="menu-container-left-text d-flex align-items-center">
+          <h2>Soluciones</h2>
+          <h2>Programa de mejora</h2>
+          <h2>Nosotros</h2>
+          <h2>Prensa</h2>
+          <h2>Inversionistas</h2>
+          <h2 class="nav-ciomer">Quiero ser Ciomer</h2>
+        </div>
+      </div>
+      <div class="menu-container-right d-flex align-items-center">
+        <div class="language-selector">
+          <button
+            class="dropbtn d-flex align-items-center justify-content-center"
+          >
+            <i class="bi bi-globe"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="changeLanguage('en')">English</a>
+            <a href="#" onclick="changeLanguage('sp')">Español</a>
+            <a href="#" onclick="changeLanguage('pt')">Português</a>
+            <a href="#" onclick="changeLanguage('fr')">Français</a>
+          </div>
+        </div>
+        <img src="assets/img/CIOM-2/person.png" alt="person-icon" />
+        <h2 class="iniciar-sesion-text">Iniciar Sesión</h2>
+        <a
+          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="navbar2_header_btn"
+        >
+          Solicitar asesor
+        </a>
+      </div>
+    </nav>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector("#navbar2 .bi-list");
+        const closeButton = document.querySelector("#navbar2 .close-icon");
+        const menuContainer = document.querySelector(
+          "#navbar2 .menu-container-left-text"
+        );
+
+        function toggleMenu() {
+          menuContainer.classList.toggle("show-menu");
+          menuButton.style.display = menuContainer.classList.contains(
+            "show-menu"
+          )
+            ? "none"
+            : "";
+          closeButton.style.display = menuContainer.classList.contains(
+            "show-menu"
+          )
+            ? ""
+            : "none";
+        }
+
+        menuButton.addEventListener("click", toggleMenu);
+        closeButton.addEventListener("click", toggleMenu);
+
+        // Reset button visibility on window resize
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 1376) {
+            menuButton.style.display = "";
+            closeButton.style.display = "none";
+            menuContainer.classList.remove("show-menu");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
