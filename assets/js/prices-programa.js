@@ -1,5 +1,5 @@
 const btnMonthly = document.getElementById("prices_btn_monthly");
-const btnAnnual = document.getElementById("prices_btn_annual");
+const btnSemestral = document.getElementById("prices_btn_semestral");
 
 const priceMisterioso = document.getElementById("misterioso-price");
 const priceInspecciones = document.getElementById("inspecciones-price");
@@ -12,7 +12,7 @@ const monthlyPrices = {
   monitoreos: "118<span class='span-numb'>75</span>",
 };
 
-const annualPrices = {
+const semestralPrices = {
   misterioso: "285<span class='span-numb'></span>",
   inspecciones: "195<span class='span-numb'></span>",
   monitoreos: "95<span class='span-numb'></span>",
@@ -30,14 +30,14 @@ btnMonthly.addEventListener("click", function () {
   changePrices(monthlyPrices);
   btnMonthly.classList.add("btn-primary");
   btnMonthly.classList.remove("btn-secondary");
-  btnAnnual.classList.add("btn-secondary");
-  btnAnnual.classList.remove("btn-primary");
+  btnSemestral.classList.add("btn-secondary");
+  btnSemestral.classList.remove("btn-primary");
 });
 
-btnAnnual.addEventListener("click", function () {
-  changePrices(annualPrices);
-  btnAnnual.classList.add("btn-primary");
-  btnAnnual.classList.remove("btn-secondary");
+btnSemestral.addEventListener("click", function () {
+  changePrices(semestralPrices);
+  btnSemestral.classList.add("btn-primary");
+  btnSemestral.classList.remove("btn-secondary");
   btnMonthly.classList.add("btn-secondary");
   btnMonthly.classList.remove("btn-primary");
 });

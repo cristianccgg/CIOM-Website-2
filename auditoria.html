@@ -24,6 +24,7 @@
     <link href="assets/css/global.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/auditoriasHover.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -80,161 +81,155 @@
   </head>
 
   <body>
-    <div id="top-section">
-      <div id="navbar-container">
-        <header id="header" class="fixed-top d-flex align-items-center">
-          <div class="container">
+    <nav id="navbar2" class="d-flex align-items-center justify-content-between">
+      <div class="menu-container-left d-flex align-items-center">
+        <a href="index.html"><img src="assets/img/logo_header.png" alt="logo" /></a>
+        <i class="bi bi-list menu-icon"></i>
+        <i class="bi bi-x-lg close-icon" style="display: none"></i>
+        <div
+          class="menu-container-left-text d-flex flex-column align-items-start"
+        >
+          <div class="menu-item-wrapper">
+            <h2 class="dropdown-toggle" id="solucionesDropdown">Soluciones</h2>
             <div
-              class="logo-container col d-flex align-items-center"
-              style="max-width: 120px"
+              class="dropdown-menu mobile-dropdown d-flex flex-column flex-lg-row justify-content-center"
+              aria-labelledby="solucionesDropdown"
             >
-              <a href="index.html" style="padding: 0px">
-                <img
-                  src="./assets/img/logo_header.png"
-                  alt="CIOM"
-                  class="logo"
-                />
-              </a>
-            </div>
-
-            <div class="d-flex justify-content-start align-items-center">
-              <nav id="navbar" class="navbar" style="padding: 0px">
-                <i class="bi bi-list mobile-nav-toggle"></i>
-                <ul>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle nav-text"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+              <div class="dropdown-item d-flex flex-column">
+                <div>
+                  <h1 id="soluciones_drop_item_title" class="dropdown-titles">Gestión</h1>
+                  <div>
+                    <h2 id="dropdown_gestion_subtitle" class="dropdown-subtitles">
+                      KPIs: Indicadores de Gestión
+                    </h2>
+                    <a id="dropdown_gestion_link" href="kpi.html" class="dropdown-links"
+                      >¿Qué son y cómo se usan?</a
                     >
-                      Principales Indicadores
-                    </a>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="navbarDropdownMenuLink"
+                  </div>
+                </div>
+                <div>
+                  <h2 id="dropdown_gestion_subtitle_1" class="dropdown-subtitles">Los más importantes:</h2>
+                  <div class="d-flex flex-column">
+                    <a id="dropdown_gestion_link_1" class="dropdown-links" href="cliente-misterioso.html"
+                      >Mystery Shopper</a
                     >
-                      <li>
-                        <a
-                          id="dropdown_item_1"
-                          class="dropdown-item nav-text"
-                          href="cliente-misterioso.html"
-                          >Cliente Misterioso</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          id="dropdown_item_2"
-                          class="dropdown-item"
-                          href="auditorias.html"
-                          >Auditorias/Inspecciones</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          id="dropdown_item_3"
-                          class="dropdown-item"
-                          href="monitoreo.html"
-                          >Monitoreo de competencia</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      id="header_menu_crowdsourcing"
-                      href="crowdsourcing.html"
-                      class="nav-link scrollto"
-                      >Crowdsourcing</a
+                    <a id="dropdown_gestion_link_2" class="dropdown-links" href="inspeccion.html"
+                      >Inspección</a
                     >
-                  </li>
-                  <li>
-                    <a
-                      id="header_menu_ciomers"
-                      href="ciomers.html"
-                      class="nav-link scrollto"
-                      >Quiero ser CIOMER</a
+                    <a id="dropdown_gestion_link_3" class="dropdown-links" href="monitoreo.html"
+                      >Monitoreo</a
                     >
-                  </li>
-                  <li>
-                    <a
-                      id="header_menu_prices"
-                      href="index.html#prices"
-                      class="nav-link scrollto"
-                      >Precios</a
+                    <a id="dropdown_gestion_link_4" class="dropdown-links" href="encuestas.html"
+                      >Encuestas</a
                     >
-                  </li>
-                  <li>
-                    <a
-                      id="header_menu_mentions"
-                      href="nosotros.html"
-                      class="nav-link scrollto"
-                      >Nosotros</a
+                    <a id="dropdown_gestion_link_5" class="dropdown-links" href="auditoria.html"
+                      >Auditoria</a
                     >
-                  </li>
-                  <li>
-                    <a
-                      id="header_menu_investors"
-                      href="inversionistas.html"
-                      class="nav-link scrollto"
-                      >Inversionistas</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="navbar-right-icons">
-              <div class="language-selector">
-                <button class="dropbtn">
-                  <i class="bi bi-globe"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#" onclick="changeLanguage('en')">English</a>
-                  <a href="#" onclick="changeLanguage('sp')">Español</a>
-                  <a href="#" onclick="changeLanguage('pt')">Português</a>
-                  <a href="#" onclick="changeLanguage('fr')">Français</a>
+                  </div>
                 </div>
               </div>
-
-              <div>
-                <a
-                  href="http://web.ciom.tech/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    class="login-icon"
-                    src="assets/img/Crowdsourcing/fluent_person-32-filled.png"
-                    alt="icon-person"
-                  />
-                </a>
+              <div class="dropdown-item nav-border-1">
+                <div>
+                  <h1 id="soluciones_drop_item_title_2" class="dropdown-titles ">Operación</h1>
+                  <div>
+                    <h2 id="dropdown_operacion_subtitle" class="dropdown-subtitles">App: Sistematización</h2>
+                    <a id="dropdown_operacion_link" href="app.html" class="dropdown-links"
+                      >¿Qué son y cómo lo logro?</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h2 id="dropdown_operacion_subtitle_1" class="dropdown-subtitles">Las Herramientas</h2>
+                  <div class="d-flex flex-column">
+                    <a id="dropdown_operacion_link_1" class="dropdown-links" href="app.html">Plataforma Web</a>
+                    <a id="dropdown_operacion_link_2" class="dropdown-links" href="app.html"
+                      >Plataforma mobil</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="d-none d-md-block">
-                <a href="http://web.ciom.tech/login" target="_blank">
-                  <h2 id="header_login" class="iniciar-sesion">
-                    Iniciar Sesión
+              <div class="dropdown-item nav-border-2">
+                <div>
+                  <h1 id="soluciones_drop_item_title_3" class="dropdown-titles">Ejecución</h1>
+                  <div>
+                    <h2 id="dropdown_ejecucion_subtitle" class="dropdown-subtitles">
+                      Ciomers: Tercerización de Operación
+                    </h2>
+                    <a id="dropdown_ejecucion_link" href="tercerizacion.html" class="dropdown-links"
+                      >¿Qué es tercerizar y cómo lo logro?</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h2 id="dropdown_ejecucion_subtitle_1" class="dropdown-subtitles">
+                    Lo más simple de Tercerizar
                   </h2>
-                </a>
-              </div>
-
-              <div>
-                <a
-                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-header"
-                  id="header_btn"
-                >
-                  Comenzar
-                </a>
+                  <div class="d-flex flex-column">
+                    <a id="dropdown_ejecucion_link_1" class="dropdown-links" href="auditoria.html"
+                      >Evaluaciones</a
+                    >
+                    <a id="dropdown_ejecucion_link_2" class="dropdown-links" href="inspeccion.html"
+                      >Inspecciones</a
+                    >
+                    <a id="dropdown_ejecucion_link_3" class="dropdown-links" href="monitoreo.html"
+                      >Monitoreos</a
+                    >
+                    <a id="dropdown_ejecucion_link_4" class="dropdown-links" href="encuestas.html"
+                      >Encuestas</a
+                    >
+                    <a id="dropdown_ejecucion_link_5" class="dropdown-links" href="auditoria.html"
+                      >Auditorias</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </header>
+          <a href="programa-de-mejora.html">
+            <h2 id="programa_de_mejora_navbar">Programa de mejora</h2>
+          </a>
+          <a href="nosotros.html">
+            <h2 id="nosotros_navbar">Nosotros</h2>
+          </a>
+          <a href="prensa.html">
+            <h2 id="prensa_navbar">Prensa</h2>
+          </a>
+          <a href="inversionistas2.html">
+            <h2 id="inversionistas_navbar">Inversionistas</h2>
+          </a>
+          <a href="ciomer.html">
+            <h2 id="ciomers_navbar" class="nav-ciomer">Quiero ser Ciomer</h2>
+          </a>
+        </div>
       </div>
+      <div class="menu-container-right d-flex align-items-center">
+        <div class="language-selector">
+          <button
+            class="dropbtn d-flex align-items-center justify-content-center"
+          >
+            <i class="bi bi-globe"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="changeLanguage('en')">English</a>
+            <a href="#" onclick="changeLanguage('sp')">Español</a>
+            <a href="#" onclick="changeLanguage('pt')">Português</a>
+            <a href="#" onclick="changeLanguage('fr')">Français</a>
+          </div>
+        </div>
+        <a href="https://web.ciom.tech/login" target="_blank"><img src="assets/img/CIOM-2/person.png" alt="person-icon" /></a>
+        <a href="https://web.ciom.tech/login" target="_blank">
+          <h2 id="iniciar_sesion_navbar" class="iniciar-sesion-text">Iniciar Sesión</h2>
+        </a>
+        <a
+          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="navbar2_header_btn"
+        >
+          Solicitar asesor
+        </a>
+      </div>
+    </nav>
 
       <div
         id="auditorias2"
@@ -253,7 +248,8 @@
         >
           <div class="header-info-container-1 col-md d-flex align-items-center">
             <p id="auditorias_description" class="text-start">
-                <strong>Las auditorías</strong> son revisiones sistemáticas y detalladas de las operaciones, finanzas o procesos de una empresa para asegurar que todo se esté realizando correctamente y cumpliendo con los estándares y regulaciones establecidos.
+                <strong>Auditar</strong> es una técnica utiliada para evaluar la calidad, exactitud y transparencia de los KPIs de una empresa.
+                  Consiste en enviar una persona agena a la compañía  (auditor) a hacer una revisión profunda sobre el cumplimiento de manuales, procesos, normas, etc. con el objetivo de validar la información de los KPIs y poder estar 100% seguro de las decisiones a tomar.
             </p>
           </div>
           <div
@@ -388,8 +384,8 @@
     >
       <div class="d-flex flex-column gap-4 align-items-center">
         <div>
-          <h3 id="cliente_misterioso_empresas_title" class="title">
-            Permita a su equipo mejorar su negocio con Inspecciones Periódicas
+          <h3 id="auditorias_empresas_title" class="title">
+            Permita a su equipo mejorar su negocio <br/> con Auditorias Regulares
           </h3>
         </div>
         <div class="datos d-flex flex-column gap-3 my-5 my-md-0 flex-md-row">
@@ -877,7 +873,7 @@
         <div class="row" data-aos="fade-up">
           <div class="col">            
             <div class="d-flex flex-column align-items-center">
-              <h1 id="prices2_title">¿Desea tercerizar las mediciones con la <br> solución uberizada que le ofrece CIOM?</h1>
+              <h1 id="prices2_title">¿Desea tercerizar las mediciones con la <a href="tercerizacion.html">solución uberizada</a></h1>
               <h2 id="prices2_sub_title">Consulte por facturación local en la moneda de su país</h2>
             </div>
             <div>
@@ -921,7 +917,7 @@
                         </div>                        
                       </div>
                     </div>
-                    <button id="seleccion_btn">Seleccionar</button>
+                    <a href="https://webforms.pipedrive.com/f/1CtHowmeUiDJlWGlzdDfL8HeLqgERdC5bDKM74VsCWlCfIjwfaBmtbVypy3MTNDpx" target="_blank" id="seleccion_btn">Cotizar</a>
                   </div>
                 </div>
               </div>
@@ -954,7 +950,7 @@
                         </div>
                       </div>
                     </div>
-                    <button id="seleccion_btn">Seleccionar</button>
+                    <a href="https://webforms.pipedrive.com/f/1CtHowmeUiDJlWGlzdDfL8HeLqgERdC5bDKM74VsCWlCfIjwfaBmtbVypy3MTNDpx" target="_blank" id="seleccion_btn">Cotizar</a>
                   </div>
                 </div>
               </div>
@@ -987,7 +983,7 @@
                         </div>
                       </div>
                     </div>
-                    <button id="seleccion_btn">Seleccionar</button>
+                    <a href="https://webforms.pipedrive.com/f/1CtHowmeUiDJlWGlzdDfL8HeLqgERdC5bDKM74VsCWlCfIjwfaBmtbVypy3MTNDpx" target="_blank" id="seleccion_btn">Cotizar</a>
                   </div>
                 </div>
               </div>
@@ -1022,7 +1018,7 @@
                         </div>
                       </div>
                     </div>
-                    <button id="seleccion_btn">Seleccionar</button>
+                    <a href="https://webforms.pipedrive.com/f/1CtHowmeUiDJlWGlzdDfL8HeLqgERdC5bDKM74VsCWlCfIjwfaBmtbVypy3MTNDpx" target="_blank" id="seleccion_btn">Cotizar</a>
                   </div>
                 </div>
               </div>
@@ -1055,7 +1051,7 @@
                         </div>
                       </div>
                     </div>
-                    <button id="seleccion_btn">Seleccionar</button>
+                    <a href="https://webforms.pipedrive.com/f/1CtHowmeUiDJlWGlzdDfL8HeLqgERdC5bDKM74VsCWlCfIjwfaBmtbVypy3MTNDpx" target="_blank" id="seleccion_btn">Cotizar</a>
                   </div>
                 </div>
               </div>
@@ -1069,8 +1065,8 @@
     <section id="measures2">   
       
       <div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
-            <h1 id="measures2_title">Las mediciones idóneas para cada tipo de KPIs</h1>
-            <h2 id="measures2_subtitle">Haga click en la que necesita y vea ¿Qué es?, ¿Cómo funciona?</h2>
+            <h1 id="measures2_title">Las mediciones idóneas para cada tipo de <a class="kpis2-link" href="kpi.html">KPIs</a></h1>
+            <h2 id="measures2_title_subtitle">Haga click en la que necesita y vea ¿Qué es?, ¿Cómo funciona?</h2>
       </div>    
       <section id="measuresItem2">
       
@@ -1081,7 +1077,7 @@
                 <div class="body">
                   <div id="measures2_item_1_title" class="title">1° LA EXPERIENCIA</div>
                   <ul>
-                    <li id="measures2_item_1_1">Cliente Misterioso</li>                  
+                    <li ><a href="cliente-misterioso.html" id="measures2_item_1_1">Cliente Misterioso</a></li>                  
                   </ul>
                 </div> 
               </div>
@@ -1093,7 +1089,7 @@
                 <div class="body">
                   <div id="measures2_item_2_title"class="title">2° LA OPERACION</div>
                   <ul>
-                    <li id="measures2_item_2_1">Inspecciones</li>                  
+                    <li ><a href="inspeccion.html" id="measures2_item_2_1">Inspecciones</a></li>                  
                   </ul>
                 </div> 
               </div>
@@ -1105,7 +1101,7 @@
                 <div class="body">
                   <div id="measures2_item_3_title"class="title">3° LA COMPETENCIA</div>
                   <ul>
-                    <li id="measures2_item_3_1">Monitoreos</li>                 
+                    <li ><a href="monitoreo.html" id="measures2_item_3_1">Monitoreos</a></li>                 
                   </ul>
                 </div> 
               </div>
@@ -1116,7 +1112,7 @@
                 <div class="body">
                   <div id="measures2_item_4_title"class="title">4° LA OPINION</div>
                   <ul>
-                    <li id="measures2_item_4_1">Encuestas</li>                  
+                    <li ><a href="encuestas.html" id="measures2_item_4_1">Encuestas</a></li>                  
                   </ul>
                 </div> 
               </div>
@@ -1126,7 +1122,7 @@
                 <div class="body">
                   <div id="measures2_item_5_title" class="title">5° LA TRANSPARENCIA</div>
                   <ul>
-                    <li id="measures2_item_5_1">Auditorías</li>                  
+                    <li ><a href="auditoria.html" id="measures2_item_5_1">Auditorías</a></li>                  
                   </ul>
                 </div> 
               </div>
@@ -1137,11 +1133,6 @@
     </section>
 
 
-    <!-- <section id="facturacion">
-      <div>
-        <h1>Consulte por facturación local en la moneda local de su país</h1>
-      </div>
-    </section> -->
 
     <section id="logos" style="background-color: #fff;">
       <div class="container">
@@ -1223,18 +1214,23 @@
               <i class="bi bi-check-lg"></i>          
               <span id="additional_item_4">Diseño de Programas Integrales de Mejora</span>
             </div>            
-          </div>                    
+          </div>
+                    
         </div>
+
       </div>
+
     </div>
+
   </div>
+ 
 </section>
 
 <section id="measures">
       
   <div class="container d-flex flex-column align-items-center text-center" data-aos="fade-up">                  
-        <h1 id="measures_title">Las soluciones integrales de CIOM para su negocio</h1>
-        <h2 id="measures_subtitle">Elija la que necesite y haga click para ver ¿Qué son?, ¿Cómo funcionan? y mucho más...</h2>
+        <h1 id="measures_title">Las 3 soluciones para su negocio</h1>
+        <h2 id="measures_subtitle">Haga click en la que necesita y vea ¿Qué es?, ¿Cómo funciona?</h2>
   </div>    
   <section id="measuresItem">
   
@@ -1245,9 +1241,11 @@
             <div class="body">
               <div id="measures_item_2_title" class="title">GESTION</div>
               <ul>
-                <li id="measures_item_2_1">Indicadores (KPIs)</li>                  
+                <li >
+                  <a href="kpi.html" id="measures_item_2_1">Indicadores (KPIs)</a>
+                </li>                  
               </ul>
-            </div> 
+            </div>
           </div>
         </div>
   
@@ -1257,7 +1255,7 @@
             <div class="body">
               <div id="measures_item_3_title" class="title">OPERACION</div>
               <ul>
-                <li id="measures_item_3_1">Aplicacación</li>                  
+                <li ><a href="app.html" id="measures_item_3_1">Aplicación</a></li>                  
               </ul>
             </div> 
           </div>
@@ -1269,7 +1267,7 @@
             <div class="body">
               <div id="measures_item_4_title" class="title">EJECUCION</div>
               <ul>
-                <li id="measures_item_4_1">Solución Uberizada</li>                 
+                <li ><a href="tercerizacion.html" id="measures_item_4_1">Solución Uberizada</a></li>                 
               </ul>
             </div> 
           </div>
@@ -1280,7 +1278,7 @@
             <div class="body">
               <div id="measures_item_5_title" class="title">PROGRAMA</div>
               <ul>
-                <li id="measures_item_5_1">Programa de Mejora</li>                  
+                <li ><a href="programa-de-mejora.html" id="measures_item_5_1">Programa de Mejora</a></li>                  
               </ul>
             </div> 
           </div>
@@ -1289,7 +1287,7 @@
     </div>   
   </section>
 </section>
-
+     
 <section id="help" data-aos="fade-up"><div class="container">
   <div class="row">
     <div class="col-md-12 custom-column">
@@ -1302,7 +1300,7 @@
           </div>
           <div class="saber-mas-btns d-flex flex-column">
             <a
-              id="solicitar_btn"
+              id="capitalize_btn"
               href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
               target="_blank"
               rel="noopener noreferrer"
@@ -1432,11 +1430,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <!-- <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-    <script src="assets/js/i18n-config.js"></script> -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="assets/js/i18n-config.js"></script>
 
     <script src="assets/js/newjs.js"></script>
-    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/navbar2.js"></script>
     <script src="assets/js/hoverText.js"></script>
     <script src="assets/js/prices.js"></script>
     <script src="assets/js/small-prices-selector.js"></script>
