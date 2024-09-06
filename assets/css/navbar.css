@@ -20,6 +20,10 @@
   position: relative;
 }
 
+#navbar2 .dropdown-toggle {
+  cursor: pointer;
+}
+
 #navbar2 .menu-container-left h2 {
   font-size: 18px !important;
   font-weight: 500 !important;
