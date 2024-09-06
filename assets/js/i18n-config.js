@@ -31,9 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (key) {
           const translation = i18next.t(key);
           slide.setAttribute("data-hover-text", translation);
-          console.log(
-            `Updated hover text for ${key} with translation: ${translation}`
-          );
         }
       });
 
@@ -47,19 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (key) {
           const translation = i18next.t(key);
           slide.setAttribute("data-hover-text", translation);
-          console.log(
-            `Updated hover text for ${key} with translation: ${translation}`
-          );
         }
       });
   }
 
   function checkI18nReady() {
     if (i18next.isInitialized) {
-      console.log("i18next is initialized");
       updateContent();
     } else {
-      console.log("i18next is not initialized yet, checking again...");
       setTimeout(checkI18nReady, 100);
     }
   }
@@ -96,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function initializeI18n() {
     loadTranslations().then((resources) => {
-      console.log("Translations loaded:", resources);
       const savedLanguage = getLanguageFromLocalStorage();
       i18next.init(
         {
@@ -115,12 +106,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateContent() {
-    console.log("Updating content...");
     document.querySelectorAll("[id]").forEach(function (el) {
       const id = el.getAttribute("id");
       if (i18next.exists(id)) {
         el.innerHTML = i18next.t(id);
-        console.log(`Updated ${id} with translation: ${i18next.t(id)}`);
       }
     });
 
@@ -135,9 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const id = el.getAttribute("id");
         if (i18next.exists(id)) {
           el.innerHTML = i18next.t(id);
-          console.log(
-            `Updated ${id} in navbar with translation: ${i18next.t(id)}`
-          );
         }
       });
     }

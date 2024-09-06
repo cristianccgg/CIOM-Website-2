@@ -5,7 +5,6 @@ const priceMisterioso = document.getElementById("misterioso-price");
 const priceInspecciones = document.getElementById("inspecciones-price");
 const priceMonitoreos = document.getElementById("monitoreos-price");
 
-// Valores de los precios para pago mensual y anual
 const monthlyPrices = {
   misterioso: "356<span class='span-numb'>25</span>",
   inspecciones: "243<span class='span-numb'>75</span>",
@@ -18,7 +17,6 @@ const semestralPrices = {
   monitoreos: "95<span class='span-numb'></span>",
 };
 
-// Función para cambiar los precios
 function changePrices(prices) {
   priceMisterioso.innerHTML = prices.misterioso;
   priceInspecciones.innerHTML = prices.inspecciones;

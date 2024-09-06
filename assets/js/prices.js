@@ -7,7 +7,6 @@ const priceMonitoreos = document.getElementById("monitoreos-price");
 const priceEncuestas = document.getElementById("encuestas-price");
 const priceAuditorias = document.getElementById("auditorias-price");
 
-// Valores de los precios para pago mensual y anual
 const monthlyPrices = {
   misterioso: "18<span class='span-numb'>75</span>",
   inspecciones: "31<span class='span-numb'>25</span>",
@@ -24,7 +23,6 @@ const annualPrices = {
   auditorias: "35<span class='span-numb'></span>",
 };
 
-// Función para cambiar los precios
 function changePrices(prices) {
   priceMisterioso.innerHTML = prices.misterioso;
   priceInspecciones.innerHTML = prices.inspecciones;
@@ -33,7 +31,6 @@ function changePrices(prices) {
   priceAuditorias.innerHTML = prices.auditorias;
 }
 
-// Event listeners para los botones
 btnMonthly.addEventListener("click", function () {
   changePrices(monthlyPrices);
   btnMonthly.classList.add("btn-primary");
