@@ -7,14 +7,14 @@ const priceProfesional = document.getElementById("profesional-price");
 
 const monthlyPrices = {
   basico: "19",
-  avanzado: "25",
-  profesional: "32",
+  avanzado: "32",
+  profesional: "38",
 };
 
 const annualPrices = {
   basico: "15",
-  avanzado: "20",
-  profesional: "25",
+  avanzado: "25",
+  profesional: "30",
 };
 
 function changePrices(prices) {

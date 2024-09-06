@@ -1,18 +1,16 @@
 #navbar2 {
   padding: 20px !important;
   text-wrap: nowrap;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1002; /* Increase this value */
   background-color: #fff;
+  height: 94px;
 }
 
 #navbar2 .menu-container-left img {
   width: 80px !important ;
   margin-right: 8px;
-}
-
-.iniciar-sesion-text {
-  display: none;
 }
 
 #navbar2 .menu-container-left-text {
@@ -33,18 +31,27 @@
   color: #175fe2;
 }
 
-#navbar2 .menu-container-right img {
-  width: 32px;
-  height: 32px;
-  margin-left: 8px;
-}
-
-#navbar2 .menu-container-right h2 {
+#navbar2 .menu-container-left h2 {
   font-size: 18px !important;
   font-weight: 500 !important;
   line-height: 32px !important;
   color: #072146;
-  margin-left: 8px;
+  margin-left: 0px;
+  width: fit-content;
+  height: 44px;
+  padding: 0px !important;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#navbar2 .menu-container-right h2 {
+  display: none;
+}
+
+#navbar2 .menu-container-right .bi {
+  width: fit-content !important;
+  margin-right: 14px !important;
 }
 
 #navbar2 .dropbtn i {
@@ -67,7 +74,38 @@
   color: white;
   background-color: #2d844a;
   border-radius: 4px;
-  margin-left: 8px;
+  margin-left: 8px !important;
+}
+
+#navbar2 .menu-container-right #navbar2_ciomer_header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px !important;
+  font-size: 0.5rem !important;
+  font-weight: 500 !important;
+  line-height: 32px !important;
+  height: 32px !important;
+  color: #175fe2;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #175fe2;
+  margin-left: 8px !important;
+}
+
+#navbar2 .menu-container-right #navbar2_nosotros_header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px !important;
+  font-size: 0.5rem !important;
+  font-weight: 500 !important;
+  line-height: 32px !important;
+  height: 32px !important;
+  color: white;
+  background-color: #175fe2 !important;
+  border-radius: 4px;
+  margin-left: 8px !important;
 }
 
 .menu-item-wrapper {
@@ -130,19 +168,28 @@
 }
 
 @media screen and (min-width: 595px) {
-  .iniciar-sesion-text {
+  #navbar2 .menu-container-right h2 {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 32px !important;
+    color: #072146;
+    margin-left: 8px;
+    width: fit-content;
+    height: 44px;
+    padding: 0px !important;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   #navbar2 {
-    padding: 22px 48px;
+    height: 94px !important;
     text-wrap: nowrap;
   }
 
   #navbar2 .menu-container-left img {
-    width: 100% !important;
+    width: 116px !important;
+    height: 50px !important;
     margin-right: 0px !important;
   }
 
@@ -158,7 +205,41 @@
     color: white;
     background-color: #2d844a;
     border-radius: 4px;
-    margin-left: 8px;
+    margin-left: 20px !important;
+  }
+
+  #navbar2 .menu-container-right #navbar2_ciomer_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 10px !important;
+    color: #175fe2;
+    background-color: transparent;
+    border-radius: 4px;
+    height: 60px !important;
+    min-width: 157px !important;
+    border: 2px solid #175fe2;
+    margin-left: 20px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+  }
+
+  #navbar2 .menu-container-right #navbar2_nosotros_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 10px !important;
+    background-color: #175fe2 !important;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    height: 52px !important;
+    min-width: 173px !important;
+    margin-left: 20px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
   }
 }
 
@@ -269,7 +350,8 @@
   }
 
   #navbar2 .menu-container-left img {
-    width: 100%;
+    width: 116px;
+    height: 50px;
     margin-right: 0px !important;
   }
 

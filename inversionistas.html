@@ -19,26 +19,73 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link href="assets/css/new-styles.css" rel="stylesheet" />
     <link href="assets/css/global.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/clienteHover.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+   
+
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
     <title>Inversionistas</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+       
+   
+    function generateLogos(type) {
+      let logos;
+  
+      if (type === "IT") {
+        logos =
+          `<div class="logo"><img src="./assets/img/it-react.png" alt="react"></div>
+          <div class="logo"><img src="./assets/img/it-redux.png" alt="redux"></div>
+          <div class="logo"><img src="./assets/img/it-node.png" alt="node"></div>
+          <div class="logo"><img src="./assets/img/it-mongodb.png" alt="mongodb"></div>
+          <div class="logo"><img src="./assets/img/it-aws.png" alt="aws"></div>
+          <div class="logo"><img src="./assets/img/it-google.png" alt="google"></div>`
+      } else if (type === "COMPANY")  { 
+        logos =   
+        `<div class="logo"><img src="./assets/img/company-exxon.svg" alt="exxon"></div>
+         <div class="logo"><img src="./assets/img/company-volvo.svg" alt="volvo"></div>
+         <div class="logo"><img src="./assets/img/company-hyundai.png" alt="hyundai"></div>
+         <div class="logo"><img src="./assets/img/company-walmart.svg" alt="walmart"></div>
+         <div class="logo"><img src="./assets/img/company-merck.svg" alt="merck"></div>
+         <div class="logo"><img src="./assets/img/company-chevron.svg" alt="chevron"></div>`
+      }
+        
+      let result = '';
+      for (let i = 0; i < 10; i++) {
+          result += logos;
+      }
+      return result;
+  }
+  
+  document.querySelector('.slider-track-it').innerHTML = generateLogos("IT");
+  document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPANY");
+    
+  });
+  
+  
+  </script>
+  
+    
+  <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 1769946,playbookUuid: '9886413d-9e92-4f17-8b12-5e2385a47ebb',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
   </head>
+  
 
   <body>
     <nav id="navbar2" class="d-flex align-items-center justify-content-between">
-      <div class="menu-container-left d-flex align-items-center">
+      <div class="menu-container-left  d-flex align-items-center justify-content-center">
         <a href="index.html"><img src="assets/img/logo_header.png" alt="logo" /></a>
         <i class="bi bi-list menu-icon"></i>
         <i class="bi bi-x-lg close-icon" style="display: none"></i>
         <div
-          class="menu-container-left-text d-flex flex-column align-items-start"
-        >
+          class="menu-container-left-text">  
           <div class="menu-item-wrapper">
             <h2 class="dropdown-toggle" id="solucionesDropdown">Soluciones</h2>
             <div
@@ -60,7 +107,7 @@
                 <div>
                   <h2 id="dropdown_gestion_subtitle_1" class="dropdown-subtitles">Los más importantes:</h2>
                   <div class="d-flex flex-column">
-                    <a id="dropdown_gestion_link_1" class="dropdown-links" href="cliente-misterioso.html"
+                    <a id="dropdown_gestion_link_1" class="dropdown-links" href="mystery-shopper.html"
                       >Mystery Shopper</a
                     >
                     <a id="dropdown_gestion_link_2" class="dropdown-links" href="inspeccion.html"
@@ -115,7 +162,7 @@
                     Lo más simple de Tercerizar
                   </h2>
                   <div class="d-flex flex-column">
-                    <a id="dropdown_ejecucion_link_1" class="dropdown-links" href="auditoria.html"
+                    <a id="dropdown_ejecucion_link_1" class="dropdown-links" href="mystery-shopper.html"
                       >Evaluaciones</a
                     >
                     <a id="dropdown_ejecucion_link_2" class="dropdown-links" href="inspeccion.html"
@@ -136,7 +183,7 @@
             </div>
           </div>
           <a href="programa-de-mejora.html">
-            <h2 id="programa_de_mejora_navbar">Programa de mejora</h2>
+            <h2 id="programa_de_mejora_navbar">Programa de Mejora</h2>
           </a>
           <a href="nosotros.html">
             <h2 id="nosotros_navbar">Nosotros</h2>
@@ -144,11 +191,11 @@
           <a href="prensa.html">
             <h2 id="prensa_navbar">Prensa</h2>
           </a>
-          <a href="inversionistas2.html">
+          <a href="inversionistas.html">
             <h2 id="inversionistas_navbar">Inversionistas</h2>
           </a>
           <a href="ciomer.html">
-            <h2 id="ciomers_navbar" class="nav-ciomer">Quiero ser Ciomer</h2>
+            <h2 id="ciomers_navbar" class="nav-ciomer">CIOMERS</h2>
           </a>
         </div>
       </div>
@@ -171,332 +218,935 @@
           <h2 id="iniciar_sesion_navbar" class="iniciar-sesion-text">Iniciar Sesión</h2>
         </a>
         <a
-          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+          href="https://webforms.pipedrive.com/f/2TzppiRCPgA8YvKxpSvFIK5wnhGBIs7IeNk7tki8tsLrhNeZ37DYjhHwF2nQDhtMT"
           target="_blank"
           rel="noopener noreferrer"
-          id="navbar2_header_btn"
+          id="navbar2_nosotros_header_btn"
         >
-          Solicitar asesor
+          CONTACTAR FOUNDERS
         </a>
       </div>
     </nav>
-      <div
-        id="inversionistas"
-        class="align-items-center text-white px-5 text-center d-flex flex-column"
-        data-aos="fade-up"
-      >
-        <h3 id="inversionistas_title" class="title">
-          El SaaS para el Canal B2B que está <br />revolucionando la forma de
-          operar de las compañías
-        </h3>
-        <a
-          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-          target="_blank"
-          ><button id="inversionistas_header_btn" class="btn btn-primary btn-hero-width">
-            Quiero invertir
-          </button></a
+
+    <main>
+      <div class="top-section"></div>
+        <div
+          id="inversionistas"
+          class="header d-flex flex-column align-items-center  align-items-lg-start  text-white"
+          data-aos="fade-up"
         >
-      </div>
-      <section
-        id="victorinox"
-        class="d-flex align-items-center flex-column text-center p-5 p-md-0"
-        data-aos="fade-up"
-      >
-        <div class="d-flex flex-column gap-md-5 align-items-center">
-          <div class="empresas-2-title mb-5 mb-md-0">
-            <h3 id="victorinox_title" class="victorinox-title">
-              Somos la victorinox de las compañías
-            </h3>
-          </div>
+          <h2 id="inversionistas_subtitle">INVERSIONISTAS</h2>
+          <h1 id="inversionistas_title" class="text-center text-md-start">
+              El SaaS que está revolucionando la forma de operar de las compañías
+          </h1>
+          <a href="https://webforms.pipedrive.com/f/2TzppiRCPgA8YvKxpSvFIK5wnhGBIs7IeNk7tki8tsLrhNeZ37DYjhHwF2nQDhtMT" target="_blank"><button id="inversionistas_header_btn">Contactar Founders</button></a>
+        </div>
           <div
-            class="icons-container-ciomers d-flex flex-column gap-3 gap-md-0 my-5 my-md-0 flex-md-row"
+          id="inversionistas-description"
+          data-aos="fade-up"
+          class="d-flex flex-column align-items-center"
           >
-            <div
-              class="herramientas-container d-flex flex-column align-items-center gap-3"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/carbon_location.png"
-                alt="geo-icon"
-              />
-              <p id="victorinox_item" class="d-flex flex-column fw-bold">
-                4.6<span id="victorinox_item_lower" class="fw-light"
-                  >Reviews</span
-                >
-              </p>
+              <h1 id="inversionistas_description_title">¿Sabía que de cada 100 empresas en el...</h1>
+              <div class="description-items d-flex flex-column justify-content-between">
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 class="blue-text">KPIs:</h2>
+                      <h2 id="inversionistas_description_righ" class="description-item-text">65% están <span>estancados</span> por no tener la info que necesitan para tomar dedecisiones.</h2>
+                  </div>
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 id="inversionistas_description_left_1"  class="blue-text">Experiencia:</h2>
+                      <h2 id="inversionistas_description_righ_1"  class="description-item-text">89% están <span>preocupados</span>  por que sus clientes puedan tener mala experiencia.</h2>
+                  </div>
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 id="inversionistas_description_left_2" class="blue-text">Operación:</h2>
+                      <h2 id="inversionistas_description_righ_2" class="description-item-text">52% están <span>agotados</span>  de intentar estandarizar su operación.</h2>
+                  </div>
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 id="inversionistas_description_left_3" class="blue-text">Competencia:</h2>
+                      <h2 id="inversionistas_description_righ_3" class="description-item-text">58% están <span>intranquilos</span>  por no tener buena visibilidad sobre sus competidores.</h2>
+                  </div>
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 id="inversionistas_description_left_4" class="blue-text">Opinión:</h2>
+                      <h2 id="inversionistas_description_righ_4" class="description-item-text">56% están <span>abrumados</span>  por no lograr entender a su cliente.</h2>
+                  </div>
+                  <div class="card d-flex flex-column flex-md-row">
+                      <h2 id="inversionistas_description_left_5" class="blue-text">Ejecución:</h2>
+                      <h2 id="inversionistas_description_righ_5" class="description-item-text">74% están <span>desmotivados</span> por no contar con la capacidad de ejecución que necesitan.</h2>
+                  </div>
+              </div>
+              <h1 id="description_problems" class="description-problems">Esos problemas son los que mantienen a su empresa estresada con...</h1>
+          </div>
+      
+          <div id="kpis4">
+              <div id="kpis_item">
+                  <div class="kpis4-main-card d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div class="card2 order-md-2 bg-transparent">
+                          <h1 id="kpis4_paso_2_item_1">Incertidumbre</h1>
+                          <p id="kpis4_paso_2_item_2">Generada por no tener herramientas para conocer de forma precisa <br> y objetiva el rendimiento de las áreas claves de un negocio.  Este <br> hecho imposibilita la toma de buenas decisiones, dificulta la <br> estabilidad del negocio y su crecimiento.  Este tipo de empresas generan alto nivel de stress a sus líderes / dueños.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/image.png" alt="money">
+                      </div>
+                  </div>
+              </div>
+              <div id="kpis_item">
+                  <div class="kpis4-main-card d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div class="card">
+                          <h1 id="kpis4_paso_3_item_1">Cansancio</h1>
+                          <p id="kpis4_paso_3_item_2">Acumulado por el esfuerzo que demanda operar una empresa sin una metodología y una herramenta de trabajo definidas que permitan estandarizar y eficientizar la operación.  Este tipo de compañías  se caracterizan por que el personal realiza sus tareas de la forma que mejor les parezca y ante cada rotación se pierde gran parte del conocimiento.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/cansancio/home.ciom.tech/image.png" alt="gas">
+                      </div>
+                  </div>
+              </div>
+              <div id="kpis_item">
+                  <div class="kpis4-main-card d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div class="card2 order-md-2 bg-transparent">
+                          <h1 id="kpis4_paso_4_item_1">Frustración</h1>
+                          <p id="kpis4_paso_4_item_2">Aparece cuando se tienen las ideas correctas, los recursos necesarios pero no se encuentra la forma de llevar una visión a su ejecución.  Es interminable la cantidad de iniciativas que quedan en <br> el camino por falta de capacidad de ejecución.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/frustracion/home.ciom.tech/image.png" alt="team">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="con-ciom">
+              <h1 id="con_ciom_title" class="text-center">Con <strong>CIOM</strong> usted podrá madurar su negocio y superar esos problemas <strong>facilmente</strong></h1>
+          </div>
+          <section id="clarin">
+              <div class="clarin-inner">
+                  <h1 id="clarin_title">La solución simple e integral para mejorar su negocio</h1>
+                  <div class="clarin-cards d-flex flex-column">
+                      <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <h2 id="clarin_text_item">Simplifique y mejore la gestión de su negocio</h2>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <h2 id="clarin_text_item_1">Sistematice y eficientice su operación</h2>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <h2 id="clarin_text_item_2">Incremente su capacidad de ejecición</h2>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                      <a href="https://www.clarin.com/economia/llega-multi-guatemala-fundo-argentino-ayuda-empresas-mejorar-ventas_0_y6j6sKz0YF.html" target="_blank"><img class="plus-icon" src="assets/img/CIOM-2/Indicadores de Gestion/home.ciom.tech/solucion/+.png" alt="plus-icon"></a>
+                      <a href="https://www.clarin.com/economia/llega-multi-guatemala-fundo-argentino-ayuda-empresas-mejorar-ventas_0_y6j6sKz0YF.html" target="_blank">
+                        <h4 id="clarin_seguir_leyendo">Seguir Leyendo</h4>
+                      </a>
+                  </div>
+              </div>
+          </section>
+          <div id="desarrollo_propio" class="d-flex flex-column align-items-center">
+              <h1 id="desarrollo_propio_text">Desarrollo propio en tecnologías de punta</h1>
+          </div>
+          <section id="logos" style="background-color: #fff;">
+              <div class="container">
+                  <div class="logo-slider">
+                      <div class="slider-track-it">
+                  </div>
+              </div>
+          </section>
+          <div id="solucion-360">
+              <div class="solucion-card d-flex flex-column flex-md-row align-items-center justify-content-lg-center">
+                  <h1 id="solucion_360_text">La solución 360 de CIOM permite a las compañías encontrar en una sola plataforma encontrar las 3 soluciones que necesitan para seguir desarrollando su negocio.</h1>
+                  <img src="assets/img/CIOM-2/Inversionistas/Solucion360/home.ciom.tech/image.png" alt="solucion-img">
+              </div>
+          </div>
+          <div id="producto_inversionistas" class="d-flex flex-column align-items-center">
+              <h1 id="producto_inversionistas_text" class="text-center">Un producto <strong>validado</strong> y <strong>aprobado</strong> por el mercado</h1>
+              <a href="https://webforms.pipedrive.com/f/2TzppiRCPgA8YvKxpSvFIK5wnhGBIs7IeNk7tki8tsLrhNeZ37DYjhHwF2nQDhtMT" target="_blank"><button id="producto_inversionistas_btn">Contactar founders</button></a>
+          </div>
+          <section id="testimonials-2" data-aos="fade-up">
+              <div class="swiper2 mySwiper2">
+                <h1 id="testimonials_title" class="testimonials-title text-center fs-2">
+                  Casos de éxito, transforme desafíos en oportunidades
+                </h1>
+                <div class="swiper-wrapper wrapper">
+                  <div class="swiper-slide">
+                    <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-gsk.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Adriana Pérez</h2>
+                          <div id="testimonials_role" class="company-name2">
+                            Manager
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial" class="description2 text-start">
+                        <strong>“...Tecnología en su máxima expresión...”</strong>
+                        Permite ver cosas que antes no veíamos.
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-chevron.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Alberto Fields</h2>
+                          <div id="testimonials_role_1" class="company-name2">
+                            Consultant
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_1" class="description2 text-start">
+                        <strong>“...Muy simple de usar...” </strong>
+                        Consolidamos todas las mediciones
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-walmart.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Martin Carbonelli</h2>
+                          <div id="testimonials_role_2" class="company-name2">
+                            Walmart
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_2" class="description2 text-start">
+                        <strong>“...Ideal para relevar en competidores..”</strong>
+                        Podemos generar la data que necesitamos
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-novey.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Alvaro Valiente</h2>
+                          <div id="testimonials_role_3" class="company-name2">
+                            CHRO Novey
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_3" class="description2 text-start">
+                        <strong>“...Aplicamos mejora continua...”</strong>
+                        Medir, Corregir, Mejorar hecho simple
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-rey.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Sonia Madrid</h2>
+                          <div id="testimonials_role_4" class="company-name2">
+                            VP Operaciones
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_4" class="description2 text-start">
+                        <strong> >“...Tecnología en su máxima expresión...”</strong>
+                        Permite ver cosas que antes no veíamos.
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-exxon.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Cintia Salgado</h2>
+                          <div id="testimonials_role_5" class="company-name2">
+                            Procurment Latam
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_5" class="description2 text-start">
+                        <strong>“...Estandaricé todo el caribe...”</strong>
+                        Una sola herramienta para toda una región
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-company1.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Aldo Mangravita</h2>
+                          <div id="testimonials_role_6" class="company-name2">
+                            Director General
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_6" class="description2 text-start">
+                        <strong>“...Estandarizamos la Imagen de la cadena...”</strong>
+                        Un nuevo logro para nuestro equipo
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-company2.png   "
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Ramón Lencina</h2>
+                          <div id="testimonials_role_7" class="company-name2">
+                            Director General
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_7" class="description2 text-start">
+                        <strong>“...Opero como una multinacional...”</strong>
+                        Tengo indicadores simples para accionar
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
+                    >
+                      <div class="header-testimonials">
+                        <div>
+                          <img
+                            class="company-icon2"
+                            alt="company-icon"
+                            src="./assets/img/testimonial-texaco.png"
+                          />
+                        </div>
+                        <div class="client-content2 text-start">
+                          <h2 class="client-name">Pedro Seguí</h2>
+                          <div id="testimonials_role_8" class="company-name2">
+                            Country Manager
+                          </div>
+                        </div>
+                      </div>
+                      <p id="testimonial_8" class="description2 text-start">
+                        <strong>“...Logramos un cambio radical en 18 m..”</strong>
+                        Pasamos a ser el mejor país de la cadena
+                      </p>
+                      <div class="stars-container">
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                        <div>
+                          <img class="star" alt="star" src="./assets/img/star.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination2"></div>
+              </div>
+          </section>
+          <section
+          id="victorinox"
+          class="d-flex align-items-center flex-column text-center "
+          data-aos="fade-up"
+        >
+          <div class="victorinox-container d-flex flex-column align-items-center">
+            <div class="empresas-2-title">
+              <h3 id="victorinox_title" class="victorinox-title">
+                Somos la victorinox de las compañías
+              </h3>
             </div>
             <div
-              class="herramientas-container d-flex flex-column align-items-center gap-3"
+              class="victorinox-cards d-flex flex-column flex-md-row align-items-center"
             >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/carbon_location-1.png"
-                alt="geo-icon"
-              />
-              <p id="victorinox_item_1" class="d-flex flex-column fw-bold">
-                19<span id="victorinox_item_1_lower" class="fw-light"
-                  >Paises</span
-                >
-              </p>
-            </div>
-            <div
-              class="herramientas-container d-flex flex-column align-items-center gap-3"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/carbon_location-2.png"
-                alt="geo-icon"
-              />
-              <p id="victorinox_item_2" class="d-flex flex-column fw-bold">
-                150k+<span id="victorinox_item_2_lower" class="fw-light"
-                  >Descargas</span
-                >
-              </p>
-            </div>
-            <div
-              class="herramientas-container d-flex flex-column align-items-center gap-3"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/carbon_location-3.png"
-                alt="geo-icon"
-              />
-              <p id="victorinox_item_3" class="d-flex flex-column fw-bold">
-                1.5M<span id="victorinox_item_3_lower" class="fw-light"
-                  >Vendido 2024</span
-                >
-              </p>
-            </div>
-            <div
-              class="herramientas-container d-flex flex-column align-items-center gap-3"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/carbon_location-4.png"
-                alt="geo-icon"
-              />
-              <p id="victorinox_item_4" class="d-flex flex-column fw-bold">
-                2.5M+<span id="victorinox_item_4_lower" class="fw-light"
-                  >Mediciones</span
-                >
-              </p>
+              <div
+                class="victorinox-card d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/carbon_location.png"
+                  alt="geo-icon"
+                />
+                <p id="victorinox_item" class="d-flex flex-column fw-bold">
+                  4.6<span id="victorinox_item_lower" class="fw-light"
+                    >Reseñas</span
+                  >
+                </p>
+              </div>
+              <div
+                class="victorinox-card  d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/carbon_location-1.png"
+                  alt="geo-icon"
+                />
+                <p id="victorinox_item_1" class="d-flex flex-column fw-bold">
+                  19<span id="victorinox_item_1_lower" class="fw-light"
+                    >Paises</span
+                  >
+                </p>
+              </div>
+              <div
+                class="victorinox-card d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/carbon_location-2.png"
+                  alt="geo-icon"
+                />
+                <p id="victorinox_item_2" class="d-flex flex-column fw-bold">
+                  150k+<span id="victorinox_item_2_lower" class="fw-light"
+                    >Descargas</span
+                  >
+                </p>
+              </div>
+              <div
+                class="victorinox-card d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/carbon_location-3.png"
+                  alt="geo-icon"
+                />
+                <p id="victorinox_item_3" class="d-flex flex-column fw-bold">
+                  1.5M<span id="victorinox_item_3_lower" class="fw-light"
+                    >Vendido 2024</span
+                  >
+                </p>
+              </div>
+              <div
+                class="herramientas-container d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/carbon_location-4.png"
+                  alt="geo-icon"
+                />
+                <p id="victorinox_item_4" class="d-flex flex-column fw-bold">
+                  2.5M+<span id="victorinox_item_4_lower" class="fw-light"
+                    >Ejecuciones</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+          <div id="con-ciom">
+              <h1 id="con_ciom2_title" class="text-center">Un camino <strong>recorrido</strong>  y una trayectoria <strong>intachable</strong></h1>
+          </div>
+          <div id="kpis5" class="d-flex flex-column align-items-lg-center">
+              <h1 id="kpis5_title" class="kpis5-title text-center">Milestones</h1>
+              <div id="kpis_item">
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div id="card2" class="order-md-2 bg-transparent">
+                          <h1>2018  Pre-Seed (350k)</h1>
+                          <p id="kpis5_paso_2_item_2">Dió comienzo el proyecto CIOM con una visión sólida hacia la <br> problemática más importante el desafío que representa “La <br> Ejecución”.  Se alcanzó el primer MVP a finales del 2019. <br><br> Esta versión no tenía la capacidad técnica de operar en tiempo real y <br> la arquitectura no era escalable para atender todo el continente. <br><br> Se decidió descartar la versión y comenzar de nuevo.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/kpis5/home.ciom.tech/image.png" alt="team">
+                      </div>
+                  </div>
+              </div>
+              <div id="kpis_item">
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div id="card" >
+                          <h1>2020 Seed (500 k)</h1>
+                          <p id="kpis5_paso_3_item_2">Se lanzó una nueva versión pensada con una arquitectura totalmente diferente basada en microservicios.  El MVP lanzado en 2021 <br> contaba con las capacidades técnicas necesarias para poder <br> atender las demandas de una operación en tiempo real y poder <br> pensar en un SAM acorde con el nivel de la solución ideada.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/kpis5/2020/home.ciom.tech/image.png" alt="gas">
+                      </div>
+                  </div>
+              </div>
+              <div id="kpis_item">
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div id="card2" class="order-md-2 bg-transparent">
+                          <h1>2018  Pre-Seed (350k)</h1>
+                          <p id="kpis5_paso_4_item_2">Se sumaron funcionalidades a la plataforma y  se le dió comercialmente un corte integral a la herramienta ya que se descubrió que los clientes no solo solucionaban sus problemas de ejecución EJECUCION, sino que también solucionaban sus problemas de GESTION y OPERACION. <br> Se hizo foco con conseguir volvernos EBITDA+.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/kpis5/ciom/home.ciom.tech/Group.png" alt="team">
+                      </div>
+                  </div>
+              </div>
+              <div id="kpis_item">
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div id="card" >
+                          <h1 id="kpis5_paso_5_item_1">2024 Pre Ronda A (950 k)</h1>
+                          <p id="kpis5_paso_5_item_2">Con un producto validado y aprobado por el mercado se comienza con el lanzamiento oficial de la plataforma CIOM en Centro América, Colombia y Argentina.  Se inicia un programa de Prensa de la mano de la agencia <a href="https://webforms.pipedrive.com/f/2TzppiRCPgA8YvKxpSvFIK5wnhGBIs7IeNk7tki8tsLrhNeZ37DYjhHwF2nQDhtMT" target="_blank">Full PR</a> para posicionar fuertemente la marca y un programa de publicidad para abrir nuestro canal inbound.</p>
+                      </div>
+                      <div>
+                          <img class="kpi-img"  src="assets/img/CIOM-2/Inversionistas/kpis5/2024/home.ciom.tech/image.png" alt="gas">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="con-ciom">
+              <h1 id="con_ciom3_title" class="text-center"><strong>3 soluciones</strong> en una sola herramienta <strong>SaaS</strong> para el canal <strong>B2B</strong></h1>
+          </div>
+          <section id="world">
+              <div class="world-header d-flex flex-column align-items-center">
+                  <div class="world-header-item d-flex flex-column flex-md-row align-items-center">
+                      <h1>TAM: 16 b</h1>
+                      <h1>SAM: 13 b</h1>
+                      <h1>SOM (Y4): 192 M</h1>
+                  </div>
+                  <div id="world_title" class="world-header-item-2 text-center">10.8 M de empresas (clientes portenciales) en el continente</div>
+              </div>
+              <div class="world-and-list d-flex flex-column flex-md-row align-items-center">
+                  <img class="world-img" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/image 147.png" alt="world-img">
+                  <div class="world-list d-flex flex-column ">
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="world-list-text d-flex align-items-center">
+                              <h2 class="left-list">Retail Stores (PDV):</h2>
+                              <h2>14.5 M</h2>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="world-list-text d-flex align-items-center">
+                              <h2 id="world_item" class="left-list">Empresas:</h2>
+                              <h2>10.8 M</h2>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="world-list-text d-flex align-items-center">
+                              <h2 id="world_item_2" class="left-list">Empresas  2 o - <span>(PDV):</span></h2>
+                              <h2>9.9 M</h2>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="world-list-text d-flex align-items-center">
+                              <h2 id="world_item_3" class="left-list">Empresas  3 a 50 <span>(PDV):</span></h2>
+                              <h2>800 k</h2>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="world-list-text d-flex align-items-center">
+                              <h2 id="world_item_4" class="left-list">Empresas 51 a 500 <span>(PDV):</span></h2>
+                              <h2>83 k</h2>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                          <img class="check-icon" src="assets/img/CIOM-2/Inversionistas/home.ciom.tech/Vector.png" alt="check">
+                          <div class="d-flex align-items-center">
+                              <h2 id="world_item_5" class="left-list">Empresas 501 o + <span>(PDV):</span></h2>
+                              <h2>3.7  k</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
       <section
-        id="maximiza"
-        class="d-flex align-items-center flex-column text-center p-5"
-        data-aos="fade-up"
-      >
-        <div class="d-flex flex-column gap-4">
-          <div id="maximiza-text">
-            <h3 id="inversionistas_maximiza_title">
-              <span class="ciom-text">CIOM</span> maximiza el potencial de
-              crecimiento de las empresas
-            </h3>
-            <h3 id="inversionistas_maximiza_title_1">
-              Simplificando su operación y empoderando a sus equipos
-            </h3>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="pre-ronda"
-        class="d-flex align-items-center flex-column text-center p-5 p-md-0"
-        data-aos="fade-up"
-      >
-        <div class="d-flex flex-column gap-4 gap-md-0">
-          <div>
-            <h1 id="inversionistas_pre_ronda_title">
-              Pre - Ronda A CIOM <br />
-              U$ 750,000.00
-            </h1>
-          </div>
-          <div
-            class="pre-ronda-items d-flex flex-column align-items-center gap-3 gap-md-0 my-5 my-md-0 flex-md-row"
-          >
-            <div
-              class="pre-ronda-inner-item flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/nimbus_marketing.png"
-                alt="geo-icon"
-              />
-              <h3 id="inversionistas_pre_ronda_item">Use of founds</h3>
-
-              <p
-                id="inversionistas_pre_ronda_item_lower"
-                class="d-flex flex-column px-5 px-md-0"
-              >
-                Estamos en una etapa <br> de aceleración via marketing
-              </p>
+          id="pre-ronda"
+          class="d-flex align-items-center flex-column text-center p-5 p-md-0"
+          data-aos="fade-up"
+        >
+          <div class="d-flex flex-column gap-4 gap-md-0">
+            <div>
+              <h1 id="inversionistas_pre_ronda_title">
+                Pre - Ronda A CIOM <br />
+                U$ 750,000.00
+              </h1>
             </div>
             <div
-              class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
+              class="pre-ronda-items d-flex flex-column align-items-center gap-3 gap-md-0 my-5 my-md-0 flex-md-row"
             >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Group 427320623.png"
-                alt="geo-icon"
-              />
-              <h3 id="inversionistas_pre_ronda_item_1">Pre - Ronda A 750k</h3>
-
-              <p
-                id="inversionistas_pre_ronda_item_1_lower"
-                class="d-flex flex-column px-5 px-md-0"
+              <div
+                class="pre-ronda-inner-item flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
               >
-                Llevamos levantado mas del 40%.
-              </p>
-            </div>
-            <div
-              class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector.png"
-                alt="geo-icon"
-              />
-              <h3 id="inversionistas_pre_ronda_item_2">Founders Equity</h3>
-
-              <p
-                id="inversionistas_pre_ronda_item_2_lower"
-                class="d-flex flex-column px-5 px-md-0"
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/nimbus_marketing.png"
+                  alt="geo-icon"
+                />
+                <h3 id="inversionistas_pre_ronda_item">Uso de fondos</h3>
+                <p
+                  id="inversionistas_pre_ronda_item_lower"
+                  class="d-flex flex-column px-5 px-md-0"
+                >
+                Aceleración via marketing
+                </p>
+              </div>
+              <div
+                class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
               >
-                Un equipo altamente motivado.
-              </p>
-            </div>
-            <div
-              class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
-            >
-              <img
-                src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector-1.png"
-                alt="geo-icon"
-              />
-              <h3 id="inversionistas_pre_ronda_item_3">Vehicle</h3>
-
-              <p
-                id="inversionistas_pre_ronda_item_3_lower"
-                class="d-flex flex-column px-5 px-md-0"
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Group 427320623.png"
+                  alt="geo-icon"
+                />
+                <h3 id="inversionistas_pre_ronda_item_1">Pre - Ronda A 950k</h3>
+                <p
+                  id="inversionistas_pre_ronda_item_1_lower"
+                  class="d-flex flex-column px-5 px-md-0"
+                >
+                  Llevamos levantado mas del 30%.
+                </p>
+              </div>
+              <div
+                class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
               >
-                SAFE para su tranquilidad. Con un CAP de 15M.
-              </p>
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector.png"
+                  alt="geo-icon"
+                />
+                <h3 id="inversionistas_pre_ronda_item_2">80% Founders Equity</h3>
+                <p
+                  id="inversionistas_pre_ronda_item_2_lower"
+                  class="d-flex flex-column px-5 px-md-0"
+                >
+                  Un equipo altamente motivado.
+                </p>
+              </div>
+              <div
+                class="pre-ronda-inner-item d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-0 text-md-start"
+              >
+                <img
+                  src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector-1.png"
+                  alt="geo-icon"
+                />
+                <h3 id="inversionistas_pre_ronda_item_3">Vehículo</h3>
+                <p
+                  id="inversionistas_pre_ronda_item_3_lower"
+                  class="d-flex flex-column px-5 px-md-0"
+                >
+                SAFE con un CAP para su comodidad
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <div
+        </section>
+        <div
         id="x5"
         class="p-5 p-md-0 d-flex flex-column align-items-center gap-5 gap-md-0 mx-5 mx-md-0 mt-0"
         data-aos="fade-up"
       >
         <div class="x5-inner d-flex flex-column align-items-center text-center">
-          <h1 id="inversionistas_ticket_title">Hagamos un x 5 en 2025</h1>
+          <h1 id="inversionistas_ticket_title">Se parte de nuestro x 5 en 2025</h1>
           <h2 id="inversionistas_ticket_sub">Ticket: U$25,500.00</h2>
         </div>
         <a
-          href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
+          href="https://webforms.pipedrive.com/f/2TzppiRCPgA8YvKxpSvFIK5wnhGBIs7IeNk7tki8tsLrhNeZ37DYjhHwF2nQDhtMT"
           target="_blank"
         >
-          <button id="inversionistas_ticket_btn">Quiero invertir</button>
+          <button id="inversionistas_ticket_btn">Contactar Founders</button>
         </a>
       </div>
-
-      <footer id="footer">
-        <div class="container mt-5">
+      <div id="info-adicional" class="d-flex flex-column align-items-center">
+          <h1 id="info_adicional_title">Información Adicional</h1>
           <div
-            class="d-flex flex-column flex-md-row justify-content-md-between"
+            class="info-buttons-container d-flex flex-column flex-md-row justify-content-md-between"
           >
-            <div>
+            <a href="nosotros.html">
+              <button id="info_adicional_btn" class="info-adicional-button">
+                NOSOTROS
+              </button>
+            </a>
+            <a href="prensa.html">
+              <button id="info_adicional_btn_1" class="info-adicional-button">
+                SALA DE PRENSA
+              </button>
+            </a>
+            <a href="inversionistas.html">
+              <button id="info_adicional_btn_2" class="info-btn-selected">
+                INVERSIONISTAS
+              </button>
+            </a>
+          </div>
+        </div>
+    </main>
+    
+      <footer>
+        <div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="footer-1 d-flex flex-column justify-content-start">
               <img
-                class="logo-image"
-                loading="lazy"
-                alt="logo-image"
-                src="./assets/img/logo2.png"
+                src="assets/img/CIOM-2/footer/home.ciom.tech/image 23.png"
+                alt="footer-logo"
               />
-              <p id="footer_description">
-                Nos hemos posicionado como la empresa líder en mediciones para
-                alimentar indicadores de mejora contínua. <br />¿Qué quieren
-                mejorar?
-              </p>
+              <h2 id="footer_description">
+                Se posicionó como la solución <br />
+                integral para compañías que buscan <br />
+                mejorar su negocio.
+              </h2>
             </div>
-
-            <div
-              class="footer-items-rigth d-flex flex-column flex-md-row justify-content-between"
-            >
-              <div
-                class="item-content-1 d-flex flex-column justify-content-between"
-              >
-                <b id="footer_menu_title">Menu</b>
-                <a
-                  id="footer_menu_prices"
-                  href="index.html#prices"
-                  target="_blank"
-                  >Precios</a
-                >
-                <a
-                  id="footer_menu_investments"
-                  href="inversionistas.html"
-                  target="_blank"
-                  >Inversiones</a
-                >
-              </div>
-
-              <div
-                class="item-content-2 d-flex gap-3 flex-column justify-content-between"
-              >
-                <b id="footer_item2_title">Contactenos</b>
-                <div style="display: grid">
-                  <strong id="footer_sales">Ventas:</strong>
-                  <span>+573508647288</span>
-                  <span>comercial@ciom.tech</span>
+            <div class="footer-right-container d-flex flex-column flex-md-row">
+              <div class="footer-2 d-flex flex-column">
+                <h1 id="footer_title_1">Soluciones</h1>
+                <div class="d-flex flex-column">
+                  <a id="footer_link_1" href="kpi.html">Gestión</a>
+                  <a id="footer_link_2" href="app.html">Operación</a>
+                  <a id="footer_link_3" href="tercerizacion.html">Ejecución</a>
+                  <a id="footer_link_4" href="programa-de-mejora.html">Programa de Mejora</a>
+                  <a id="footer_link_5" href="ciomer.html">Quiero ser Ciomer</a>
                 </div>
-                <div style="display: grid">
-                  <strong id="footer_support">Soporte:</strong>
-                  <span>+5491136610332</span>
-                  <span>soporte@ciom.tech</span>
+              </div>
+              <div class="footer-3 d-flex flex-column">
+                <h1 id="footer_title_2">Mediciones</h1>
+                <div class="d-flex flex-column">
+                  <a id="footer_link_6" href="cliente-misterioso.html">Mystery Shopper</a>
+                  <a id="footer_link_7" href="inspeccion.html">Inspecciones</a>
+                  <a id="footer_link_8" href="monitoreo.html">Monitoreos</a>
+                  <a id="footer_link_9" href="encuestas.html">Encuestas</a>
+                  <a id="footer_link_10" href="auditoria.html">Auditorías</a>
+                </div>
+              </div>
+              <div class="footer-4 d-flex flex-column">
+                <h1 id="footer_title_3">Compañía</h1>
+                <div class="d-flex flex-column">
+                  <a id="footer_link_11" href="nosotros.html">Nosotros</a>
+                  <a id="footer_link_12" href="prensa.html">Prensa</a>
+                  <a id="footer_link_13" href="inversionistas2.html">Inversionistas</a>
+                </div>
+              </div>
+              <div class="footer-5 d-flex flex-column">
+                <h1 id="footer_title_4">Contactos</h1>
+                <div>
+                  <h2 id="ventas_footer" class="contact-footer">Ventas:</h2>
+                  <div>
+                    <h2>+573508647288</h2>
+                    <h2>comercial@ciom.tech</h2>
+                  </div>
+                </div>
+                <div>
+                  <h2 id="soporte_footer" class="contact-footer">Soporte:</h2>
+                  <div>
+                    <h2>+5491136610332</h2>
+                    <h2>soporte@ciom.tech</h2>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="divide mt-5"></div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
-          >
-            <div
-              class="legal-container d-flex flex-column flex-md-row align-items-start"
-            >
-              <a
-                id="footer_conditions"
-                href="https://web.ciom.tech/terminosycondicionesdeuso"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Terminos y condiciones</a
-              >
-              <div  id="footer_privacy">Aviso de privacidad</div>
-              <div>©2024 CIOM</div>
+          <div class="footer-divider"></div>
+          <div class="d-flex  flex-column flex-md-row justify-content-between">
+            <div class="terms-container d-flex flex-column flex-md-row">
+              <a id="footer_conditions" href="https://web.ciom.tech/terminosycondicionesdeuso" target="_blank">Terminos y condiciones</a>
+              <a id="footer_privacy"  target="_blank">Aviso de privacidad</a>
+              <a>©2024 CIOM</a>
             </div>
-            <div class="d-flex icons-footer">
-              <div>
-                <a
-                  href="https://www.linkedin.com/company/circle-complete-group/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    alt="facebook-icon"
-                    src="assets/img/Crowdsourcing/icon-Facebook.png"
-                /></a>
-              </div>
-              <div>
-                <a
-                  href="https://www.linkedin.com/company/circle-complete-group/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img alt="linkedin-icon" src="./assets/img/linkedin.svg"
-                /></a>
-              </div>
+            <div class="footer-icons">
+              <a href="https://www.facebook.com/ciom.tech/" target="_blank">
+                <img
+                  src="assets/img/CIOM-2/footer/home.ciom.tech/_x30_1._Facebook.png"
+                  alt="facebook-icon"
+                />
+              </a>
+              <a href="https://www.linkedin.com/company/circle-complete-group/mycompany/">
+                <img
+                  src="assets/img/CIOM-2/footer/home.ciom.tech/Linkedin.png"
+                  alt="linkedin-icon"
+                />
+              </a>
+              <a href="https://www.instagram.com/ciom.latam/?hl=es">
+                <img
+                  src="assets/img/CIOM-2/footer/home.ciom.tech/Vector.png"
+                  alt="instagram-icon"
+                />
+              </a>
             </div>
           </div>
         </div>
       </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script
@@ -512,6 +1162,9 @@
     <script src="assets/js/i18n-config.js"></script>
 
     <script src="assets/js/newjs.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/hoverText.js"></script>
+    <script src="assets/js/navbar2.js"></script>
+    <script src="assets/js/prices-programa.js"></script>
+    <script src="assets/js/small-prices-selector.js"></script>
+    
+  </body>
 </html>
