@@ -4426,7 +4426,7 @@ body {
 /* -----Inversionistas CIOM 2-------- */
 
 #inversionistas {
-  background-image: url("/assets/img/CIOM-2/Inversionistas/Header.png");
+  background-image: url("../img/CIOM-2/Inversionistas/Header.png");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
