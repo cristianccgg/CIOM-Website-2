@@ -3191,6 +3191,7 @@ body {
 #kpis3 #kpis_item .card2 {
   border: none;
   width: 100% !important;
+  height: 100% !important;
 }
 
 #kpis3 #kpis_item .card h2,
@@ -3254,7 +3255,14 @@ body {
   #kpis3 #kpis_item .card2 {
     width: 620px !important;
     margin-left: 123px;
-    height: 449px !important;
+    min-height: 449px !important;
+    border: none;
+  }
+
+  #kpis3 #kpis_item .card-paso4 {
+    width: 620px !important;
+    margin-left: 123px;
+    height: 580px !important;
     border: none;
   }
 
@@ -4713,7 +4721,7 @@ body {
 /* ---------- Clarin -----------*/
 
 #clarin {
-  background-image: url("/assets/img/CIOM-2/Inversionistas/hhero_1.png");
+  background-image: url("../img/CIOM-2/Inversionistas/hhero_1.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -5431,9 +5439,13 @@ body {
 
   #kpis6 #kpis_item .card {
     max-width: 580px !important;
-    height: 288px;
     border: none;
-    height: 344px !important;
+    min-height: 307px !important;
+  }
+
+  .kpis6_main-card-ciom {
+    height: 370px !important;
+    padding-bottom: 46px !important;
   }
 
   #kpis6 #kpis_item .card2 {
@@ -5448,9 +5460,15 @@ body {
     margin-top: 0px;
     width: 100%;
   }
+
+  .usa-card {
+    height: 307px !important ;
+    border: 2px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  #kpis6 .kpis6_main-card {
+  #kpis6 .kpis6_main-card,
+  .kpis6_main-card-ciom {
     max-width: 1282px !important;
     margin-left: auto;
     margin-right: auto;
