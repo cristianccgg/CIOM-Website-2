@@ -581,6 +581,7 @@ body {
 #testimonials-2 h1 {
   font-size: 36px;
   font-weight: 600;
+  color: var(--azul-primario);
 }
 
 .header-testimonials {
@@ -706,10 +707,10 @@ body {
 }
 
 #prices2 h1 {
-  color: var(--azul-primario);
+  color: var(--azul-primario) !important;
   text-align: center;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 50px;
   margin-bottom: 24px;
 }
@@ -969,39 +970,39 @@ body {
 #measures2 h1 {
   color: var(--azul-primario);
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
 }
 
-#measuresItem2 {
+#measures2 #measuresItem2 {
   background-color: var(--background-ligth);
 }
 
-.card-body {
-  width: 233.4px;
+#measures2 .card-body {
+  min-width: 233.4px;
   height: 130px;
   padding: 0px;
 }
 
-#measuresItem2 .title:hover {
+#measures2 #measuresItem2 .title:hover {
   background-color: var(--green);
 }
 
-.body ul {
+#measures2 .body ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.body ul li {
+#measures2 .body ul li {
   padding: 0 !important;
 }
 
-#measuresItem2 .container {
+#measures2 #measuresItem2 .container {
   max-width: 95% !important;
 }
 
-#measuresItem2 h1 {
+#measures2 #measuresItem2 h1 {
   color: var(--blue-light);
   text-align: center;
   font-weight: 600;
@@ -1016,17 +1017,17 @@ body {
   font-size: 18px;
 }
 
-#measuresItem2 .body {
+#measures2 #measuresItem2 .body {
   border: 1px solid var(--grey);
   border-radius: 15px;
 }
 
-.measures-inner {
-  gap: 40px;
+#measures2 .measures-inner {
+  gap: 24px;
   padding: 45px 0px;
 }
 
-#measuresItem2 .title {
+#measures2 #measuresItem2 .title {
   padding: 15px 10px;
   line-height: 28px;
   background-color: var(--blue-light);
@@ -1041,17 +1042,25 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
-  .card-body {
+@media screen and (min-width: 1700px) {
+  #measures2 .card-body {
     width: 100%;
     height: 130px;
     padding: 0px;
   }
 }
 
-@media (max-width: 1300px) {
-  #measuresItem2 .container {
-    max-width: 100% !important;
+@media screen and (max-width: 1000px) {
+  #measures2 .card-body {
+    width: 100%;
+    height: 130px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #measures2 #measuresItem2 .container {
+    max-width: 75% !important;
   }
 }
 
@@ -1072,7 +1081,9 @@ body {
 
 #objetivo h1 {
   text-align: center;
-  font-weight: 100;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 50px !important;
 }
 
 @media (max-width: 1000px) {
@@ -2219,6 +2230,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 24px;
+    color: var(--azul-primario);
   }
 
   #indicadores-description .header-info-container-1 {
@@ -2238,6 +2250,7 @@ body {
   #indicadores-description .header-info-container-2 h2 {
     font-size: 22px;
     font-weight: 600;
+    color: var(--azul-primario);
   }
 
   #indicadores-description .header-info-container-2 ul {
@@ -2257,6 +2270,18 @@ body {
   }
 }
 
+@media screen and (min-width: 3000px) {
+  #indicadores {
+    background-image: url("../img/CIOM-2/Indicadores de Gestion/home.ciom.tech/solucion/Header.png");
+    background-size: cover;
+    background-position: 30% 30%; /* Ajusta este valor según lo necesites */
+    background-repeat: no-repeat;
+    height: 401px;
+    max-height: 401px;
+    padding-top: 160px;
+  }
+}
+
 /* --------KPIs -----------*/
 
 #kpis .title {
@@ -2267,6 +2292,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 55px;
+  color: var(--azul-primario);
 }
 
 #kpis #kpis_item {
@@ -2394,6 +2420,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 24px;
+  color: var(--azul-primario) !important;
 }
 
 #app-description .header-info-container-1 {
@@ -2412,6 +2439,7 @@ body {
   max-width: 430px !important;
   font-size: 22px;
   font-weight: 600;
+  color: var(--azul-primario) !important;
 }
 
 #app_description_item_4 {
@@ -2541,13 +2569,14 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 50px;
+  color: var(--azul-primario) !important;
 }
 
 .insight-left p {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  margin-top: 42px;
+  margin-top: 42px !important;
 }
 
 .insight-left .insight-span-1 {
@@ -2620,19 +2649,27 @@ body {
 #App .title {
   font-size: 36px;
   font-weight: 600;
+  color: var(--azul-primario) !important;
 }
 
 #App .card1 h4,
-#App .card2 h4 {
+#App .card2 h4,
+.app-lower-container h4 {
   font-size: 22px;
   font-weight: 600;
+  line-height: 30px;
   text-wrap: nowrap;
+  color: var(--azul-primario) !important;
 }
 
 #App .card1 p,
-#App .card2 p {
-  font-size: 16px;
+#App .card2 p,
+.app-lower-container p {
+  font-size: 16px !important;
   font-weight: 500;
+  line-height: 24px;
+  color: #2b2b2b;
+  opacity: 80%;
 }
 
 #App .webapp-icon {
@@ -2674,7 +2711,13 @@ body {
   #App .card2 {
     margin-top: 0px;
     margin-left: 186px;
+    padding: 0% !important;
     gap: 48px;
+    width: 400px !important;
+  }
+
+  #App .card2 p {
+    width: 321px !important;
   }
 }
 
@@ -2703,20 +2746,28 @@ body {
 #App2 .title {
   font-size: 36px;
   font-weight: 600;
+  line-height: 50px;
+  color: var(--azul-primario) !important;
 }
 
 #App2 .card1 h4,
-#App2 .card2 h4 {
+#App2 .card2 h4,
+.app2-lower-container h4 {
   font-size: 22px;
   font-weight: 600;
+  line-height: 30px;
+  color: var(--azul-primario);
   text-wrap: nowrap;
 }
 
 #App2 .card1 p,
-#App2 .card2 p {
+#App2 .card2 p,
+.app2-lower-container p {
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 24px !important;
+  color: #2b2b2b;
+  opacity: 80%;
 }
 
 #App2 .webapp-icon {
@@ -3061,6 +3112,13 @@ body {
   max-width: 532px !important;
 }
 
+#programa-description .header-info-container-1 h1 {
+  color: var(--azul-primario);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
 #programa-description .header-info-container-2 {
   padding: 25px;
 }
@@ -3170,6 +3228,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 55px;
+  color: var(--azul-primario);
 }
 
 #kpis3 #kpis_item {
@@ -3545,12 +3604,18 @@ body {
   font-weight: 600;
   line-height: 50px;
   margin-bottom: 50px;
+  color: var(--azul-primario);
 }
 
 #ciomer2-description p {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.lists-container #requisitos_title,
+#requisitos_list_title {
+  color: var(--azul-primario);
 }
 
 @media screen and (min-width: 1300px) {
@@ -3851,6 +3916,7 @@ body {
   font-weight: 600;
   line-height: 50px;
   margin-bottom: 10px;
+  color: var(--azul-primario);
 }
 
 #testimonials-3 p {
@@ -4264,7 +4330,6 @@ body {
   font-weight: 100;
 }
 
-/* Estilos generales */
 #info-adicional {
   padding: 100px 25px;
   height: 435px;
@@ -4274,6 +4339,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 24px;
+  color: var(--azul-primario) !important;
 }
 
 #info-adicional .info-buttons-container {
@@ -4461,6 +4527,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 54px;
+  color: var(--azul-primario);
 }
 
 #inversionistas-description .card {
@@ -4662,10 +4729,11 @@ body {
   }
 
   #kpis4 #kpis_item {
-    padding-top: 45px;
+    padding-top: 112px;
     padding-left: 112px;
     padding-right: 97px;
     padding-bottom: 46px;
+    height: 540px;
   }
 
   #kpis4 #kpis_item .card {
@@ -4685,12 +4753,13 @@ body {
     justify-content: flex-start;
     width: 620px !important;
     margin-left: 100px;
-    height: 314px !important;
+    min-height: 314px !important;
     border: none;
+    padding: 0px !important;
   }
 
   #kpis4 #kpis_item .kpi-img {
-    width: 568px;
+    width: 549px;
     margin-top: 0px;
     width: 100%;
   }
@@ -4708,6 +4777,7 @@ body {
 #con-ciom {
   background-color: var(--blue-light);
   padding: 55px;
+  margin-top: 40px;
 }
 
 #con-ciom h1 {
@@ -4716,6 +4786,12 @@ body {
   line-height: 50px;
   margin-bottom: 20px;
   color: white;
+}
+
+@media screen and (min-width: 1300px) {
+  #con-ciom {
+    margin-top: -60px;
+  }
 }
 
 /* ---------- Clarin -----------*/
@@ -4761,11 +4837,22 @@ body {
   line-height: 24px;
   text-decoration: underline;
   margin-left: 8px;
+  color: #363636;
+}
+
+.clarin-seguir-leyendo-contenedor {
+  display: flex;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.clarin-seguir-leyendo-contenedor a {
+  height: 24px !important;
 }
 
 #clarin .plus-icon {
-  width: 16.79px;
-  height: 16.79px;
+  width: 24px !important;
+  height: 24px !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -4889,6 +4976,7 @@ body {
   font-weight: 600;
   line-height: 50px;
   margin-bottom: 69px;
+  color: var(--azul-primario);
 }
 
 #victorinox .victorinox-cards {
@@ -4927,6 +5015,13 @@ body {
 
 #kpis5 #kpis_item {
   padding: 25px;
+}
+
+#kpis5_title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--azul-primario);
 }
 
 #kpis5 #kpis_item .kpi-img {
@@ -5001,7 +5096,7 @@ body {
     padding-right: 57px;
     padding-bottom: 100px;
     padding-left: 95px;
-    min-height: 540px;
+    height: 540px;
     display: flex;
     align-items: center !important;
   }
@@ -5034,6 +5129,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  #kpis5 .kpis5-main-card {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* ---------World -------*/
 #world {
   padding: 78px 25px;
@@ -5049,6 +5152,14 @@ body {
   font-weight: 600;
   line-height: 50px;
   gap: 100px;
+  color: var(--azul-primario);
+}
+
+#wordl_title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40.32px;
+  color: var(--azul-primario);
 }
 
 #world .world-header-item-2 {
@@ -5061,14 +5172,11 @@ body {
   gap: 54px;
 }
 
-.world-and-list {
-  justify-content: space-between;
-}
-
 #world .world-list {
   gap: 22px;
-  max-width: 481px;
+  width: 481px;
   min-width: 375px !important;
+  height: 261px !important;
 }
 
 #world .world-list-text {
@@ -5087,8 +5195,9 @@ body {
     padding: 78px 178px 106px 173px;
   }
 
-  #world .world-and-list {
-    gap: 254px;
+  .world-and-list {
+    justify-content: space-between;
+    gap: 254px !important;
   }
 
   #world .left-list {
@@ -5130,6 +5239,20 @@ body {
   margin-bottom: 21px;
 }
 
+#inversionistas_pre_ronda_title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--azul-primario);
+}
+
+#inversionistas_pre_ronda_title span {
+  font-size: 22px !important;
+  font-weight: 600;
+  line-height: 30px !important;
+  color: var(--azul-primario);
+}
+
 #pre-ronda p {
   font-size: 18px;
   line-height: 32px;
@@ -5168,6 +5291,10 @@ body {
   color: var(--azul-primario);
   border-top: 2px var(--blue-light) solid;
   border-bottom: 2px var(--blue-light) solid;
+}
+
+#inversionistas_ticket_title {
+  color: var(--azul-primario);
 }
 
 #x5 button {
@@ -5497,6 +5624,7 @@ body {
   font-size: 42;
   font-weight: 600;
   line-height: 54px;
+  color: var(--azul-primario);
 }
 
 #contacto-prensa .contacto-inner-left h2 {

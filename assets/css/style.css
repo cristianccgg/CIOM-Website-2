@@ -601,7 +601,7 @@ section {
 
   #home #hero {
     margin-top: 0px !important;
-    min-width: 692px !important;
+    width: 692px !important;
   }
 }
 
@@ -737,7 +737,7 @@ section {
   display: grid;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1890px) {
   #webApp .mobile-card {
     min-width: 600px;
     height: 100%;
@@ -821,11 +821,13 @@ section {
 #measures h1 {
   color: var(--azul-primario);
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50px;
 }
 
 .card-body {
-  width: 233.4px;
+  min-width: 233.4px;
   height: 130px;
   padding: 0px;
 }
@@ -919,6 +921,7 @@ section {
 #methodology h1 {
   font-size: 36px;
   line-height: 50px;
+  font-weight: 600;
   color: var(--azul-primario);
   margin: 0px;
 }
@@ -1263,10 +1266,6 @@ section {
   padding: 50px 0 30px 0;
 }
 
-#prices .container {
-  max-width: 95% !important;
-}
-
 #prices .container h2 {
   font-weight: 400;
   font-size: 18px;
@@ -1283,12 +1282,18 @@ section {
 
 #prices .cards-main-container {
   margin-top: 16px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 0px 55px !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2500px !important;
 }
 
 #prices h1 {
   color: var(--azul-primario);
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
 }
 
@@ -1322,7 +1327,7 @@ section {
   justify-content: space-between;
   padding: 40px 30px;
   gap: 22px;
-  width: 311.5px;
+  min-width: 311.5px;
   height: 898px;
 }
 
@@ -1562,11 +1567,15 @@ section {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1700px) {
   #prices .cards-main-container {
-    min-width: 1330px !important;
+    margin-top: 16px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0px 55px !important;
     max-width: 80% !important;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1660,7 +1669,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   #footer {
     height: 424px;
   }
@@ -1678,7 +1687,7 @@ section {
     gap: 60px;
     margin-bottom: 0px;
   }
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1970,6 +1979,7 @@ footer h2 {
   line-height: 30px;
   padding: 0px !important;
   margin: 0px !important;
+  letter-spacing: -0.05em !important;
 }
 
 footer a {
@@ -1979,6 +1989,8 @@ footer a {
   padding: 0px !important;
   margin: 0px !important;
   color: white;
+  opacity: 80% !important;
+  letter-spacing: -0.05em;
 }
 
 footer a:hover {
