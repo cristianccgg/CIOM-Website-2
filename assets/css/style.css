@@ -631,14 +631,14 @@ section {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
+    max-height: 610px !important;
     display: flex;
     position: relative;
   }
 
   #home-hero .hero-desktop {
     width: 100% !important;
-    height: auto;
-    object-fit: cover;
+    max-height: 610px !important;
   }
 
   .home-inner-text {

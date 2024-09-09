@@ -2379,6 +2379,10 @@ body {
   color: #363636;
 }
 
+#kpis_seguir {
+  text-decoration: underline !important;
+}
+
 @media screen and (min-width: 992px) {
   #kpis .title {
     height: 137px;
@@ -2822,8 +2826,18 @@ body {
 }
 
 #App2 .app2-lower-container {
-  width: 325px !important;
+  width: 315px !important;
   margin-top: 27px;
+}
+
+#App2 .app2-lower-container img {
+  width: 41px !important;
+  height: 43px !important;
+}
+
+#App2 .phone-img {
+  width: 344px !important;
+  height: 334px !important;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2849,7 +2863,11 @@ body {
   }
 
   #App2 .phone-img {
-    padding-top: 134px !important;
+    padding-top: 50px !important;
+  }
+
+  #App2 .app2-lower-container {
+    margin-right: 40px !important;
   }
 }
 
@@ -3319,6 +3337,7 @@ body {
   width: 100% !important;
   height: 100% !important;
   padding: 25px !important;
+  display: unset;
 }
 
 #kpis3 #kpis_item .card h2,
@@ -3391,16 +3410,9 @@ body {
     padding: 0px !important;
   }
 
-  #kpis3 #kpis_item .card-paso4 {
-    width: 620px !important;
-    margin-left: 123px;
-    height: 580px !important;
-    border: none;
-  }
-
   #kpis3 #kpis_item .kpi-img {
     max-width: 566px !important;
-    margin-top: 0px;
+    margin-top: 0px !important;
     width: 100% !important;
   }
 }
@@ -5339,8 +5351,8 @@ body {
 
 #world .world-list {
   gap: 22px;
-  width: 481px;
-  min-width: 375px !important;
+  max-width: 481px;
+  min-width: 350px !important;
   height: 261px !important;
 }
 
@@ -5669,7 +5681,7 @@ body {
 
 #kpis6 #kpis_item {
   padding: 50px 25px !important;
-  max-height: 800px !important;
+
   display: flex;
 }
 
@@ -5765,6 +5777,18 @@ body {
   margin-top: 50px;
 }
 
+#kpis_seguir {
+  color: #363636;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#kpis6 .seguir {
+  height: 24px !important;
+  align-items: end !important;
+}
+
 @media screen and (min-width: 992px) {
   #kpis6 #kpis_item {
     padding: 0px 45px !important;
@@ -5823,6 +5847,13 @@ body {
     width: 100% !important;
     max-width: 508px !important;
     margin-top: 0px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .llega-ciom,
+  .ciom-brasil {
+    margin-right: -120px !important;
   }
 }
 
@@ -5951,7 +5982,7 @@ body {
 #ayuda {
   background-image: url("../img/CIOM-2/faq/home.ciom.tech/Header.png");
   background-size: cover;
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   height: 401px;
   position: relative;
