@@ -2192,10 +2192,16 @@ body {
   color: var(--blue-light);
 }
 
+@media screen and (min-width: 992px) {
+  #indicadores {
+    padding-left: 25px !important;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   #indicadores {
     padding-top: 150px;
-    padding-left: 103px;
+    padding-left: 103px !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3188,6 +3194,11 @@ body {
 #programa_description_item_4 {
   color: var(--blue-light);
 }
+@media screen and (min-width: 992px) {
+  #programa {
+    padding-left: 103px !important;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   #programa {
@@ -3699,6 +3710,12 @@ body {
 #ciomer2-description video {
   width: 248px;
   height: 338px;
+}
+
+@media screen and (min-width: 992px) {
+  #ciomer {
+    padding-left: 25px;
+  }
 }
 
 @media screen and (min-width: 1212px) {
@@ -4459,10 +4476,16 @@ body {
   color: var(--blanco);
 }
 
+@media screen and (min-width: 992px) {
+  #nosotros {
+    padding-left: 103px;
+  }
+}
+
 @media (min-width: 1118px) {
   #info-adicional {
-    padding: 100px 81px;
-    max-height: 435px;
+    padding: 100px 81px !important;
+    max-height: 435px !important;
   }
 
   #info-adicional .info-adicional-button,
@@ -4473,10 +4496,10 @@ body {
 
 @media (max-width: 1000px) {
   #nosotros_objetivo {
-    padding: 31px 20px;
+    padding: 31px 20px !important;
     color: var(--blanco);
     background-color: var(--blue-light);
-    margin: 48px 0px;
+    margin: 48px 0px !important;
   }
 }
 
@@ -4653,10 +4676,43 @@ body {
   margin-top: 46px;
 }
 
+#inversionistas_header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  font-size: 16px;
+  min-width: 203px;
+  height: 52px;
+  background: var(--blue-light);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 46px;
+}
+
 #inversionistas-description .description-problems {
   margin-top: 122px !important;
   margin-bottom: 20px !important;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  #inversionistas_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    font-size: 16px;
+    min-width: 203px;
+    height: 52px;
+    background: transparent;
+    color: white;
+    border: var(--celeste-secundario) 2px solid;
+    border-radius: 4px;
+    margin-top: 46px;
+    margin-left: 25px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -4696,6 +4752,7 @@ body {
     border: var(--celeste-secundario) 2px solid;
     border-radius: 4px;
     margin-top: 46px;
+    margin-left: 0px;
   }
 
   #inversionistas-description {
@@ -5503,6 +5560,16 @@ body {
   max-width: 430px !important;
   font-size: 22px;
   font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  #prensa {
+    padding-left: 25px;
+  }
+
+  #prensa h2 {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1300px) {

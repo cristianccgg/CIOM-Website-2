@@ -145,16 +145,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  document.addEventListener("click", function (event) {
-    const languageSelector = document.querySelector(".language-selector");
-    const dropbtn = document.querySelector(".dropbtn");
+  const languageSelector = document.querySelector(".language-selector");
+  const dropbtn = document.querySelector(".dropbtn");
+  const closeBtn = document.querySelector(".close-btn");
 
-    if (languageSelector && dropbtn) {
-      if (event.target === dropbtn) {
-        languageSelector.classList.toggle("active");
-      } else if (!languageSelector.contains(event.target)) {
-        languageSelector.classList.remove("active");
-      }
+  if (!languageSelector || !dropbtn || !closeBtn) {
+    console.error("Error: Uno o más elementos no se encontraron.");
+    return;
+  }
+
+  dropbtn.addEventListener("click", function () {
+    languageSelector.classList.toggle("active");
+  });
+
+  closeBtn.addEventListener("click", function (event) {
+    languageSelector.classList.remove("active");
+    console.log("Botón de cierre clicado");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      languageSelector.classList.contains("active") &&
+      !languageSelector.contains(event.target) &&
+      event.target !== dropbtn
+    ) {
+      languageSelector.classList.remove("active");
+      console.log("Menú cerrado al hacer clic fuera");
     }
   });
 

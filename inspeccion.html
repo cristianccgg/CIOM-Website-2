@@ -203,18 +203,18 @@
       </div>
       <div class="menu-container-right d-flex align-items-center">
         <div class="language-selector">
-          <button
-            class="dropbtn d-flex align-items-center justify-content-center"
-          >
+          <button class="dropbtn d-flex align-items-center justify-content-center">
             <i class="bi bi-globe"></i>
           </button>
-          <div class="dropdown-content">
+          <div id="dropdown-content-language" class="dropdown-content">
+            <button class="close-btn">&times;</button> <!-- Aquí la X para cerrar -->
             <a href="#" onclick="changeLanguage('en')">English</a>
             <a href="#" onclick="changeLanguage('sp')">Español</a>
             <a href="#" onclick="changeLanguage('pt')">Português</a>
             <a href="#" onclick="changeLanguage('fr')">Français</a>
           </div>
         </div>
+        
         <a href="https://web.ciom.tech/login" target="_blank"><img src="assets/img/CIOM-2/person.png" alt="person-icon" /></a>
         <a href="https://web.ciom.tech/login" target="_blank">
           <h2 id="iniciar_sesion_navbar" class="iniciar-sesion-text">Iniciar Sesión</h2>

@@ -272,6 +272,26 @@ li {
 /*--------------------------------------------------------------
 # Menu languages
 --------------------------------------------------------------*/
+#dropdown-content-language .close-btn {
+  border: none !important;
+  background-color: transparent !important;
+  scale: 2;
+  margin-left: 13px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.language-selector .dropdown-content {
+  display: none; /* Por defecto, no se muestra */
+}
+
+.language-selector.active .dropdown-content {
+  display: block; /* Se muestra cuando .active está en .language-selector */
+}
+
+.close-btn {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
 
 .language-selector {
   position: relative;
@@ -304,6 +324,7 @@ li {
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  margin-top: 10px;
 }
 
 .dropdown-content a {
@@ -315,12 +336,6 @@ li {
 
 .dropdown-content a:hover {
   background-color: var(--blanco);
-}
-
-.language-selector.active .dropdown-content,
-.language-selector:hover .dropdown-content {
-  display: block;
-  border: none !important;
 }
 
 .iniciar-sesion {
