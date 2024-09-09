@@ -73,7 +73,7 @@ body {
   background-color: var(--background-ligth);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #cliente-misterioso h1 {
     font-size: 40px;
     font-weight: 600;
@@ -158,7 +158,7 @@ body {
   width: 300px !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #insight {
     max-height: 602px;
   }
@@ -182,7 +182,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .insight-inner {
     padding: 123px 44px 85px 99px;
   }
@@ -235,8 +235,11 @@ body {
 
 #webApp-1 {
   background-color: var(--blanco);
-  padding: 100px 92px;
-  /* max-height: 602px; */
+  padding: 25px !important;
+}
+
+#webApp-1 .container {
+  width: 100% !important;
 }
 
 .webapp-items {
@@ -244,13 +247,15 @@ body {
 }
 
 #webApp-1 h1 {
-  text-align: center;
+  text-align: center !important;
   font-weight: 500;
-  position: relative;
   color: var(--azul-primario);
   font-weight: 600;
   font-size: 36px;
+  margin-left: 0px !important;
   margin-bottom: 42px;
+  width: 100% !important;
+  padding: 0px !important;
 }
 
 #webApp-1 h4 {
@@ -282,15 +287,22 @@ body {
   padding: 40px 30px !important;
   border: 1px solid var(--grey-ligth);
   box-shadow: 4px 0px 10px var(--grey-ligth);
-  width: 402px;
-  height: 310px;
-  min-width: fit-content;
+  max-width: 402px;
+  min-height: 310px;
+  min-width: 330px;
   border-radius: 20px 20px 20px 20px;
 }
 
 #webApp-1 .mobile-card h4 {
   color: var(--blue-light);
   font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  #webApp-1 {
+    background-color: var(--blanco);
+    padding: 100px 92px !important;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -619,7 +631,7 @@ body {
   align-items: center;
 }
 
-.card2 {
+#testimonials-2 .card2 {
   width: 384px !important;
   height: 376px !important;
   display: flex;
@@ -693,10 +705,6 @@ body {
   padding: 79px 0 100px 0 !important;
 }
 
-#prices2 .container {
-  max-width: 90% !important;
-}
-
 #prices2 .price-cards-container {
   margin-top: 60px;
 }
@@ -749,7 +757,6 @@ body {
 }
 
 #prices2 .card {
-  flex: 1;
   box-shadow: 34.9px 29.6px 48.34px rgba(51, 102, 255, 0.05);
   border-radius: 20px;
   background-color: #fff;
@@ -758,13 +765,12 @@ body {
   flex-direction: column;
   padding: 40px 30px;
   gap: 22px;
-  width: 320px;
+  width: 320px !important;
   height: 410px !important;
 }
 
 #prices2 .card:hover,
 #prices2 .card.active {
-  flex: 1;
   border-radius: 20px;
   background-color: #fff;
   border: 2px solid #002e8a;
@@ -773,8 +779,8 @@ body {
   padding: 40px 30px;
   gap: 20px;
   box-shadow: 0 0 20px 20px rgba(6, 29, 113, 0.2);
-  margin-bottom: 10px;
-  min-width: 300px;
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 #prices2 .card.active {
@@ -924,7 +930,7 @@ body {
 
 @media (max-width: 800px) {
   #prices2 .container {
-    max-width: 95% !important;
+    max-width: 100% !important;
   }
 
   #prices2 .price-switch-text {
@@ -1155,7 +1161,7 @@ body {
   color: var(--blue-light);
 }
 
-@media screen and (min-width: 1035px) {
+@media screen and (min-width: 1173px) {
   #inspeccion h1 {
     font-size: 40px;
     font-weight: 600;
@@ -1182,7 +1188,7 @@ body {
 
   #inspeccion-description .header-info-container-1 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 38px;
     max-width: 662px !important;
     height: 228px !important;
@@ -1248,7 +1254,7 @@ body {
   width: 300px !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #insight-inspeccion {
     max-height: 684px !important;
   }
@@ -1343,9 +1349,13 @@ body {
 #monitoreo-description .header-info-container-1 {
   color: var(--azul-primario);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 38px;
   max-width: 530px;
+}
+
+#monitoreo-description .header-info-container-1 p .dark-text {
+  font-weight: 700 !important;
 }
 
 #monitoreo-description .header-info-container-2 {
@@ -1378,7 +1388,7 @@ body {
   margin-top: 0px !important;
 }
 
-@media screen and (min-width: 1018px) {
+@media screen and (min-width: 1114px) {
   #empresas-monitoreo {
     height: 488px !important;
     padding: 80px 90px !important;
@@ -1429,7 +1439,7 @@ body {
 
   #monitoreo-description .header-info-container-1 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 38px;
     max-width: 677px !important;
     height: 266px !important;
@@ -1486,7 +1496,7 @@ body {
   width: 300px !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #insight-monitoreo {
     max-height: 682px !important;
   }
@@ -1666,7 +1676,7 @@ body {
   color: var(--blue-light);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1203px) {
   #encuestas h1 {
     font-size: 40px;
     font-weight: 600;
@@ -1751,7 +1761,7 @@ body {
   width: 300px !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #insight-encuestas {
     max-height: 591px !important;
   }
@@ -1998,7 +2008,7 @@ body {
   color: #ff0000;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #insight-auditoria {
     max-height: 602px;
   }
@@ -2363,7 +2373,7 @@ body {
   color: #363636;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #kpis .title {
     height: 137px;
     margin-bottom: 19px;
@@ -2376,22 +2386,38 @@ body {
   }
 
   #kpis #kpis_item .card {
-    max-width: 500px;
+    max-width: 572px;
+    width: 100%;
     border: none;
   }
 
   #kpis #kpis_item .kpi-img {
+    max-width: 568px;
     width: 100%;
   }
-}
 
-@media screen and (min-width: 1400px) {
   #kpis .kpis-main-card {
-    max-width: 1158px !important;
+    max-width: 1241px !important;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .operacion-card {
+    margin-left: 100px !important;
+  }
+
+  .experiencia-card {
+    margin-right: 100px;
+  }
 }
+
+/* @media screen and (min-width: 1400px) {
+  #kpis .kpis-main-card {
+    max-width: 1241px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
 
 /* -----App-------- */
 
@@ -2633,7 +2659,7 @@ body {
 
 #App .card1,
 #App .card2 {
-  max-width: 315px;
+  width: 315px;
   padding: 0%;
 }
 
@@ -2704,8 +2730,17 @@ body {
   }
 
   #App .app-lower-container {
-    max-width: 258px !important;
+    max-width: 260px !important;
     margin-top: 50px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 20px;
+  }
+
+  #App .card1,
+  #App .card2 {
+    max-width: 315px;
+    padding: 0%;
   }
 
   #App .card2 {
@@ -2736,6 +2771,10 @@ body {
 
 #App2 .card1 {
   margin-top: 45px;
+}
+
+#App2 .card2 {
+  padding: 0px !important;
 }
 
 #App2 .cards-container {
@@ -2989,7 +3028,6 @@ body {
 #kpis2 #kpis_item .card,
 #kpis2 #kpis_item .card2 {
   border: none;
-
   width: 100% !important;
 }
 
@@ -3030,7 +3068,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #kpis2 .title {
     height: 293px;
     margin-bottom: 0px;
@@ -3039,16 +3077,18 @@ body {
   }
 
   #kpis2 #kpis_item {
-    padding-top: 89px;
-    padding-left: 112px;
-    padding-right: 97px;
-    padding-bottom: 90px;
+    padding-top: 20px !important;
+    padding-left: 112px !important;
+    padding-right: 97px !important;
+    padding-bottom: 20px !important;
+    min-height: 700px;
   }
 
   #kpis2 #kpis_item .card {
     width: 500px !important;
     height: 351px;
     border: none;
+    margin-right: 100px;
   }
 
   #kpis2 #kpis_item .card2 {
@@ -3056,12 +3096,28 @@ body {
     margin-left: 123px;
     height: 351px;
     border: none;
+    margin-left: 100px;
   }
 
   #kpis2 #kpis_item .kpi-img {
     width: 568px;
     margin-top: 0px;
     width: 100%;
+  }
+
+  #kpis2 .main-card-items,
+  #kpis2 .main-card-items-2 {
+    min-height: fit-content;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #kpis2 #kpis_item {
+    padding-top: 89px !important;
+    padding-left: 112px;
+    padding-right: 97px;
+    padding-bottom: 90px;
+    min-height: 540px;
   }
 }
 
@@ -3232,11 +3288,11 @@ body {
 }
 
 #kpis3 #kpis_item {
-  padding: 25px;
+  padding: 0px !important;
 }
 
 #kpis3 #kpis_item .kpi-img {
-  width: 350px;
+  width: 350px !important;
   margin-top: 35px;
 }
 
@@ -3251,6 +3307,7 @@ body {
   border: none;
   width: 100% !important;
   height: 100% !important;
+  padding: 25px !important;
 }
 
 #kpis3 #kpis_item .card h2,
@@ -3290,7 +3347,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #kpis3 .title {
     height: 114px !important;
     margin-bottom: 0px !important;
@@ -3298,10 +3355,11 @@ body {
   }
 
   #kpis3 #kpis_item {
-    padding-top: 45px;
-    padding-left: 112px;
-    padding-right: 97px;
-    padding-bottom: 46px;
+    padding-top: 20px !important;
+    padding-left: 112px !important;
+    padding-right: 97px !important;
+    padding-bottom: 20px !important;
+    min-height: 720px !important;
   }
 
   #kpis3 #kpis_item .card {
@@ -3309,6 +3367,8 @@ body {
     height: 351px;
     border: none;
     height: 449px !important;
+    margin-right: 100px;
+    padding: 0px !important;
   }
 
   #kpis3 #kpis_item .card2 {
@@ -3316,6 +3376,8 @@ body {
     margin-left: 123px;
     min-height: 449px !important;
     border: none;
+    margin-left: 100px;
+    padding: 0px !important;
   }
 
   #kpis3 #kpis_item .card-paso4 {
@@ -3328,7 +3390,18 @@ body {
   #kpis3 #kpis_item .kpi-img {
     max-width: 566px !important;
     margin-top: 0px;
-    width: 100%;
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #kpis3 #kpis_item {
+    padding-top: 65px !important;
+    padding-left: 95px !important;
+    padding-right: 97px !important;
+    padding-bottom: 62px !important;
+    min-height: 540px !important;
+    max-height: 580px !important;
   }
 }
 
@@ -3338,6 +3411,11 @@ body {
     max-width: 1230px !important;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #kpis3 #kpis_item .card {
+    margin-right: 0px !important;
+    width: 561px !important;
   }
 }
 
@@ -3578,7 +3656,7 @@ body {
   background-repeat: no-repeat;
   height: 401px;
   max-height: 401px;
-  padding-top: 140px;
+  padding-top: 120px;
 }
 
 #ciomer h2 {
@@ -3618,7 +3696,12 @@ body {
   color: var(--azul-primario);
 }
 
-@media screen and (min-width: 1300px) {
+#ciomer2-description video {
+  width: 248px;
+  height: 338px;
+}
+
+@media screen and (min-width: 1212px) {
   #ciomer {
     padding-top: 95px;
     padding-left: 120px;
@@ -3689,17 +3772,20 @@ body {
   text-wrap: wrap;
 }
 
-#requisitos_ciomer .requisitos-list2 > * {
-  height: 32px;
-}
-
 #requisitos_ciomer .requisitos-list2 .nivel {
-  width: 90px;
+  max-width: 90px !important;
   color: var(--blue-light);
   font-weight: 500;
+  text-wrap: nowrap;
+  padding: 0px !important;
+  margin-right: 10px !important;
 }
 
-@media screen and (min-width: 1000px) {
+#requisitos_ciomer .requisitos-list2 .nivel-result {
+  padding: 0px !important;
+}
+
+@media screen and (min-width: 1212px) {
   #ciomer .card1 {
     margin-top: 0px;
     margin-right: 160px;
@@ -3719,7 +3805,7 @@ body {
     padding: 50px 130px 96px 117px;
     margin-bottom: 0px;
     max-width: 1440px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
 
   #requisitos_ciomer .lists-container {
@@ -4567,6 +4653,12 @@ body {
   margin-top: 46px;
 }
 
+#inversionistas-description .description-problems {
+  margin-top: 122px !important;
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+
 @media screen and (min-width: 1300px) {
   #inversionistas {
     padding-top: 93px;
@@ -4666,6 +4758,7 @@ body {
 #kpis4 #kpis_item .card2 {
   border: none;
   width: 100% !important;
+  padding: 45px !important;
 }
 
 #kpis4 #kpis_item .card h2,
@@ -4717,7 +4810,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #kpis4 {
     margin-bottom: 67px;
     margin-top: 86px;
@@ -4729,11 +4822,11 @@ body {
   }
 
   #kpis4 #kpis_item {
-    padding-top: 112px;
+    padding-top: 20px;
     padding-left: 112px;
     padding-right: 97px;
     padding-bottom: 46px;
-    height: 540px;
+    min-height: 540px;
   }
 
   #kpis4 #kpis_item .card {
@@ -4745,6 +4838,7 @@ body {
     border: none;
     height: 314px !important;
     background-color: var(--background-ligth) !important;
+    padding: 0px !important;
   }
 
   #kpis4 #kpis_item .card2 {
@@ -4762,6 +4856,20 @@ body {
     width: 549px;
     margin-top: 0px;
     width: 100%;
+  }
+
+  #kpis4 #kpis_item .card {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #kpis4 #kpis_item {
+    padding-top: 112px;
+    padding-left: 95px;
+    padding-right: 116px;
+    padding-bottom: 100px;
+    min-height: 540px;
   }
 }
 
@@ -5493,12 +5601,9 @@ body {
 }
 
 #kpis6 #kpis_item {
-  padding: 25px;
-}
-
-#kpis6 #kpis_item .kpi-img {
-  width: 350px;
-  margin-top: 35px;
+  padding: 50px 25px !important;
+  max-height: 800px !important;
+  display: flex;
 }
 
 #kpis6 .clock-icon {
@@ -5510,8 +5615,10 @@ body {
 #kpis6 #kpis_item .card,
 #kpis6 #kpis_item .card2 {
   border: none;
-
-  width: 100% !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  padding: 0px !important;
+  display: unset;
 }
 
 #kpis6 #kpis_item .card h2,
@@ -5555,50 +5662,115 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 900px) {
+#kpis6 #kpis_item .kpi-img1 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 50px;
+}
+
+#kpis6 #kpis_item .kpi-img2 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 150px;
+}
+
+#kpis6 #kpis_item .kpi-img3 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 50px;
+}
+
+#kpis6 #kpis_item .kpi-img4 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 50px;
+}
+
+#kpis6 #kpis_item .kpi-img5 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 50px;
+}
+
+#kpis6 #kpis_item .kpi-img6 {
+  max-width: 370px !important;
+  width: 300px !important;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
   #kpis6 #kpis_item {
-    padding-top: 125px;
-    padding-left: 95px;
-    padding-right: 110px;
-    padding-bottom: 46px;
-    min-height: 540px;
+    padding: 0px 45px !important;
+    display: flex;
+    justify-content: center;
+    min-height: 700px !important;
+  }
+
+  #kpis6 #kpis_item .kpis6_main-card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1282px !important;
   }
 
   #kpis6 #kpis_item .card {
     max-width: 580px !important;
-    border: none;
-    min-height: 307px !important;
-  }
-
-  .kpis6_main-card-ciom {
-    height: 370px !important;
-    padding-bottom: 46px !important;
+    margin-right: 100px !important;
   }
 
   #kpis6 #kpis_item .card2 {
-    max-width: 620px !important;
-    margin-left: 123px;
-    height: 449px !important;
-    border: none;
+    max-width: 632px !important;
+    margin-left: 100px !important;
   }
 
-  #kpis6 #kpis_item .kpi-img {
-    max-width: 584px;
-    margin-top: 0px;
-    width: 100%;
+  #kpis6 #kpis_item .kpi-img1 {
+    width: 100% !important;
+    max-width: 602px !important;
+    margin-top: 0px !important;
   }
 
-  .usa-card {
-    height: 307px !important ;
-    border: 2px;
+  #kpis6 #kpis_item .kpi-img2 {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin-top: 0px !important;
+  }
+
+  #kpis6 #kpis_item .kpi-img3 {
+    width: 100% !important;
+    max-width: 584px !important;
+    margin-top: 0px !important;
+  }
+
+  #kpis6 #kpis_item .kpi-img4 {
+    width: 100% !important;
+    max-width: 524px !important;
+    margin-top: 0px !important;
+  }
+
+  #kpis6 #kpis_item .kpi-img5 {
+    width: 100% !important;
+    max-width: 518px !important;
+    margin-top: 0px !important;
+  }
+
+  #kpis6 #kpis_item .kpi-img6 {
+    width: 100% !important;
+    max-width: 508px !important;
+    margin-top: 0px !important;
   }
 }
-@media screen and (min-width: 1440px) {
-  #kpis6 .kpis6_main-card,
-  .kpis6_main-card-ciom {
-    max-width: 1282px !important;
-    margin-left: auto;
-    margin-right: auto;
+
+@media screen and (min-width: 1250px) {
+  #kpis6 .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #kpis6 #kpis_item {
+    min-height: 540px !important;
+    height: 540px !important;
   }
 }
 
