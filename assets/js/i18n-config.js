@@ -147,20 +147,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const languageSelector = document.querySelector(".language-selector");
   const dropbtn = document.querySelector(".dropbtn");
-  const closeBtn = document.querySelector(".close-btn");
 
-  if (!languageSelector || !dropbtn || !closeBtn) {
+  if (!languageSelector || !dropbtn) {
     console.error("Error: Uno o más elementos no se encontraron.");
     return;
   }
 
   dropbtn.addEventListener("click", function () {
     languageSelector.classList.toggle("active");
-  });
-
-  closeBtn.addEventListener("click", function (event) {
-    languageSelector.classList.remove("active");
-    console.log("Botón de cierre clicado");
   });
 
   document.addEventListener("click", function (event) {

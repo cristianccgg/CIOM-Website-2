@@ -143,7 +143,7 @@
 
   "objetivo_text": "Nuestro objetivo es que usted alcance el suyo",
 
-  "additional_title": "¿Necesita ayuda de <br class='d-lg-none'> profesionales en la materia?",
+  "additional_title": "¿Necesita ayuda de <br /> profesionales en la materia?",
   "additional_item_1": "Asesoría para identificar los mejores KPIs para usted",
   "additional_item_2": "Apoyo para la configuración y gestión del sistema",
   "additional_item_3": "Acompañamiento en su proceso de mejora",
@@ -778,15 +778,15 @@
   "testimonials_role_7": "Director General",
   "testimonials_role_8": "Country Manager",
 
-  "testimonial": "“...Tecnología en su máxima expresión...” Nos permitió identificar oportunidades que antes no podíamos ver.  Sumamos imparcialidad y objetividad en nuestros indicadores de Disponibilidad de Productos en Góndola.",
-  "testimonial_1": "“...Muy simple de usar...” Consolidamos todas las mediciones de toda la región Centroamérica y Colombia con una sola plataforma permitiéndonos ganar eficiencia y centralizar la toma de decisiones.",
-  "testimonial_2": "“...Ideal para relevar en competidores..” Podemos generar la data que necesitamos para conocer las estrategias de nuestros competidores.",
-  "testimonial_3": "“...Aplicamos mejora continua...” Hoy medimos corregimos y mejoramos con mucha facilidad y eficiencia.  Nuestro Servicio mejoró a nivel nacional.",
-  "testimonial_4": "“...Todo el equipo se comprometió...” Con los reportes customizados por audiencia pudimos gestionar la mejora con la ayuda de todos los Gerentes.",
-  "testimonial_5": "“...Estandaricé todo el caribe...” Con una sola herramienta puede estandarizar nuestro programa de Servicio al Cliente en todas las islas donde operamos de habla inglesa, francesa y española.",
-  "testimonial_6": "“...Estandarizamos la Imagen de la cadena...” Nuestra cadena creció gracias a indicadores simples que nos permitieron mejorar rapidamente.",
-  "testimonial_7": "“...Opero como una multinacional...” Tengo indicadores de gestión simples para accionar.  Mejoramos nuestras ventas a través de góndolas bien presentadas y abastecidas.",
-  "testimonial_8": "“...Logramos un cambio radical en 18 meses..” Tener indicadores de gestión simples y alimentados en tiempo real te permite generar cambios de forma muy fácil.  Llegamos a ser el mejor país de todo nuestro cluster.",
+  "testimonial": "“...Tecnologia em sua máxima expressão...” Isso nos permitiu identificar oportunidades que antes não podíamos ver. Adicionamos imparcialidade e objetividade aos nossos indicadores de Disponibilidade de Produtos na Prateleira.",
+  "testimonial_1": "“...Muito simples de usar...” Consolidamos todas as medições de toda a região da América Central e Colômbia com uma única plataforma, permitindo-nos ganhar eficiência e centralizar a tomada de decisões.",
+  "testimonial_2": "“...Ideal para pesquisar concorrentes...” Podemos gerar os dados que precisamos para entender as estratégias de nossos concorrentes.",
+  "testimonial_3": "“...Aplicamos melhoria contínua...” Hoje, medimos, corrigimos e melhoramos com muita facilidade e eficiência. Nosso serviço melhorou em todo o país.",
+  "testimonial_4": "“...Toda a equipe se envolveu...” Com relatórios personalizados para o público, conseguimos gerenciar a melhoria com a ajuda de todos os Gerentes.",
+  "testimonial_5": "“...Padronizei todo o Caribe...” Com uma única ferramenta, consegui padronizar nosso programa de Atendimento ao Cliente em todas as ilhas onde operamos em inglês, francês e espanhol.",
+  "testimonial_6": "“...Padronizamos a imagem da cadeia...” Nossa cadeia cresceu graças a indicadores simples que nos permitiram melhorar rapidamente.",
+  "testimonial_7": "“...Opero como uma multinacional...” Tenho indicadores de gestão simples para agir. Melhoramos nossas vendas por meio de prateleiras bem apresentadas e abastecidas.",
+  "testimonial_8": "“...Conseguimos uma mudança radical em 18 meses...” Ter indicadores de gestão simples e alimentados em tempo real permite gerar mudanças de forma muito fácil. Nos tornamos o melhor país de todo o nosso cluster.",
 
   "capitalize_title": "¿Listo para capitalizar tus oportunidades?",
   "capitalize_btn": "Empezá ahora",
