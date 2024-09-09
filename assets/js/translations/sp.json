@@ -323,8 +323,8 @@
 
   "monitoreo_title": "Monitoreo de competencia",
   "monitoreo_btn_start": "Comenzar",
-  "monitoreo_description": " <strong>Monitorear</strong> a la Competencia es una metodología que lo ayuda a conocer más en detalle el mercado en el que está compitiendo.  Consiste en enviar personas a inspeccionar, evaluar y experimientar los productos, el servicios y la atención con el propósito de obtener nuevas ideas, conocer sus precios, ofertas, promociones, condiciones, presentaciones, etc.",
-  "monitoreo_description_item": "Detecta rapidamente las amenazas",
+  "monitoreo_description": " <strong>Monitorear</strong> a la Competencia es una metodología que lo ayuda a conocer más en detalle el mercado en el que está compitiendo.  Consiste en enviar personas a inspeccionar, evaluar y experimentar los productos, el servicio y la atención con el propósito de obtener nuevas ideas, conocer sus precios, ofertas, promociones, condiciones, presentaciones, etc.",
+  "monitoreo_description_item": "Detecta rápidamente las amenazas",
   "monitoreo_description_item_1": "Identifica tendencias y oportunidades",
   "monitoreo_description_item_2": "Mejora su propuesta de valor",
   "monitoreo_description_item_3": "Eleva su competitividad",
@@ -350,7 +350,7 @@
   "monitoreo_mejorar_monitoreo_btn": "MONITOREO DE COMPETENCIA",
 
   "encuestas_title": "Encuestas",
-  "encuestas_p": "<strong>Encuestar</strong> es una técnica utilizada propularmente para poder conocer la opinión de las personas sobre productos, servicios, condiciones, etc.  Consiste en circular encuestas por diferentes medios o bien enviar personas para lograr una experiencias más personalizada y respuestas más detalladas.  Esta actividad permite a las empresas adaptarse a los gustos y necesidades de sus clientes con rapidez.",
+  "encuestas_p": "<strong>Encuestar</strong> es una técnica utilizada popularmente para poder conocer la opinión de las personas sobre productos, servicios, condiciones, etc.  Consiste en circular encuestas por diferentes medios o bien enviar personas para lograr una experiencia más personalizada y respuestas más detalladas.  Esta actividad permite a las empresas adaptarse a los gustos y necesidades de sus clientes con rapidez.",
   "encuestas_description_item": "Logra una propuesta de valor más afinada",
   "encuestas_description_item_1": "Gana competitividad en el mercado",
   "encuestas_description_item_2": "Mejora el servicio y la satisfacción del cliente.",
@@ -359,13 +359,13 @@
 
   "insight_encuestas_title": "¿Qué quiere / necesita su cliente?",
   "insight_encuestas_description": "En el caso de las encuestas debe partir del principio que no existen malos resultados, sino que, absolutamente todo lo que obtenga del cliente va a ser información valiosa.  Es importante parametrizarla y analizarla debidamente.  Una correcta interpretación de la voz del cliente van a traer a usted y a su compañía la satisfacción y lealtad de su cliente, de la mano de más ventas y mejor rentabilidad.",
-  "under_insight_encuestas_text": "<span>Observación: </span>Especial atención a <span class='under-blue-text'>qué y cómo</span>se encuesta a los clientes, una fórmula que, mal configurada, le puede dar como resultado información erronea que lo puede llevar por caminos equivocados.",
+  "under_insight_encuestas_text": "<span>Observación: </span>Especial atención a <span class='under-blue-text'>qué y cómo</span>se encuesta a los clientes, una fórmula que, mal configurada, le puede dar como resultado información errónea que lo puede llevar por caminos equivocados.",
 
   "encuestas_swiper_title": "Conocer a su cliente una garantía de éxito",
 
   "encuestas_empresas_title": "Permita a su equipo mejorar su negocio <br> Encuestas a clientes",
 
-  "encuestas_empresas2_title": "Empresa #1 en latinoamerica para encuestar clientes",
+  "encuestas_empresas2_title": "Empresa #1 en Latinoamérica para encuestar clientes",
 
   "app_title": "Aplicación (Sistematización)",
   "app_subtitle": "OPERACION",
@@ -415,14 +415,14 @@
   "statistics_app_item_3": "Calidad de Ejecución",
   "statistics_app_item_4": "Precisión en Tareas",
 
-  "vision_text": "Visión sin capacidad de ejeución es ilusión",
+  "vision_text": "Visión sin capacidad de ejecución es ilusión",
 
   "programa_title": "Programa de Mejora",
   "programa_subtitle": "PROGRAMA",
   "programa_description_title": "¿En qué consiste un Programa de Mejora?",
-  "programa_p": "Es una solución integral para compañías en donde CIOM se encarga de llevarlo a paso acelerado sobre 25 años de experiencia en mejorar resultados de compañías. <br> Está diseñada para que todo su equipo se alinie sobre un mismo objetivo: <strong>La  Satisfación del Cliente</strong>.  Trabaja desde la participación y el compromiso de su equipo sobre una base de mejora continua.  Implementa los 3 KPIs más importantes (Experiencia, Operación y Opinión).",
+  "programa_p": "Es una solución integral para compañías en donde CIOM se encarga de llevarlo a paso acelerado sobre 25 años de experiencia en mejorar resultados de compañías. <br> Está diseñada para que todo su equipo se alinee sobre un mismo objetivo: <strong>La  Satisfacción del Cliente</strong>.  Trabaja desde la participación y el compromiso de su equipo sobre una base de mejora continua.  Implementa los 3 KPIs más importantes (Experiencia, Operación y Opinión).",
   "programa_list_title": "Ventajas",
-  "programa_description_item": "Enfoca facilmente a su equipo en sus objetivos",
+  "programa_description_item": "Enfoca fácilmente a su equipo en sus objetivos",
   "programa_description_item_1": "Genera compromiso con el cambio",
   "programa_description_item_2": "Simplifica el proceso de mejora",
   "programa_description_item_3": "Acelera la llegada de resultados",
@@ -431,7 +431,7 @@
   "kpis3_programa_title": "¿Cómo funciona?",
   "kpis_paso_1": "PASO 1",
   "kpis_paso_1_item_1": "Diseño",
-  "kpis_paso_1_item_2": "Partimos conociendo los objetivos que quieren lograr y los desafíos que enfrentan.  Nos familiarizamos con el ADN que hizo exitosa a su empresa y la propueta de valor que ofrece <br class='d-none d-lg-block'> a sus clientes.  Experimientamos de froma objetiva e <br class='d-none d-lg-block'> imparcial su servicio / poducto para encontrar las <br class='d-none d-lg-block'> oportunidades de mejora. Diseñamos un plan y lo <br class='d-none d-lg-block'> dividimos en metas de corto y mediano plazo para su <br class='d-none d-lg-block'> aprobación.",
+  "kpis_paso_1_item_2": "Partimos conociendo los objetivos que quieren lograr y los desafíos que enfrentan.  Nos familiarizamos con el ADN que hizo exitosa a su empresa y la propuesta de valor que ofrece <br class='d-none d-lg-block'> a sus clientes.  Experimentamos de forma objetiva e <br class='d-none d-lg-block'> imparcial su servicio / producto para encontrar las <br class='d-none d-lg-block'> oportunidades de mejora. Diseñamos un plan y lo <br class='d-none d-lg-block'> dividimos en metas de corto y mediano plazo para su <br class='d-none d-lg-block'> aprobación.",
   "kpis_dias": "30 días",
   "kpis_paso_2": "PASO 2",
   "kpis_paso_2_item_1": "Herramientas",
