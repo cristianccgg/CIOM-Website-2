@@ -336,7 +336,7 @@ li {
 
 @media (max-width: 1000px) {
   .dropbtn {
-    padding-right: 12px;
+    padding-right: 12px !important;
     border: none !important;
     cursor: pointer !important;
   }
